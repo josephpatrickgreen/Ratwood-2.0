@@ -217,6 +217,7 @@ SUBSYSTEM_DEF(migrants)
 	GLOB.joined_player_list += character.ckey
 	if(character.client)
 		character.client.update_ooc_verb_visibility()
+	update_wretch_slots()
 
 	if(humanc)
 		var/fakekey = character.ckey
