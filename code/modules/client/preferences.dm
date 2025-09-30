@@ -1779,7 +1779,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					dat += "ANY edit (Even pressing OK on an unchanged Flavortext / OOC notes) will <font color ='red'><b>irreversibly</b></font> override all html, and remove the legacy status of the slot.<br>"
 					dat += "There are no exceptions. Have fun!"
 					dat += "(You can still add an OOC Extra)"
-					var/datum/browser/popup = new(user, "Legacy Help", nwidth = 450, nheight = 250)
+					var/datum/browser/popup = new(user, "Legacy Help", width = 450, height = 250)
 					popup.set_content(dat.Join())
 					popup.open(FALSE)
 				if("formathelp")
@@ -1797,7 +1797,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					dat += "-=FFFFFFtext=- : Adds a specific <font color = '#FFFFFF'>colour</font> to text.<br><br>"
 					dat += "Minimum Flavortext: <b>[MINIMUM_FLAVOR_TEXT]</b> characters.<br>"
 					dat += "Minimum OOC Notes: <b>[MINIMUM_OOC_NOTES]</b> characters."
-					var/datum/browser/popup = new(user, "Formatting Help", nwidth = 400, nheight = 350)
+					var/datum/browser/popup = new(user, "Formatting Help", width = 400, height = 350)
 					popup.set_content(dat.Join())
 					popup.open(FALSE)
 				if("skin_color_ref_list")
@@ -1806,7 +1806,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					dat += "<br>"
 					for(var/tone in pref_species.get_skin_list_tooltip())
 						dat += "[tone]<br>"
-					var/datum/browser/popup = new(user, "Formatting Help", width = 400, nheight = 450)
+					var/datum/browser/popup = new(user, "Formatting Help", width = 400, height = 450)
 					popup.set_content(dat.Join())
 					popup.open(FALSE)
 				if("flavortext")

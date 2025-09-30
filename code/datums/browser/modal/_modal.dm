@@ -16,7 +16,7 @@
 	/// If the modal will continuously regrab focus.
 	var/final/autofocus = FALSE
 
-/datum/browser/modal/New(mob/user, window_id, title = "", width = 0, nheight = 0, atom/owner = null, autofocus = TRUE, timeout = 0)
+/datum/browser/modal/New(mob/user, window_id, title = "", width = 0, height = 0, atom/owner = null, autofocus = TRUE, timeout = 0)
 	. = ..()
 	src.timeout = timeout
 	src.autofocus = autofocus

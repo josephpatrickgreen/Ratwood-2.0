@@ -49,7 +49,7 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 			dat += ("<br><div align='center'><img src='[nsfw_headshot_link]' width='600px'></div>")
 		else if(nsfw_headshot_link && (wear_armor || wear_shirt))
 			dat += "<br><center><i><font color = '#9d0080'; font size = 5>There is more to see but they are not naked...</font></i></center>"
-		var/datum/browser/popup = new(user, "[src]", width = 700, nheight = 800)
+		var/datum/browser/popup = new(user, "[src]", width = 700, height = 800)
 		popup.set_content(dat.Join())
 		popup.open(FALSE)
 		return
@@ -447,7 +447,7 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 					
 			dat += "</td>"
 			dat += "</tr>"
-			var/datum/browser/popup = new(user, "assess", title = "[src] Assesment", width = 1000, nheight = 600)
+			var/datum/browser/popup = new(user, "assess", title = "[src] Assesment", width = 1000, height = 600)
 			popup.set_content(dat.Join())
 			popup.open(FALSE)
 		else
