@@ -69,7 +69,7 @@
 	</script>
 	"})
 
-	var/window_height = multiline ? 350 : 150
+	var/window_height = multiline ? 400 : 200
 
 	..(user, ckey("[user]-[message]-[title]-[world.time]-[rand(1,10000)]"), title, 500, window_height, src, TRUE, timeout)
 
@@ -84,7 +84,7 @@
 			style="
 				overflow-y: auto;
 				resize: none;
-				[multiline ? "height: 10rem;" : ""]"
+				[multiline ? "flex:1;" : ""]"
 			name="choice"
 			[NULLABLE(isnum(max_length)) && "maxlength=[max_length]"]
 			placeholder="WE AWAIT YOUR COMMAND..."

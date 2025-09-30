@@ -160,6 +160,8 @@ h4 {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
 }
 
 .uiTitle {
@@ -180,6 +182,7 @@ h4 {
 }
 
 .uiContent {
+	flex: 1;
 	clear: both;
 	margin: 8px;
 	box-sizing: border-box;
