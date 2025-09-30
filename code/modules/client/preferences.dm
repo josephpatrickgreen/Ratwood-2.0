@@ -1811,7 +1811,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					popup.open(FALSE)
 				if("flavortext")
 					to_chat(user, "<span class='notice'>["<span class='bold'>Flavortext should not include nonphysical nonsensory attributes such as backstory or the character's internal thoughts.</span>"]</span>")
-					var/new_flavortext = browser_input_text(user, "Input your character description:", "Flavortext", flavortext, multiline=TRUE)
+					var/new_flavortext = browser_input_text(user, "Input your character description:", "Flavortext", flavortext, max_length=8192, multiline=TRUE)
 					if(new_flavortext == null)
 						return
 					if(new_flavortext == "")
