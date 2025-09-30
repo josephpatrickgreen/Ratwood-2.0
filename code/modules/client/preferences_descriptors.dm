@@ -56,7 +56,7 @@
 			for(var/desc_type in choice.descriptors)
 				var/datum/mob_descriptor/descriptor = MOB_DESCRIPTOR(desc_type)
 				picklist[descriptor.name] = desc_type
-			var/picked_descriptor_name = input(user, "Describe my [lowertext(choice.name)]", "Describe myself") as null|anything in picklist
+			var/picked_descriptor_name = browser_input_list(user, "Describe my [lowertext(choice.name)]", "Describe myself", picklist)
 
 			if(!picked_descriptor_name)
 				return
@@ -69,7 +69,7 @@
 			var/index = text2num(href_list["index"])
 			var/datum/custom_descriptor_entry/custom_entry = custom_descriptors[index]
 			var/current_prefix_text = translation["[custom_entry.prefix_type ]"]
-			var/new_prefix_text = input(user, "Choose the prefix", "Describe myself", current_prefix_text) as null|anything in input_list
+			var/new_prefix_text = browser_input_list(user, "Choose the prefix", "Describe myself", current_prefix_text, input_list)
 			if(!new_prefix_text)
 				return
 			var/new_prefix_type = input_list[new_prefix_text]

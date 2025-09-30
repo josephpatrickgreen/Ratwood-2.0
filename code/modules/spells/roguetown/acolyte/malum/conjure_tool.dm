@@ -38,7 +38,7 @@
 	)
 
 /obj/effect/proc_holder/spell/invoked/conjure_tool/cast(list/targets, mob/living/user = usr)
-	var/tool_choice = input(user, "Choose a tool", "Conjure Tool") as anything in tool_options
+	var/tool_choice = browser_input_list(user, "Choose a tool", "Conjure Tool", tool_options)
 	if(!tool_choice)
 		return
 	tool_choice = tool_options[tool_choice]

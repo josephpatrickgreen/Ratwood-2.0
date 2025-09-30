@@ -53,7 +53,7 @@
 	H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 	var/weapons = list("Katar","Steel Knuckles","Punch Dagger","MY BARE HANDS!!!","Battle Axe","Mace","Sword")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if ("Katar")

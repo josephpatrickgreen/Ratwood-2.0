@@ -25,7 +25,7 @@
 	var/A = null
 
 	if(!randomise_selection)
-		A = input("Area to teleport to", "Teleport", A) as null|anything in GLOB.teleportlocs
+		A = browser_input_list("Area to teleport to", "Teleport", A, GLOB.teleportlocs)
 	else
 		A = pick(GLOB.teleportlocs)
 	if(!A)

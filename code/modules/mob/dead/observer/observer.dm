@@ -594,7 +594,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		var/area/A = V
 		if(!A.hidden)
 			filtered += A
-	var/area/thearea  = input("Area to jump to", "BOOYEA") as null|anything in filtered
+	var/area/thearea  = browser_input_list("Area to jump to", "BOOYEA", filtered)
 
 	if(!thearea)
 		return
@@ -617,7 +617,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	set hidden = 1
 	var/list/mobs = getpois(mobs_only=1,skip_mindless=1)
 
-	var/input = input("Who?!", "Haunt", null, null) as null|anything in mobs
+	var/input = browser_input_list("Who?!", "Haunt", null, null, mobs)
 	var/mob/target = mobs[input]
 	ManualFollow(target)
 
@@ -675,7 +675,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		var/target = null	   //Chosen target.
 
 		dest += getpois(mobs_only=1) //Fill list, prompt user with list
-		target = input("Please, select a player!", "Jump to Mob", null, null) as null|anything in dest
+		target = browser_input_list("Please, select a player!", "Jump to Mob", null, null, dest)
 
 		if (!target)//Make sure we actually have a target
 			return
@@ -702,7 +702,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		var/list/views = list()
 		for(var/i in 7 to max_view)
 			views |= i
-		var/new_view = input("Choose your new view", "Modify view range", 7) as null|anything in views
+		var/new_view = browser_input_list("Choose your new view", "Modify view range", 7, views)
 		if(new_view)
 			client.change_view(CLAMP(new_view, 7, max_view))
 	else
@@ -828,7 +828,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		if(!(L in GLOB.player_list) && !L.mind)
 			possessible += L
 
-	var/mob/living/target = input("Your new life begins today!", "Possess Mob", null, null) as null|anything in sortNames(possessible)
+	var/mob/living/target = browser_input_list("Your new life begins today!", "Possess Mob", null, null, sortNames(possessible))
 
 	if(!target)
 		return FALSE
@@ -1034,7 +1034,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	var/eye_name = null
 
-	eye_name = input("Please, select a player!", "Observe", null, null) as null|anything in creatures
+	eye_name = browser_input_list("Please, select a player!", "Observe", null, null, creatures)
 
 	if (!eye_name)
 		return

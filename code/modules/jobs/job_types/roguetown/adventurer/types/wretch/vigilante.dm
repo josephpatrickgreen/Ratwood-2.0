@@ -36,7 +36,7 @@
 	H.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE) //SNIFF OUT JUSTICE.
 	H.cmode_music = 'sound/music/combatmaniac.ogg'
 	var/classes = list("The Watchman", "The Gadgeteer", "I AM JUSTICE INCARNATE!!!")
-	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
+	var/classchoice = browser_input_list("Choose your archetypes", "Available archetypes", classes)
 	switch(classchoice)
 		if("The Watchman") //Face-to-face CQC. No crit resist. Pure aura. Rorschach. 
 			H.set_blindness(0)

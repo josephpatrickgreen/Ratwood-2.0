@@ -70,8 +70,8 @@
 
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mindlink)
 
-	var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in list("Crossbow", "Bow", "Sling")
-	var/armor_choice = input(H, "Choose your armor.", "TAKE UP ARMS") as anything in list("Light Armor", "Medium Armor")
+	var/weapon_choice = browser_input_list(H, "Choose your weapon.", "TAKE UP ARMS", list("Crossbow", "Bow", "Sling"))
+	var/armor_choice = browser_input_list(H, "Choose your armor.", "TAKE UP ARMS", list("Light Armor", "Medium Armor"))
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Crossbow")

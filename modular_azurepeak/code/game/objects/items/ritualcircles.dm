@@ -31,7 +31,7 @@
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more.")) // If you have already done a ritual in the last 30 minutes, you cannot do another.
 		return
-	var/riteselection = input(user, "Rituals of the Sun", src) as null|anything in solarrites // When you use a open hand on a rune, It'll give you a selection of all the rites available from that rune
+	var/riteselection = browser_input_list(user, "Rituals of the Sun", src, solarrites) // When you use a open hand on a rune, It'll give you a selection of all the rites available from that rune
 	switch(riteselection) // rite selection goes in this section, try to do something fluffy. Presentation is most important here, truthfully.
 		if("Guiding Light") // User selects Guiding Light, begins the stuff for it
 			if(do_after(user, 50)) // just flavor stuff before activation
@@ -79,7 +79,7 @@
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of the Moon", src) as null|anything in lunarrites
+	var/riteselection = browser_input_list(user, "Rituals of the Moon", src, lunarrites)
 	switch(riteselection) // put ur rite selection here
 		if("Moonlight Dance")
 			if(do_after(user, 50))
@@ -125,7 +125,7 @@
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Plague", src) as null|anything in plaguerites
+	var/riteselection = browser_input_list(user, "Rituals of Plague", src, plaguerites)
 	switch(riteselection) // put ur rite selection here
 		if("Flylord's Triage")
 			if(do_after(user, 50))
@@ -173,7 +173,7 @@
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Beasts", src) as null|anything in bestialrites
+	var/riteselection = browser_input_list(user, "Rituals of Beasts", src, bestialrites)
 	switch(riteselection) // put ur rite selection here
 		if("Rite of the Lesser Wolf")
 			if(do_after(user, 50))
@@ -216,7 +216,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Creation", src) as null|anything in forgerites
+	var/riteselection = browser_input_list(user, "Rituals of Creation", src, forgerites)
 	switch(riteselection) // put ur rite selection here
 		if("Ritual of Blessed Reforgance")
 			if(do_after(user, 50))
@@ -299,7 +299,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 		to_chat(user,span_smallred("No rites are currently available."))
 		return
 
-	var/riteselection = input(user, "Rites of his dream", src) as null|anything in available_rites
+	var/riteselection = browser_input_list(user, "Rites of his dream", src, available_rites)
 	switch(riteselection)
 		if("Rite of the Crystal Spire")
 			if(do_after(user, 50))
@@ -411,7 +411,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rite of the Tides", src) as null|anything in stormrites
+	var/riteselection = browser_input_list(user, "Rite of the Tides", src, stormrites)
 	switch(riteselection)
 		if("Rite of the Tides")
 			if(do_after(user, 50))
@@ -817,7 +817,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Death", src) as null|anything in deathrites
+	var/riteselection = browser_input_list(user, "Rituals of Death", src, deathrites)
 	switch(riteselection) // put ur rite selection here
 		if("Undermaiden's Bargain")
 			loc.visible_message(span_warning("[user] sways before the rune, they open their mouth, though no words come out..."))
@@ -894,7 +894,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Love", src) as null|anything in peacerites
+	var/riteselection = browser_input_list(user, "Rituals of Love", src, peacerites)
 	switch(riteselection) // put ur rite selection here
 		if("Rite of Pacification")
 			if(do_after(user, 50))
@@ -943,7 +943,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Progress", src) as null|anything in zizorites
+	var/riteselection = browser_input_list(user, "Rituals of Progress", src, zizorites)
 	switch(riteselection)
 		if("Rite of Armaments")
 			var/onrune = view(1, loc)
@@ -951,7 +951,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 			for(var/mob/living/carbon/human/persononrune in onrune)
 				if(HAS_TRAIT(persononrune, TRAIT_CABAL))
 					folksonrune += persononrune
-			var/target = input(user, "Choose a host") as null|anything in folksonrune
+			var/target = browser_input_list(user, "Choose a host", folksonrune)
 			if(!target)
 				return
 			if(!do_after(user, 5 SECONDS))
@@ -1000,7 +1000,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 			if(!valids_on_rune.len)
 				to_chat(user, "No valid targets on the rune!")
 				return
-			var/mob/living/carbon/human/target = input(user, "Choose a host") as null|anything in valids_on_rune
+			var/mob/living/carbon/human/target = browser_input_list(user, "Choose a host", valids_on_rune)
 			if(!target || QDELETED(target) || target.loc != loc)
 				return
 			if(!do_after(user, 5 SECONDS))
@@ -1029,7 +1029,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 			if(!valids_on_rune.len)
 				loc.visible_message(span_cult("THE RITE REJECTS ONE NOT OF THE CABAL!"))
 				return
-			var/mob/living/carbon/human/target = input(user, "Choose a host") as null|anything in valids_on_rune
+			var/mob/living/carbon/human/target = browser_input_list(user, "Choose a host", valids_on_rune)
 			if(!target || QDELETED(target) || target.loc != loc)
 				return
 			if(!do_after(user, 5 SECONDS))
@@ -1244,7 +1244,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Transaction", src) as null|anything in matthiosrites
+	var/riteselection = browser_input_list(user, "Rituals of Transaction", src, matthiosrites)
 	switch(riteselection) // put ur rite selection here
 		if("Rite of Armaments")
 			var/onrune = view(1, loc)
@@ -1252,7 +1252,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 			for(var/mob/living/carbon/human/persononrune in onrune)
 				if(HAS_TRAIT(persononrune, TRAIT_COMMIE))
 					folksonrune += persononrune
-			var/target = input(user, "Choose a host") as null|anything in folksonrune
+			var/target = browser_input_list(user, "Choose a host", folksonrune)
 			if(!target)
 				return
 			if(!do_after(user, 5 SECONDS))
@@ -1462,7 +1462,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Violence", src) as null|anything in graggarrites
+	var/riteselection = browser_input_list(user, "Rituals of Violence", src, graggarrites)
 	switch(riteselection) // put ur rite selection here
 		if("Rite of Armaments")
 			var/onrune = view(1, loc)
@@ -1470,7 +1470,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 			for(var/mob/living/carbon/human/persononrune in onrune)
 				if(HAS_TRAIT(persononrune, TRAIT_HORDE))
 					folksonrune += persononrune
-			var/target = input(user, "Choose a host") as null|anything in folksonrune
+			var/target = browser_input_list(user, "Choose a host", folksonrune)
 			if(!target)
 				return
 			if(!do_after(user, 5 SECONDS))
@@ -1668,7 +1668,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
-	var/riteselection = input(user, "Rituals of Desire", src) as null|anything in baotharites
+	var/riteselection = browser_input_list(user, "Rituals of Desire", src, baotharites)
 	switch(riteselection) // put ur rite selection here
 		if("Conversion")
 			if(!Adjacent(user))
@@ -1682,7 +1682,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 			if(!valids_on_rune.len)
 				to_chat(user, "No valid targets on the rune!")
 				return
-			var/mob/living/carbon/human/target = input(user, "Choose a host") as null|anything in valids_on_rune
+			var/mob/living/carbon/human/target = browser_input_list(user, "Choose a host", valids_on_rune)
 			if(!target || QDELETED(target) || target.loc != loc)
 				return
 			if(do_after(user, 50))

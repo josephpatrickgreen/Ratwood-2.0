@@ -239,7 +239,7 @@
 	if(!do_after(user, 5 SECONDS))
 		return
 
-	var/p_input = input(user, "Choose your character's pronouns", "Pronouns") as null|anything in GLOB.pronouns_list
+	var/p_input = browser_input_list(user, "Choose your character's pronouns", "Pronouns", GLOB.pronouns_list)
 	if(p_input)
 		user.pronouns = p_input
 	if(alert("Do you wish to change your frame?", "Body Type", "Yes", "No") == "Yes")

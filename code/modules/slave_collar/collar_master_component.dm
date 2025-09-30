@@ -220,10 +220,10 @@ GLOBAL_LIST_EMPTY(collar_masters)
         return list()
 
     if(allow_multiple)
-        var/list/selected = input(user, "Choose pets to [action_name]:", "Pet Selection") as null|anything in valid_pets
+        var/list/selected = browser_input_list(user, "Choose pets to [action_name]:", "Pet Selection", valid_pets)
         return selected ? selected : list()
     else
-        var/mob/living/carbon/human/selected = input(user, "Choose a pet to [action_name]:", "Pet Selection") as null|anything in valid_pets
+        var/mob/living/carbon/human/selected = browser_input_list(user, "Choose a pet to [action_name]:", "Pet Selection", valid_pets)
         return selected ? list(selected) : list()
 
 /datum/component/collar_master/proc/toggle_listening(mob/living/carbon/human/pet)

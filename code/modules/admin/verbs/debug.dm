@@ -55,7 +55,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 
 	if(matches.len==0)
 		return
-	var/hsbitem = input(usr, "Choose an object to delete.", "Delete:") as null|anything in sortList(matches)
+	var/hsbitem = browser_input_list(usr, "Choose an object to delete.", "Delete:", sortList(matches))
 	if(hsbitem)
 		hsbitem = matches[hsbitem]
 		var/counter = 0
@@ -254,7 +254,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 		if(initial(O.can_be_admin_equipped))
 			outfits[initial(O.name)] = path
 
-	var/dresscode = input("Select outfit", "Robust quick dress shop") as null|anything in baseoutfits + sortList(outfits)
+	var/dresscode = browser_input_list("Select outfit", "Robust quick dress shop", baseoutfits + sortList(outfits))
 	if (isnull(dresscode))
 		return
 
@@ -265,7 +265,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 		var/list/custom_names = list()
 		for(var/datum/outfit/D in GLOB.custom_outfits)
 			custom_names[D.name] = D
-		var/selected_name = input("Select outfit", "Robust quick dress shop") as null|anything in sortList(custom_names)
+		var/selected_name = browser_input_list("Select outfit", "Robust quick dress shop", sortList(custom_names))
 		dresscode = custom_names[selected_name]
 		if(isnull(dresscode))
 			return
@@ -279,7 +279,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 			if(initial(O.can_be_admin_equipped))
 				roguejob_outfits["[path]"] = path
 
-		dresscode = input("Select job equipment", "Robust quick dress shop") as null|anything in sortList(roguejob_outfits)
+		dresscode = browser_input_list("Select job equipment", "Robust quick dress shop", sortList(roguejob_outfits))
 		dresscode = roguejob_outfits[dresscode]
 		if(isnull(dresscode))
 			return
@@ -381,7 +381,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 
 		names[name] = ruin_landmark
 
-	var/ruinname = input("Select ruin", "Jump to Ruin") as null|anything in sortList(names)
+	var/ruinname = browser_input_list("Select ruin", "Jump to Ruin", sortList(names))
 
 
 	var/obj/effect/landmark/ruin/landmark = names[ruinname]
@@ -461,7 +461,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 		"Total Time"	=	/proc/cmp_profile_time_dsc,
 		"Call Count"	=	/proc/cmp_profile_count_dsc
 	)
-	var/sort = input(src, "Sort type?", "Sort Type", "Avg time") as null|anything in sortlist
+	var/sort = browser_input_list(src, "Sort type?", "Sort Type", "Avg time", sortlist)
 	if (!sort)
 		return
 	sort = sortlist[sort]

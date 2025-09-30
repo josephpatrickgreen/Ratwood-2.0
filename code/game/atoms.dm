@@ -797,7 +797,7 @@
 						if(!valid_id)
 							to_chat(usr, "<span class='warning'>A reagent with that ID doesn't exist!</span>")
 				if("Choose from a list")
-					chosen_id = input(usr, "Choose a reagent to add.", "Choose a reagent.") as null|anything in sortList(subtypesof(/datum/reagent), GLOBAL_PROC_REF(cmp_typepaths_asc))
+					chosen_id = browser_input_list(usr, "Choose a reagent to add.", "Choose a reagent.", sortList(subtypesof(/datum/reagent), GLOBAL_PROC_REF(cmp_typepaths_asc)))
 				if("I'm feeling lucky")
 					chosen_id = pick(subtypesof(/datum/reagent))
 			if(chosen_id)
@@ -809,7 +809,7 @@
 	if(href_list[VV_HK_TRIGGER_EXPLOSION] && check_rights(R_FUN))
 		usr.client.cmd_admin_explosion(src)
 	if(href_list[VV_HK_MODIFY_TRANSFORM] && check_rights(R_VAREDIT))
-		var/result = input(usr, "Choose the transformation to apply","Transform Mod") as null|anything in list("Scale","Translate","Rotate")
+		var/result = browser_input_list(usr, "Choose the transformation to apply","Transform Mod", list("Scale","Translate","Rotate"))
 		var/matrix/M = transform
 		switch(result)
 			if("Scale")

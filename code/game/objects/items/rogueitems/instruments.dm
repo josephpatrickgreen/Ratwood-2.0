@@ -84,7 +84,7 @@
 			if(user.mind && user.get_skill_level(/datum/skill/misc/music) >= 4)
 				options["Upload New Song"] = "upload"
 			
-			var/choice = input(user, "Which song?", "Music", name) as null|anything in options
+			var/choice = browser_input_list(user, "Which song?", "Music", name, options)
 			if(!choice || !user)
 				return
 				
@@ -188,7 +188,7 @@
 							for(var/obj/item/rogue/instrument/bandinstrumentspersonal in thisguyinstrument)
 								if(bandinstrumentspersonal.playing)
 									return
-								bandinstrumentspersonal.curfile = input(potentialbandmates, "Which song shall [potentialbandmates] perform?", "Music", name) as null|anything in bandinstrumentspersonal.song_list
+								bandinstrumentspersonal.curfile = browser_input_list(potentialbandmates, "Which song shall [potentialbandmates] perform?", "Music", name, bandinstrumentspersonal.song_list)
 								bandinstrumentspersonal.curfile = bandinstrumentspersonal.song_list[bandinstrumentspersonal.curfile]
 			if(do_after(user, 1))
 				for(var/obj/item/rogue/instrument/bandinstrumentsband in instrumentsintheband)

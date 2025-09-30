@@ -123,7 +123,7 @@ decreases charge time if held opened in hand, for pure mage build + aesthetics.
 	user_mind.has_changed_spell = TRUE //To pre-empt a halting duplication in the for loop here
 	var/unlearn_success = FALSE
 	for(var/i = 1, i <= 2, i++)
-		var/choice = input(user, "Choose up to two spells to unbind. Cancel both to not use up your daily unbinding.") as null|anything in resettable_spells
+		var/choice = browser_input_list(user, "Choose up to two spells to unbind. Cancel both to not use up your daily unbinding.", resettable_spells)
 		var/obj/effect/proc_holder/spell/item = resettable_spells[choice]
 		if(!item)
 			break
@@ -150,7 +150,7 @@ decreases charge time if held opened in hand, for pure mage build + aesthetics.
 		if(gamer.job == "Court Magician")
 			designlist = list("steel", "gem", "skin", "mimic")
 		var/the_time = world.time
-		var/design = input(user, "Select a design.","Spellbook Design") as null|anything in designlist
+		var/design = browser_input_list(user, "Select a design.","Spellbook Design", designlist)
 		if(!design)
 			return
 		if(world.time > (the_time + 30 SECONDS))

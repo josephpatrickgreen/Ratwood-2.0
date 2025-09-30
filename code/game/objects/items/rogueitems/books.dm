@@ -122,7 +122,7 @@
 		if(C.orders.len > 4)
 			to_chat(user, span_warning("Too much order."))
 			return
-		var/picked_cat = input(user, "Categories", "Shipping Ledger") as null|anything in sortList(SSmerchant.supply_cats)
+		var/picked_cat = browser_input_list(user, "Categories", "Shipping Ledger", sortList(SSmerchant.supply_cats))
 		if(!picked_cat)
 			testing("yeye")
 			return
@@ -132,7 +132,7 @@
 			if(PA.group == picked_cat)
 				pax += PA
 
-		var/datum/supply_pack/picked_pack = input(user, "Shipments", "Shipping Ledger") as null|anything in sortList(pax)
+		var/datum/supply_pack/picked_pack = browser_input_list(user, "Shipments", "Shipping Ledger", sortList(pax))
 		if(!picked_pack)
 			return
 
@@ -147,7 +147,7 @@
 		if(P.info)
 			to_chat(user, span_warning("Something is written here already."))
 			return
-		var/picked_cat = input(user, "Categories", "Shipping Ledger") as null|anything in sortList(SSmerchant.supply_cats)
+		var/picked_cat = browser_input_list(user, "Categories", "Shipping Ledger", sortList(SSmerchant.supply_cats))
 		if(!picked_cat)
 			return
 		var/list/pax = list()
@@ -155,7 +155,7 @@
 			var/datum/supply_pack/PA = SSmerchant.supply_packs[pack]
 			if(PA.group == picked_cat)
 				pax += PA
-		var/datum/supply_pack/picked_pack = input(user, "Shipments", "Shipping Ledger") as null|anything in sortList(pax)
+		var/datum/supply_pack/picked_pack = browser_input_list(user, "Shipments", "Shipping Ledger", sortList(pax))
 		if(!picked_pack)
 			return
 		var/obj/item/paper/scroll/cargo/C = new(user.loc)
@@ -188,7 +188,7 @@
 	if(in_range(user, src) || isobserver(user))
 		user.changeNext_move(CLICK_CD_MELEE)
 		var/list/choices = list("The Unsundered", "The Ruin", "The Dawn")
-		var/section_choice = input(user,"Which section shall I read from?", "DIVINE ENLIGHTENMENT") as anything in choices
+		var/section_choice = browser_input_list(user,"Which section shall I read from?", "DIVINE ENLIGHTENMENT", choices)
 		var/chosentxt
 		switch(section_choice)
 			if("The Unsundered")
@@ -253,7 +253,7 @@
 /obj/item/book/rogue/bibble/psy/MiddleClick(mob/user, params)
 	. = ..()
 	var/sects = list("Sect 1 - PSALMS", "Sect 2 - OF LYFE", "Sect 3 - CHANTS")
-	var/sect_choice = input(user, "Select a Sect", "OF PSYDONIA") as anything in sects
+	var/sect_choice = browser_input_list(user, "Select a Sect", "OF PSYDONIA", sects)
 	switch(sect_choice)
 		if("Sect 1 - PSALMS")
 			sect = "sect1"
@@ -493,7 +493,7 @@
 	while(!player_book_author_ckey) // doesn't have to be this, but better than defining a bool.
 		player_book_title = capitalize(STRIP_HTML_SIMPLE(input(in_round_player_mob, "What title do you want to give the book? (max 42 characters)", "Title", "Unknown"), MAX_NAME_LEN))
 		player_book_author = STRIP_HTML_SIMPLE(input(in_round_player_mob, "What do you want the author text to be? (max 42 characters)", "Author", ""), MAX_NAME_LEN)
-		player_book_icon = book_icons[input(in_round_player_mob, "Choose a book style", "Book Style") as anything in book_icons]
+		player_book_icon = book_icons[browser_input_list(in_round_player_mob, "Choose a book style", "Book Style", book_icons)]
 		player_book_author_ckey = in_round_player_mob.ckey
 		//This gives the icon_state name, not the descriptive name, i. e. "book8", instead of "Sickly green with embossed Bronze"
 		if(alert("Confirm?:\nTitle: [player_book_title]\nAuthor: [player_book_author]\nBook Cover: [player_book_icon]", "", "Yes", "No") == "No")

@@ -83,7 +83,7 @@
 		if(extra_classes)
 			classes += extra_classes
 
-		.["class"] = input(src, "What kind of data?", "Variable Type", default_class) as null|anything in classes
+		.["class"] = browser_input_list(src, "What kind of data?", "Variable Type", default_class, classes)
 		if(holder && holder.marked_datum && .["class"] == markstring)
 			.["class"] = VV_MARKED_DATUM
 
@@ -146,7 +146,7 @@
 				.["class"] = null
 				return
 			var/list/things = vv_reference_list(type, subtypes)
-			var/value = input("Select reference:", "Reference", current_value) as null|anything in things
+			var/value = browser_input_list("Select reference:", "Reference", current_value, things)
 			if(!value)
 				.["class"] = null
 				return
@@ -159,7 +159,7 @@
 				.["class"] = null
 				return
 			var/list/things = vv_reference_list(type, subtypes)
-			var/value = input("Select reference:", "Reference", current_value) as null|anything in things
+			var/value = browser_input_list("Select reference:", "Reference", current_value, things)
 			if(!value)
 				.["class"] = null
 				return
@@ -172,14 +172,14 @@
 				.["class"] = null
 				return
 			var/list/things = vv_reference_list(type, subtypes)
-			var/value = input("Select reference:", "Reference", current_value) as null|anything in things
+			var/value = browser_input_list("Select reference:", "Reference", current_value, things)
 			if(!value)
 				.["class"] = null
 				return
 			.["value"] = things[value]
 
 		if(VV_CLIENT)
-			.["value"] = input("Select reference:", "Reference", current_value) as null|anything in GLOB.clients
+			.["value"] = browser_input_list("Select reference:", "Reference", current_value, GLOB.clients)
 			if(.["value"] == null)
 				.["class"] = null
 				return

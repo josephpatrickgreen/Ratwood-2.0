@@ -536,7 +536,7 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 		A.admin_remove(usr)
 
 	if (href_list["role_edit"])
-		var/new_role = input("Select new role", "Assigned role", assigned_role) as null|anything in sortList(get_all_jobs())
+		var/new_role = browser_input_list("Select new role", "Assigned role", assigned_role, sortList(get_all_jobs()))
 		if (!new_role)
 			return
 		assigned_role = new_role
@@ -576,7 +576,7 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 					if(1)
 						target_antag = antag_datums[1]
 					else
-						var/datum/antagonist/target = input("Which antagonist gets the objective:", "Antagonist", "(new custom antag)") as null|anything in sortList(antag_datums) + "(new custom antag)"
+						var/datum/antagonist/target = browser_input_list("Which antagonist gets the objective:", "Antagonist", "(new custom antag)", sortList(antag_datums) + "(new custom antag)")
 						if (QDELETED(target))
 							return
 						else if(target == "(new custom antag)")
@@ -591,7 +591,7 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 			if(old_objective.name in GLOB.admin_objective_list)
 				def_value = old_objective.name
 
-		var/selected_type = input("Select objective type:", "Objective type", def_value) as null|anything in GLOB.admin_objective_list
+		var/selected_type = browser_input_list("Select objective type:", "Objective type", def_value, GLOB.admin_objective_list)
 		selected_type = GLOB.admin_objective_list[selected_type]
 		if (!selected_type)
 			return

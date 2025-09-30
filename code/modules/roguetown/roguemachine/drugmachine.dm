@@ -115,7 +115,7 @@
 		else
 			if(!(drugrade_flags & DRUGRADE_MONEYB))
 				options += "Unlock 50% Cut (105)"
-		var/select = input(usr, "Please select an option.", "", null) as null|anything in options
+		var/select = browser_input_list(usr, "Please select an option.", "", null, options)
 		if(!select)
 			return
 		if(!usr.canUseTopic(src, BE_CLOSE) || locked)
@@ -126,7 +126,7 @@
 					say("There is no mammon to move, Master.")
 					return
 				options = list("To Bank (Taxed)", "Direct")
-				select = input(usr, "Please select an option.", "", null) as null|anything in options
+				select = browser_input_list(usr, "Please select an option.", "", null, options)
 				if(!select)
 					return
 				if(!usr.canUseTopic(src, BE_CLOSE) || locked)

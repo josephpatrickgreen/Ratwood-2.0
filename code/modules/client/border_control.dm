@@ -95,7 +95,7 @@ GLOBAL_VAR_INIT(whitelistLoaded, 0)
 	set name = "BC - Remove Whitelist Key"
 	set category = "-Server-"
 
-	var/keyToRemove = input("CKey to Remove", "Remove Key") as null|anything in GLOB.whitelistedCkeys
+	var/keyToRemove = browser_input_list("CKey to Remove", "Remove Key", GLOB.whitelistedCkeys)
 
 	if(keyToRemove)
 		var/confirm = alert("Remove [keyToRemove] from the border control whitelist?", , "Yes", "No")
@@ -133,7 +133,7 @@ GLOBAL_VAR_INIT(whitelistLoaded, 0)
 
 	var/borderControlMode = CONFIG_GET(number/border_control)
 
-	var/choice = input("New State (Current state is: [BC_ModeToText(borderControlMode)])", "Border Control State") as null|anything in list("Disabled", "Learning", "Enforced")
+	var/choice = browser_input_list("New State (Current state is: [BC_ModeToText(borderControlMode)])", "Border Control State", list("Disabled", "Learning", "Enforced"))
 
 	switch(choice)
 		if("Disabled")

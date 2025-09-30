@@ -143,13 +143,13 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	for(var/miracle in t3)
 		if(H.mind?.has_spell(t3[miracle]))
 			t3.Remove(miracle)
-	var/t4_choice = input(H,"Choose your Tier Four Miracle.", "TAKE UP KNAWLEDGE") as anything in t4
+	var/t4_choice = browser_input_list(H,"Choose your Tier Four Miracle.", "TAKE UP KNAWLEDGE", t4)
 	if(t4_choice)
 		var/obj/effect/proc_holder/chosen_miracle = t4[t4_choice]
 		H.mind?.AddSpell(new chosen_miracle)
 
 	for(var/i in 1 to t3_count)
-		var/t3_choice = input(H,"Choose your Tier Three Miracle.", "TAKE UP KNAWLEDGE ([t3_count] CHOICES REMAIN)") as anything in t3
+		var/t3_choice = browser_input_list(H,"Choose your Tier Three Miracle.", "TAKE UP KNAWLEDGE ([t3_count] CHOICES REMAIN)", t3)
 		if(t3_choice)
 			var/obj/effect/proc_holder/chosen_miracle = t3[t3_choice]
 			H.mind?.AddSpell(new chosen_miracle)
@@ -492,7 +492,7 @@ code\modules\admin\verbs\divinewrath.dm has a variant with all the gods so keep 
 		"Curse of Xylix" = /datum/curse/xylix,
 		)
 
-	var/curse_pick = input("Choose a curse to apply or lift.", "Select Curse") as null|anything in curse_choices
+	var/curse_pick = browser_input_list("Choose a curse to apply or lift.", "Select Curse", curse_choices)
 	if (!curse_pick)
 		return
 

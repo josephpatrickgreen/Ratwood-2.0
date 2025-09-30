@@ -90,7 +90,7 @@
 	// Weapon choice system
 	H.adjust_blindness(-3)
 	var/weapons = list("Crossbow & Bolts", "Recurve Bow & Arrows")
-	var/weapon_choice = input("Choose your ranged weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your ranged weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if("Crossbow & Bolts")
 			H.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
@@ -130,7 +130,7 @@
 /datum/outfit/job/roguetown/puritan/inspector/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Eucharist (Rapier)", "Daybreak (Whip)", "Stigmata (Halberd)")
-	var/weapon_choice = input(H,"CHOOSE YOUR RELIQUARY PIECE.", "WIELD THEM IN HIS NAME.") as anything in weapons
+	var/weapon_choice = browser_input_list(H,"CHOOSE YOUR RELIQUARY PIECE.", "WIELD THEM IN HIS NAME.", weapons)
 	switch(weapon_choice)
 		if("Eucharist (Rapier)")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/rapier/psy/relic(H), TRUE)
@@ -206,7 +206,7 @@
 /datum/outfit/job/roguetown/puritan/ordinator/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Covenant And Creed (Broadsword + Shield)", "Covenant and Consecratia (Flail + Shield)", "Apocrypha (Greatsword) and a Silver Dagger")
-	var/weapon_choice = input(H,"CHOOSE YOUR RELIQUARY PIECE.", "WIELD THEM IN HIS NAME.") as anything in weapons
+	var/weapon_choice = browser_input_list(H,"CHOOSE YOUR RELIQUARY PIECE.", "WIELD THEM IN HIS NAME.", weapons)
 	switch(weapon_choice)
 		if("Covenant And Creed (Broadsword + Shield)")
 			H.put_in_hands(new /obj/item/rogueweapon/greatsword/bsword/psy/relic(H), TRUE)

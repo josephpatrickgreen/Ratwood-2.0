@@ -48,7 +48,7 @@
 		)
 	H.grant_language(/datum/language/celestial)
 	var/weapons = list("Axe and Shield","Shamshir and Shield","Spear and Shield")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Axe and Shield")
@@ -65,7 +65,7 @@
 			r_hand = /obj/item/rogueweapon/spear
 			backl = /obj/item/rogueweapon/shield/tower/raneshen
 	var/armors = list("Khulad Helmet","Padded Hijab and Mask")
-	var/armor_choice = input("Cover thine head.", "HIDE THE HAIR") as anything in armors
+	var/armor_choice = browser_input_list("Cover thine head.", "HIDE THE HAIR", armors)
 	switch(armor_choice)
 		if("Khulad Helmet")
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/raneshen
@@ -127,7 +127,7 @@
 		)
 	H.grant_language(/datum/language/celestial)
 	var/weapons = list("Shamshir and Javelin","Whips and Knives", "Recurve Bow")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Shamshir and Javelin")

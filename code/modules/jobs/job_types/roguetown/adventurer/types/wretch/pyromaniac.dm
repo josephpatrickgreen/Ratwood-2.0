@@ -51,7 +51,7 @@
 	wretch_select_bounty(H)
 	H.cmode_music = 'sound/music/Iconoclast.ogg'
 	var/weapons = list("Archery", "Crossbows", "LET THERE BE FLAME!!!")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Archery")

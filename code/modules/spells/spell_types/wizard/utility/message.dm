@@ -24,7 +24,7 @@
 		revert_cast()
 		return
 	eligible_players = sortList(eligible_players)
-	var/input = input(user, "Who do you wish to contact?", src) as null|anything in eligible_players
+	var/input = browser_input_list(user, "Who do you wish to contact?", src, eligible_players)
 	if(isnull(input))
 		to_chat(user, span_warning("No target selected."))
 		revert_cast()

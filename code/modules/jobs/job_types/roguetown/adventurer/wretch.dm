@@ -68,13 +68,13 @@
 /proc/wretch_select_bounty(mob/living/carbon/human/H)
 	var/bounty_face_noface = alert(H,"Is your face known?", , "Yes", "No" )
 	if(bounty_face_noface == "Yes")
-		var/bounty_poster = input(H, "Who placed a bounty on you?", "Bounty Poster") as anything in list("The Justiciary of Rotwood", "The Grenzelhoftian Holy See", "The Otavan Orthodoxy")
+		var/bounty_poster = browser_input_list(H, "Who placed a bounty on you?", "Bounty Poster", list("The Justiciary of Rotwood", "The Grenzelhoftian Holy See", "The Otavan Orthodoxy"))
 		if(bounty_poster == "The Justiciary of Rotwood")
 			GLOB.outlawed_players += H.real_name
 		else
 			GLOB.excommunicated_players += H.real_name
 		// Felinid said we should gate it at 100 or so on at the lowest, so that wretch cannot ezmode it.
-		var/bounty_severity = input(H, "How severe are your crimes?", "Bounty Amount") as anything in list("Misdeed", "Harm towards lyfe", "Horrific atrocities")
+		var/bounty_severity = browser_input_list(H, "How severe are your crimes?", "Bounty Amount", list("Misdeed", "Harm towards lyfe", "Horrific atrocities"))
 		var/bounty_total = rand(100, 400) // Just in case
 		switch(bounty_severity)
 			if("Misdeed")
@@ -99,7 +99,7 @@
 		var/descriptor_body = build_coalesce_description_nofluff(d_list, H, list(MOB_DESCRIPTOR_SLOT_BODY), "%DESC1%")
 		var/descriptor_voice = build_coalesce_description_nofluff(d_list, H, list(MOB_DESCRIPTOR_SLOT_VOICE), "%DESC1%")
 		var/bounty_poster = "The Justiciary of Rotwood"
-		var/bounty_severity = input(H, "How severe are your crimes?", "Bounty Amount") as anything in list("Misdeed", "Harm towards lyfe", "Horrific atrocities")
+		var/bounty_severity = browser_input_list(H, "How severe are your crimes?", "Bounty Amount", list("Misdeed", "Harm towards lyfe", "Horrific atrocities"))
 		var/bounty_total = rand(100, 400) // Just in case
 		switch(bounty_severity)
 			if("Misdeed")

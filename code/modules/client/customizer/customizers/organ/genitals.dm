@@ -39,7 +39,7 @@
 	var/datum/customizer_entry/organ/penis/penis_entry = entry
 	switch(href_list["customizer_task"])
 		if("penis_size")
-			var/named_size = input(user, "Choose your penis size:", "Character Preference", find_key_by_value(GLOB.named_penis_sizes, penis_entry.penis_size)) as anything in GLOB.named_penis_sizes
+			var/named_size = browser_input_list(user, "Choose your penis size:", "Character Preference", find_key_by_value(GLOB.named_penis_sizes, penis_entry.penis_size), GLOB.named_penis_sizes)
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_penis_sizes[named_size]
@@ -257,7 +257,7 @@
 	var/datum/customizer_entry/organ/testicles/testicles_entry = entry
 	switch(href_list["customizer_task"])
 		if("ball_size")
-			var/named_size = input(user, "Choose your ball size:", "Character Preference", find_key_by_value(GLOB.named_ball_sizes, testicles_entry.ball_size)) as anything in GLOB.named_ball_sizes
+			var/named_size = browser_input_list(user, "Choose your ball size:", "Character Preference", find_key_by_value(GLOB.named_ball_sizes, testicles_entry.ball_size), GLOB.named_ball_sizes)
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_ball_sizes[named_size]
@@ -340,7 +340,7 @@
 	var/datum/customizer_entry/organ/breasts/breasts_entry = entry
 	switch(href_list["customizer_task"])
 		if("breast_size")
-			var/named_size = input(user, "Choose your breast size:", "Character Preference", find_key_by_value(GLOB.named_breast_sizes, breasts_entry.breast_size)) as anything in GLOB.named_breast_sizes
+			var/named_size = browser_input_list(user, "Choose your breast size:", "Character Preference", find_key_by_value(GLOB.named_breast_sizes, breasts_entry.breast_size), GLOB.named_breast_sizes)
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_breast_sizes[named_size]

@@ -78,7 +78,7 @@ GLOBAL_VAR_INIT(donatorLoaded, 0)
 	set name = "BC - Remove Donator Ckey"
 	set category = "-Server-"
 
-	var/key = input("CKey to Remove", "Remove Donator CKey") as null|anything in GLOB.donatorCkeys
+	var/key = browser_input_list("CKey to Remove", "Remove Donator CKey", GLOB.donatorCkeys)
 
 	if(key)
 		var/confirm = alert("Remove [key] from the donator list?", , "Yes", "No")

@@ -130,7 +130,7 @@
 		"Glaive",
 		"Sabre and Buckler",
 		)
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Glaive")
@@ -173,7 +173,7 @@
 	if(!length(recruitment))
 		to_chat(user, span_warning("There are no potential recruits in range."))
 		return
-	var/inputty = input(user, "Select a potential recruit!", "[name]") as anything in recruitment
+	var/inputty = browser_input_list(user, "Select a potential recruit!", "[name]", recruitment)
 	if(inputty)
 		var/mob/living/carbon/human/recruit = recruitment[inputty]
 		if(!QDELETED(recruit) && (recruit in get_hearers_in_view(recruitment_range, user)))

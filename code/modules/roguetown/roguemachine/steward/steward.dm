@@ -191,7 +191,7 @@
 		for(var/list/category in L)
 			for(var/A in category)
 				things += A
-		var/job_to_pay = input(usr, "Select a job", src) as null|anything in things
+		var/job_to_pay = browser_input_list(usr, "Select a job", src, things)
 		if(!job_to_pay)
 			return
 		if(!usr.canUseTopic(src, BE_CLOSE) || locked)

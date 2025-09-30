@@ -1103,7 +1103,7 @@ rough example of the "cone" made by the 3 dirs checked
 	if(matches.len==1)
 		chosen = matches[1]
 	else
-		chosen = input("Select a type", "Pick Type", matches[1]) as null|anything in sortList(matches)
+		chosen = browser_input_list("Select a type", "Pick Type", matches[1], sortList(matches))
 		if(!chosen)
 			return
 	chosen = matches[chosen]

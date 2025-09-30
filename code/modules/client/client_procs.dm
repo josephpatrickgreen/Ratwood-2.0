@@ -1675,7 +1675,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	var/list/selections = GLOB.character_ckey_list.Copy()
 	if(!selections.len)
 		return
-	var/selection = input(src,"Which Character?") as null|anything in sortList(selections)
+	var/selection = browser_input_list(src,"Which Character?", sortList(selections))
 	if(!selection)
 		return
 	var/theykey = selections[selection]

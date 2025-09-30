@@ -14,7 +14,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite"))
 	if(!design)
 		return
 	if(world.time > (the_time + 30 SECONDS))
@@ -61,7 +61,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite"))
 	if(!design)
 		return
 	if(world.time > (the_time + 30 SECONDS))
@@ -110,7 +110,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite"))
 	if(!design)
 		return
 	if(world.time > (the_time + 30 SECONDS))

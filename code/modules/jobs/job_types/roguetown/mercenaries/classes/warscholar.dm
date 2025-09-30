@@ -35,7 +35,7 @@
 		"MAROON" = "#5F1F34",
 		"BLACK" = "#242526"
 	))
-	detailcolor = input("Choose a color.", "NALEDIAN COLORPLEX") as anything in naledicolors
+	detailcolor = browser_input_list("Choose a color.", "NALEDIAN COLORPLEX", naledicolors)
 	detailcolor = naledicolors[detailcolor]
 	to_chat(H, span_warning("You are a Naledi Hierophant, a magician who studied under cloistered sages, well-versed in all manners of arcyne. You prioritize enhancing your teammates and distracting foes while staying in the backline."))
 	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
@@ -122,7 +122,7 @@
 		"MAROON" = "#5F1F34",
 		"BLACK" = "#242526"
 	))
-	detailcolor = input("Choose a color.", "NALEDIAN COLORPLEX") as anything in naledicolors
+	detailcolor = browser_input_list("Choose a color.", "NALEDIAN COLORPLEX", naledicolors)
 	detailcolor = naledicolors[detailcolor]
 	to_chat(H, span_warning("You are a Naledi Pontifex, a warrior trained into a hybridized style of movement-controlling magic and hand-to-hand combat. Though your abilities in magical fields are lacking, you are far more dangerous than other magi in a straight fight. You manifest your calm, practiced skill into a killing intent that takes the shape of an arcyne blade."))
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
@@ -197,7 +197,7 @@
 		"MAROON" = "#5F1F34",
 		"BLACK" = "#242526"
 	))
-	detailcolor = input("Choose a color.", "NALEDIAN COLORPLEX") as anything in naledicolors
+	detailcolor = browser_input_list("Choose a color.", "NALEDIAN COLORPLEX", naledicolors)
 	detailcolor = naledicolors[detailcolor]
 	to_chat(H, span_warning("You are a Naledi Vizier. Your research into miracles and holy incantations has lead you to esoteric magycks. Though psydonians have long struggled to channel their all-father's divinity, a combination of the saint's power may be similar enough."))
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)

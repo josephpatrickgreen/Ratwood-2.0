@@ -30,7 +30,7 @@
 	H.set_blindness(0)
 	H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
 	var/weapons = list("Longsword","Mace","Billhook","Battle Axe","Short Sword & Iron Shield","Iron Saber & Wood Shield")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if("Longsword")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
@@ -59,7 +59,7 @@
 			beltr = /obj/item/rogueweapon/scabbard/sword
 			backr = /obj/item/rogueweapon/shield/wood
 	var/armors = list("Chainmaille Set","Iron Breastplate","Gambeson & Helmet","Light Raneshi Armor")
-	var/armor_choice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
+	var/armor_choice = browser_input_list("Choose your armor.", "TAKE UP ARMOR", armors)
 	switch(armor_choice)
 		if("Chainmaille Set")
 			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
@@ -126,7 +126,7 @@
 	H.set_blindness(0)
 	H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
 	var/weapons = list("Rapier","Dagger")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if("Rapier")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
@@ -184,7 +184,7 @@
 	H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 	H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
 	var/steel = list("Parrying Dagger","Sword","Dagger")
-	var/steel_choice = input("Choose your steel.", "PURGE THE LIVING") as anything in steel
+	var/steel_choice = browser_input_list("Choose your steel.", "PURGE THE LIVING", steel)
 	switch(steel_choice)
 		if ("Parrying Dagger")
 			l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
@@ -196,7 +196,7 @@
 			l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel
 			beltr = /obj/item/rogueweapon/scabbard/sheath
 	var/silver = list("Silver Sword","Silver Dagger")
-	var/silver_choice = input("Choose your silver.", "PURGE THE CURSED") as anything in silver
+	var/silver_choice = browser_input_list("Choose your silver.", "PURGE THE CURSED", silver)
 	switch(silver_choice)
 		if("Silver Sword")
 			r_hand = /obj/item/rogueweapon/sword/silver
@@ -259,7 +259,7 @@
 	H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 	H.set_blindness(0)
 	var/weapons = list("Katar","Axe","Sword","Club","Spear","MY BARE HANDS!!!")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if ("Katar")
 			H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 4, TRUE)
@@ -365,7 +365,7 @@
 		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron,
 		"None"
 		)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	var/helmchoice = browser_input_list("Choose your Helm.", "TAKE UP HELMS", helmets)
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
 
@@ -373,7 +373,7 @@
 		"Breastplate + Hauberk",
 		"Half-Plate + Light Gambeson"
 		)
-	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
+	var/armorchoice = browser_input_list("Choose your armor.", "TAKE UP ARMOR", armors)
 	switch(armorchoice)
 		if("Breastplate + Hauberk")
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
@@ -386,7 +386,7 @@
 		"Chain Chausses"	= /obj/item/clothing/under/roguetown/chainlegs/iron,
 		"Chain Kilt"		= /obj/item/clothing/under/roguetown/chainlegs/iron/kilt
 		)
-	var/legschoice = input("Choose your Pants.", "TAKE UP PANTS") as anything in legs
+	var/legschoice = browser_input_list("Choose your Pants.", "TAKE UP PANTS", legs)
 	pants = legs[legschoice]
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	neck = /obj/item/clothing/neck/roguetown/bevor/iron
@@ -414,7 +414,7 @@
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 	H.set_blindness(0)
 	var/weapons = list("Executioner's Sword","Warhammer + Shield","Flail + Shield","Lucerne","Greataxe")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if("Executioner's Sword")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
@@ -453,7 +453,7 @@
 	..()
 	to_chat(H, span_warning("Fierce warrior women from distant lands, Amazons choose their armor based on their preferred fighting style - from light and agile to heavily protected."))
 	var/armor_styles = list("Leather Kini","Hide Armor Kini","Studded Leather Kini","Half Plate Kini","Plate Kini")
-	var/armor_choice = input("Choose your armor style", "Available armor styles") as anything in armor_styles
+	var/armor_choice = browser_input_list("Choose your armor style", "Available armor styles", armor_styles)
 
 	switch(armor_choice)
 		if("Leather Kini")
@@ -485,7 +485,7 @@
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
 			var/weapons = list("Steel Knuckles","Axe","Sword","Whip","Spear","MY BARE HANDS!!!")
-			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 			switch(weapon_choice)
 				if ("Steel Knuckles")
 					H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
@@ -536,7 +536,7 @@
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
 			var/weapons = list("Steel Knuckles","Axe","Sword","Whip","Spear","MY BARE HANDS!!!")
-			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 			switch(weapon_choice)
 				if ("Steel Knuckles")
 					H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
@@ -586,7 +586,7 @@
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife/idagger/steel = 1)
 			var/weapons = list("Katar","Rapier","Whip","Billhook","MY BARE HANDS!!!")
-			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 			switch(weapon_choice)
 				if ("Katar")
 					H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
@@ -634,7 +634,7 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			var/weapons = list("Great Sword","Eagle's Beak","Battle Axe","MY BARE HANDS!!!")
-			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 			switch(weapon_choice)
 				if("Great Sword")
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
@@ -681,7 +681,7 @@
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1, /obj/item/recipe_book/survival = 1)
 			var/weapons = list("Sword and Tower Shield","Mace and Tower Shield","TWO TOWER SHIELDS!!!")
-			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 			switch(weapon_choice)
 				if("Sword and Tower Shield")
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)

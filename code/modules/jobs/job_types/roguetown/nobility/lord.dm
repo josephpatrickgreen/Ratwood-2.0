@@ -265,7 +265,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(!length(recruitment))
 		to_chat(user, span_warning("There are no potential honoraries in range."))
 		return
-	var/inputty = input(user, "Select an honorary!", "[name]") as anything in recruitment
+	var/inputty = browser_input_list(user, "Select an honorary!", "[name]", recruitment)
 	if(inputty)
 		var/mob/living/carbon/human/recruit = recruitment[inputty]
 		if(!QDELETED(recruit) && (recruit in get_hearers_in_view(title_range, user)))
@@ -320,7 +320,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(!length(recruitment))
 		to_chat(user, span_warning("There are no potential honoraries in range."))
 		return
-	var/inputty = input(user, "Select an honorary!", "[name]") as anything in recruitment
+	var/inputty = browser_input_list(user, "Select an honorary!", "[name]", recruitment)
 	if(inputty)
 		var/mob/living/carbon/human/recruit = recruitment[inputty]
 		if(!QDELETED(recruit) && (recruit in get_hearers_in_view(nobility_range, user)))

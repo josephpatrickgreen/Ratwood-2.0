@@ -64,7 +64,7 @@
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 
 	if(!istype(H.patron, /datum/patron/inhumen/matthios))
-		var/inputty = input(H, "Would you like to change your patron to Matthios?", "The Transactor calls", "No") as anything in list("Yes", "No")
+		var/inputty = browser_input_list(H, "Would you like to change your patron to Matthios?", "The Transactor calls", "No", list("Yes", "No"))
 		if(inputty == "Yes")
 			to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))
 			H.set_patron(/datum/patron/inhumen/matthios)

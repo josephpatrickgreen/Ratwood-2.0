@@ -106,7 +106,7 @@
 		to_chat(user, span_cult("Nothing comes in mind to draw with the chalk."))
 		return
 	var/obj/effect/decal/cleanable/roguerune/pickrune
-	var/runenameinput = input(user, "Runes", "Tier 1 and 2 Runes") as null|anything in GLOB.t2rune_types
+	var/runenameinput = browser_input_list(user, "Runes", "Tier 1 and 2 Runes", GLOB.t2rune_types)
 	testing("runenameinput [runenameinput]")
 	pickrune = GLOB.rune_types[runenameinput]
 	rune_to_scribe = pickrune
@@ -186,7 +186,7 @@
 		is_bled = TRUE
 		return
 	var/obj/effect/decal/cleanable/roguerune/pickrune
-	var/runenameinput = input(user, "Runes", "T4 Runes") as null|anything in GLOB.t4rune_types
+	var/runenameinput = browser_input_list(user, "Runes", "T4 Runes", GLOB.t4rune_types)
 	testing("runenameinput [runenameinput]")
 	pickrune = GLOB.rune_types[runenameinput]
 	rune_to_scribe = pickrune

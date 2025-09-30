@@ -16,7 +16,7 @@
 		to_chat(src, span_warning("No valid pets available!"))
 		return
 
-	var/list/selected = input(src, "Select pets to command:", "Pet Selection") as null|anything in valid_pets
+	var/list/selected = browser_input_list(src, "Select pets to command:", "Pet Selection", valid_pets)
 	if(!selected || !CM)
 		return
 
@@ -40,7 +40,7 @@
 		"Free Pet" = /mob/proc/collar_master_release_pet,
 	)
 
-	var/choice = input(src, "Choose a command:", "Collar Control") as null|anything in options
+	var/choice = browser_input_list(src, "Choose a command:", "Collar Control", options)
 	if(!choice || !CM || !length(CM.temp_selected_pets))
 		return
 
@@ -452,7 +452,7 @@
 		to_chat(src, span_warning("No valid pets available!"))
 		return
 
-	var/list/selected = input(src, "Select pets to command:", "Pet Selection") as null|anything in pet_options
+	var/list/selected = browser_input_list(src, "Select pets to command:", "Pet Selection", pet_options)
 	if(!selected)
 		return
 

@@ -26,7 +26,7 @@
 	if(detail_tag)
 		return
 	var/the_time = world.time
-	var/pickedcolor = input(user, "Select a color.","Brigandine Color") as null|anything in CLOTHING_COLOR_NAMES
+	var/pickedcolor = browser_input_list(user, "Select a color.","Brigandine Color", CLOTHING_COLOR_NAMES)
 	if(!pickedcolor)
 		return
 	if(world.time > (the_time + 30 SECONDS))
@@ -87,7 +87,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/pickedvalue = input(user, "Select a color", "KINGSLAYER'S GARB") as null|anything in list("Khaki", "Black")
+	var/pickedvalue = browser_input_list(user, "Select a color", "KINGSLAYER'S GARB", list("Khaki", "Black"))
 	if(!pickedvalue)
 		return
 	if(world.time > (the_time + 30 SECONDS))
@@ -122,7 +122,7 @@
 	if(detail_tag)
 		return
 	var/the_time = world.time
-	var/pickedcolor = input(user, "Select a color.","Brigandine Color") as null|anything in CLOTHING_COLOR_NAMES
+	var/pickedcolor = browser_input_list(user, "Select a color.","Brigandine Color", CLOTHING_COLOR_NAMES)
 	if(!pickedcolor)
 		return
 	if(world.time > (the_time + 30 SECONDS))

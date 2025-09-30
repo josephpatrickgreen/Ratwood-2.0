@@ -649,7 +649,7 @@
 		return
 	var/t
 	if(catty.len > 1)
-		t=input(user, "CHOOSE SKILL") as null|anything in catty
+		t=browser_input_list(user, "CHOOSE SKILL", catty)
 	else
 		t=pick(catty)
 	if(t)
@@ -664,7 +664,7 @@
 					realdata += X
 		if(realdata.len)
 			realdata = sortNames(realdata)
-			var/r = input(user, "What should I craft?") as null|anything in realdata
+			var/r = browser_input_list(user, "What should I craft?", realdata)
 			if(r)
 				construct_item(user, r)
 				user.mind.lastrecipe = r

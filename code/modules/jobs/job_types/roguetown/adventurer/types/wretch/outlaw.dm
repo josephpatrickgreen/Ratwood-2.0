@@ -58,7 +58,7 @@
 	H.adjust_skillrank(/datum/skill/craft/traps, 5, TRUE)
 	H.cmode_music = 'sound/music/cmode/antag/combat_cutpurse.ogg'
 	var/weapons = list("Rapier","Dagger", "Whip")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Rapier")
@@ -126,7 +126,7 @@
 	H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
 	H.cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg'
 	var/weapons = list("Just An Iron Shield","Dagger + Crossbow", "Militia Warpick + Heater Shield", "Militia Spear + Heater Shield")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Just An Iron Shield")

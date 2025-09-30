@@ -165,11 +165,11 @@
 	set category = "Emotes"
 
 	var/list/options = list("Desire", "Dread")
-	var/choice = input(src, "What feeling do you want to express?", "Feel") as null|anything in options
+	var/choice = browser_input_list(src, "What feeling do you want to express?", "Feel", options)
 	if(!choice) return
 
 	var/list/degrees = list("mild", "moderate", "strong")
-	var/degree = input(src, "Select degree:", "Degree") as null|anything in degrees
+	var/degree = browser_input_list(src, "Select degree:", "Degree", degrees)
 	if(!degree) return
 
 	if(choice == "Desire")

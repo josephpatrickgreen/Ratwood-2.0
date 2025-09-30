@@ -179,7 +179,7 @@
 		else
 			if(L in range(1, usr))
 				to_chat(usr, span_notice("My student needs some time to select a lesson."))
-				var/chosen_skill = input(L, "Most of the lessons require you to be no less than novice in the selected skill", "Choose a skill") as null|anything in choices
+				var/chosen_skill = browser_input_list(L, "Most of the lessons require you to be no less than novice in the selected skill", "Choose a skill", choices)
 				var/datum/skill/item = choices[chosen_skill]
 				if(!item)
 					return  // student canceled
@@ -294,7 +294,7 @@
 						to_chat(user, span_warning("[teacher] can't teach me anything."))
 						revert_cast()
 						return
-					var/skill_choice = input(teacher, "Choose a skill to teach","Skills") as null|anything in skill_names
+					var/skill_choice = browser_input_list(teacher, "Choose a skill to teach","Skills", skill_names)
 					if(skill_choice)
 						for(var/real_skill in known_skills)//real_skill is the actual datum for the skill rather than the "Skill" string
 							if(skill_choice == GetSkillRef(real_skill))//if skill_choice (the name string) is equal to real_skill's name ref, essentially

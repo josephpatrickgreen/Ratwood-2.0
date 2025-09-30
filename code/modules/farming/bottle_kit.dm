@@ -42,7 +42,7 @@
 		fake_glass_name = "Blue"
 		return
 
-	var/choice = input(user, "What colour do you pick?", name) as anything in options
+	var/choice = browser_input_list(user, "What colour do you pick?", name, options)
 
 	var/printing_choice = options[choice]
 

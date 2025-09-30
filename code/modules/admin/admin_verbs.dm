@@ -482,7 +482,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set category = "Debug"
 	set name = "SetTODOverride"
 	var/list/TODs = list("dawn","day","dusk","night")
-	var/choice = input(src,"","Set time of day override") as null|anything in TODs
+	var/choice = browser_input_list(src,"","Set time of day override", TODs)
 	if(choice)
 		GLOB.todoverride = choice
 		world << "[ckey] has set the time of day override to [choice]."
@@ -613,7 +613,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set desc = ""
 
 	var/list/choices = list("Small Bomb (1, 2, 3, 3)", "Medium Bomb (2, 3, 4, 4)", "Big Bomb (3, 5, 7, 5)", "Maxcap", "Custom Bomb")
-	var/choice = input("What size explosion would you like to produce? NOTE: You can do all this rapidly and in an IC manner (using cruise missiles!) with the Config/Launch Supplypod verb. WARNING: These ignore the maxcap") as null|anything in choices
+	var/choice = browser_input_list("What size explosion would you like to produce? NOTE: You can do all this rapidly and in an IC manner (using cruise missiles!) with the Config/Launch Supplypod verb. WARNING: These ignore the maxcap", choices)
 	var/turf/epicenter = mob.loc
 
 	switch(choice)
@@ -705,7 +705,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	var/type_length = length("/obj/effect/proc_holder/spell") + 2
 	for(var/A in GLOB.spells)
 		spell_list[copytext("[A]", type_length)] = A
-	var/obj/effect/proc_holder/spell/S = input("Choose the spell to give to that guy", "ABRAKADABRA") as null|anything in sortList(spell_list)
+	var/obj/effect/proc_holder/spell/S = browser_input_list("Choose the spell to give to that guy", "ABRAKADABRA", sortList(spell_list))
 	if(!S)
 		return
 
@@ -726,7 +726,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set desc = ""
 
 	if(T && T.mind)
-		var/obj/effect/proc_holder/spell/S = input("Choose the spell to remove", "NO ABRAKADABRA") as null|anything in sortList(T.mind.spell_list)
+		var/obj/effect/proc_holder/spell/S = browser_input_list("Choose the spell to remove", "NO ABRAKADABRA", sortList(T.mind.spell_list))
 		if(S)
 			T.mind.RemoveSpell(S)
 			log_admin("[key_name(usr)] removed the spell [S] from [key_name(T)].")
@@ -878,7 +878,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		to_chat(src, "There are no active bounties to remove.")
 		return
 
-	var/target_name = input(src, "Whose name shall be struck from the wanted list?", src) as null|anything in bounty_list
+	var/target_name = browser_input_list(src, "Whose name shall be struck from the wanted list?", src, bounty_list)
 	if(!target_name)
 		return
 

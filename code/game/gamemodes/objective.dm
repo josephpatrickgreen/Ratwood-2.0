@@ -49,7 +49,7 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 	if(target && target.current)
 		def_value = target.current
 
-	var/mob/new_target = input(admin,"Select target:", "Objective target", def_value) as null|anything in sortNames(possible_targets)
+	var/mob/new_target = browser_input_list(admin,"Select target:", "Objective target", def_value, sortNames(possible_targets))
 	if (!new_target)
 		return
 
@@ -479,7 +479,7 @@ GLOBAL_LIST_EMPTY(possible_items)
 
 /datum/objective/steal/admin_edit(mob/admin)
 	var/list/possible_items_all = GLOB.possible_items
-	var/new_target = input(admin,"Select target:", "Objective target", steal_target) as null|anything in sortNames(possible_items_all)+"custom"
+	var/new_target = browser_input_list(admin,"Select target:", "Objective target", steal_target, sortNames(possible_items_all)+"custom")
 	if (!new_target)
 		return
 

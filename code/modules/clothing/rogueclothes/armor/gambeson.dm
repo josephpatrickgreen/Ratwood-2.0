@@ -137,7 +137,7 @@
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan/attack_right(mob/user)
 	..()
 	if(!picked)
-		var/choice = input(user, "Choose a color.", "Otavan colors") as anything in colorlist
+		var/choice = browser_input_list(user, "Choose a color.", "Otavan colors", colorlist)
 		var/playerchoice = colorlist[choice]
 		picked = TRUE
 		detail_color = playerchoice
@@ -199,7 +199,7 @@
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/grenzelhoft/attack_right(mob/user)
 	..()
 	if(!picked)
-		var/choice = input(user, "Choose a color.", "Grenzelhoft colors") as anything in colorlist
+		var/choice = browser_input_list(user, "Choose a color.", "Grenzelhoft colors", colorlist)
 		var/playerchoice = colorlist[choice]
 		picked = TRUE
 		detail_color = playerchoice

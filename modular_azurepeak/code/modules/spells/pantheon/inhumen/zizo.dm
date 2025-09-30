@@ -140,7 +140,7 @@
 
 	choices = sortList(choices)
 
-	var/choice = input("Choose an arcyne expression of the Lesser Work") as null|anything in choices
+	var/choice = browser_input_list("Choose an arcyne expression of the Lesser Work", choices)
 	var/obj/effect/proc_holder/spell/item = choices[choice]
 
 	if (!choice || !item)

@@ -142,7 +142,7 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 	if(!client)
 		return
 	if(winexists(src, "lobby_window"))
-		src << browse(popup.get_content(), "window=lobby_window") //dont update the size or annoyingly refresh
+		src << browse(popup.build_page(), "window=lobby_window") //dont update the size or annoyingly refresh
 		qdel(popup)
 		return
 	else
@@ -164,7 +164,7 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 		if(1)
 			pick = csa[1]
 		else
-			pick = input(src, "Pick a server to jump to", "Server Hop") as null|anything in csa
+			pick = browser_input_list(src, "Pick a server to jump to", "Server Hop", csa)
 
 	if(!pick)
 		return

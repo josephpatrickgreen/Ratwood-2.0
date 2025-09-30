@@ -98,7 +98,7 @@
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Warhammer & Shield")
@@ -131,7 +131,7 @@
 	"Skull Cap"			= /obj/item/clothing/head/roguetown/helmet/skullcap,
 	"None"
 	)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	var/helmchoice = browser_input_list("Choose your Helm.", "TAKE UP HELMS", helmets)
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
 
@@ -140,7 +140,7 @@
 		"Iron Hauberk"		= /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
 		"Scalemail"	= /obj/item/clothing/suit/roguetown/armor/plate/scale,
 	)
-	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
+	var/armorchoice = browser_input_list("Choose your armor.", "TAKE UP ARMOR", armors)
 	armor = armors[armorchoice]
 
 	var/arms = list(
@@ -148,14 +148,14 @@
 		"Steel Bracers"		= wrists = /obj/item/clothing/wrists/roguetown/bracers,
 		"Jack Chains"		= wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain,
 	)
-	var/armschoice = input("Choose your arm protection.", "READY THYSELF") as anything in arms
+	var/armschoice = browser_input_list("Choose your arm protection.", "READY THYSELF", arms)
 	wrists = arms[armschoice]
 
 	var/chausses = list(
 		"Brigandine Chausses"		= /obj/item/clothing/under/roguetown/splintlegs,
 		"Steel Chain Chausses"		= /obj/item/clothing/under/roguetown/chainlegs,
 	)
-	var/chausseschoice = input("Choose your chausses.", "READY THYSELF") as anything in chausses
+	var/chausseschoice = browser_input_list("Choose your chausses.", "READY THYSELF", chausses)
 	pants = chausses[chausseschoice]
 
 // Ranged weapons and daggers on the side - lighter armor, but fleet!
@@ -198,9 +198,9 @@
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Crossbow","Bow","Sling")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	var/armor_options = list("Light Armor", "Medium Armor")
-	var/armor_choice = input("Choose your armor.", "TAKE UP ARMS") as anything in armor_options
+	var/armor_choice = browser_input_list("Choose your armor.", "TAKE UP ARMS", armor_options)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Crossbow")
@@ -228,7 +228,7 @@
 		"Steel Bracers"		= wrists = /obj/item/clothing/wrists/roguetown/bracers,
 		"Jack Chains"		= wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain,
 	)
-	var/armschoice = input("Choose your arm protection.", "READY THYSELF") as anything in arms
+	var/armschoice = browser_input_list("Choose your arm protection.", "READY THYSELF", arms)
 	wrists = arms[armschoice]
 
 	backpack_contents = list(
@@ -249,7 +249,7 @@
 	"Skull Cap"			= /obj/item/clothing/head/roguetown/helmet/skullcap,
 	"None"
 	)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	var/helmchoice = browser_input_list("Choose your Helm.", "TAKE UP HELMS", helmets)
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
 
@@ -297,7 +297,7 @@
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Bardiche","Sword & Shield")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Bardiche")
@@ -326,7 +326,7 @@
 	"Skull Cap"			= /obj/item/clothing/head/roguetown/helmet/skullcap,
 	"None"
 	)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	var/helmchoice = browser_input_list("Choose your Helm.", "TAKE UP HELMS", helmets)
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
 
@@ -335,7 +335,7 @@
 		"Iron Hauberk"		= /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
 		"Scalemail"	= /obj/item/clothing/suit/roguetown/armor/plate/scale,
 	)
-	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
+	var/armorchoice = browser_input_list("Choose your armor.", "TAKE UP ARMOR", armors)
 	armor = armors[armorchoice]
 
 	var/arms = list(
@@ -343,12 +343,12 @@
 		"Steel Bracers"		= wrists = /obj/item/clothing/wrists/roguetown/bracers,
 		"Jack Chains"		= wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain,
 	)
-	var/armschoice = input("Choose your arm protection.", "READY THYSELF") as anything in arms
+	var/armschoice = browser_input_list("Choose your arm protection.", "READY THYSELF", arms)
 	wrists = arms[armschoice]
 
 	var/chausses = list(
 		"Brigandine Chausses"		= /obj/item/clothing/under/roguetown/splintlegs,
 		"Steel Chain Chausses"		= /obj/item/clothing/under/roguetown/chainlegs,
 	)
-	var/chausseschoice = input("Choose your chausses.", "READY THYSELF") as anything in chausses
+	var/chausseschoice = browser_input_list("Choose your chausses.", "READY THYSELF", chausses)
 	pants = chausses[chausseschoice]

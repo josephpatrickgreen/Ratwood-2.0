@@ -557,7 +557,7 @@
 		for(var/AC in atomrefs)
 			var/AD = "[AC] ([atomcounts[AC]])"
 			atomy[AD] = atomrefs[AC]
-	var/atom/AB = input(user, "What will I take?","Items on [src.name ? "\the [src.name]:" : "the floor:"]",null) as null|anything in atomy
+	var/atom/AB = browser_input_list(user, "What will I take?","Items on [src.name ? "\the [src.name]:" : "the floor:"]",null, atomy)
 	if(!AB)
 		return
 	if(QDELETED(atomy[AB]))

@@ -39,7 +39,7 @@
 				var/mob/living/carbon/human/species/wildshape/A = path
 				animal_list[initial(A.name)] = path
 
-			var/new_wildshape_type = input(M, "Choose Your Animal Form!", "It's Morphing Time!", null) as null|anything in sortList(animal_list)
+			var/new_wildshape_type = browser_input_list(M, "Choose Your Animal Form!", "It's Morphing Time!", null, sortList(animal_list))
 
 			for(var/crecher in possible_shapes) //Second pass to fetch the mob type itself and send it on wildshape_transformation
 				var/mob/living/carbon/human/species/wildshape/B = crecher

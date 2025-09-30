@@ -137,7 +137,7 @@
 		..()
 		return
 
-	var/picked_name = input(user, "Choose a Heraldry", "ROGUETOWN", name) as null|anything in sortList(istates)
+	var/picked_name = browser_input_list(user, "Choose a Heraldry", "ROGUETOWN", name, sortList(istates))
 	if(!picked_name)
 		picked_name = "none"
 	var/mutable_appearance/M = mutable_appearance('icons/roguetown/weapons/shield_heraldry.dmi', "[icon_state]_[picked_name]")

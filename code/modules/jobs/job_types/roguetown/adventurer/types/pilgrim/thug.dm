@@ -17,7 +17,7 @@
 
 	H.adjust_blindness(-3)
 	var/classes = list("Goon","Wise Guy","Big Man")
-	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
+	var/classchoice = browser_input_list("Choose your archetypes", "Available archetypes", classes)
 
 	switch(classchoice)
 		if("Goon")
@@ -44,7 +44,7 @@
 			H.change_stat("speed", -1)
 			H.change_stat("intelligence", -1)
 			var/options = list("Frypan", "Knuckles", "Navaja", "Bare Hands",) //"Whatever I Can Find") THIS OPTION IS TOTALLY BUGGED!
-			var/option_choice = input("Choose your means.", "TAKE UP ARMS") as anything in options
+			var/option_choice = browser_input_list("Choose your means.", "TAKE UP ARMS", options)
 			switch(option_choice)
 				if("Frypan")
 					H.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE) // expert cook; expert pan-handler
@@ -87,7 +87,7 @@
 			ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC) // very smart
 			ADD_TRAIT(H, TRAIT_CICERONE, TRAIT_GENERIC)
 			var/options = list("Stone Sling", "Magic Bricks", "Lockpicking Equipment")
-			var/option_choice = input("Choose your means.", "TAKE UP ARMS") as anything in options
+			var/option_choice = browser_input_list("Choose your means.", "TAKE UP ARMS", options)
 			switch(option_choice)
 				if("Stone Sling")
 					H.adjust_skillrank(/datum/skill/combat/slings, 4, TRUE)
@@ -121,7 +121,7 @@
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_HARDDISMEMBER, TRAIT_GENERIC) // like a brick wall
 			var/options = list("Hands-On", "Big Stick")
-			var/option_choice = input("Choose your means.", "TAKE UP ARMS") as anything in options
+			var/option_choice = browser_input_list("Choose your means.", "TAKE UP ARMS", options)
 			switch(option_choice) // you are big dumb guy, none of your options give you expert-level weapons skill
 				if("Hands-On")
 					ADD_TRAIT(H, TRAIT_BASHDOORS, TRAIT_GENERIC) // deal 200 damage to a door you sprint-charge into

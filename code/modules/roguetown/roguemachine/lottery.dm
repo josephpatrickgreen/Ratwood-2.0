@@ -139,7 +139,7 @@
 		if(gamblingprice > 5)
 			choicez += "SILVER"
 		choicez += "BRONZE"
-		var/selection = input(user, "Make a Selection", src) as null|anything in choicez
+		var/selection = browser_input_list(user, "Make a Selection", src, choicez)
 		if(!selection)
 			return
 		var/mod = 1

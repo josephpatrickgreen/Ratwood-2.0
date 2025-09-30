@@ -241,7 +241,7 @@
 	if(!myposts_list.len)
 		to_chat(guy, span_warning("There are no posts I can take down."))
 		return
-	var/post2remove = input(guy, "Which post shall I take down?", src) as null|anything in myposts_list
+	var/post2remove = browser_input_list(guy, "Which post shall I take down?", src, myposts_list)
 	if(!post2remove)
 		return
 	playsound(loc, 'sound/foley/dropsound/paper_drop.ogg', 50, FALSE, -1)
@@ -267,7 +267,7 @@
 	if(!posts_list.len)
 		to_chat(guy, span_warning("There are no posts I can take down."))
 		return
-	var/post2remove = input(guy, "Which post shall I take down?", src) as null|anything in posts_list
+	var/post2remove = browser_input_list(guy, "Which post shall I take down?", src, posts_list)
 	if(!post2remove)
 		return
 	playsound(loc, 'sound/foley/dropsound/paper_drop.ogg', 50, FALSE, -1)
@@ -345,7 +345,7 @@
 		var/deposit = difficulty_data[difficulty]["deposit"]
 		difficulty_choices["[difficulty] ([deposit] mammon deposit)"] = difficulty
 
-	var/selection = input(user, "Select contract difficulty (deposit required)", src) as null|anything in difficulty_choices
+	var/selection = browser_input_list(user, "Select contract difficulty (deposit required)", src, difficulty_choices)
 	if(!selection)
 		return
 
@@ -363,7 +363,7 @@
 		QUEST_DIFFICULTY_HARD = list(QUEST_OUTLAW)
 	)
 
-	var/type_selection = input(user, "Select contract type", src) as null|anything in type_choices[actual_difficulty] // Changed from selection to actual_difficulty
+	var/type_selection = browser_input_list(user, "Select contract type", src, type_choices[actual_difficulty]) // Changed from selection to actual_difficulty
 	if(!type_selection)
 		return
 

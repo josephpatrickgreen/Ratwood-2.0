@@ -50,7 +50,7 @@
 	H.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
 	H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander3.ogg'
 	var/weapons = list("Recurve Bow","Crossbow")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Recurve Bow")
@@ -199,7 +199,7 @@
 	H.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
 	H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander4.ogg'
 	var/weapons = list("Recurve Bow","Billhook","Sling","Crossbow")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if("Recurve Bow")
 			H.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
@@ -218,7 +218,7 @@
 			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			beltl = /obj/item/quiver/bolts
 	var/armors = list("Light Armor","Medium Armor")
-	var/armor_choice = input("Choose your armor.", "TAKE UP ARMS") as anything in armors
+	var/armor_choice = browser_input_list("Choose your armor.", "TAKE UP ARMS", armors)
 	switch(armor_choice)
 		if("Light Armor")
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/hide

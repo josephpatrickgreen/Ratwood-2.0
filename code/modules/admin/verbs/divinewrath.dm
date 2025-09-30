@@ -29,7 +29,7 @@
 	if (!target_name)
 		return
 
-	var/curse_pick = input("Choose a curse to apply or lift.", "Select Curse") as null|anything in curse_choices
+	var/curse_pick = browser_input_list("Choose a curse to apply or lift.", "Select Curse", curse_choices)
 	if (!curse_pick)
 		return
 

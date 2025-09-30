@@ -47,7 +47,7 @@
 
 	if(istype(target, /obj/item/rogueweapon))
 		var/obj/item/I = target
-		var/enchant_type = input(user, "Select the type of enchantment you want to apply:", "Enchant Weapon") as anything in enchant_types
+		var/enchant_type = browser_input_list(user, "Select the type of enchantment you want to apply:", "Enchant Weapon", enchant_types)
 		if(!enchant_type)
 			return
 		enchant_type = enchant_types[enchant_type]

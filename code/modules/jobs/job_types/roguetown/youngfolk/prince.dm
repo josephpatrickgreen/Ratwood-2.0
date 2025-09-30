@@ -56,7 +56,7 @@
 	..()
 
 	// Equipment choice - only affects clothing/gear, not skills
-	var/equipment_choice = input(H, "Choose your equipment style", "Equipment Choice") as anything in list("Wartime Outfit", "Traditional Dress")
+	var/equipment_choice = browser_input_list(H, "Choose your equipment style", "Equipment Choice", list("Wartime Outfit", "Traditional Dress"))
 
 	if(equipment_choice == "Wartime Outfit")
 		// Original daring twit equipment

@@ -81,7 +81,7 @@
 			if ("Set Direction")
 				var/current_direction = dir
 				var/list/directionlist = list("NORTH", "SOUTH", "EAST", "WEST")
-				var/direction = input("Directions", "Select a direction") as anything in directionlist
+				var/direction = browser_input_list("Directions", "Select a direction", directionlist)
 				var/texttodirection = text2dir(direction)
 				if(busy)
 					to_chat(user, "<span class='warning'>Someone else is currently using this catapult.</span>")

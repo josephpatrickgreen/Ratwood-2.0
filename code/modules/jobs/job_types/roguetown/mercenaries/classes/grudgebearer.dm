@@ -96,7 +96,7 @@
 			/obj/item/natural/feather,
 			)
 		var/weapons = list("Axe", "Mace")
-		var/wepchoice = input("Choose your weapon", "Available weapons") as anything in weapons
+		var/wepchoice = browser_input_list("Choose your weapon", "Available weapons", weapons)
 		switch(wepchoice)
 			if("Axe")
 				backr = /obj/item/rogueweapon/stoneaxe/battle

@@ -199,7 +199,7 @@ GLOBAL_LIST(teleport_runes)
 					rituals += GLOB.t2enchantmentrunerituallist
 			else if(istype(src,/obj/effect/decal/cleanable/roguerune/arcyne))
 				rituals += GLOB.allowedrunerituallist
-			var/ritualnameinput = input(user, "Rituals", "") as null|anything in rituals
+			var/ritualnameinput = browser_input_list(user, "Rituals", "", rituals)
 			var/datum/runeritual/pickritual1
 			pickritual1 = rituals[ritualnameinput]
 			if(!pickritual1 || pickritual1 == null)
@@ -675,7 +675,7 @@ GLOBAL_LIST(teleport_runes)
 		fail_invoke()
 		return
 
-	var/input_rune_key = input(user, "Rune to teleport to", "Teleportation Target") as null|anything in potential_runes //we know what key they picked
+	var/input_rune_key = browser_input_list(user, "Rune to teleport to", "Teleportation Target", potential_runes) //we know what key they picked
 	if(isnull(input_rune_key))
 		return
 	if(isnull(potential_runes[input_rune_key]))

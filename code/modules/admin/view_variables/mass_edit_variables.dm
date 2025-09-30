@@ -28,7 +28,7 @@
 
 		names = sortList(names)
 
-		variable = input("Which var?", "Var") as null|anything in names
+		variable = browser_input_list("Which var?", "Var", names)
 	else
 		variable = var_name
 

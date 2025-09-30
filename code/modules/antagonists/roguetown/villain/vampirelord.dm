@@ -547,14 +547,14 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 			possible[V.current.real_name] = V.current
 	for(var/datum/mind/D in SSmapping.retainer.death_knights)
 		possible[D.current.real_name] = D.current
-	var/name_choice = input(src, "Who to punish?", "PUNISHMENT") as null|anything in possible
+	var/name_choice = browser_input_list(src, "Who to punish?", "PUNISHMENT", possible)
 	if(!name_choice)
 		return
 	var/mob/living/carbon/human/choice = possible[name_choice]
 	if(!choice || QDELETED(choice))
 		return
 	var/punishmentlevels = list("Pause", "Pain", "DESTROY")
-	var/punishment = input(src, "Severity?", "PUNISHMENT") as null|anything in punishmentlevels
+	var/punishment = browser_input_list(src, "Severity?", "PUNISHMENT", punishmentlevels)
 	if(!punishment)
 		return
 	switch(punishment)
@@ -634,7 +634,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 	var/datum/antagonist/vampirelord/lord = user.mind.has_antag_datum(/datum/antagonist/vampirelord)
 	if(user.mind.special_role != "Vampire Lord")
 		return
-	var/choice = input(user,"What to do?", "ROGUETOWN") as anything in useoptions|null
+	var/choice = browser_input_list(user,"What to do?", "ROGUETOWN", useoptions|null)
 	switch(choice)
 		if("Grow Power")
 			if(lord.vamplevel == 4)
@@ -711,12 +711,12 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		to_chat(user, "I've yet to regain this aspect of my power!")
 		return
 	var/list/choices = list("Return", "Sending", "CANCEL")
-	var/inputportal = input(user, "Which type of portal?", "Portal Type") as anything in choices
+	var/inputportal = browser_input_list(user, "Which type of portal?", "Portal Type", choices)
 	switch(inputportal)
 		if("Return")
 			for(var/obj/item/clothing/neck/roguetown/portalamulet/P in GLOB.vampire_objects)
 				possibleportals += P
-			var/atom/choice = input(user, "Choose an area to open the portal", "Choices") as null|anything in possibleportals
+			var/atom/choice = browser_input_list(user, "Choose an area to open the portal", "Choices", possibleportals)
 			if(!choice)
 				return
 			user.visible_message("[user] begins to summon a portal.", "I begin to summon a portal.")
@@ -738,7 +738,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 				return
 			for(var/obj/item/clothing/neck/roguetown/portalamulet/P in GLOB.vampire_objects)
 				sendpossibleportals += P
-			var/atom/choice = input(user, "Choose an area to open the portal to", "Choices") as null|anything in sendpossibleportals
+			var/atom/choice = browser_input_list(user, "Choose an area to open the portal to", "Choices", sendpossibleportals)
 			if(!choice)
 				return
 			user.visible_message("[user] begins to summon a portal.", "I begin to summon a portal.")
@@ -784,7 +784,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		if(!unlocked)
 			to_chat(user, "I have yet to regain this aspect of my power!")
 			return
-		var/choice = input(user,"What to do?", "ROGUETOWN") as anything in useoptions|null
+		var/choice = browser_input_list(user,"What to do?", "ROGUETOWN", useoptions|null)
 		switch(choice)
 			if("Create Death Knight")
 				if(alert(user, "Create a Death Knight? Cost:5000","","Yes","No") == "Yes")
@@ -1176,7 +1176,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		var/area/A = V
 		if(!A.hidden)
 			filtered += A
-	var/area/thearea  = input("Area to jump to", "ROGUETOWN") as null|anything in filtered
+	var/area/thearea  = browser_input_list("Area to jump to", "ROGUETOWN", filtered)
 
 	if(!thearea)
 		return

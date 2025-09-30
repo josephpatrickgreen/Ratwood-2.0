@@ -167,7 +167,7 @@
 		return
 
 	if(!M)
-		M = input("Direct narrate to whom?", "Active Players") as null|anything in GLOB.player_list
+		M = browser_input_list("Direct narrate to whom?", "Active Players", GLOB.player_list)
 
 	if(!M)
 		return
@@ -733,7 +733,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		ADMIN_PUNISHMENT_DIVINE_WRATH,
 	)
 
-	var/punishment = input("Choose a punishment", "DIVINE SMITING") as null|anything in sortList(punishment_list)
+	var/punishment = browser_input_list("Choose a punishment", "DIVINE SMITING", sortList(punishment_list))
 
 	if(QDELETED(target) || !punishment)
 		return
@@ -916,7 +916,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!D)
 		return
 
-	var/add_or_remove = input("Remove/Add?", "Trait Remove/Add") as null|anything in list("Add","Remove")
+	var/add_or_remove = browser_input_list("Remove/Add?", "Trait Remove/Add", list("Add","Remove"))
 	if(!add_or_remove)
 		return
 	var/list/availible_traits = list()
@@ -933,7 +933,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 				var/name = GLOB.trait_name_map[trait] || trait
 				availible_traits[name] = trait
 
-	var/chosen_trait = input("Select trait to modify", "Trait") as null|anything in sortList(availible_traits)
+	var/chosen_trait = browser_input_list("Select trait to modify", "Trait", sortList(availible_traits))
 	if(!chosen_trait)
 		return
 
@@ -942,14 +942,14 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		if("Add") //Not doing source choosing here intentionally to make this bit faster to use, you can always vv it.
 			ADD_TRAIT(D,chosen_trait,source)
 		if("Remove")
-			var/specific = input("All or specific source ?", "Trait Remove/Add") as null|anything in list("All","Specific")
+			var/specific = browser_input_list("All or specific source ?", "Trait Remove/Add", list("All","Specific"))
 			if(!specific)
 				return
 			switch(specific)
 				if("All")
 					source = null
 				if("Specific")
-					source = input("Source to be removed","Trait Remove/Add") as null|anything in sortList(D.status_traits[chosen_trait])
+					source = browser_input_list("Source to be removed","Trait Remove/Add", sortList(D.status_traits[chosen_trait]))
 					if(!source)
 						return
 			REMOVE_TRAIT(D,chosen_trait,source)

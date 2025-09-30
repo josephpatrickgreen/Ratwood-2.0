@@ -169,7 +169,7 @@ var/global/list/pridelist = list(
 		if(HAS_TRAIT(usr, TRAIT_DYES))
 			var/choice
 			if(alert(usr, "Input Choice", "Primary Dye", "Color Wheel", "Color Preset") != "Color Wheel")
-				choice = input(usr, "Choose your dye:", "Dyes", null) as null|anything in used_colors
+				choice = browser_input_list(usr, "Choose your dye:", "Dyes", null, used_colors)
 				if(!choice)
 					return
 				activecolor = used_colors[choice]
@@ -179,7 +179,7 @@ var/global/list/pridelist = list(
 					activecolor = "#FFFFFF"
 			updateUsrDialog()
 		else
-			var/choice = input(usr,"Choose your dye:","Dyes",null) as null|anything in colorlist
+			var/choice = browser_input_list(usr,"Choose your dye:","Dyes",null, colorlist)
 			if(!choice)
 				return
 			activecolor = colorlist[choice]
@@ -189,7 +189,7 @@ var/global/list/pridelist = list(
 		if(HAS_TRAIT(usr, TRAIT_DYES))
 			var/choice
 			if(alert(usr, "Input Choice", "Primary Dye", "Color Wheel", "Color Preset") != "Color Wheel")
-				choice = input(usr, "Choose your dye:", "Dyes", null) as null|anything in used_colors
+				choice = browser_input_list(usr, "Choose your dye:", "Dyes", null, used_colors)
 				if(!choice)
 					return
 				activecolor_detail = used_colors[choice]
@@ -199,7 +199,7 @@ var/global/list/pridelist = list(
 					activecolor_detail = "#FFFFFF"
 			updateUsrDialog()
 		else
-			var/choice = input(usr,"Choose your dye:","Dyes",null) as null|anything in colorlist
+			var/choice = browser_input_list(usr,"Choose your dye:","Dyes",null, colorlist)
 			if(!choice)
 				return
 			activecolor_detail = colorlist[choice]
@@ -209,7 +209,7 @@ var/global/list/pridelist = list(
 		if(HAS_TRAIT(usr, TRAIT_DYES))
 			var/choice
 			if(alert(usr, "Input Choice", "Primary Dye", "Color Wheel", "Color Preset") != "Color Wheel")
-				choice = input(usr, "Choose your dye:", "Dyes", null) as null|anything in used_colors
+				choice = browser_input_list(usr, "Choose your dye:", "Dyes", null, used_colors)
 				if(!choice)
 					return
 				activecolor_altdetail = used_colors[choice]
@@ -219,7 +219,7 @@ var/global/list/pridelist = list(
 					activecolor_altdetail = "#FFFFFF"
 			updateUsrDialog()
 		else
-			var/choice = input(usr,"Choose your dye:","Dyes",null) as null|anything in colorlist
+			var/choice = browser_input_list(usr,"Choose your dye:","Dyes",null, colorlist)
 			if(!choice)
 				return
 			activecolor_altdetail = colorlist[choice]

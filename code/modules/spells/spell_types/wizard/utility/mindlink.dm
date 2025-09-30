@@ -41,7 +41,7 @@
 	if(user.client)
 		possible_targets = list(user.real_name) + possible_targets // Oohhhhhh this looks bad. But this is supposed to append ourselves at the start of the ordered list.
 
-	var/first_target_name = input(user, "Choose the first person to link", "Mindlink") as null|anything in possible_targets
+	var/first_target_name = browser_input_list(user, "Choose the first person to link", "Mindlink", possible_targets)
 
 	if(!first_target_name)
 		revert_cast()
@@ -55,7 +55,7 @@
 
 	possible_targets -= first_target_name
 
-	var/second_target_name = input(user, "Choose the second person to link", "Mindlink") as null|anything in possible_targets
+	var/second_target_name = browser_input_list(user, "Choose the second person to link", "Mindlink", possible_targets)
 
 	if(!second_target_name)
 		revert_cast()

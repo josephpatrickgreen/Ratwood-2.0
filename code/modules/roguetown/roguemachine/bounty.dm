@@ -38,7 +38,7 @@
 
 	// Main Menu
 	var/list/choices = list("Consult Bounties", "Set Bounty", "Print List of Bounties", "Remove Bounty", "Collect Change")
-	var/selection = input(user, "The Excidium listens", src) as null|anything in choices
+	var/selection = browser_input_list(user, "The Excidium listens", src, choices)
 
 	switch(selection)
 
@@ -99,7 +99,7 @@
 		say("You have no active bounty listings to remove.")
 		return
 
-	var/target_name = input(user, "Whose name shall be struck from the wanted list?", src) as null|anything in bounty_list
+	var/target_name = browser_input_list(user, "Whose name shall be struck from the wanted list?", src, bounty_list)
 	if(!target_name)
 		return
 
@@ -125,7 +125,7 @@
 		to_chat(user, span_warning("I don't know anyone."))
 		return
 	eligible_players = sortList(eligible_players)
-	var/target = input(user, "Whose name shall be etched on the wanted list?", src) as null|anything in eligible_players
+	var/target = browser_input_list(user, "Whose name shall be etched on the wanted list?", src, eligible_players)
 	if(isnull(target))
 		say("No target selected.")
 		return
@@ -151,7 +151,7 @@
 		say("No reason given.")
 		return
 
-	var/confirm = input(user, "Do you dare unleash this darkness upon the world? Your name will be known.", src) as null|anything in list("Yes", "No")
+	var/confirm = browser_input_list(user, "Do you dare unleash this darkness upon the world? Your name will be known.", src, list("Yes", "No"))
 	if(isnull(confirm) || confirm == "No") return
 
 	// Deduct money from user

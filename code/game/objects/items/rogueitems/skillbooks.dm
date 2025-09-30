@@ -242,7 +242,7 @@
 			if(!length(writable_skills))//nobody has ever been as dumb as you are. feel bad.
 				to_chat(user, span_warning("I know nothing of value to write."))
 				return
-		var/skill_choice = input(user, "Begin your story","Skills") as null|anything in skill_names
+		var/skill_choice = browser_input_list(user, "Begin your story","Skills", skill_names)
 		if(skill_choice)
 			for(var/real_skill in writable_skills)//real_skill is the actual datum for the skill rather than the "Skill" string
 				if(skill_choice == GetSkillRef(real_skill))//if skill_choice (the name string) is equal to real_skill's name ref, essentially

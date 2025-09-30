@@ -85,7 +85,7 @@
 	if(!valid_types.len)
 		return
 
-	var/i_type_choice = input(user, "Choose a type", "Artificer") as null|anything in valid_types
+	var/i_type_choice = browser_input_list(user, "Choose a type", "Artificer", valid_types)
 	if(!i_type_choice)
 		return
 
@@ -102,7 +102,7 @@
 			appro_recipe -= R
 
 	if(appro_recipe.len)
-		var/datum/chosen_recipe = input(user, "Choose A Creation", "Artificer") as null|anything in sortNames(appro_recipe.Copy())
+		var/datum/chosen_recipe = browser_input_list(user, "Choose A Creation", "Artificer", sortNames(appro_recipe.Copy()))
 		if(!material.artrecipe && chosen_recipe)
 			material.artrecipe = new chosen_recipe.type(material)
 			return TRUE

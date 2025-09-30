@@ -182,7 +182,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("None", "Symbol", "Split", "Quadrants", "Boxes", "Diamonds")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("None", "Symbol", "Split", "Quadrants", "Boxes", "Diamonds"))
 	if(!design)
 		return
 	if(world.time > (the_time + 30 SECONDS))
@@ -190,17 +190,17 @@
 	var/symbol_chosen = FALSE
 	if(design == "Symbol")
 		design = null
-		design = input(user, "Select a symbol.","Tabard Design") as null|anything in list("chalice","psy","peace","z","imp","skull","widow","arrow")
+		design = browser_input_list(user, "Select a symbol.","Tabard Design", list("chalice","psy","peace","z","imp","skull","widow","arrow"))
 		if(!design)
 			return
 		design = "_[design]"
 		symbol_chosen = TRUE
-	var/colorone = input(user, "Select a primary color.","Tabard Design") as null|anything in CLOTHING_COLOR_NAMES
+	var/colorone = browser_input_list(user, "Select a primary color.","Tabard Design", CLOTHING_COLOR_NAMES)
 	if(!colorone)
 		return
 	var/colortwo
 	if(design != "None")
-		colortwo = input(user, "Select a primary color.","Tabard Design") as null|anything in CLOTHING_COLOR_NAMES
+		colortwo = browser_input_list(user, "Select a primary color.","Tabard Design", CLOTHING_COLOR_NAMES)
 		if(!colortwo)
 			return
 	if(world.time > (the_time + 30 SECONDS))
@@ -265,7 +265,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("Default", "Gold Cross", "Jeruah", "BlackGold", "BlackWhite"))
 	if(!design)
 		return
 	if(world.time > (the_time + 30 SECONDS))
@@ -346,7 +346,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("Default", "RedBlack", "BlackRed")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("Default", "RedBlack", "BlackRed"))
 	if(!design)
 		return
 	if(world.time > (the_time + 30 SECONDS))
@@ -381,7 +381,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/chosen = input(user, "Select a design.","Tabard Design") as null|anything in list("Split", "Quadrants", "Boxes", "Diamonds")
+	var/chosen = browser_input_list(user, "Select a design.","Tabard Design", list("Split", "Quadrants", "Boxes", "Diamonds"))
 	if(world.time > (the_time + 10 SECONDS))
 		return
 	if(!chosen)
@@ -482,15 +482,15 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("None","Split", "Quadrants", "Boxes", "Diamonds")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("None","Split", "Quadrants", "Boxes", "Diamonds"))
 	if(!design)
 		return
-	var/colorone = input(user, "Select a primary color.","Tabard Design") as null|anything in CLOTHING_COLOR_NAMES
+	var/colorone = browser_input_list(user, "Select a primary color.","Tabard Design", CLOTHING_COLOR_NAMES)
 	if(!colorone)
 		return
 	var/colortwo
 	if(design != "None")
-		colortwo = input(user, "Select a primary color.","Tabard Design") as null|anything in CLOTHING_COLOR_NAMES
+		colortwo = browser_input_list(user, "Select a primary color.","Tabard Design", CLOTHING_COLOR_NAMES)
 		if(!colortwo)
 			return
 	if(world.time > (the_time + 30 SECONDS))
@@ -534,7 +534,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/chosen = input(user, "Select a design.","Tabard Design") as null|anything in list("Split", "Quadrants", "Boxes", "Diamonds")
+	var/chosen = browser_input_list(user, "Select a design.","Tabard Design", list("Split", "Quadrants", "Boxes", "Diamonds"))
 	if(world.time > (the_time + 10 SECONDS))
 		return
 	if(!chosen)
@@ -638,15 +638,15 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/design = input(user, "Select a design.","Tabard Design") as null|anything in list("None","Split", "Quadrants", "Boxes", "Diamonds")
+	var/design = browser_input_list(user, "Select a design.","Tabard Design", list("None","Split", "Quadrants", "Boxes", "Diamonds"))
 	if(!design)
 		return
-	var/colorone = input(user, "Select a primary color.","Tabard Design") as null|anything in CLOTHING_COLOR_NAMES
+	var/colorone = browser_input_list(user, "Select a primary color.","Tabard Design", CLOTHING_COLOR_NAMES)
 	if(!colorone)
 		return
 	var/colortwo
 	if(design != "None")
-		colortwo = input(user, "Select a primary color.","Tabard Design") as null|anything in CLOTHING_COLOR_NAMES
+		colortwo = browser_input_list(user, "Select a primary color.","Tabard Design", CLOTHING_COLOR_NAMES)
 		if(!colortwo)
 			return
 	if(world.time > (the_time + 30 SECONDS))
@@ -697,7 +697,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/chosen = input(user, "Select a design.","Tabard Design") as null|anything in list("Split", "Quadrants", "Boxes", "Diamonds")
+	var/chosen = browser_input_list(user, "Select a design.","Tabard Design", list("Split", "Quadrants", "Boxes", "Diamonds"))
 	if(world.time > (the_time + 10 SECONDS))
 		return
 	if(!chosen)
@@ -1661,7 +1661,7 @@
 	if(picked)
 		return
 	var/the_time = world.time
-	var/chosen = input(user, "Select a design.","Tabard Design") as null|anything in list("Split")
+	var/chosen = browser_input_list(user, "Select a design.","Tabard Design", list("Split"))
 	if(world.time > (the_time + 10 SECONDS))
 		return
 	if(!chosen)

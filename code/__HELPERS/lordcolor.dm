@@ -22,11 +22,11 @@ GLOBAL_VAR(lordsecondary)
 		return
 	var/prim
 	var/sec
-	var/choice = input(src, "Choose a Primary Color", "ROGUETOWN") as anything in colorlist
+	var/choice = browser_input_list(src, "Choose a Primary Color", "ROGUETOWN", colorlist)
 	if(choice)
 		prim = colorlist[choice]
 		colorlist -= choice
-	choice = input(src, "Choose a Secondary Color", "ROGUETOWN") as anything in colorlist
+	choice = browser_input_list(src, "Choose a Secondary Color", "ROGUETOWN", colorlist)
 	if(choice)
 		sec = colorlist[choice]
 	if(!prim || !sec)

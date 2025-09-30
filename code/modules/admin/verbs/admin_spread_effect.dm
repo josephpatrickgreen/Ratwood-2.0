@@ -11,7 +11,7 @@
 	for(var/type in effect_types)
 		effect_names[type] = "[type]"
 
-	var/selected_type = input("Select an effect to spread:", "Choose Effect") as null|anything in effect_names
+	var/selected_type = browser_input_list("Select an effect to spread:", "Choose Effect", effect_names)
 	if(!selected_type)
 		return
 

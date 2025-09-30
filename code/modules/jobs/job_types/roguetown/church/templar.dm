@@ -86,7 +86,7 @@
 		if(/datum/patron/divine/undivided)
 			neck = /obj/item/clothing/neck/roguetown/psicross/undivided
 			var/cloaks = list("Cloak", "Tabard")
-			var/cloakchoice = input(H,"Choose your covering", "TAKE UP FASHION") as anything in cloaks
+			var/cloakchoice = browser_input_list(H,"Choose your covering", "TAKE UP FASHION", cloaks)
 			switch(cloakchoice)
 				if("Cloak")
 					cloak = /obj/item/clothing/cloak/undivided
@@ -199,7 +199,7 @@
 		if(/datum/patron/divine/abyssor)
 			weapons += "Barotrauma"
 
-	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list(H,"Choose your weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if("Katar")
 			H.put_in_hands(new /obj/item/rogueweapon/katar(H), TRUE)
@@ -242,7 +242,7 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 			backr = /obj/item/rogueweapon/shield/tower/holysee
 			var/cloaks = list("Cloak", "Tabard")
-			var/cloakchoice = input(H,"Choose your covering", "TAKE UP FASHION") as anything in cloaks
+			var/cloakchoice = browser_input_list(H,"Choose your covering", "TAKE UP FASHION", cloaks)
 			switch(cloakchoice)
 				if("Cloak")
 					cloak = /obj/item/clothing/cloak/undivided
@@ -391,7 +391,7 @@
 			weapons += "The Heartstring"
 		if(/datum/patron/divine/abyssor)
 			weapons += "Tidecleaver"
-	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list(H,"Choose your weapon.", "TAKE UP ARMS", weapons)
 	switch(weapon_choice)
 		if("Longsword")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/church(H), TRUE)

@@ -297,7 +297,7 @@
 
 /obj/effect/proc_holder/spell/invoked/necras_sight/proc/try_scry(mob/living/carbon/human/user)
 	listclearnulls(marked_objects)
-	var/selected_grave = input(user, "Which Grave shall we peer through?", "") as null|anything in marked_objects
+	var/selected_grave = browser_input_list(user, "Which Grave shall we peer through?", "", marked_objects)
 	if(selected_grave)
 		var/obj/structure/gravemarker/spygrave = selected_grave
 		var/filter = spygrave.get_filter(GRAVE_SPY)

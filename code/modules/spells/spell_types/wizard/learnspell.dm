@@ -25,7 +25,7 @@
 
 	choices = sortList(choices)
 
-	var/choice = input("Choose a spell, points left: [user.mind.spell_points - user.mind.used_spell_points]") as null|anything in choices
+	var/choice = browser_input_list("Choose a spell, points left: [user.mind.spell_points - user.mind.used_spell_points]", choices)
 	var/obj/effect/proc_holder/spell/item = choices[choice]
 
 	if(!item)

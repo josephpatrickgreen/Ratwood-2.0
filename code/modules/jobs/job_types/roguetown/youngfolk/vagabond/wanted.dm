@@ -37,7 +37,7 @@
 		if (!my_crime)
 			my_crime = "crimes against the Crown"
 		var/list/bounty_cats = list("Meager", "Moderate", "Massive")
-		var/bounty_amount = input(H, "How ample is your bounty?", "Blooded Gold") as anything in bounty_cats
+		var/bounty_amount = browser_input_list(H, "How ample is your bounty?", "Blooded Gold", bounty_cats)
 		var/race = H.dna.species
 		var/gender = H.gender
 		var/list/d_list = H.get_mob_descriptors()

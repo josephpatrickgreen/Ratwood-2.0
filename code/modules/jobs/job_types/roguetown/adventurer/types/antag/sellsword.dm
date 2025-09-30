@@ -52,7 +52,7 @@
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
 	var/weapons = list("Spear & Crossbow","Sword & Buckler")
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Spear & Crossbow") //Deserter watchman. Maybe should be shield and spear? spear and crossbow is kinda clumsy
@@ -67,7 +67,7 @@
 			head = /obj/item/clothing/head/roguetown/helmet/sallet
 
 	if(!istype(H.patron, /datum/patron/inhumen/matthios))
-		var/inputty = input(H, "Would you like to change your patron to Matthios?", "The Transactor calls", "No") as anything in list("Yes", "No")
+		var/inputty = browser_input_list(H, "Would you like to change your patron to Matthios?", "The Transactor calls", "No", list("Yes", "No"))
 		if(inputty == "Yes")
 			to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))
 			H.set_patron(/datum/patron/inhumen/matthios)

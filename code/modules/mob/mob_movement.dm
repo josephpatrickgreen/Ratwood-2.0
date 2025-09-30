@@ -77,9 +77,8 @@
 /client/Move(n, direct)
 	if(world.time < move_delay) //do not move anything ahead of this check please
 		return FALSE
-	else
-		next_move_dir_add = 0
-		next_move_dir_sub = 0
+	next_move_dir_add = 0
+	next_move_dir_sub = 0
 	var/old_move_delay = move_delay
 	move_delay = world.time + world.tick_lag //this is here because Move() can now be called mutiple times per tick
 	if(!mob || !mob.loc)
@@ -172,6 +171,8 @@
 			// Reset our sprint counter if we change direction
 			L.sprinted_tiles = 0
 
+	var/old_direct = mob.dir
+	
 	. = ..()
 
 	if((direct & (direct - 1)) && mob.loc == n) //moved diagonally successfully
@@ -181,6 +182,10 @@
 	if(.) // If mob is null here, we deserve the runtime
 		if(mob.throwing)
 			mob.throwing.finalize(FALSE)
+
+		// At this point we've moved the client's attached mob. This is one of the only ways to guess that a move was done
+		// as a result of player input and not because they were pulled or any other magic.
+		SEND_SIGNAL(mob, COMSIG_MOB_CLIENT_MOVED, direct, old_direct)
 
 	var/atom/movable/P = mob.pulling
 	if(P)
@@ -201,14 +206,6 @@
 		mob.stop_attack(FALSE)
 		mob.changeNext_move(CLICK_CD_MELEE)
 
-	for(var/datum/browser/X in open_popups)
-		if(!X.no_close_movement)
-	//		var/datum/browser/popup = new(mob, X, "", 5, 5)
-	//		popup.set_content()
-	//		popup.open()
-	//		popup.close()
-			mob << browse(null, "window=[X]")
-			open_popups -= X
 /**
   * Checks to see if you're being grabbed and if so attempts to break it
   *

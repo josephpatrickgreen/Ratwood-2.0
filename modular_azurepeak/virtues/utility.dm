@@ -146,7 +146,7 @@
 		var/lang_count = 3
 		var/count = lang_count
 		for(var/i in 1 to lang_count)
-			var/chosen_language = input(recipient, "Choose your extra spoken language.", "VIRTUE: [count] LEFT") as null|anything in choices
+			var/chosen_language = browser_input_list(recipient, "Choose your extra spoken language.", "VIRTUE: [count] LEFT", choices)
 			if(chosen_language)
 				var/language_type = choices[chosen_language]
 				recipient.grant_language(language_type)
@@ -246,7 +246,7 @@
 		instruments[instr.name] = instrument_type
 		qdel(instr)  // Clean up the temporary instance
 
-	var/chosen_name = input(recipient, "What instrument did I stash?", "STASH") as null|anything in instruments
+	var/chosen_name = browser_input_list(recipient, "What instrument did I stash?", "STASH", instruments)
 	if(chosen_name)
 		var/instrument_type = instruments[chosen_name]
 		recipient.mind?.special_items[chosen_name] = instrument_type

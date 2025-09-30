@@ -57,7 +57,7 @@
 	H.grant_language(/datum/language/thievescant)
 	addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, choose_name_popup), "BANDIT"), 5 SECONDS)
 	var/wanted = list("I am a notorious criminal", "I am a nobody")
-	var/wanted_choice = input("Are you a known criminal?") as anything in wanted
+	var/wanted_choice = browser_input_list("Are you a known criminal?", wanted)
 	switch(wanted_choice)
 		if("I am a notorious criminal") //Extra challenge for those who want it
 			bandit_select_bounty(H)
@@ -67,8 +67,8 @@
 
 // Changed up proc from Wretch to suit bandits bit more
 /proc/bandit_select_bounty(mob/living/carbon/human/H)
-	var/bounty_poster = input(H, "Who placed a bounty on you?", "Bounty Poster") as anything in list("The Justiciary of Rotwood", "The Grenzelhoftian Holy See")
-	var/bounty_severity = input(H, "How notorious are you?", "Bounty Amount") as anything in list("Small Fish", "Bay Butcher", "Vale Boogeyman")
+	var/bounty_poster = browser_input_list(H, "Who placed a bounty on you?", "Bounty Poster", list("The Justiciary of Rotwood", "The Grenzelhoftian Holy See"))
+	var/bounty_severity = browser_input_list(H, "How notorious are you?", "Bounty Amount", list("Small Fish", "Bay Butcher", "Vale Boogeyman"))
 	var/race = H.dna.species
 	var/gender = H.gender
 	var/list/d_list = H.get_mob_descriptors()

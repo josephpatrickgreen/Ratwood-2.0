@@ -459,7 +459,7 @@
 	if(!isarcyne(user))
 		return
 	var/obj/effect/decal/cleanable/roguerune/pickrune
-	var/runenameinput = input(user, "Runes", "All Runes") as null|anything in GLOB.t4rune_types
+	var/runenameinput = browser_input_list(user, "Runes", "All Runes", GLOB.t4rune_types)
 	pickrune = GLOB.rune_types[runenameinput]
 	if(!pickrune)
 		return
@@ -680,7 +680,7 @@
 		// Check if targeting the head or skull zone
 		if(user.zone_selected == BODY_ZONE_HEAD || user.zone_selected == BODY_ZONE_PRECISE_SKULL)
 			var/list/options = list("hairstyle", "facial hairstyle")
-			var/chosen = input(user, "What would you like to style?", "Hair Styling") as null|anything in options
+			var/chosen = browser_input_list(user, "What would you like to style?", "Hair Styling", options)
 			if(!chosen)
 				return
 			
@@ -692,7 +692,7 @@
 						var/datum/sprite_accessory/hair/head/hair = new hair_type()
 						valid_hairstyles[hair.name] = hair_type
 					
-					var/new_style = input(user, "Choose their hairstyle", "Hair Styling") as null|anything in valid_hairstyles
+					var/new_style = browser_input_list(user, "Choose their hairstyle", "Hair Styling", valid_hairstyles)
 					if(new_style)
 						user.visible_message(span_notice("[user] begins styling [H]'s hair..."), span_notice("You begin styling [H == user ? "your" : "[H]'s"] hair..."))
 						if(!do_after(user, 30 SECONDS, target = H))
@@ -739,7 +739,7 @@
 						var/datum/sprite_accessory/hair/facial/facial = new facial_type()
 						valid_facial_hairstyles[facial.name] = facial_type
 					
-					var/new_style = input(user, "Choose their facial hairstyle", "Hair Styling") as null|anything in valid_facial_hairstyles
+					var/new_style = browser_input_list(user, "Choose their facial hairstyle", "Hair Styling", valid_facial_hairstyles)
 					if(new_style)
 						user.visible_message(span_notice("[user] begins styling [H]'s facial hair..."), span_notice("You begin styling [H == user ? "your" : "[H]'s"] facial hair..."))
 						if(!do_after(user, 60 SECONDS, target = H))
@@ -773,7 +773,7 @@
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
 			var/list/options = list("hairstyle", "facial hairstyle")
-			var/chosen = input(user, "What would you like to style?", "Hair Styling") as null|anything in options
+			var/chosen = browser_input_list(user, "What would you like to style?", "Hair Styling", options)
 			if(!chosen)
 				return
 			
@@ -785,7 +785,7 @@
 						var/datum/sprite_accessory/hair/head/hair = new hair_type()
 						valid_hairstyles[hair.name] = hair_type
 					
-					var/new_style = input(user, "Choose their hairstyle", "Hair Styling") as null|anything in valid_hairstyles
+					var/new_style = browser_input_list(user, "Choose their hairstyle", "Hair Styling", valid_hairstyles)
 					if(new_style)
 						user.visible_message(span_notice("[user] begins styling [H]'s hair..."), span_notice("You begin styling [H == user ? "your" : "[H]'s"] hair..."))
 						if(!do_after(user, 60 SECONDS, target = H))
@@ -832,7 +832,7 @@
 						var/datum/sprite_accessory/hair/facial/facial = new facial_type()
 						valid_facial_hairstyles[facial.name] = facial_type
 					
-					var/new_style = input(user, "Choose their facial hairstyle", "Hair Styling") as null|anything in valid_facial_hairstyles
+					var/new_style = browser_input_list(user, "Choose their facial hairstyle", "Hair Styling", valid_facial_hairstyles)
 					if(new_style)
 						user.visible_message(span_notice("[user] begins styling [H]'s facial hair..."), span_notice("You begin styling [H == user ? "your" : "[H]'s"] facial hair..."))
 						if(!do_after(user, 60 SECONDS, target = H))

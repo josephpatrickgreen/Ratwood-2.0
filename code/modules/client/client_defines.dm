@@ -150,6 +150,9 @@
 	var/last_asset_job = 0
 	var/last_completed_asset_job = 0
 
+	/// The DPI scale of the client. 1 is equivalent to 100% window scaling, 2 will be 200% window scaling
+	var/window_scaling = 1
+
 /client/proc/update_weather(force)
 	if(!mob)
 		return

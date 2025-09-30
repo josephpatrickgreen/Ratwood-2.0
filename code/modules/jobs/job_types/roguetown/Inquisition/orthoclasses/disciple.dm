@@ -57,7 +57,7 @@
 /datum/outfit/job/roguetown/disciple/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("MY BARE HANDS", "Katar", "Knuckles")
-	var/weapon_choice = input(H,"Choose your PSYDONIAN weapon.", "TAKE UP PSYDON'S ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list(H,"Choose your PSYDONIAN weapon.", "TAKE UP PSYDON'S ARMS", weapons)
 	switch(weapon_choice)
 		if("MY BARE HANDS")
 			H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 5, TRUE)

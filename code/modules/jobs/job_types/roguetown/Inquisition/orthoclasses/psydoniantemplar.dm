@@ -58,7 +58,7 @@
 /datum/outfit/job/roguetown/psydoniantemplar/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/helmets = list("Barbute", "Sallet", "Armet", "Bucket Helm")
-	var/helmet_choice = input(H,"Choose your PSYDONIAN helmet.", "TAKE UP PSYDON'S HELMS") as anything in helmets
+	var/helmet_choice = browser_input_list(H,"Choose your PSYDONIAN helmet.", "TAKE UP PSYDON'S HELMS", helmets)
 	switch(helmet_choice)
 		if("Barbute")
 			H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/psydonbarbute, SLOT_HEAD, TRUE)
@@ -70,7 +70,7 @@
 			H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/psybucket, SLOT_HEAD, TRUE)
 
 	var/weapons = list("Sword", "Axe", "Whip", "Flail", "Mace", "Spear")
-	var/weapon_choice = input(H,"Choose your PSYDONIAN weapon.", "TAKE UP PSYDON'S ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list(H,"Choose your PSYDONIAN weapon.", "TAKE UP PSYDON'S ARMS", weapons)
 	switch(weapon_choice)
 		if("Sword")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/psysword(H), TRUE)

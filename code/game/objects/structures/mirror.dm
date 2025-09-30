@@ -49,7 +49,7 @@
 
 	var/should_update = FALSE
 	var/list/choices = list("hairstyle", "facial hairstyle", "accessory", "face detail", "tail", "tail color one", "tail color two", "hair color", "facial hair color", "eye color", "natural gradient", "natural gradient color", "dye gradient", "dye gradient color", "penis", "testicles", "breasts", "vagina", "breast size", "penis size", "testicle size")
-	var/chosen = input(user, "Change what?", "Appearance") as null|anything in choices
+	var/chosen = browser_input_list(user, "Change what?", "Appearance", choices)
 	
 	if(!chosen)
 		return
@@ -62,7 +62,7 @@
 				var/datum/sprite_accessory/hair/head/hair = new hair_type()
 				valid_hairstyles[hair.name] = hair_type
 			
-			var/new_style = input(user, "Choose your hairstyle", "Hair Styling") as null|anything in valid_hairstyles
+			var/new_style = browser_input_list(user, "Choose your hairstyle", "Hair Styling", valid_hairstyles)
 			if(new_style)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)
@@ -176,7 +176,7 @@
 			for(var/gradient_type in GLOB.hair_gradients)
 				valid_gradients[gradient_type] = gradient_type
 			
-			var/new_style = input(user, "Choose your natural gradient", "Hair Gradient") as null|anything in valid_gradients
+			var/new_style = browser_input_list(user, "Choose your natural gradient", "Hair Gradient", valid_gradients)
 			if(new_style)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)
@@ -238,7 +238,7 @@
 			for(var/gradient_type in GLOB.hair_gradients)
 				valid_gradients[gradient_type] = gradient_type
 			
-			var/new_style = input(user, "Choose your dye gradient", "Hair Gradient") as null|anything in valid_gradients
+			var/new_style = browser_input_list(user, "Choose your dye gradient", "Hair Gradient", valid_gradients)
 			if(new_style)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)
@@ -301,7 +301,7 @@
 				var/datum/sprite_accessory/hair/facial/facial = new facial_type()
 				valid_facial_hairstyles[facial.name] = facial_type
 			
-			var/new_style = input(user, "Choose your facial hairstyle", "Hair Styling") as null|anything in valid_facial_hairstyles
+			var/new_style = browser_input_list(user, "Choose your facial hairstyle", "Hair Styling", valid_facial_hairstyles)
 			if(new_style)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)
@@ -334,7 +334,7 @@
 				var/datum/sprite_accessory/accessory/acc = new accessory_type()
 				valid_accessories[acc.name] = accessory_type
 			
-			var/new_style = input(user, "Choose your accessory", "Accessory Styling") as null|anything in valid_accessories
+			var/new_style = browser_input_list(user, "Choose your accessory", "Accessory Styling", valid_accessories)
 			if(new_style)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)
@@ -357,7 +357,7 @@
 				var/datum/sprite_accessory/face_detail/detail = new detail_type()
 				valid_details[detail.name] = detail_type
 			
-			var/new_detail = input(user, "Choose your face detail", "Face Detail") as null|anything in valid_details
+			var/new_detail = browser_input_list(user, "Choose your face detail", "Face Detail", valid_details)
 			if(new_detail)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)
@@ -379,7 +379,7 @@
 				var/datum/sprite_accessory/penis/penis = new penis_path()
 				valid_penis_types[penis.name] = penis_path
 			
-			var/new_style = input(user, "Choose your penis type", "Penis Customization") as null|anything in valid_penis_types
+			var/new_style = browser_input_list(user, "Choose your penis type", "Penis Customization", valid_penis_types)
 			if(new_style)
 				if(new_style == "none")
 					var/obj/item/organ/penis/penis = H.getorganslot(ORGAN_SLOT_PENIS)
@@ -404,7 +404,7 @@
 				var/datum/sprite_accessory/testicles/testicles = new testicle_path()
 				valid_testicle_types[testicles.name] = testicle_path
 			
-			var/new_style = input(user, "Choose your testicles type", "Testicles Customization") as null|anything in valid_testicle_types
+			var/new_style = browser_input_list(user, "Choose your testicles type", "Testicles Customization", valid_testicle_types)
 			if(new_style)
 				if(new_style == "none")
 					var/obj/item/organ/testicles/testicles = H.getorganslot(ORGAN_SLOT_TESTICLES)
@@ -429,7 +429,7 @@
 				var/datum/sprite_accessory/breasts/breasts = new breast_path()
 				valid_breast_types[breasts.name] = breast_path
 			
-			var/new_style = input(user, "Choose your breast type", "Breast Customization") as null|anything in valid_breast_types
+			var/new_style = browser_input_list(user, "Choose your breast type", "Breast Customization", valid_breast_types)
 
 			if(new_style)
 				if(new_style == "none")
@@ -452,7 +452,7 @@
 
 		if("vagina")
 			var/list/valid_vagina_types = list("none", "human", "hairy", "spade", "furred", "gaping", "cloaca")
-			var/new_style = input(user, "Choose your vagina type", "Vagina Customization") as null|anything in valid_vagina_types
+			var/new_style = browser_input_list(user, "Choose your vagina type", "Vagina Customization", valid_vagina_types)
 
 			if(new_style)
 				if(new_style == "none")
@@ -480,7 +480,7 @@
 
 		if("breast size")
 			var/list/breast_sizes = list("Flat", "Slight", "Small", "Moderate", "Large", "Generous", "Heavy", "Massive", "Heaping", "Obscene")
-			var/new_size = input(user, "Choose your breast size", "Breast Size") as null|anything in breast_sizes
+			var/new_size = browser_input_list(user, "Choose your breast size", "Breast Size", breast_sizes)
 			if(new_size)
 				var/obj/item/organ/breasts/breasts = H.getorganslot(ORGAN_SLOT_BREASTS)
 				if(breasts)
@@ -513,7 +513,7 @@
 
 		if("penis size")
 			var/list/penis_sizes = list("small", "average", "large")
-			var/new_size = input(user, "Choose your penis size", "Penis Size") as null|anything in penis_sizes
+			var/new_size = browser_input_list(user, "Choose your penis size", "Penis Size", penis_sizes)
 			if(new_size)
 				var/obj/item/organ/penis/penis = H.getorganslot(ORGAN_SLOT_PENIS)
 				if(penis)
@@ -532,7 +532,7 @@
 
 		if("testicle size")
 			var/list/testicle_sizes = list("small", "average", "large")
-			var/new_size = input(user, "Choose your testicle size", "Testicle Size") as null|anything in testicle_sizes
+			var/new_size = browser_input_list(user, "Choose your testicle size", "Testicle Size", testicle_sizes)
 			if(new_size)
 				var/obj/item/organ/testicles/testicles = H.getorganslot(ORGAN_SLOT_TESTICLES)
 				if(testicles)
@@ -555,7 +555,7 @@
 				var/datum/sprite_accessory/tail/tail = new tail_path()
 				valid_tails[tail.name] = tail_path
 			
-			var/new_style = input(user, "Choose your tail", "Tail Customization") as null|anything in valid_tails
+			var/new_style = browser_input_list(user, "Choose your tail", "Tail Customization", valid_tails)
 			if(new_style)
 				if(new_style == "none")
 					var/obj/item/organ/tail/tail = H.getorganslot(ORGAN_SLOT_TAIL)
@@ -697,7 +697,7 @@
 	var/mob/living/carbon/human/H = user
 	var/should_update = FALSE
 
-	var/choice = input(user, "Something to change?", "Magical Grooming") as null|anything in list("name", "race", "gender", "hair", "eyes", "accessory", "face detail")
+	var/choice = browser_input_list(user, "Something to change?", "Magical Grooming", list("name", "race", "gender", "hair", "eyes", "accessory", "face detail"))
 
 	if(!user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
 		return
@@ -719,7 +719,7 @@
 
 		if("race")
 			var/newrace
-			var/racechoice = input(H, "What are we again?", "Race change") as null|anything in choosable_races
+			var/racechoice = browser_input_list(H, "What are we again?", "Race change", choosable_races)
 			newrace = GLOB.species_list[racechoice]
 
 			if(!newrace)
@@ -797,7 +797,7 @@
 				var/datum/sprite_accessory/accessory/acc = new accessory_type()
 				valid_accessories[acc.name] = accessory_type
 			
-			var/new_style = input(user, "Choose your accessory", "Accessory Styling") as null|anything in valid_accessories
+			var/new_style = browser_input_list(user, "Choose your accessory", "Accessory Styling", valid_accessories)
 			if(new_style)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)
@@ -820,7 +820,7 @@
 				var/datum/sprite_accessory/face_detail/detail = new detail_type()
 				valid_details[detail.name] = detail_type
 			
-			var/new_detail = input(user, "Choose your face detail", "Face Detail") as null|anything in valid_details
+			var/new_detail = browser_input_list(user, "Choose your face detail", "Face Detail", valid_details)
 			if(new_detail)
 				var/obj/item/bodypart/head/head = H.get_bodypart(BODY_ZONE_HEAD)
 				if(head && head.bodypart_features)

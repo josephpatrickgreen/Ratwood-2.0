@@ -52,7 +52,7 @@
 		"Lance + Kite Shield",
 		"Samshir",
 	)
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Estoc")
@@ -92,7 +92,7 @@
 		"Kulah Khud"	= /obj/item/clothing/head/roguetown/helmet/sallet/raneshen,
 		"None"
 	)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	var/helmchoice = browser_input_list("Choose your Helm.", "TAKE UP HELMS", helmets)
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
 
@@ -103,7 +103,7 @@
 		"Fluted Cuirass"	= /obj/item/clothing/suit/roguetown/armor/plate/half/fluted,
 		"Scalemail"		= /obj/item/clothing/suit/roguetown/armor/plate/scale,
 	)
-	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
+	var/armorchoice = browser_input_list("Choose your armor.", "TAKE UP ARMOR", armors)
 	armor = armors[armorchoice]
 	gloves = /obj/item/clothing/gloves/roguetown/plate 
 	pants = /obj/item/clothing/under/roguetown/chainlegs
@@ -144,7 +144,7 @@
 /datum/outfit/job/roguetown/wretch/desertermaa/pre_equip(mob/living/carbon/human/H)
 	..()
 	var/weapons = list("Warhammer & Shield","Sabre & Shield","Axe & Shield","Billhook","Greataxe","Halberd",)
-	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list("Choose your weapon.", "TAKE UP ARMS", weapons)
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Warhammer & Shield")
@@ -211,7 +211,7 @@
 	"Winged Helmet" 	= /obj/item/clothing/head/roguetown/helmet/winged,
 	"None"
 	)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	var/helmchoice = browser_input_list("Choose your Helm.", "TAKE UP HELMS", helmets)
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
 
@@ -221,7 +221,7 @@
 	"Wildguard"			= /obj/item/clothing/mask/rogue/wildguard,
 	"None"
 	)
-	var/maskchoice = input("Choose your Mask.", "MASK MASK MASK") as anything in masks // Run from it. MASK. MASK. MASK.
+	var/maskchoice = browser_input_list("Choose your Mask.", "MASK MASK MASK", masks) // Run from it. MASK. MASK. MASK.
 	if(maskchoice != "None")
 		mask = masks[maskchoice]	
 
@@ -464,7 +464,7 @@
 	if(!length(recruitment))
 		to_chat(user, span_warning("There are no potential recruits in range."))
 		return
-	var/inputty = input(user, "Select a potential recruit!", "[name]") as anything in recruitment
+	var/inputty = browser_input_list(user, "Select a potential recruit!", "[name]", recruitment)
 	if(inputty)
 		var/mob/living/carbon/human/recruit = recruitment[inputty]
 		if(!QDELETED(recruit) && (recruit in get_hearers_in_view(recruitment_range, user)))

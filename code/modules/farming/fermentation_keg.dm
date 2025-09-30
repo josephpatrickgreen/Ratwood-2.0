@@ -251,7 +251,7 @@ GLOBAL_LIST_EMPTY(custom_fermentation_recipes)
 		return FALSE
 
 	options = sortList(options)
-	var/choice = input(user,"What brew do you want to make?", name) as null|anything in options
+	var/choice = browser_input_list(user,"What brew do you want to make?", name, options)
 
 	if(!choice)
 		return

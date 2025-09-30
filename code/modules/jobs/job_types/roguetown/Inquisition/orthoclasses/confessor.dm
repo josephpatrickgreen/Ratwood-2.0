@@ -64,7 +64,7 @@
 /datum/outfit/job/roguetown/confessor/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Shortsword", "Handmace", "Dagger")
-	var/weapon_choice = input(H,"Choose your PSYDONIAN weapon.", "TAKE UP PSYDON'S ARMS") as anything in weapons
+	var/weapon_choice = browser_input_list(H,"Choose your PSYDONIAN weapon.", "TAKE UP PSYDON'S ARMS", weapons)
 	switch(weapon_choice)
 		if("Shortsword")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/short/psy/preblessed(H), TRUE)

@@ -69,7 +69,7 @@
 /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants/attack_right(mob/user)
 	..()
 	if(!picked)
-		var/choice = input(user, "Choose a color.", "Grenzelhoft colors") as anything in colorlist
+		var/choice = browser_input_list(user, "Choose a color.", "Grenzelhoft colors", colorlist)
 		var/playerchoice = colorlist[choice]
 		picked = TRUE
 		detail_color = playerchoice

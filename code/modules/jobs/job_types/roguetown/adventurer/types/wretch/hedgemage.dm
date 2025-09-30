@@ -59,7 +59,7 @@
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	var/classes = list("Hedge Mage","Rogue Mage")
-	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
+	var/classchoice = browser_input_list("Choose your archetypes", "Available archetypes", classes)
 	switch(classchoice)
 		if("Hedge Mage")
 			H?.mind.adjust_spellpoints(27)

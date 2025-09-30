@@ -56,7 +56,7 @@ GLOBAL_DATUM_INIT(carebox, /datum/carebox, new())
 	while(remaining_choices > 0)
 		if(!length(result_table))
 			break
-		var/result = input(human, "What did I receive? (Choices: [remaining_choices]) [table.addendum]", "MAIL") as null|anything in result_table
+		var/result = browser_input_list(human, "What did I receive? (Choices: [remaining_choices]) [table.addendum]", "MAIL", result_table)
 		if(!result)
 			break
 		var/result_loot = result_table[result]

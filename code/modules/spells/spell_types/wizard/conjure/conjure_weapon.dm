@@ -59,7 +59,7 @@
 	var/list/weapons = iron_weapons
 	if(user.STAINT >= 12)
 		weapons = steel_weapons
-	var/weapon_choice = input(user, "Choose a weapon", "Conjure Weapon") as anything in weapons
+	var/weapon_choice = browser_input_list(user, "Choose a weapon", "Conjure Weapon", weapons)
 	if(!weapon_choice)
 		return
 	if(src.conjured_weapon)

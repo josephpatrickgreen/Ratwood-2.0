@@ -44,5 +44,5 @@
 			continue
 		possible_classes += CHECKS
 
-	var/datum/advclass/C = input(H.client, "What is my class?", "Adventure") as null|anything in possible_classes
+	var/datum/advclass/C = browser_input_list(H.client, "What is my class?", "Adventure", possible_classes)
 	C.equipme(H)
