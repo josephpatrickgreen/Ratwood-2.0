@@ -26,11 +26,10 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	if(get_playerquality(ckey) <= -5)
 		to_chat(src, span_danger("I can't use that."))
 		return
-	// LOBBY ONLY CHANGE: OOC is now restricted purely to the lobby (new_player) and admins.
-	// Regular players who have spawned (alive or ghost) cannot use or see OOC.
+
 	if(!holder)
-		if(!istype(mob, /mob/dead/new_player))
-			to_chat(src, span_danger("OOC is lobby-only. Use in-round channels (say/LOOC/dead chat) instead."))
+		if(Master.current_runlevel != RUNLEVEL_POSTGAME && !istype(mob, /mob/dead/new_player))
+			to_chat(src, span_danger("OOC is lobby-only during the round. After the round ends it re-opens to everyone."))
 			return
 		if(!GLOB.ooc_allowed)
 			to_chat(src, span_danger("OOC is globally muted."))
@@ -85,12 +84,14 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	var/msg_to_send = ""
 
 	for(var/client/C in GLOB.clients)
-		// Non-admin: must be lobby new_player.
-		if(!C.holder && !istype(C.mob, /mob/dead/new_player))
-			continue
-		// Admin: they can opt out of lobby OOC while not in lobby.
-		if(C.holder && !C.show_lobby_ooc && !istype(C.mob, /mob/dead/new_player))
-			continue
+		var/postgame = (Master.current_runlevel == RUNLEVEL_POSTGAME)
+		if(!postgame)
+			// Non-admin: must be lobby new_player during active round
+			if(!C.holder && !istype(C.mob, /mob/dead/new_player))
+				continue
+			// Admin: they can opt out while not in lobby
+			if(C.holder && !C.show_lobby_ooc && !istype(C.mob, /mob/dead/new_player))
+				continue
 		if(!(C.prefs.chat_toggles & CHAT_OOC))
 			continue
 		var/real_key = C.holder ? "([key])" : ""
@@ -197,10 +198,12 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	for(var/client/C in GLOB.clients)
 		if(!(C.prefs.chat_toggles & CHAT_OOC))
 			continue
-		if(!C.holder && !istype(C.mob, /mob/dead/new_player))
-			continue
-		if(C.holder && !C.show_lobby_ooc && !istype(C.mob, /mob/dead/new_player))
-			continue
+		var/postgame = (Master.current_runlevel == RUNLEVEL_POSTGAME)
+		if(!postgame)
+			if(!C.holder && !istype(C.mob, /mob/dead/new_player))
+				continue
+			if(C.holder && !C.show_lobby_ooc && !istype(C.mob, /mob/dead/new_player))
+				continue
 		var/real_key = C.holder ? "([key])" : ""
 		msg_to_send = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='[chat_color]'><span class='message linkify'>[msg]</span></font>"
 		if(holder)
