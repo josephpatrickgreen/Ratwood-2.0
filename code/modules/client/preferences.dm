@@ -1806,7 +1806,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					dat += "<br>"
 					for(var/tone in pref_species.get_skin_list_tooltip())
 						dat += "[tone]<br>"
-					var/datum/browser/popup = new(user, "Formatting Help", nwidth = 400, nheight = 450)
+					var/datum/browser/popup = new(user, "Formatting Help", width = 400, nheight = 450)
 					popup.set_content(dat.Join())
 					popup.open(FALSE)
 				if("flavortext")
@@ -1895,7 +1895,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					if(nsfw_headshot_link)
 						dat += "<br><div align='center'><b>NSFW</b></div>"
 						dat += ("<br><div align='center'><img src='[nsfw_headshot_link]' width='600px'></div>")
-					var/datum/browser/popup = new(user, "[real_name]", nwidth = 700, nheight = 800)
+					var/datum/browser/popup = new(user, "[real_name]", width = 700, height = 800)
 					popup.set_content(dat.Join())
 					popup.open(FALSE)
 				if("ooc_extra")

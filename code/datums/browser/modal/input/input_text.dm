@@ -69,12 +69,12 @@
 	</script>
 	"})
 
-	var/window_height = multiline ? 600 : 250
+	var/window_height = multiline ? 350 : 150
 
-	..(user, ckey("[user]-[message]-[title]-[world.time]-[rand(1,10000)]"), title, 600, window_height, src, TRUE, timeout)
+	..(user, ckey("[user]-[message]-[title]-[world.time]-[rand(1,10000)]"), title, 500, window_height, src, TRUE, timeout)
 
 	set_content({"
-	<form style="display: flex; justify-content: space-between; flex-direction: column; height: 100%; width: 100%; box-sizing: border-box;" action="byond://">
+	<form style="display: flex; justify-content: space-around; flex-direction: column; height: 100%; width: 100%; box-sizing: border-box;" action="byond://">
 		<input type="hidden" name="src" value="[REF(src)]">
 
 		<center style="flex: 0 0 auto; margin:"><b>[message]</b></center>
@@ -84,12 +84,11 @@
 			style="
 				overflow-y: auto;
 				resize: none;
-				[multiline ? "height: 15rem;" : ""]"
+				[multiline ? "height: 10rem;" : ""]"
 			name="choice"
 			[NULLABLE(isnum(max_length)) && "maxlength=[max_length]"]
 			placeholder="WE AWAIT YOUR COMMAND..."
-			autofocus>[html_encode(default)]
-		[multiline ? "</textarea>" : "</input>"]
+			autofocus>[html_encode(default)][multiline ? "</textarea>" : "</input>"]
 
 		<div style="display: flex; justify-content: space-between; align-items: center; text-align: center; flex: 0 0 auto;">
 			<button id="submitButton" type="submit" name="submit" value="[TRUE]">[CHOICE_CONFIRM]</button>
