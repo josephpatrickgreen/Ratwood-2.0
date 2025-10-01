@@ -250,6 +250,23 @@ Hotkey-Mode: (hotkey-mode must be on)
 			LAZYREMOVE(GLOB.roleplay_ads,C.mobid)
 			to_chat(C, span_info("Roleplay ad removed."))
 
+/client/verb/ui_scaling()
+	set category = "Options"
+	set name = "UI Scaling"
+	if(prefs)
+		var/current_scaling = window_scaling * 100
+		var/new_scaling = input(usr, "Enter UI Scaling (Your current scaling is [current_scaling]%). Cancel to reset to native scaling.", "New UI Scaling", window_scaling * 100) as null|num
+		if(!isnull(new_scaling))
+			prefs.ui_scale = new_scaling
+			window_scaling = new_scaling / 100
+			prefs.save_preferences()
+			to_chat(src, span_notice("UI Scaling set to [window_scaling * 100]%. Changes take effect when opening new windows."))
+		else
+			prefs.ui_scale = null
+			prefs.save_preferences()
+			window_scaling = text2num(winget(src, null, "dpi"))
+			to_chat(src, span_notice("UI Scaling reset to native [window_scaling * 100]%. Changes take effect when opening new windows."))
+
 /client/verb/changefps()
 	set category = "Options"
 	set name = "ChangeFPS"

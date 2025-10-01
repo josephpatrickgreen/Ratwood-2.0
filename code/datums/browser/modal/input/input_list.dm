@@ -151,7 +151,7 @@
 				[item]
 			</label>"}
 
-	..(user, ckey("[user]-[message]-[title]-[world.time]-[rand(1,10000)]"), title, 450, 650, src, TRUE, timeout)
+	..(user, ckey("[user]-[message]-[title]-[world.time]-[rand(1,10000)]"), title, 360, 520, src, TRUE, timeout)
 	set_content({"
 	<form style="width: 100%; height: 100%; box-sizing: border-box;" action="byond://">
 		<input type="hidden" name="src" value="[REF(src)]">

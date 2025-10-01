@@ -1,3 +1,10 @@
+:root{
+	--color-one: #aa8f8f;
+	--color-two: #7b5353;
+	--color-three: #eac0b9;
+	--color-bg: #100000;
+}
+
 @font-face {
 	font-family: "New Rocker";
 	src: url("newrocker.ttf");
@@ -20,9 +27,9 @@ body {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	background: #100000 url("flowers.png") repeat;
+	background: var(--color-bg) url("flowers.png") repeat;
 	font-size: 14px;
-	color: #aa8f8f;
+	color: var(--color-one);
 	line-height: 170%;
 	vertical-align: middle;
 }
@@ -40,7 +47,7 @@ a:active,
 .linkOn,
 .linkOff {
 	font-family: Pterra, TrueType !important;
-	color: #7b5353;
+	color: var(--color-two);
 	text-decoration: none;
 	background: #00000066;
 	border: 1px solid #000000;
@@ -51,7 +58,7 @@ a:active,
 }
 
 a:hover {
-	color: #eac0b9;
+	color: var(--color-three);
 	background: #000000;
 	border-color: #000000;
 	text-decoration-line: underline;
@@ -61,7 +68,7 @@ a.white,
 a.white:link,
 a.white:visited,
 a.white:active {
-	color: #7b5353;
+	color: var(--color-two);
 	text-decoration: none;
 	background: #000000;
 	border: 1px solid #000000;
@@ -71,7 +78,7 @@ a.white:active {
 }
 
 a.white:hover {
-	color: #eac0b9;
+	color: var(--color-three);
 	background: #000000;
 	text-decoration-line: underline;
 }
@@ -81,9 +88,9 @@ a.linkOn:link,
 a.linkOn:visited,
 a.linkOn:active,
 a.linkOn:hover {
-	color: #7b5353;
+	color: var(--color-two);
 	background: #000000;
-	border-color: #7b5353;
+	border-color: var(--color-two);
 }
 
 .linkOff,
@@ -190,6 +197,10 @@ h4 {
 	padding: 8px;
 	box-sizing: border-box;
 	font-family: "New Rocker", TrueType;
+
+	scrollbar-color: var(--color-two) var(--color-bg);
+	scrollbar-width: thin;
+	caret-shape: block;
 }
 
 .good {
@@ -205,7 +216,7 @@ h4 {
 }
 
 .highlight {
-	color: #7b5353;
+	color: var(--color-two);
 }
 
 .dark {
@@ -310,7 +321,7 @@ div.notice {
 	top: 276px;
 	width: 96px;
 	height: 121px;
-	border: 4px ridge #aa8f8f;
+	border: 4px ridge var(--color-one);
 	z-index: 1;
 	box-sizing: border-box;
 }
@@ -320,7 +331,7 @@ div.notice {
 	height: 12px;
 	margin-left: 4px;
 	border-radius: 2px;
-	border: 1px solid #aa8f8f;
+	border: 1px solid var(--color-one);
 	display: inline-block;
 	vertical-align: middle;
 }

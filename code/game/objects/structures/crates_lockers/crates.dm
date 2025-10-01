@@ -18,7 +18,6 @@
 	close_sound_volume = 50
 	drag_slowdown = 0
 	var/obj/item/paper/fluff/jobs/cargo/manifest/manifest
-	var/base_icon_state
 
 /obj/structure/closet/crate/Initialize()
 	. = ..()

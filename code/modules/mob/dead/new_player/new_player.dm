@@ -9,7 +9,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 
 	invisibility = INVISIBILITY_ABSTRACT
 
-//	hud_type = /datum/hud/new_player
+	hud_type = /datum/hud/new_player
 
 	density = FALSE
 	stat = DEAD

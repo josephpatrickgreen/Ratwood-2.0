@@ -69,7 +69,7 @@
 	</script>
 	"})
 
-	var/window_height = multiline ? 400 : 200
+	var/window_height = multiline ? 320 : 160
 
 	..(user, ckey("[user]-[message]-[title]-[world.time]-[rand(1,10000)]"), title, 500, window_height, src, TRUE, timeout)
 

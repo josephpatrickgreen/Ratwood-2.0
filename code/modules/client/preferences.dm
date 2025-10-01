@@ -205,6 +205,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/taur_type = null
 	var/taur_color = "ffffff"
 
+	var/ui_scale = null
+
 /datum/preferences/New(client/C)
 	parent = C
 	migrant  = new /datum/migrant_pref(src)
@@ -801,19 +803,16 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	if(user.client.is_new_player())
 		dat = list("<center>REGISTER!</center>")
 
-	// var/W = 900
-	// var/H = 1000
+	user.client.acquire_dpi()
 
 	winshow(user, "preferencess_window", TRUE)
-	// winset(user, "preferencess_window", "size=[W]x[H];is-visible=true")
-	// winset(user, "preferences_browser", "pos=0,0;size=[W]x[H];anchor1=0,0;anchor2=100,100;is-visible=true")
-	var/datum/browser/noclose/popup = new(user, "preferences_browser", "<div align='center'>[used_title]</div>")
-	popup.set_window_options("can_close=0")
+	winshow(user, "preferencess_window.character_preview_map", TRUE)
+	var/datum/browser/popup = new(user, "preferences_browser", "<div align='center'>[used_title]</div>", 800, 900)
+	popup.set_window_options(can_close = TRUE)
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
-	winset(user, "preferencess_window.character_preview_map", "pos=370,350;size=130x160;is-visible=true;mouse-opacity=0")
 	update_preview_icon()
-//	onclose(user, "preferencess_window", src)
+	onclose(user, "preferencess_window", src)
 
 #undef APPEARANCE_CATEGORY_COLUMN
 #undef MAX_MUTANT_ROWS

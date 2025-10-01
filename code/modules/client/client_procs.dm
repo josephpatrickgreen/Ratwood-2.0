@@ -1019,6 +1019,14 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 	Master.UpdateTickRate()
 
+/// This grabs the DPI of the user per their skin
+/client/proc/acquire_dpi()
+	if(isnull(prefs?.ui_scale))
+		window_scaling = text2num(winget(src, null, "dpi"))
+	else
+		window_scaling = prefs.ui_scale
+	debug_admins("scalies: [window_scaling]")
+
 //////////////
 //DISCONNECT//
 //////////////
