@@ -65,11 +65,11 @@
 
 					body = "<table><tr><td>";
 
-					body += "</td><td align='center'>";
+					body += "</td><td style='text-align: center;'>";
 
 					body += "<font size='2'><b>"+job+" "+name+"</b><br><b>Real name "+real_name+"</b><br><b>Played by "+key+" ("+ip+")</b><br><b>Old names :"+old_names+"</b></font>";
 
-					body += "</td><td align='center'>";
+					body += "</td><td style='text-align: center;'>";
 
 					body += "<a href='?_src_=holder;[HrefToken()];adminplayeropts="+ref+"'>PP</a> - "
 					body += "<a href='?_src_=holder;[HrefToken()];showmessageckey="+ckey+"'>N</a> - "
@@ -184,16 +184,16 @@
 	//title + search bar
 	dat += {"
 
-		<table width='560' align='center' cellspacing='0' cellpadding='5' id='maintable'>
+		<table width='560' style='text-align: center;' cellspacing='0' cellpadding='5' id='maintable'>
 			<tr id='title_tr'>
-				<td align='center'>
+				<td style='text-align: center;'>
 					<font size='5'><b>Player panel</b></font><br>
 					Hover over a line to see more information - <a href='?_src_=holder;[HrefToken()];check_antagonist=1'>Check antagonists</a> - Kick <a href='?_src_=holder;[HrefToken()];kick_all_from_lobby=1;afkonly=0'>everyone</a>/<a href='?_src_=holder;[HrefToken()];kick_all_from_lobby=1;afkonly=1'>AFKers</a> in lobby
 					<p>
 				</td>
 			</tr>
 			<tr id='search_tr'>
-				<td align='center'>
+				<td style='text-align: center;'>
 					<b>Search:</b> <input type='text' id='filter' value='' style='width:300px;'>
 				</td>
 			</tr>
@@ -204,7 +204,7 @@
 	//player table header
 	dat += {"
 		<span id='maintable_data_archive'>
-		<table width='560' align='center' cellspacing='0' cellpadding='5' id='maintable_data'>"}
+		<table width='560' style='text-align: center;' cellspacing='0' cellpadding='5' id='maintable_data'>"}
 
 	var/list/mobs = sortmobs()
 	var/i = 1
@@ -261,7 +261,7 @@
 			dat += {"
 
 				<tr id='data[i]' name='[i]' onClick="addToLocked('item[i]','data[i]','notice_span[i]')">
-					<td align='center' bgcolor='[color]'>
+					<td style='text-align: center;' bgcolor='[color]'>
 						<span id='notice_span[i]'></span>
 						<a id='link[i]'
 						onmouseover='expand("item[i]","[M_job]","[M_name]","[M_rname]","[previous_names]","[M_key]","[M.lastKnownIP]",[is_antagonist],"[REF(M)]")'

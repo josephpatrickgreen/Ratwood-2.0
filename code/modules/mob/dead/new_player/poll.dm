@@ -3,7 +3,7 @@
   *
   */
 /mob/dead/new_player/proc/handle_player_polling()
-	var/list/output = list("<div align='center'><B>Player polls</B><hr><table>")
+	var/list/output = list("<div style='text-align: center;'><B>Player polls</B><hr><table>")
 	var/rs = REF(src)
 	for(var/p in GLOB.polls)
 		var/datum/poll_question/poll = p
@@ -53,7 +53,7 @@
 	if(query_option_get_voted.NextRow())
 		voted_option_id = text2num(query_option_get_voted.item[1])
 	qdel(query_option_get_voted)
-	var/list/output = list("<div align='center'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
+	var/list/output = list("<div style='text-align: center;'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
 	if(poll.subtitle)
 		output += "[poll.subtitle]<br>"
 	output += "<font size='2'>Poll runs from <b>[poll.start_datetime]</b> until <b>[poll.end_datetime]</b></font><br>"
@@ -97,7 +97,7 @@
 	if(query_text_get_replytext.NextRow())
 		reply_text = query_text_get_replytext.item[1]
 	qdel(query_text_get_replytext)
-	var/list/output = list("<div align='center'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
+	var/list/output = list("<div style='text-align: center;'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
 	if(poll.subtitle)
 		output += "[poll.subtitle]<br>"
 	output += "<font size='2'>Feedback gathering runs from <b>[poll.start_datetime]</b> until <b>[poll.end_datetime]</b></font><br>"
@@ -134,7 +134,7 @@
 	while(query_rating_get_votes.NextRow())
 		voted_ratings += list("[query_rating_get_votes.item[1]]" = query_rating_get_votes.item[2])
 	qdel(query_rating_get_votes)
-	var/list/output = list("<div align='center'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
+	var/list/output = list("<div style='text-align: center;'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
 	if(poll.subtitle)
 		output += "[poll.subtitle]<br>"
 	output += "<font size='2'>Poll runs from <b>[poll.start_datetime]</b> until <b>[poll.end_datetime]</b></font><br>"
@@ -189,7 +189,7 @@
 	while(query_multi_get_votes.NextRow())
 		voted_for += text2num(query_multi_get_votes.item[1])
 	qdel(query_multi_get_votes)
-	var/list/output = list("<div align='center'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
+	var/list/output = list("<div style='text-align: center;'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>")
 	if(poll.subtitle)
 		output += "[poll.subtitle]<br>"
 	output += "You can select up to [poll.options_allowed] options. If you select more, the first [poll.options_allowed] will be saved.<br><font size='2'>Poll runs from <b>[poll.start_datetime]</b> until <b>[poll.end_datetime]</b></font><br>"
@@ -280,7 +280,7 @@
 	</script>
 	</head>
 	<body>
-	<div align='center'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>"})
+	<div style='text-align: center;'><B>Player poll</B><hr><b>Question: [poll.question]</b><br>"})
 	if(poll.subtitle)
 		output += "[poll.subtitle]<br>"
 	output += "<font size='2'>Poll runs from <b>[poll.start_datetime]</b> until <b>[poll.end_datetime]</b></font><br>"

@@ -788,7 +788,7 @@ SUBSYSTEM_DEF(gamemode)
 			var/even = TRUE
 			dat += "<h2>Event Tracks:</h2>"
 			dat += "<font color='#888888'><i>Every track represents progression towards scheduling an event of it's severity</i></font>"
-			dat += "<table align='center'; width='100%'; height='100%'; style='background-color:#13171C'>"
+			dat += "<table width='100%'; height='100%'; style='background-color:#13171C; text-align: center;'>"
 			dat += "<tr style='vertical-align:top'>"
 			dat += "<td width=25%><b>Track</b></td>"
 			dat += "<td width=20%><b>Progress</b></td>"
@@ -818,7 +818,7 @@ SUBSYSTEM_DEF(gamemode)
 			dat += "</table>"
 
 			dat += "<h2>Scheduled Events:</h2>"
-			dat += "<table align='center'; width='100%'; height='100%'; style='background-color:#13171C'>"
+			dat += "<table width='100%'; height='100%'; style='background-color:#13171C; text-align: center;'>"
 			dat += "<tr style='vertical-align:top'>"
 			dat += "<td width=30%><b>Name</b></td>"
 			dat += "<td width=17%><b>Severity</b></td>"
@@ -843,7 +843,7 @@ SUBSYSTEM_DEF(gamemode)
 			dat += "</table>"
 
 			dat += "<h2>Running Events:</h2>"
-			dat += "<table align='center'; width='100%'; height='100%'; style='background-color:#13171C'>"
+			dat += "<table width='100%'; height='100%'; style='background-color:#13171C; text-align: center;'>"
 			dat += "<tr style='vertical-align:top'>"
 			dat += "<td width=30%><b>Name</b></td>"
 			dat += "<td width=70%><b>Actions</b></td>"
@@ -887,7 +887,7 @@ SUBSYSTEM_DEF(gamemode)
 		dat += "<a href='byond://?src=[REF(src)];panel=stats;action=set_cat;cat=[track]'[(statistics_track_page == track) ? "class='linkOn'" : ""]>[track]</a>"
 	dat += "<HR>"
 	/// Create event info and stats table
-	dat += "<table align='center'; width='100%'; height='100%'; style='background-color:#13171C'>"
+	dat += "<table width='100%'; height='100%'; style='background-color:#13171C'; text-align: center;>"
 	dat += "<tr style='vertical-align:top'>"
 	dat += "<td width=17%><b>Name</b></td>"
 	dat += "<td width=16%><b>Tags</b></td>"

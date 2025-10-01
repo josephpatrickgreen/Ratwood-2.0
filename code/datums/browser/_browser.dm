@@ -108,7 +108,7 @@
 			</head>
 			<body scroll=auto>
 				<div class='uiWrapper'>
-					[title ? "<div class='uiTitle' align='center'>[title]</div>" : ""]
+					[title ? "<div class='uiTitle' style='text-align: center;'>[title]</div>" : ""]
 					<div class='[title ? "uiContent" : ""]'>
 						[body]
 					</div>

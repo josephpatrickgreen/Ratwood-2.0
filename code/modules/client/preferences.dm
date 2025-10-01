@@ -768,28 +768,10 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	// well.... one empty slot here for something I suppose lol
 	dat += "<table width='100%'>"
 	dat += "<tr>"
-	dat += "<td width='33%' align='left'></td>"
-	dat += "<td width='33%' align='center'>"
-	var/mob/dead/new_player/N = user
-	if(istype(N))
-		//dat += "<a href='?_src_=prefs;preference=bespecial'><b>[next_special_trait ? "<font color='red'>SPECIAL</font>" : "Be Special"]</b></a><BR>"
-		if(SSticker.current_state <= GAME_STATE_PREGAME)
-			switch(N.ready)
-				if(PLAYER_NOT_READY)
-					dat += "<b>UNREADY</b> <a href='byond://?src=[REF(N)];ready=[PLAYER_READY_TO_PLAY]'>READY</a>"
-				if(PLAYER_READY_TO_PLAY)
-					dat += "<a href='byond://?src=[REF(N)];ready=[PLAYER_NOT_READY]'>UNREADY</a> <b>READY</b>"
-					log_game("([user || "NO KEY"]) readied as ([real_name])")
-		else
-			if(!is_active_migrant())
-				dat += "<a href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
-			else
-				dat += "<a class='linkOff' href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
-			dat += " - <a href='?_src_=prefs;preference=migrants'>MIGRATION</a>"
-			dat += "<br><a href='?_src_=prefs;preference=manifest'>ACTORS</a>"
-			dat += " - <a href='?_src_=prefs;preference=observe'>VOYEUR</a>"
-	else
-		dat += "<a href='?_src_=prefs;preference=finished'>DONE</a>"
+	dat += "<td width='33%' style='text-align: left;'></td>"
+	dat += "<td width='33%' style='text-align: center;'>"
+
+	dat += "<a href='?_src_=prefs;preference=char_finished'>DONE (make sure you saved)</a>"
 
 	dat += "</td>"
 	dat += "<td width='33%' align='right'>"
@@ -807,7 +789,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	winshow(user, "preferencess_window", TRUE)
 	winshow(user, "preferencess_window.character_preview_map", TRUE)
-	var/datum/browser/popup = new(user, "preferences_browser", "<div align='center'>[used_title]</div>", 800, 900)
+	var/datum/browser/popup = new(user, "preferences_browser", "<div style='text-align: center;'>[used_title]</div>", 800, 900)
 	popup.set_window_options(can_close = TRUE)
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
@@ -837,7 +819,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	</script>
 	"}
 	winshow(user, "capturekeypress", TRUE)
-	var/datum/browser/noclose/popup = new(user, "capturekeypress", "<div align='center'>Keybindings</div>", 350, 300)
+	var/datum/browser/noclose/popup = new(user, "capturekeypress", "<div style='text-align: center;'>Keybindings</div>", 350, 300)
 	popup.set_content(HTML)
 	popup.open(FALSE)
 	onclose(user, "capturekeypress", src)
@@ -860,7 +842,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	else
 //		HTML += "<b>Choose class preferences</b><br>"
-//		HTML += "<div align='center'>Left-click to raise a class preference, right-click to lower it.<br></div>"
+//		HTML += "<div style='text-align: center;'>Left-click to raise a class preference, right-click to lower it.<br></div>"
 		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Done</a></center><br>" // Easier to press up here.
 		if(joblessrole != RETURNTOLOBBY && joblessrole != BERANDOMJOB) // this is to catch those that used the previous definition and reset.
 			joblessrole = RETURNTOLOBBY
@@ -1058,7 +1040,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 			HTML += "</a></td></tr>"
 
 		for(var/i = 1, i < (limit - index), i += 1) // Finish the column so it is even
-			HTML += "<tr bgcolor='000000'><td width='60%' align='right'>&nbsp</td><td>&nbsp</td></tr>"
+			HTML += "<tr style='background-color: #00000000;><td width='60%' align='right'>&nbsp</td><td>&nbsp</td></tr>"
 
 		HTML += "</td'></tr></table>"
 		HTML += "</center></table><br>"
@@ -1075,7 +1057,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 			HTML += "<br>"
 		HTML += "<center><a href='?_src_=prefs;preference=job;task=reset'>Reset</a></center>"
 
-	var/datum/browser/noclose/popup = new(user, "mob_occupation", "<div align='center'>Class Selection</div>", width, height)
+	var/datum/browser/noclose/popup = new(user, "mob_occupation", "<div style='text-align: center;'>Class Selection</div>", width, height)
 	popup.set_window_options("can_close=0")
 	popup.set_content(HTML)
 	popup.open(FALSE)
@@ -1192,7 +1174,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 	dat += "<a href ='?_src_=prefs;preference=keybinds;task=keybindings_reset'>\[Reset to default\]</a>"
 	dat += "</body>"
 
-	var/datum/browser/noclose/popup = new(user, "keybind_setup", "<div align='center'>Keybinds</div>", 600, 600) //no reason not to reuse the occupation window, as it's cleaner that way
+	var/datum/browser/noclose/popup = new(user, "keybind_setup", "<div style='text-align: center;'>Keybinds</div>", 600, 600) //no reason not to reuse the occupation window, as it's cleaner that way
 	popup.set_window_options("can_close=0")
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
@@ -1226,7 +1208,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 
 	dat += "</body>"
 
-	var/datum/browser/noclose/popup = new(user, "antag_setup", "<div align='center'>Special Role</div>", 250, 300) //no reason not to reuse the occupation window, as it's cleaner that way
+	var/datum/browser/noclose/popup = new(user, "antag_setup", "<div style='text-align: center;'>Special Role</div>", 250, 300) //no reason not to reuse the occupation window, as it's cleaner that way
 	popup.set_window_options("can_close=0")
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
@@ -1865,7 +1847,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					log_game("[user] has set their NSFW Headshot image to '[nsfw_headshot_link]'.")
 				if("ooc_preview")	//Unashamedly copy pasted from human_topic.dm L:7. Sorry!
 					var/list/dat = list()
-					dat += "<div align='center'><font size = 5; font color = '#dddddd'><b>[real_name]</b></font></div>"
+					dat += "<div style='text-align: center;'><font size = 5; font color = '#dddddd'><b>[real_name]</b></font></div>"
 					var/legacy_check = FALSE
 					if(isnull(flavortext_display) && !isnull(flavortext))	//If there's an FT already in the slot, but no _display, that means it's a legacy slot.
 						is_legacy = TRUE
@@ -1882,18 +1864,18 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					if(is_legacy)
 						dat += "<center><i><font color = '#b9b9b9'; font size = 1>This is a LEGACY Profile from naive days of Psydon.</font></i></center>"
 					if(valid_headshot_link(null, headshot_link, TRUE))
-						dat += ("<div align='center'><img src='[headshot_link]' width='350px' height='350px'></div>")
+						dat += ("<div style='text-align: center;'><img src='[headshot_link]' width='350px' height='350px'></div>")
 					if(flavortext && flavortext_display)
-						dat += "<div align='left'>[flavortext_display]</div>"
+						dat += "<div style='text-align: left; overflow-wrap: break-word;'>[flavortext_display]</div>"
 					if(ooc_notes && ooc_notes_display)
 						dat += "<br>"
-						dat += "<div align='center'><b>OOC notes</b></div>"
-						dat += "<div align='left'>[ooc_notes_display]</div>"
+						dat += "<div style='text-align: center;'><b>OOC notes</b></div>"
+						dat += "<div style='text-align: left; overflow-wrap: break-word;'>[ooc_notes_display]</div>"
 					if(ooc_extra)
-						dat += "<div align='center'>[ooc_extra]</div>"
+						dat += "<div style='text-align: center;'>[ooc_extra]</div>"
 					if(nsfw_headshot_link)
-						dat += "<br><div align='center'><b>NSFW</b></div>"
-						dat += ("<br><div align='center'><img src='[nsfw_headshot_link]' width='600px'></div>")
+						dat += "<br><div style='text-align: center;'><b>NSFW</b></div>"
+						dat += ("<br><div style='text-align: center;'><img src='[nsfw_headshot_link]' width='600px'></div>")
 					var/datum/browser/popup = new(user, "[real_name]", width = 700, height = 800)
 					popup.set_content(dat.Join())
 					popup.open(FALSE)
@@ -2467,17 +2449,14 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					else
 						to_chat(user, span_warning("You are no longer a voice."))
 
-				if("migrants")
-					migrant.show_ui()
-					return
-
-				if("manifest")
-					parent.view_actors_manifest()
-					return
-
 				if("observe")
 					var/mob/dead/new_player/P = user
 					P.make_me_an_observer()
+					return
+
+				if("char_finished")
+					winshow(user, "preferencess_window", FALSE)
+					user << browse(null, "window=preferences_browser")
 					return
 
 				if("finished")

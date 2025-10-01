@@ -458,7 +458,7 @@
 				var/datum/advclass/adv = sclass
 				var/datum/advclass/adv_ref = SSrole_class_handler.get_advclass_by_name(initial(adv.name))
 				dat += "<details><summary><b><font color ='#ece9e9'>[adv_ref.name]</font></b></summary>"
-				dat += "<table align='center'; width='100%'; height='100%';border: 1px solid white;border-collapse: collapse>"
+				dat += "<table style='text-align: center;'; width='100%'; height='100%';border: 1px solid white;border-collapse: collapse>"
 				dat += "<tr style='vertical-align:top'>"
 				dat += "<td width = 70%><i><font color ='#ece9e9'>[adv_ref.tutorial]</font></i></td>"
 				dat += "<td width = 30%; style='text-align:right'>"

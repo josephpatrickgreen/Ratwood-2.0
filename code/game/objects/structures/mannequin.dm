@@ -190,7 +190,7 @@
 	dat += "<HR>Turn Mannequin:<B><A href='byond://?src=[REF(src)];command=turn_mannequin'>[dir2text(dir)]</A></B>"
 	dat += "<BR><A href='byond://?src=[REF(src)];command=close' style='position:absolute;right:50px'>Close</A>"
 
-	var/datum/browser/noclose/popup = new(user, "mannequin[REF(src)]", "<div align='center'>Mannequin Fitting</div>", 275, 425)
+	var/datum/browser/noclose/popup = new(user, "mannequin[REF(src)]", "<div style='text-align: center;'>Mannequin Fitting</div>", 275, 425)
 	//I don't think generating a new popup datum every ui update is a good thing, but what do I know. I'm so used to tgui.
 	popup.set_content(dat)
 	popup.open()

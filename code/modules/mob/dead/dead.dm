@@ -136,7 +136,7 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 		wanderers_listing += "<br>"
 		job_list.Insert(1, wanderers_listing)
 	dat += job_list
-	var/datum/browser/popup = new(src, "lobby_window", "<div align='center'>LOBBY</div>", 330, 430)
+	var/datum/browser/popup = new(src, "lobby_window", "<div style='text-align: center;'>LOBBY</div>", 330, 430)
 	popup.set_window_options("can_close=1;can_minimize=0;can_maximize=0;can_resize=1;")
 	popup.set_content(dat.Join())
 	if(!client)

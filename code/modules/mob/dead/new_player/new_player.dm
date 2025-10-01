@@ -108,7 +108,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	output += "</center>"
 
 	//src << browse(output,"window=playersetup;size=210x240;can_close=0")
-	var/datum/browser/popup = new(src, "playersetup", "<div align='center'>LOBBY MENU</div>", 250, 200)
+	var/datum/browser/popup = new(src, "playersetup", "<div style='text-align: center;'>LOBBY MENU</div>", 250, 200)
 	popup.set_window_options("can_close=0")
 	popup.set_content(output)
 	popup.open(FALSE)*/
@@ -647,7 +647,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			//		cat_name = "Goblins"
 
 			dat += "<fieldset style='width: 185px; border: 2px solid [cat_color]; display: inline'>"
-			dat += "<legend align='center' style='font-weight: bold; color: [cat_color]'>[cat_name]</legend>"
+			dat += "<legend style='font-weight: bold; color: [cat_color], text-align: center;'>[cat_name]</legend>"
 
 			if(has_world_trait(/datum/world_trait/skeleton_siege))
 				dat += "<a class='job command' href='byond://?src=[REF(src)];SelectedJob=Skeleton'>BECOME AN EVIL SKELETON</a>"

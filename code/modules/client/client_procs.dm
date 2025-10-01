@@ -1024,7 +1024,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	if(isnull(prefs?.ui_scale))
 		window_scaling = text2num(winget(src, null, "dpi"))
 	else
-		window_scaling = prefs.ui_scale
+		window_scaling = prefs.ui_scale / 100
 	debug_admins("scalies: [window_scaling]")
 
 //////////////

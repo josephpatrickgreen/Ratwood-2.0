@@ -27,7 +27,7 @@
 	set desc = ""
 	if(prefs)
 		usr.client.prefs.current_tab = 1
-		usr.client.prefs.ShowChoices(usr, 0)
+		usr.client.prefs.ShowChoices(usr, 4)
 
 /client/verb/toggle_fullscreen()
 	set name = "ToggleFullscreen"

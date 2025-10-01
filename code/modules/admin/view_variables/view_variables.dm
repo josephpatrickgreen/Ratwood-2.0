@@ -200,21 +200,21 @@
 				document.getElementById(what.substr(0, idx)).innerHTML = what.substr(idx + 1);
 			}
 		</script>
-		<div align='center'>
+		<div style='text-align: center;'>
 			<table width='100%'>
 				<tr>
 					<td width='50%'>
-						<table align='center' width='100%'>
+						<table style='text-align: center;' width='100%'>
 							<tr>
 								<td>
 									[sprite_text]
-									<div align='center'>
+									<div style='text-align: center;'>
 										[header.Join()]
 									</div>
 								</td>
 							</tr>
 						</table>
-						<div align='center'>
+						<div style='text-align: center;'>
 							<b><font size='1'>[formatted_type]</font></b>
 							<span id='marked'>[marked_line]</span>
 							<span id='varedited'>[varedited_line]</span>
@@ -222,7 +222,7 @@
 						</div>
 					</td>
 					<td width='50%'>
-						<div align='center'>
+						<div style='text-align: center;'>
 							<a id='refresh_link' href='?_src_=vars;
 datumrefresh=[refid];[HrefToken()]'>Refresh</a>
 							<form>
@@ -248,7 +248,7 @@ datumrefresh=[refid];[HrefToken()]'>Refresh</a>
 		<table width='100%'>
 			<tr>
 				<td width='20%'>
-					<div align='center'>
+					<div style='text-align: center;'>
 						<b>Search:</b>
 					</div>
 				</td>

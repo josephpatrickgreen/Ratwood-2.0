@@ -8,17 +8,25 @@
 
 /datum/hud/new_player/New(mob/owner)
 
-	scannies = new /atom/movable/screen/scannies
-	scannies.hud = src
-	static_inventory += scannies
-	if(owner.client?.prefs?.crt == TRUE)
-		scannies.alpha = 70
+	// scannies = new /atom/movable/screen/scannies
+	// scannies.hud = src
+	// static_inventory += scannies
+	// if(owner.client?.prefs?.crt == TRUE)
+	// 	scannies.alpha = 70
+
+	// grain = new /atom/movable/screen/grain
+	// grain.hud = src
+	// static_inventory += grain
+	// if(owner.client?.prefs?.grain == TRUE)
+	// 	grain.alpha = 55
 
 	if (!owner?.client)
 		return
 
 	var/list/buttons = subtypesof(/atom/movable/screen/lobby)
 	for (var/atom/movable/screen/lobby/lobbyscreen as anything in buttons)
+		if(lobbyscreen.type == lobbyscreen.abstract_type)
+			continue
 		if (!initial(lobbyscreen.always_available))
 			continue
 		lobbyscreen = new lobbyscreen(our_hud = src)
@@ -41,6 +49,7 @@
 	/// If true we will create this button every time the HUD is generated
 	var/always_available = TRUE
 	alpha = 210
+	abstract_type = /atom/movable/screen/lobby
 
 /atom/movable/screen/lobby/New(loc, datum/hud/our_hud, ...)
 	set_new_hud(our_hud)
@@ -77,6 +86,7 @@
 	///Should this button play the select sound?
 	var/select_sound_play = TRUE
 	layer = LOBBY_MENU_LAYER
+	abstract_type = /atom/movable/screen/lobby/button
 
 /atom/movable/screen/lobby/button/Click(location, control, params)
 	if(!usr.client)
@@ -158,7 +168,7 @@
 	if(winget(hud.mymob.client, "preferencess_window", "is-visible") == "true")
 		winshow(hud.mymob.client, "preferencess_window", FALSE)
 	else
-		winshow(hud.mymob.client, "preferencess_window", TRUE)
+		hud.mymob.client?.setup_character()
 
 /atom/movable/screen/lobby/button/character_setup/proc/enable_character_setup()
 	SIGNAL_HANDLER
@@ -205,6 +215,7 @@
 	var/mob/dead/new_player/new_player = hud.mymob
 	ready = !ready
 	if(ready)
+		log_game("([key_name(new_player) || "NO KEY"]) readied as ([new_player.real_name])")
 		new_player.ready = PLAYER_READY_TO_PLAY
 		base_icon_state = "ready"
 	else
