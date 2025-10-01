@@ -27,8 +27,9 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 		to_chat(src, span_danger("I can't use that."))
 		return
 
+
 	if(!holder)
-		if(Master.current_runlevel != RUNLEVEL_POSTGAME && !istype(mob, /mob/dead/new_player))
+		if(SSticker.current_state < GAME_STATE_FINISHED && !istype(mob, /mob/dead/new_player))
 			to_chat(src, span_danger("OOC is lobby-only during the round. After the round ends it re-opens to everyone."))
 			return
 		if(!GLOB.ooc_allowed)
@@ -84,8 +85,9 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	var/msg_to_send = ""
 
 	for(var/client/C in GLOB.clients)
-		var/postgame = (Master.current_runlevel == RUNLEVEL_POSTGAME)
-		if(!postgame)
+		// Treat anything at or beyond GAME_STATE_FINISHED as post-round for OOC visibility.
+		var/post_round = (SSticker.current_state >= GAME_STATE_FINISHED)
+		if(!post_round)
 			// Non-admin: must be lobby new_player during active round
 			if(!C.holder && !istype(C.mob, /mob/dead/new_player))
 				continue
@@ -198,8 +200,8 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	for(var/client/C in GLOB.clients)
 		if(!(C.prefs.chat_toggles & CHAT_OOC))
 			continue
-		var/postgame = (Master.current_runlevel == RUNLEVEL_POSTGAME)
-		if(!postgame)
+		var/post_round = (SSticker.current_state >= GAME_STATE_FINISHED)
+		if(!post_round)
 			if(!C.holder && !istype(C.mob, /mob/dead/new_player))
 				continue
 			if(C.holder && !C.show_lobby_ooc && !istype(C.mob, /mob/dead/new_player))
