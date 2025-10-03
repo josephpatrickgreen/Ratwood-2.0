@@ -99,15 +99,17 @@
 			r_hand = /obj/item/rogueweapon/sword/short/messer/iron
 			beltl= /obj/item/rogueweapon/scabbard/sword
 			neck = /obj/item/clothing/neck/roguetown/chaincoif
-			//No whip, dagger, etc. Saw and chisel instead. Get to building!
+			//No whip. Saw and chisel instead. Get to building!
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary,
 				/obj/item/storage/belt/rogue/pouch/coins/poor,
 				/obj/item/rogueweapon/handsaw,
 				/obj/item/rogueweapon/chisel,
+				/obj/item/rogueweapon/huntingknife/combat,
+				/obj/item/rogueweapon/scabbard/sheath
 				)
-			H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
