@@ -7,9 +7,9 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman
 	category_tags = list(CTAG_MERCENARY)
-	cmode_music = 'sound/music/combat_steppe.ogg'
+	cmode_music = 'sound/music/combat_league.ogg'
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled
-	extra_context = "This subclass has 4 loadouts with various stats, skills & equipment."
+	extra_context = "This subclass has 5 loadouts with various stats, skills & equipment."
 
 /datum/outfit/job/roguetown/mercenary/steppesman/pre_equip(mob/living/carbon/human/H)
 	..()
