@@ -67,6 +67,8 @@
 	ambientnight = AMB_MOUNTAIN
 	soundenv = 17
 	first_time_text = null
+	ambush_times = null
+	ambush_mobs = null
 
 /area/rogue/outdoors/woodsrat/safe
 	name = "Woods safe"
