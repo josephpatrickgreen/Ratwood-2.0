@@ -97,9 +97,18 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 		if(!(C.prefs.chat_toggles & CHAT_OOC))
 			continue
 		var/real_key = C.holder ? "([key])" : ""
-		msg_to_send = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='[chat_color]'><span class='message linkify'>[msg]</span></font>"
-		if(holder)
-			msg_to_send = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='#4972bc'><span class='message linkify'>[msg]</span></font>"
+		// Precedence: sender-admin (blue) > recipient-admin non-lobby (green/small) > default gray
+		var/is_admin_nonlobby = (C.holder && !istype(C.mob, /mob/dead/new_player) && !post_round)
+		var/sender_nonlobby = (!istype(mob, /mob/dead/new_player) && !post_round)
+		var/sender_is_admin = holder
+		// Choose color: admin-sent stays blue; otherwise if admin recipient non-lobby, use green; else default gray
+		var/message_color = sender_is_admin ? "#4972bc" : (is_admin_nonlobby ? "#4CAF50" : chat_color)
+		var/base_msg = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='[message_color]'><span class='message linkify'>[msg]</span></font>"
+		// Apply size reduction: if recipient is admin non-lobby OR (sender is admin non-lobby)
+		if(is_admin_nonlobby || (sender_is_admin && sender_nonlobby))
+			msg_to_send = "<span style='font-size:70%'>[base_msg]</span>"
+		else
+			msg_to_send = base_msg
 		to_chat(C, msg_to_send)
 
 //				if(!holder.fakekey || C.holder)
@@ -207,9 +216,16 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			if(C.holder && !C.show_lobby_ooc && !istype(C.mob, /mob/dead/new_player))
 				continue
 		var/real_key = C.holder ? "([key])" : ""
-		msg_to_send = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='[chat_color]'><span class='message linkify'>[msg]</span></font>"
-		if(holder)
-			msg_to_send = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='#4972bc'><span class='message linkify'>[msg]</span></font>"
+		// Precedence: sender-admin (blue) > recipient-admin non-lobby (green/small) > default gray
+		var/is_admin_nonlobby = (C.holder && !istype(C.mob, /mob/dead/new_player) && !post_round)
+		var/sender_nonlobby = (!istype(mob, /mob/dead/new_player) && !post_round)
+		var/sender_is_admin = holder
+		var/message_color = sender_is_admin ? "#4972bc" : (is_admin_nonlobby ? "#4CAF50" : chat_color)
+		var/base_msg = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='[message_color]'><span class='message linkify'>[msg]</span></font>"
+		if(is_admin_nonlobby || (sender_is_admin && sender_nonlobby))
+			msg_to_send = "<span style='font-size:70%'>[base_msg]</span>"
+		else
+			msg_to_send = base_msg
 		to_chat(C, msg_to_send)
 
 
