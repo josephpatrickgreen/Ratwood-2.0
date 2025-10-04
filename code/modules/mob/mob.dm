@@ -833,6 +833,8 @@ GLOBAL_VAR_INIT(mobids, 1)
 				stat("Real Time: [station_time_timestamp()] [station_time()]")
 			stat("Ping: [round(client?.lastping, 1)]ms (Average: [round(client?.avgping, 1)]ms)")
 			stat("Time Dilation: [round(SStime_track.time_dilation_current,1)]% AVG: ([round(SStime_track.time_dilation_avg_fast,1)]%, [round(SStime_track.time_dilation_avg,1)]%, [round(SStime_track.time_dilation_avg_slow,1)]%)")
+			if(client?.holder)
+				stat(null, "Player count: [GLOB.clients.len]")
 
 	if(client && client.holder && check_rights(R_DEBUG,0))
 		if(statpanel("MC"))
