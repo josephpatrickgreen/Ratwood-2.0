@@ -41,11 +41,11 @@
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
-	var/classes = list("Szabrista - Saber Veteran", "Árkász - Elite Sapper", "Gromoverzhets - Pálya Sapper", "Druzhina - Light Archer", "Kozak - Light Infantry")
+	var/classes = list("Starshina - Saber Veteran", "Obyvatel' - Elite Sapper", "Gromoverzhets - Pálya Sapper", "Zastrel'shchik - Light Archer", "Plastunsky - Light Infantry")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
-		if("Szabrista - Saber Veteran")	//Tl;dr - medium armor class for Mount and Blade larpers who still get a saiga. Akin to Vaquero with specific drip.
+		if("Starshina - Saber Veteran")	//Tl;dr - medium armor class for Mount and Blade larpers who still get a saiga. Akin to Vaquero with specific drip.
 			H.set_blindness(0)
 			to_chat(H, span_warning("The Starshina are the Junior officer class of the Northern steppe Kozaks, veterans of conflicts across all of Grimoria. \
 			Your extended time in the service grants you your shishka, shield, and armor- but make no mistake. \
@@ -84,7 +84,7 @@
 			if(maskchoice != "None")
 				mask = masks[maskchoice]
 
-		if("Árkász - Elite Sapper")	//Tl;dr - Sappers. Saw, chisel. Fort building funny men.
+		if("Obyvatel' - Elite Sapper")	//Tl;dr - Sappers. Saw, chisel. Fort building funny men.
 			H.set_blindness(0)
 			to_chat(H, span_warning("The Obyvatel' are a uniquely trained unit of Kozaky footmen, learned in the arts of destruction, and fortification. \
 			They are often the first to follow the Starshina into battle, and; are likely the first to fall. \
@@ -96,8 +96,6 @@
 			wrists = /obj/item/clothing/wrists/roguetown/bracers
 			backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 			l_hand = /obj/item/rogueweapon/stoneaxe/battle/steppesman
-			r_hand = /obj/item/rogueweapon/sword/short/messer/iron
-			beltl= /obj/item/rogueweapon/scabbard/sword
 			neck = /obj/item/clothing/neck/roguetown/chaincoif
 			//No whip. Saw and chisel instead. Get to building!
 			backpack_contents = list(
@@ -198,7 +196,7 @@
 				H.adjust_skillrank_up_to(/datum/skill/craft/engineering, 2, TRUE)	//Eeyup.
 				H.adjust_skillrank_up_to(/datum/skill/craft/alchemy, 2, TRUE)	//This ain't a pie factory.
 
-		if("Druzhina - Light Archer")	//Tl;dr - light armor class for Tatar-style archery.
+		if("Zastrel'shchik - Light Archer")	//Tl;dr - light armor class for Tatar-style archery.
 			H.set_blindness(0)
 			to_chat(H, span_warning("Zastrel'shchik, an Aavnic conscript who specialized as a mounted archer, \
 			often times recruited from more isolated nomadic hunting parties, and small villages on the outskirts of the Northern Steppe. \
@@ -229,7 +227,7 @@
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
-		if("Kozak - Light Infantry")		//Tl;dr - Old Steppesman, with whip or banner, be the glass canon you always wanted to be. Live your life, king.
+		if("Plastunsky - Light Infantry")		//Tl;dr - Old Steppesman, with whip or banner, be the glass canon you always wanted to be. Live your life, king.
 			H.set_blindness(0)
 			to_chat(H, span_warning("Being an Aavnic, and part of a Kozak is not a title one earns, nor is born with. It's a way of life. \
 			Eccentric frontiersmen who look Noble, and Peasant in the eye, in the same light. \
