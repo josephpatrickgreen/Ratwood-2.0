@@ -154,8 +154,8 @@ var/global/list/CROSS_TRAINING_MAP = list(
 	//skill name then list cross trained skills at their multiplier
 	"lumberjacking" = list("axes" = 0.25),
 	"crafting" = ("carpentry" = 0.1, "masonry" = 0.1),
-	"weaponsmithing" = ("armorsmithing" = 0.25, "blacksmithing" = 0.25, "smelting" = 0.1),
-	"armorsmithing" = ("weaponsmithing" = 0.25, "blacksmithing" = 0.25, "smelting" = 0.1),
+	"weaponsmithing" = ("armorsmithing" = 0.25, "blacksmithing" = 0.25),
+	"armorsmithing" = ("weaponsmithing" = 0.25, "blacksmithing" = 0.25),
 	"blacksmithing" = ("armorsmithing" = 0.25, "weaponsmithing" = 0.25, "smelting" = 0.1),
 	//"smelting" = (),
 	"carpentry" = ("crafting" = 0.25, "masonry" = 0.1),
