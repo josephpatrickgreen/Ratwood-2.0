@@ -163,7 +163,7 @@ var/global/list/CROSS_TRAINING_MAP = list(
 	"traps" = ("tracking" = 0.25, "engineering" = 0.25),
 	"cooking" = ("alchemy" = 0.1),
 	"engineering" = ("traps" = 0.5),
-	"tanning" = ("butchering" = 0.1),
+	"tanning" = ("sewing" = 0.5, "butchering" = 0.1),
 	"alchemy" = ("cooking" = 0.1),
 
 	"knives" = ("swords" = 0.25, "unarmed" = 0.1),
@@ -195,7 +195,7 @@ var/global/list/CROSS_TRAINING_MAP = list(
 	//"riding" = (),
 	//"music" = (),
 	"medicine" = ("sewing" = 0.25),
-	"sewing" = ("medicine" = 0.1),
+	"sewing" = ("sewing" = 0.5, "medicine" = 0.1),
 	"tracking" = ("traps" = 0.25),
 	//"ceramics" = (),
 )
