@@ -180,7 +180,7 @@ var/global/list/CROSS_TRAINING_MAP = list(
 	//"slings" = (),
 
 	//"farming" = (),
-	"mining" = ("axes" = 0.1),
+	"mining" = ("axes" = 0.1, "maces" = 0.1),
 	//"fishing" = (),
 	"butchering" = ("tanning" = 0.1),
 	"lumberjacking" = ("axes" = 0.25),
