@@ -63,7 +63,7 @@
 
 /obj/item/rogueweapon/katar
 	slot_flags = ITEM_SLOT_HIP
-	force = 18
+	force = 18//Two more than a punch dagger.
 	possible_item_intents = list(/datum/intent/katar/cut, /datum/intent/katar/thrust)
 	name = "katar"
 	desc = "A blade that sits above the users fist. Commonly used by those proficient at unarmed fighting"
@@ -117,8 +117,8 @@
 	name = "punch dagger"
 	desc = "A weapon that combines the ergonomics of the Ranesheni katar with the capabilities of the Western Psydonian \"knight-killers\". It can be tied around the wrist."
 	slot_flags = ITEM_SLOT_WRISTS
-	max_integrity = 120
-	force = 15
+	max_integrity = 120		//Steel dagger -30
+	force = 15		//Steel dagger -5
 	throwforce = 8
 	thrown_bclass = BCLASS_STAB
 	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/thrust/pick)
@@ -128,6 +128,12 @@
 	name = "vývrtka"
 	desc = "A type of punch dagger of Aavnic make initially designed to level the playing field with an orc in fisticuffs, its serrated edges and longer, thinner point are designed to maximize pain for the recipient. It's aptly given the name of \"corkscrew\", and this specific one has the colours of Szöréndnížina. Can be worn on your ring slot."
 	icon_state = "freiplug"
+	slot_flags = ITEM_SLOT_RING
+
+/obj/item/rogueweapon/katar/punchdagger/aav
+	name = "vývrtka"//I'm creatively bankrupt.
+	desc = "A type of punch dagger of Aavnic make initially designed to level the playing field with an orc in fisticuffs, its serrated edges and longer, thinner point are designed to maximize pain for the recipient. It's aptly given the name of \"corkscrew\", and this specific one has the colours of a Steppesman's banner. Can be worn on your ring slot."
+	icon_state = "avplug"
 	slot_flags = ITEM_SLOT_RING
 
 //TODO: Add caestus, for an unarmed option with defence.
@@ -144,7 +150,7 @@
 	slot_flags = ITEM_SLOT_HIP
 	parrysound = list('sound/combat/parry/pugilism/unarmparry (1).ogg','sound/combat/parry/pugilism/unarmparry (2).ogg','sound/combat/parry/pugilism/unarmparry (3).ogg')
 	sharpness = IS_BLUNT
-	max_integrity = 200
+	max_integrity = 150
 	swingsound = list('sound/combat/wooshes/punch/punchwoosh (1).ogg','sound/combat/wooshes/punch/punchwoosh (2).ogg','sound/combat/wooshes/punch/punchwoosh (3).ogg')
 	associated_skill = /datum/skill/combat/unarmed
 	throwforce = 12
@@ -171,6 +177,7 @@
 	force = 18
 	max_integrity = 200
 	wdefense = 6	//Meant to be used with bracers. Temp for now.
+	wbalance = WBALANCE_HEAVY
 	smeltresult = /obj/item/ingot/bronze
 
 /obj/item/rogueweapon/knuckles/aknuckles
