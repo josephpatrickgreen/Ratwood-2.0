@@ -581,13 +581,11 @@
 	embedding = list("embedded_pain_multiplier" = 0, "embed_chance" = 0, "embedded_fall_chance" = 0)
 	mob_throw_hit_sound = 'sound/magic/lightning.ogg'
 	throwforce = 15//The damage does not typically come from the impact. This is here as a fallback.
-	thrown_bclass = BCLASS_PIERCE//As above.
-	thrown_damage_flag = "piercing"//Yup.
+	thrown_bclass = BCLASS_CUT//As above.
 	throw_speed = 2
-	armor_penetration = 30//Again, as above. Not really the main point of the weapon, normally. But just in case.
-	var/step_delay = 10//Delay for the strike. Adjust sleep in the damage proc if changing.
-	var/strike_damage = 40//Target damage. 40 on center, 30 on outer.
 	bigboy = 1
+	var/step_delay = 10//Delay for the strike. Adjust sleep in the damage proc if changing.
+	var/strike_damage = 25//Target damage. 25 on center, 19 on outer.
 
 /obj/item/rogueweapon/light_spear/attack_self()
 	qdel(src)
