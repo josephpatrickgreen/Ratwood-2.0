@@ -43,7 +43,7 @@
 			visible_message(span_warning("[target] erupts in flame upon being struck by [src]!"))
 			M.IgniteMob()
 		else
-			M.adjust_fire_stacks(6)
+			M.adjust_fire_stacks(4)
 			visible_message(span_warning("[src] ignites [target]!"))
 			M.IgniteMob()
 	return FALSE
@@ -507,7 +507,7 @@
 /obj/effect/proc_holder/spell/self/astratan_path
 	name = "Path of Order"
 	overlay_state = "order"//Temp.
-	desc = "Astrata blesses your mind, allowing you to choose <br>Her</b> method of bringing order."
+	desc = "Astrata blesses your mind, allowing you to choose <b>Her</b> method of bringing order."
 	miracle = TRUE
 	devotion_cost = 100
 	recharge_time = 10 MINUTES
@@ -545,7 +545,7 @@
 /obj/effect/proc_holder/spell/self/astratan_spear
 	name = "Summon Spear"
 	overlay_state = "astra_spear"//Temp.
-	desc = "An ancient miracle, honed by those who'd served as Astrata's martial arm in the first era. \
+	desc = "An ancient miracle, honed by those who'd served as Astrata's martial arm in the second era. \
 	With such, you may beseech Astrata for a mote of Her power."
 	clothes_req = FALSE
 	sound = 'sound/magic/blade_burst.ogg'
