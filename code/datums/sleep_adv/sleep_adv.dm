@@ -180,12 +180,12 @@ var/global/list/CROSS_TRAINING_MAP = list(
 	//"slings" = (),
 
 	//"farming" = (),
-	"mining" = list("axes" = 0.1, "maces" = 0.1),
+	"mining" = list("axes" = 0.1, "maces" = 0.1, "athletics" = 0.1),
 	//"fishing" = (),
-	"butchering" = list("tanning" = 0.25, "medicine" = 0.25),
-	"lumberjacking" = list("axes" = 0.25, "unarmed" = 0.05),
+	"butchering" = list("tanning" = 0.25, "medicine" = 0.25, "knives" = 0.25),
+	"lumberjacking" = list("axes" = 0.25, "unarmed" = 0.05, "athletics" = 0.1),
 
-	"athletics" = list("swimming" = 0.5, "climbing" = 0.5),
+	"athletics" = list("swimming" = 1, "climbing" = 1),
 	"climbing" = list("athletics" = 0.25, "swimming" = 0.25),
 	//"reading" = (),
 	"swimming" = list("athletics" = 0.1, "climbing" = 0.1),
