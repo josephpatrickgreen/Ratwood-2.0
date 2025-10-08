@@ -126,7 +126,7 @@
 	name = "Armbrustschutze"
 	tutorial = "You're a proved marksman with a crossbow, and learned how to set up camp and defenses in the wild. The guild needs you."
 	outfit = /datum/outfit/job/roguetown/mercenary/grenzelhoft_crossbowman
-	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_STEELHEARTED)
+	traits_applied = list(TRAIT_STEELHEARTED)	//THANK YOU AP FOR GIVING THEM DODGE EXPERT AND IGNORING THE FIRST LINE WHERE IT SAYS NO DODGE EXPERT
 	subclass_stats = list(
 		STATKEY_SPD = 2,
 		STATKEY_WIL = 2,
@@ -151,7 +151,7 @@
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)		// Make your energy count, little silly individual
 	H.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)		// meant to live off the land and set up camp.
 	H.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)		// learn 2 maintain your uniform.
-	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)		// Just so you don't suck at cooking
+	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)		// Just so you don't suck at cooking. Fuck it. You get 2. Be a souschef.
 	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/lumberjacking, 2, TRUE)	
 	H.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
