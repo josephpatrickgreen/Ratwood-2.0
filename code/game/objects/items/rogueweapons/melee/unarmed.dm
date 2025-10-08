@@ -274,7 +274,8 @@
 			'To see the claws of the four, Is to see the true danger of the north. Not man, Not land but beast. We are all prey in their eyes.'"
 	icon_state = "gronnclaws"
 	icon = 'icons/roguetown/weapons/32.dmi'
-	force = 22 //+4dmg compared to iron + swift balance
+	force = 22 //+4dmg compared to iron + swift balance for the random chance you're a Speed Freak
+	max_blade_int = 220
 	possible_item_intents = list(/datum/intent/claw/cut/gronn, /datum/intent/claw/disarm)
 	wbalance = WBALANCE_SWIFT
 
@@ -300,7 +301,7 @@
 /datum/intent/claw/cut/iron
 	penfactor = 15
 	swingdelay = 0
-	clickcd = CLICK_CD_FAST
+	clickcd = CLICK_CD_MELEE	//make it a bit worse since they're the worst handclaws
 
 /datum/intent/claw/cut/steel
 	penfactor = 20
@@ -321,9 +322,9 @@
 	blade_class = null	//We don't use a blade class because it has on damage.
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	penfactor = BLUNT_DEFAULT_PENFACTOR
-	swingdelay = 2	//Small delay to hook
+	swingdelay = 10	//Equal in delay to a SMASH intent. Previously 2. Let's try balancing it
 	damfactor = 0.1	//No real damage
-	clickcd = 20	//Can't spam this; long delay.
+	clickcd = 30	//Can't spam this; long delay. Previously 20. Let's try balancing it!
 	item_d_type = "blunt"
 
 /obj/item/rogueweapon/handclaw/attack(mob/living/M, mob/living/user, bodyzone_hit)
@@ -347,7 +348,7 @@
 		if(I)
 			if(M.mind)
 				if(I.associated_skill)
-					probby -= M.get_skill_level(I.associated_skill) * 5
+					probby -= M.get_skill_level(I.associated_skill) * 4	//let's nerf this var a little bit. Expert unarmed means you get 16% more. Master means 20% more. Previously 5
 			var/obj/item/mainhand = user.get_active_held_item()
 			var/obj/item/offhand = user.get_inactive_held_item()
 			if(HAS_TRAIT(src, TRAIT_DUALWIELDER) && istype(offhand, mainhand))
