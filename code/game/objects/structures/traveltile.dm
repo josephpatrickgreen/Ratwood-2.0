@@ -157,7 +157,6 @@
 		else
 			to_chat(L, "<b>It is a dead end.</b>")
 			return FALSE
-
 /obj/structure/fluff/traveltile/bandit
 	required_trait = TRAIT_BANDITCAMP
 /obj/structure/fluff/traveltile/vampire
@@ -176,4 +175,10 @@
 	appearance_flags = NONE
 	opacity = FALSE
 
+/obj/structure/fluff/traveltile/magicportal
+	desc = "flickering, warping magick"
+	name = "mysterious portal"
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "shitportal"
+	
 /obj/structure/fluff/traveltile/eventarea
