@@ -219,10 +219,10 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
-	H.mind?.adjust_spellpoints(27) //More than an Associate actually gets- but much like how the Warrior Duke gets a set of full blacksteel plate, I think we can give the mage duke a little something extra.
+	
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-
+		H.mind?.adjust_spellpoints(27) //More than an Associate actually gets- but much like how the Warrior Duke gets a set of full blacksteel plate, I think we can give the mage duke a little something extra.
 
 
 /**
