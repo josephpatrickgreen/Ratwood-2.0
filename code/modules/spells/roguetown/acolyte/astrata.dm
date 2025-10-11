@@ -581,7 +581,8 @@
 	embedding = list("embedded_pain_multiplier" = 0, "embed_chance" = 0, "embedded_fall_chance" = 0)
 	mob_throw_hit_sound = 'sound/magic/lightning.ogg'
 	throwforce = 15//The damage does not typically come from the impact. This is here as a fallback.
-	thrown_bclass = BCLASS_CUT//As above.
+	thrown_bclass = BCLASS_PIERCE//As above.
+	thrown_damage_flag = "piercing"//Let it have some fun against boots, gloves, clothing, etc. C'mon...
 	throw_speed = 2
 	bigboy = 1
 	var/step_delay = 10//Delay for the strike. Adjust sleep in the damage proc if changing.
