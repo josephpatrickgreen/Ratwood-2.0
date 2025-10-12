@@ -510,8 +510,8 @@
 	overlay_state = "order"//Temp.
 	desc = "Astrata blesses your mind, allowing you to choose <b>Her</b> method of bringing order."
 	miracle = TRUE
-	devotion_cost = 1//100
-	recharge_time = 1//10 MINUTES
+	devotion_cost = 100
+	recharge_time = 10 MINUTES
 	chargetime = 0
 	chargedrain = 0
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
