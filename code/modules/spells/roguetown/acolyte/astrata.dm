@@ -3,6 +3,7 @@
 	desc = "Deals damage and ignites target, Deals extra damage to undead."
 	overlay_state = "sacredflame"
 	sound = 'sound/magic/bless.ogg'
+	invocations = list("By fire, be cleansed!")//Not so sacred.
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
@@ -503,14 +504,14 @@
 
 #undef IMMOLATION_FILTER
 
-//Choosing between Lance/Spear/Resonance
+//Choosing between Lance/Spear
 /obj/effect/proc_holder/spell/self/astratan_path
 	name = "Path of Order"
 	overlay_state = "order"//Temp.
 	desc = "Astrata blesses your mind, allowing you to choose <b>Her</b> method of bringing order."
 	miracle = TRUE
-	devotion_cost = 100
-	recharge_time = 10 MINUTES
+	devotion_cost = 1//100
+	recharge_time = 1//10 MINUTES
 	chargetime = 0
 	chargedrain = 0
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
@@ -518,26 +519,22 @@
 
 /obj/effect/proc_holder/spell/self/astratan_path/cast(list/targets, mob/user)
 	. = ..()
-	var/choice = alert(user, "YOUR MARTIAL ARM, M'LORD?", "TAKE UP STRENGTH", "Lance", "Spear"/*, "Resonance"*/)
+	var/choice = alert(user, "YOUR MARTIAL ARM, M'LORD?", "TAKE UP STRENGTH", "Lance", "Spear")
 	switch(choice)
 		if("Lance")
-			user.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue)
-			if(user.mind?.has_spell(/obj/effect/proc_holder/spell/self/astratan_spear))//No, thanks.
-				user.mind?.RemoveSpell(/obj/effect/proc_holder/spell/self/astratan_spear)
-			if(HAS_TRAIT(user, TRAIT_RESONANCE))//You don't get both. Prevents stacking.
-				REMOVE_TRAIT(user, TRAIT_RESONANCE, TRAIT_MIRACLE)
+			if(user.mind?.has_spell(/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue))//No stacking.
+				revert_cast()
+			else
+				user.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue)
+				if(user.mind?.has_spell(/obj/effect/proc_holder/spell/self/astratan_spear))//No, thanks.
+					user.mind?.RemoveSpell(/obj/effect/proc_holder/spell/self/astratan_spear)
 		if("Spear")
-			user.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/astratan_spear)
-			if(user.mind?.has_spell(/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue))//Nope.
-				user.mind?.RemoveSpell(/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue)
-			if(HAS_TRAIT(user, TRAIT_RESONANCE))//As above.
-				REMOVE_TRAIT(user, TRAIT_RESONANCE, TRAIT_MIRACLE)
-/*		if("Resonance")//Your healing miracles apply fortify in an AoE around you.
-			ADD_TRAIT(user, TRAIT_RESONANCE, TRAIT_MIRACLE)
-			if(user.mind?.has_spell(/obj/effect/proc_holder/spell/self/astratan_spear))
-				user.mind?.RemoveSpell(/obj/effect/proc_holder/spell/self/astratan_spear)
-			if(user.mind?.has_spell(/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue))
-				user.mind?.RemoveSpell(/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue)*/
+			if(user.mind?.has_spell(/obj/effect/proc_holder/spell/self/astratan_spear))//No stacking. Again. As funny as a dozen of these were.
+				revert_cast()
+			else
+				user.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/astratan_spear)
+				if(user.mind?.has_spell(/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue))//Nope.
+					user.mind?.RemoveSpell(/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt/sacred_flame_rogue)
 		else
 			revert_cast()
 
@@ -549,6 +546,8 @@
 	With such, you may beseech Astrata for a mote of Her power."
 	clothes_req = FALSE
 	sound = 'sound/magic/blade_burst.ogg'
+	invocations = list("Lady of Order, guide my hand!")
+	invocation_type = "shout"
 	recharge_time = 30 SECONDS
 	chargedrain = 0
 	chargetime = 0
