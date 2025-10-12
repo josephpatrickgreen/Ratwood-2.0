@@ -375,13 +375,13 @@
 		knotted_part_partner = SEX_PART_NULL
 
 /mob/living/carbon/human/werewolf_transform() // needed to ensure that we safely remove the tie before transitioning
-	if(src.sexcon.knotted_status)
-		src.sexcon.knot_remove()
+	if(istype(sexcon) && sexcon.knotted_status)
+		sexcon.knot_remove()
 	return ..()
 
 /mob/living/carbon/human/werewolf_untransform(dead,gibbed) // needed to ensure that we safely remove the tie after transitioning
-	if(src.sexcon.knotted_status)
-		src.sexcon.knot_remove()
+	if(istype(sexcon) && sexcon.knotted_status)
+		sexcon.knot_remove()
 	return ..()
 
 /mob/living/carbon/can_speak_vocal() // do not allow bottom to speak while knotted orally (at least until they're double knotted or it has been removed)
