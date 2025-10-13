@@ -540,8 +540,6 @@
 				if(isliving(L))
 					if(!L.cmode)
 						to_chat(target, span_love("It's somewhat stimulating..."))
-			else
-				message_param = "kisses %t on \the [parse_zone(H.zone_selected)]."
 			else if(J.zone_selected == BODY_ZONE_HEAD)
 				message_param = "licks %t cheek"
 			else
