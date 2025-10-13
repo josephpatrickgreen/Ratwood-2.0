@@ -236,7 +236,7 @@
 	icon = 'icons/roguetown/weapons/32.dmi'
 	wdefense = 0
 	force = 18 //alternative to katar
-	possible_item_intents = list(/datum/intent/claw/cut/iron, /datum/intent/claw/disarm)
+	possible_item_intents = list(/datum/intent/claw/cut/iron)
 	wbalance = WBALANCE_NORMAL
 	max_blade_int = 200
 	max_integrity = 120
@@ -262,7 +262,7 @@
 	icon_state = "steelclaws"
 	icon = 'icons/roguetown/weapons/32.dmi'
 	force = 20 //2 more dmg because steel
-	possible_item_intents = list(/datum/intent/claw/cut/steel, /datum/intent/claw/disarm)
+	possible_item_intents = list(/datum/intent/claw/cut/steel)
 	max_blade_int = 220 //10% more blade integrity . Wow!
 	smeltresult = /obj/item/ingot/steel
 	sharpness_mod = 2
@@ -344,7 +344,7 @@
 		if(M.mind)
 			skill_diff -= (M.get_skill_level(/datum/skill/combat/wrestling))	//They check their wrestling skill to stop the weapon from being pulled.
 		user.stamina_add(rand(3,8))
-		var/probby = clamp((((3 + (((user.STASTR - M.STASTR)/4) + skill_diff)) * 10)), 5, 95)
+		var/probby = clamp((((2 + (((user.STASTR - M.STASTR)/4) + skill_diff)) * 8)), 5, 95)	//nerfing further. Previously 3 and times 10
 		if(I)
 			if(M.mind)
 				if(I.associated_skill)
@@ -364,7 +364,7 @@
 				if(!M.mind)	//If you hit an NPC - they pick up weapons instantly. So, we do more stuff.
 					M.Stun(12)
 			else
-				probby += 20
+				//probby += 20 		we take it out of equation to not make disarm That Good
 				if(prob(probby))
 					M.dropItemToGround(I, force = FALSE, silent = FALSE)
 					M.visible_message(span_danger("[user] disarms [M] of [I]!"), \
