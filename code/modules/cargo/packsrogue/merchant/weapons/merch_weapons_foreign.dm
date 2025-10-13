@@ -84,7 +84,3 @@
 	cost = 180
 	contains = list(/obj/item/rogueweapon/handclaw/steel)
 
-/datum/supply_pack/rogue/merc_weapons/handclawsiron
-	name = "Gronnian Claws"
-	cost = 240 //They're the best AND are merc exclusive. Bite Me .
-	contains = list(/obj/item/rogueweapon/handclaw/gronn)
