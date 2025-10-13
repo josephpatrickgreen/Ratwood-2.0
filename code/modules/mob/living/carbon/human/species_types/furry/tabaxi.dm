@@ -118,7 +118,8 @@
 		/datum/body_marking/gradient,
 	)
 	languages = list(
-		/datum/language/common
+		/datum/language/common,
+		/datum/language/felid
 	)
 	descriptor_choices = list(
 		/datum/descriptor_choice/height,

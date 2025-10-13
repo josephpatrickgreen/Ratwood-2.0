@@ -1,6 +1,6 @@
 /datum/language/grenzelhoftian
 	name = "Grenzelhoftian Imperial"
-	desc = "The primary language of the Grenzelhoft Emperiate, a robust language filled with hearty words and enthusiastic enunciation."
+	desc = "The primary language of the Grenzelhoft Emperiate, a robust language filled with hearty words and enthusiastic enunciation. Often said to be similar to the Lupians Canilunzt."
 	speech_verb = "remarks"
 	ask_verb = "inquires"
 	exclaim_verb = "asserts"
@@ -9,7 +9,7 @@
 	space_chance = 66
 	default_priority = 90
 	icon_state = "asse"
-	spans = list(SPAN_GRENZELHOFTIAN)
+	spans = list(SPAN_LUPIAN)
 	syllables = list(
 		"auf", "aum", "ach", "an", "auch", "ans", "bech", "bus", "baum", "bauf", "bom",
 		"ch", "cau", "com", "duch", "die", "das", "der", "den", "doch", "dich", "dem",

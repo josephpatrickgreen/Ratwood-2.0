@@ -19,11 +19,12 @@
 		"algaib.ttf" = 'interface/fonts/languages/algaib.otf',
 		"undead.ttf" = 'interface/fonts/languages/undead.ttf',
 		"draconic.ttf" = 'interface/fonts/languages/draconic.ttf',
-		"grenzelhoftian.ttf" = 'interface/fonts/languages/grenzelhoftian.ttf',
+		"lupian.ttf" = 'interface/fonts/languages/lupian.ttf',
 		"kazengunese.ttf" = 'interface/fonts/languages/kazengunese.ttf',
 		"kazengunaccent.ttf" = 'interface/fonts/languages/kazengunaccent.ttf',
 		"otavan.ttf" = 'interface/fonts/languages/otavan.ttf',
 		"etruscan.ttf" = 'interface/fonts/languages/etruscan.ttf',
 		"gronnic.ttf" = 'interface/fonts/languages/gronnic.ttf',
 		"aavnic.ttf" = 'interface/fonts/languages/aavnic.ttf',
+		"felid.ttf" = 'interface/fonts/languages/felid.ttf'
 	)
