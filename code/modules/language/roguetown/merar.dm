@@ -1,6 +1,6 @@
-/datum/language/felid
-	name = "Felid"
-	desc = "The desert sands the ancestors used to walk echoes through this raspy tongue that's mostly composed of murrs and mrrps with the ocassional meow or hiss if one is getting quite vocal. Hailing from the desert tribe and kingdoms ruled by the swift tabaxi this language is sharp and direct. With a keen ear you can notice the vague gizan influence on this language."
+/datum/language/merar
+	name = "Merar"
+	desc = "The desert sands the ancestors used to walk echoes through this raspy tongue that's mostly composed of murrs and mrrps with the ocassional meow or hiss if one is getting quite vocal. Hailing from the desert tribes and kingdoms ruled by the swift tabaxi this language is sharp and direct. With a keen ear you can notice the vague gizan influence on this language."
 	speech_verb = "murrs"
 	ask_verb = "mrrps"
 	exclaim_verb = "hisses"
@@ -9,7 +9,7 @@
 	space_chance = 80
 	default_priority = 90
 	icon_state = "asse"
-	spans = list(SPAN_FELID)
+	spans = list(SPAN_MERAR)
 	syllables = list(
 	    "za","az","ze","ez","zi","iz","zo","oz","zu","uz","zs","sz","ha","ah","he","eh","hi","ih",
 	    "ho","oh","hu","uh","hs","sh","la","al","le","el","li","il","lo","ol","lu","ul","ls","sl","ka","ak","ke","ek",

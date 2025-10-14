@@ -94,7 +94,7 @@
 	H.grant_language(/datum/language/kazengunese)
 	H.grant_language(/datum/language/draconic)
 	H.grant_language(/datum/language/aavnic)
-	H.grant_language(/datum/language/felid) // All but beast, which is associated with werewolves.
+	H.grant_language(/datum/language/merar) // All but beast, which is associated with werewolves.
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/teach)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/learn)
