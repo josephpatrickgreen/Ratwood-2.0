@@ -172,7 +172,7 @@
 					if(src.skin_tone == skin_tones[tone])
 						skin_tone_seen = lowertext(tone)
 						break
-			var/slop_lore_string = "."
+/*			var/slop_lore_string = "."
 			if(ishumannorthern(user))
 				var/mob/living/carbon/human/racist = user
 				var/list/user_skin_tones = racist.dna.species.get_skin_list()
@@ -184,7 +184,7 @@
 				if((user_skin_tone_seen == "lalvestine" && skin_tone_seen == "shalvistine") || \
 					(user_skin_tone_seen == "shalvistine" && skin_tone_seen == "lalvestine"))
 					slop_lore_string = ", <span class='danger'>A TRAITOR!</span>"
-			. += span_info("[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]")
+			. += span_info("[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]")	*/
 
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
