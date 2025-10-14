@@ -35,7 +35,6 @@
 	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
-
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/crusader
 	wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
 	cloak = /obj/item/clothing/cloak/cape/crusader
