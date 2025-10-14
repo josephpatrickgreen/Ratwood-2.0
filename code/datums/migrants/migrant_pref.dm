@@ -5,6 +5,8 @@
 	var/active = FALSE
 	/// Role preferences of the user, the things he clicks on to be preferred to be
 	var/list/role_preferences = list()
+	///are we viewing the page?
+	var/viewer = FALSE
 
 /datum/migrant_pref/New(datum/preferences/passed_prefs)
 	. = ..()
