@@ -40928,7 +40928,7 @@
 /area/rogue/indoors/town/manor/rockhill)
 "nDu" = (
 /obj/structure/mineral_door/wood/towner/witch,
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/concrete,
 /area/rogue/indoors)
 "nDU" = (
 /obj/structure/bed/rogue/inn/wool,
@@ -62254,7 +62254,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/concrete,
 /area/rogue/indoors)
 "uWX" = (
 /obj/item/rope/chain,
@@ -71967,7 +71967,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/twig,
 /area/rogue/indoors)
 "yfN" = (
 /obj/effect/decal/cobbleedge{
