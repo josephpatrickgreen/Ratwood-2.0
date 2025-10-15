@@ -181,7 +181,7 @@
 					if(racist.skin_tone == user_skin_tones[tone])
 						user_skin_tone_seen = lowertext(tone)
 						break
-			. += span_info("[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]")	*/
+			. += span_info("[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]")
 
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
