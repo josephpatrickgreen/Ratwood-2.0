@@ -26,17 +26,15 @@
 	//get held item
 	var/obj/item/held_item = user.get_active_held_item()
 	var/obj/item/reagent_containers/con = held_item
-
-	//get fillable volume
-	var/fillable_volume = con.volume - con.reagents.total_volume
-
 	if(con)
 		if(con.spillable)
-			if(fillable_volume > 0)
+			if(!con.reagents.holder_full())
+				var/fillable_volume = con.reagents.maximum_volume - con.reagents.total_volume
+
 				var/main_ingredient = reagent_options[rand(1, reagent_options.len)]
 				var/secondary_ingredient = reagent_options[rand(1, reagent_options.len)]
 				var/tertiary_ingredient = reagent_options[rand(1, reagent_options.len)]
-				
+
 				con.reagents.add_reagent(main_ingredient, fillable_volume*0.6)
 				con.reagents.add_reagent(secondary_ingredient, fillable_volume*0.3)
 				con.reagents.add_reagent(tertiary_ingredient, fillable_volume*0.1)
