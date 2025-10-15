@@ -6,7 +6,7 @@
 	cost = 2
 	xp_gain = TRUE
 	releasedrain = 30
-	recharge_time = 60 SECONDS
+	recharge_time = 30 SECONDS
 	warnie = "spellwarning"
 	spell_tier = 1
 	associated_skill = /datum/skill/magic/arcane
