@@ -25,11 +25,10 @@
 	user.visible_message(span_warning("[user] starts masturbating [target] over [user.get_active_held_item()]..."))
 
 /datum/sex_action/force_milk_genitals/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user.sexcon.do_message_signature("[type]"))
-		if(target.getorganslot(ORGAN_SLOT_PENIS))
-			user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] jerks [target]'s cock into the [user.get_active_held_item()]..."))
-		else
-			user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fingers [target]'s cunt over the [user.get_active_held_item()]..."))
+	if(target.getorganslot(ORGAN_SLOT_PENIS))
+		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] jerks [target]'s cock into the [user.get_active_held_item()]..."))
+	else
+		user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fingers [target]'s cunt over the [user.get_active_held_item()]..."))
 	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
 
 	user.sexcon.perform_sex_action(target, 2, 4, TRUE)
