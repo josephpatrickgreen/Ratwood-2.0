@@ -10,7 +10,7 @@
 		if (!recipient.mind?.has_spell(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation))
 			recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 		if (!HAS_TRAIT(recipient, TRAIT_MEDIUMARMOR) && !HAS_TRAIT(recipient, TRAIT_HEAVYARMOR) && !HAS_TRAIT(recipient, TRAIT_DODGEEXPERT) && !HAS_TRAIT(recipient, TRAIT_CRITICAL_RESISTANCE))
-			if(recipient.isgnome())
+			if(isgnome(recipient))
 				ADD_TRAIT(recipient, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
 			else
 				ADD_TRAIT(recipient, TRAIT_ARCYNE_T1, TRAIT_GENERIC)
