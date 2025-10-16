@@ -510,7 +510,7 @@
 //alchemy jug
 /obj/item/reagent_containers/glass/bottle/alchemyjug
 	name = "alchemy jug"
-	desc = "An enchanted jug that fills itself with liquids."
+	desc = "An enchanted jug that fills itself with liquids. I can change what it fills if I touch it just right..."
 	var/fill_per_minute = 15
 	var/reagent = /datum/reagent/water
 	var/wait = 0
