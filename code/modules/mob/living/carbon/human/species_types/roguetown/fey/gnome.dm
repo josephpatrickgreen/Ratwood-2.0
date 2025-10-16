@@ -28,7 +28,7 @@
 	Though physically unimposing, they possess a cunning beyond reckoning and wield magic and deceit as naturally as breathing. \
 	Among the the sentient, they are tolerated for their utility, but never trusted; \
 	to strike a deal with a gnome is to court one's own undoing. \
-	(+1 Fortune, -1 Willpower, Arcane T2 Trait)"
+	(+1 Fortune, -1 Constitution, -1 Willpower, Arcane T2 Trait)"
 	expanded_desc = "Gnomes were first shaped by Xylix, the Trickster, from the echoes of elven laughter and pure joy — small folk meant to amuse and inspire the greater folk. \
 	But the spark that gave them wit burned too fiercely; they grew restless under their creator's light, delighting in mischief that soured into malice. \
 	When their pranks turned cruel and their illusions began to twist the minds of mortals, polite society cast them out, banishing them to the shallow warrens between root and stone. \
@@ -75,7 +75,7 @@
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-4), \
 		)
 	//inherent_traits = list(TRAIT_WOODWALKER)
-	race_bonus = list(STAT_FORTUNE = 1, STAT_WILLPOWER = -1)
+	race_bonus = list(STAT_FORTUNE = 1, STAT_CONSTITUTION = -1, STAT_WILLPOWER = -1)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
@@ -207,7 +207,7 @@
 	..()
 	H.mind?.special_items.Add(new /obj/item/clothing/head/roguetown/feycap)
 	H.mind?.adjust_spellpoints(4)
-	ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_ARCYNE_T1, TRAIT_GENERIC)
 
 /datum/species/fey/gnome/check_roundstart_eligible()
 	return TRUE
