@@ -2366,6 +2366,7 @@
 #include "code\modules\spells\spell_types\wizard\invoked_aoe\aerosolize.dm"
 #include "code\modules\spells\spell_types\wizard\invoked_aoe\blade_burst.dm"
 #include "code\modules\spells\spell_types\wizard\invoked_aoe\ensnare.dm"
+#include "code\modules\spells\spell_types\wizard\invoked_aoe\greater_aerosolize.dm"
 #include "code\modules\spells\spell_types\wizard\invoked_aoe\knock.dm"
 #include "code\modules\spells\spell_types\wizard\invoked_aoe\meteor_storm.dm"
 #include "code\modules\spells\spell_types\wizard\invoked_aoe\repulse.dm"
