@@ -28,13 +28,14 @@
 	Their interactions with other fey are rare, often hostile, and usually violent. They are almost always solitary, forming alliances only when mutual destruction benefits them. \
 	Legends tell of Redcaps storming humen outposts, razing them entirely, or silently stalking lonely roads at night to satisfy their relentless hunger for blood and chaos. \
 	(+1 Strength, +1 Fortune, -1 Willpower, Hat Dipper Trait)"
+
 	expanded_desc = "The Redcaps are said to be the bitter children of Xylix's earliest works — gnomes who once danced in the hollow roots of the world, singing hymns of cleverness and craft. \
-	When the War of the Hollow Deep split the fey courts, Graggar the Rot-Father crept into their hidden warrens, whispering promises of iron, blood, and dominion. \
+	Graggar the Rot-Father crept into their hidden warrens, whispering promises of iron, blood, and dominion. \
 	He taught them that blood was the truest magic, and that only by tempering their hats in the viscera of the living could they remain free in a dying world. \
 	Thus were born the first Redcaps — gnomes who fed upon the pulse of others to keep their own hearts beating. \
 	Their laughter curdled into shrieks, their whimsy twisted into weapon, and their craft became slaughter. \
 	The cap, once a mark of gnomish ingenuity, became a vessel for vitae; it is said that if it ever dries, the Redcap withers and dies. \
-	Though they have long since severed their bond to Xylix, a faint echo of their maker lingers in their cruel wit and dark inventiveness. 
+	Though they have long since severed their bond to Xylix, a faint echo of their maker lingers in their cruel wit and dark inventiveness."
 
 	skin_tone_wording = "Burrow"
 
@@ -206,7 +207,7 @@
 	. = ..()
 	if(!HAS_TRAIT(user, TRAIT_FEY_HAT_DIPPER))
 		return
-	if(istype(target, /obj/effect/decal/cleanable/blood))
+	if(istype(target, /obj/effect/decal/cleanable/blood/puddle))
 		var/mob/living/carbon/human/H = user
 		H.visible_message(span_notice("[H] begins to wipe up \the [target.name] with [src]."), span_warning("I wipe up \the [target.name] with my [src]..."))
 		if(do_after(H, 20, target = target))
