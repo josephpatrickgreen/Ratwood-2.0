@@ -180,8 +180,10 @@
 			M.adjustToxLoss(2)
 	return ..()
 
-//Like murky water but slightly stronger, stew metabolizes much faster so it is less deadly
+//Like murky water but two times as strong, stew metabolizes much faster so it is not deadly
 /datum/reagent/consumable/soup/poo/on_mob_life(mob/living/carbon/M)
+	if(HAS_TRAIT(M, TRAIT_NASTY_EATER)) // lets orcs and goblins drink bogwater
+		return
 	M.adjustToxLoss(0.5)
-	M.add_nausea(40)
+	M.add_nausea(24)
 	return ..()
