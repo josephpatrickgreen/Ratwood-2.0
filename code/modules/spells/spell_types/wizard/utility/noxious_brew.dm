@@ -19,6 +19,8 @@
 		/datum/reagent/water/gross,
 		/datum/reagent/consumable/soup/poo
 	)
+	invocations = list("Putor Infusio")
+	invocation_type = "whisper"
 
 /obj/effect/proc_holder/spell/self/noxious_brew/cast(mob/user)
 	. = ..()
