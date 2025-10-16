@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2025 Jerry Goldman
+ * discord user "___.__.__.__.__.___"
+ *
+ * Licensed under a custom license for use exclusively within the Ratwood-Vale/Ratwood-2.0 project.
+ * Redistribution, reuse, or modification of this file outside the Ratwood-Vale/Ratwood-2.0 repository
+ * (https://github.com/Rotwood-Vale/Ratwood-2.0) is prohibited without explicit permission.
+ *
+ * Within the Ratwood-Vale/Ratwood-2.0 repository, this file is governed by the GNU General Public License v3.0.
+ * GPL compliance is fully acknowledged only within the Ratwood-Vale/Ratwood-2.0 repository.
+ */
+
 /mob/living/carbon/human/species/fey/redcap
 	race = /datum/species/fey/redcap
 
@@ -15,7 +27,14 @@
 	Culturally, Redcaps are obsessed with the accumulation of blood-soaked trophies and arcane relics, believing each kill strengthens their connection to the dark fey realms. \
 	Their interactions with other fey are rare, often hostile, and usually violent. They are almost always solitary, forming alliances only when mutual destruction benefits them. \
 	Legends tell of Redcaps storming humen outposts, razing them entirely, or silently stalking lonely roads at night to satisfy their relentless hunger for blood and chaos. \
-	(+1 Speed, +1 Fortune)"
+	(+1 Strength, +1 Fortune, -1 Willpower, Hat Dipper Trait)"
+	expanded_desc = "The Redcaps are said to be the bitter children of Xylix's earliest works — gnomes who once danced in the hollow roots of the world, singing hymns of cleverness and craft. \
+	When the War of the Hollow Deep split the fey courts, Graggar the Rot-Father crept into their hidden warrens, whispering promises of iron, blood, and dominion. \
+	He taught them that blood was the truest magic, and that only by tempering their hats in the viscera of the living could they remain free in a dying world. \
+	Thus were born the first Redcaps — gnomes who fed upon the pulse of others to keep their own hearts beating. \
+	Their laughter curdled into shrieks, their whimsy twisted into weapon, and their craft became slaughter. \
+	The cap, once a mark of gnomish ingenuity, became a vessel for vitae; it is said that if it ever dries, the Redcap withers and dies. \
+	Though they have long since severed their bond to Xylix, a faint echo of their maker lingers in their cruel wit and dark inventiveness. 
 
 	skin_tone_wording = "Burrow"
 
@@ -52,8 +71,8 @@
 		OFFSET_NECK_F = list(0,-5), OFFSET_MOUTH_F = list(0,-5), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-4), \
 		)
-	//inherent_traits = list(TRAIT_WOODWALKER)
-	race_bonus = list(STAT_SPEED = 1, STAT_FORTUNE = 1)
+	race_bonus = list(STAT_STRENGTH = 1, STAT_FORTUNE = 1, STAT_WILLPOWER = -1)
+	inherent_traits = list(TRAIT_FEY_HAT_DIPPER)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
@@ -182,3 +201,17 @@
 
 /datum/species/fey/redcap/check_roundstart_eligible()
 	return TRUE
+
+/obj/item/clothing/head/roguetown/afterattack(atom/target, mob/user, proximity)
+	. = ..()
+	if(!HAS_TRAIT(user, TRAIT_FEY_HAT_DIPPER))
+		return
+	if(istype(target, /obj/effect/decal/cleanable/blood))
+		var/mob/living/carbon/human/H = user
+		H.visible_message(span_notice("[H] begins to wipe up \the [target.name] with [src]."), span_warning("I wipe up \the [target.name] with my [src]..."))
+		if(do_after(H, 20, target = target))
+			to_chat(H, span_notice("I pull \the [target.name] into my [src] making me feel invigorated!"))
+			src.add_atom_colour("#bb0a1e", FIXED_COLOUR_PRIORITY)
+			H.apply_status_effect(/datum/status_effect/buff/healing, 1)
+			H.apply_status_effect(/datum/status_effect/buff/haste, 1 MINUTES)
+			qdel(target)

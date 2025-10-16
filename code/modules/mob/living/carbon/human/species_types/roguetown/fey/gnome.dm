@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2025 Jerry Goldman
+ * discord user "___.__.__.__.__.___"
+ *
+ * Licensed under a custom license for use exclusively within the Ratwood-Vale/Ratwood-2.0 project.
+ * Redistribution, reuse, or modification of this file outside the Ratwood-Vale/Ratwood-2.0 repository
+ * (https://github.com/Rotwood-Vale/Ratwood-2.0) is prohibited without explicit permission.
+ *
+ * Within the Ratwood-Vale/Ratwood-2.0 repository, this file is governed by the GNU General Public License v3.0.
+ * GPL compliance is fully acknowledged only within the Ratwood-Vale/Ratwood-2.0 repository.
+ */
+
 /mob/living/carbon/human/species/fey/gnome
 	race = /datum/species/fey/gnome
 
@@ -17,6 +29,14 @@
 	Among the the sentient, they are tolerated for their utility, but never trusted; \
 	to strike a deal with a gnome is to court one's own undoing. \
 	(+1 Fortune, -1 Willpower, Arcane T2 Trait)"
+	expanded_desc = "Gnomes were first shaped by Xylix, the Trickster, from the echoes of elven laughter and pure joy — small folk meant to amuse and inspire the greater folk. \
+	But the spark that gave them wit burned too fiercely; they grew restless under their creator's light, delighting in mischief that soured into malice. \
+	When their pranks turned cruel and their illusions began to twist the minds of mortals, polite society cast them out, banishing them to the shallow warrens between root and stone. \
+	There, in the dim humus of forgotten groves, they festered — no longer creators of joy, but of mockery. \
+	They learned to weave jests as deftly as blades, to turn truth into poison and laughter into a weapon. \
+	In their exile they came to worship their own cleverness, believing deceit itself to be the highest form of art. \
+	Xylix mourned their fall, yet would not unmake them, for even ruin has its place in the great design. \
+	Among the mortal folk, gnomes now skulk as tricksters, charmers, and whispering tempters — never fully trusted, yet never fully shunned, for their cunning remains a potent, perilous gift."
 
 
 	skin_tone_wording = "Burrow"

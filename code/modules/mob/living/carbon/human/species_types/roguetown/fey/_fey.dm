@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2025 Jerry Goldman
+ * discord user "___.__.__.__.__.___"
+ *
+ * Licensed under a custom license for use exclusively within the Ratwood-Vale/Ratwood-2.0 project.
+ * Redistribution, reuse, or modification of this file outside the Ratwood-Vale/Ratwood-2.0 repository
+ * (https://github.com/Rotwood-Vale/Ratwood-2.0) is prohibited without explicit permission.
+ *
+ * Within the Ratwood-Vale/Ratwood-2.0 repository, this file is governed by the GNU General Public License v3.0.
+ * GPL compliance is fully acknowledged only within the Ratwood-Vale/Ratwood-2.0 repository.
+ */
+
 /mob/living/carbon/human/species/fey
 	race = /datum/species/fey
 

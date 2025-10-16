@@ -217,6 +217,7 @@
 #define TRAIT_RACISMISBAD "Heritage Vision"
 #define TRAIT_VENOMOUS "Venomous"
 #define TRAIT_OVERTHERETIC "Overt Heretic"//Applied on someone who has rites buffs. Armour, rituos, etc.
+#define TRAIT_FEY_HAT_DIPPER "Hat Dipper"
 
 // If you want description to show up you gotta have the trait name defined BEFORE this lol
 
@@ -400,7 +401,9 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_WING_BOUND = span_info("The wings upon my back allow me to glide. Poorly. Falls will be less painful, but still not ideal."),
 	TRAIT_DWARF_REPAIR = span_info("Never again will there be a people like ours. Repairs come easy to me."),
 	TRAIT_DRUNK_HEALING = span_info("A little drinking never hurt!"),
-	TRAIT_RESONANCE = span_suppradio("My miracles will <b><u>fortify</u></b> others nearby.")
+	TRAIT_RESONANCE = span_suppradio("My miracles will <b><u>fortify</u></b> others nearby."),
+	TRAIT_FEY_HAT_DIPPER = span_info("Dipping a hat in a pool of blood invigorates me!")
+
 ))
 
 // trait accessor defines
