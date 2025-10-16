@@ -68,8 +68,14 @@
 	icon_state = "fisherhat"
 	item_state = "fisherhat"
 	sewrepair = TRUE
-//	color = "#fbc588"
-	//dropshrink = 0.75
+
+/obj/item/clothing/head/roguetown/feycap
+	name = "fey cap"
+	desc = "A hat mostly worn by the diminutive."
+	icon_state = "fisherhat"
+	item_state = "fisherhat"
+	sewrepair = TRUE
+	color = "#990c0c"
 
 /obj/item/clothing/head/roguetown/flathat
 	name = "flat hat"

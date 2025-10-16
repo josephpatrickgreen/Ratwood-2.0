@@ -200,6 +200,8 @@ Balloon Alert / Floating Text defines
 	/datum/species/goblinp,\
 	/datum/species/dullahan,\
 	/datum/species/lamia,\
+	/datum/species/fey/redcap,\
+	/datum/species/fey/gnome,\
 )
 
 #define RACES_RESPECTED \
@@ -228,9 +230,11 @@ Balloon Alert / Floating Text defines
 	/datum/species/kobold,\
 	/datum/species/dullahan,\
 	/datum/species/lamia,\
+	/datum/species/fey/gnome,\
 
 #define RACES_DESPISED \
 	/datum/species/goblinp,\
+	/datum/species/fey/redcap,\
 
 #define RACES_CONSTRUCT \
 	/datum/species/construct/metal,\
@@ -268,6 +272,7 @@ Balloon Alert / Floating Text defines
 	/datum/species/construct/porcelain,\
 	/datum/species/dullahan,\
 	/datum/species/lamia,\
+	/datum/species/fey/gnome,\
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -296,6 +301,8 @@ Balloon Alert / Floating Text defines
 	/datum/species/construct/porcelain,\
 	/datum/species/dullahan,\
 	/datum/species/lamia,\
+	/datum/species/fey/gnome,\
+	/datum/species/fey/redcap,\
 )
 // Non-dwarf non-kobold non-goblin mostly
 #define NON_DWARVEN_RACE_TYPES list(\
@@ -319,6 +326,8 @@ Balloon Alert / Floating Text defines
 	/datum/species/construct/porcelain,\
 	/datum/species/dullahan,\
 	/datum/species/lamia,\
+	/datum/species/fey/gnome,\
+	/datum/species/fey/redcap,\
 )
 // Non-elf non-dwarf non-kobold non-goblin mostly
 #define HUMANLIKE_RACE_TYPES list(\
