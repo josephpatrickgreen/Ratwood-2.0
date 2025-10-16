@@ -208,11 +208,14 @@
 	if(!HAS_TRAIT(user, TRAIT_FEY_HAT_DIPPER))
 		return
 	if(istype(target, /obj/effect/decal/cleanable/blood/puddle))
-		var/mob/living/carbon/human/H = user
-		H.visible_message(span_notice("[H] begins to wipe up \the [target.name] with [src]."), span_warning("I wipe up \the [target.name] with my [src]..."))
-		if(do_after(H, 20, target = target))
-			to_chat(H, span_notice("I pull \the [target.name] into my [src] making me feel invigorated!"))
-			src.add_atom_colour("#bb0a1e", FIXED_COLOUR_PRIORITY)
-			H.apply_status_effect(/datum/status_effect/buff/healing, 1)
-			H.apply_status_effect(/datum/status_effect/buff/haste, 1 MINUTES)
-			qdel(target)
+		if (sewrepair)
+			var/mob/living/carbon/human/H = user
+			H.visible_message(span_notice("[H] begins to wipe up \the [target.name] with [src]."), span_warning("I wipe up \the [target.name] with my [src]..."))
+			if(do_after(H, 20, target = target))
+				to_chat(H, span_notice("I pull \the [target.name] into my [src] making me feel invigorated!"))
+				src.add_atom_colour("#bb0a1e", FIXED_COLOUR_PRIORITY)
+				H.apply_status_effect(/datum/status_effect/buff/healing, 1)
+				H.apply_status_effect(/datum/status_effect/buff/haste, 1 MINUTES)
+				qdel(target)
+		else
+			to_chat(user, span_warning("Blast it! This isn't a cap!"))
