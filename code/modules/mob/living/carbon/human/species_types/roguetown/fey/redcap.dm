@@ -30,7 +30,7 @@
 	(+1 Strength, +1 Fortune, -1 Willpower, Hat Dipper Trait)"
 
 	expanded_desc = "The Redcaps are said to be the bitter children of Xylix's earliest works — gnomes who once danced in the hollow roots of the world, singing hymns of cleverness and craft. \
-	Graggar the Rot-Father crept into their hidden warrens, whispering promises of iron, blood, and dominion. \
+	Graggar the Rot-Father crept into their hidden warrens, whispering promises of iron, blood, and dominion. When Xylix abandoned them for turning merrymaking into cruelty \
 	He taught them that blood was the truest magic, and that only by tempering their hats in the viscera of the living could they remain free in a dying world. \
 	Thus were born the first Redcaps — gnomes who fed upon the pulse of others to keep their own hearts beating. \
 	Their laughter curdled into shrieks, their whimsy twisted into weapon, and their craft became slaughter. \
