@@ -47,16 +47,15 @@ SUBSYSTEM_DEF(migrants)
 		log_game("Migrants: FAILED to spawn wave: [current_wave]")
 
 	// Handle downgrade logic
-		// Reset parent wave triumph if this was a downgrade that succeeded
-		if(parent_wave)
-			reset_wave_contributions(MIGRANT_WAVE(parent_wave))
-
+	var/datum/migrant_wave/wave = MIGRANT_WAVE(current_wave)
 	var/parent_wave = current_parent_wave
 
 	// Unset some values, increment wave number if success
 	if(success)
 		wave_number++
-	var/datum/migrant_wave/wave = MIGRANT_WAVE(current_wave)
+		// Reset parent wave triumph if this was a downgrade that succeeded
+		if(parent_wave)
+			reset_wave_contributions(MIGRANT_WAVE(parent_wave))
 	set_current_wave(null, 0)
 	if(success)
 		time_until_next_wave = time_between_waves

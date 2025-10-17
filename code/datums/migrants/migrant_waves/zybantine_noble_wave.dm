@@ -2,7 +2,7 @@
 	name = "Zybantine Emir"
 	max_spawns = 1
 	shared_wave_type = /datum/migrant_wave/zybantine_noble
-	weight = 50
+	weight = 40
 	downgrade_wave = /datum/migrant_wave/zybantine_noble_down_one
 	roles = list(
 		/datum/migrant_role/zybantine/emir = 1,

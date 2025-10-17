@@ -15,28 +15,13 @@
 	name = "Emir"
 	outfit = /datum/outfit/job/roguetown/zybantine/emir
 	traits_applied = list(TRAIT_NOBLE, TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
-	category_tags = list(CTAG_zybantine_EMIR)
+	category_tags = list(CTAG_ZYBANTINE_EMIR)
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_CON = 1,
 		STATKEY_WIL = 2,
 		STATKEY_PER = 1,
 		STATKEY_SPD = 1,
-	)
-	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/shields = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
-		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/stealing = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
 	)
 
 /datum/outfit/job/roguetown/zybantine/emir/pre_equip(mob/living/carbon/human/H)
@@ -65,6 +50,19 @@
 		)
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
 	H.grant_language(/datum/language/celestial)
+	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/stealing, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 
 /datum/migrant_role/zybantine/amirah
 	name = "Amirah"
@@ -82,18 +80,6 @@
 		STATKEY_CON = 1,
 		STATKEY_WIL = 3,
 		STATKEY_PER = 1,
-	)
-	subclass_skills = list(
-		/datum/skill/misc/stealing = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/sneaking = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/reading = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/riding = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/music = SKILL_LEVEL_MASTER,
 	)
 
 /datum/outfit/job/roguetown/zybantine/amirah/pre_equip(mob/living/carbon/human/H)
@@ -123,6 +109,17 @@
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
 	H.grant_language(/datum/language/celestial)
 
+	H.adjust_skillrank(/datum/skill/misc/stealing, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/music, 5, TRUE)
+
 /datum/migrant_role/zybantine/janissary
 	name = "Janissary"
 	greet_text = "You are a dilligent soldier in employ of the Emir for protection and to assure that their mission goes as planned."
@@ -140,20 +137,6 @@
 		STATKEY_WIL = 2,
 		STATKEY_CON = 1,
 		STATKEY_SPD = 1,
-	)
-	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/whipsflails = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 	)
 
 /datum/outfit/job/roguetown/zybantine/janissary/pre_equip(mob/living/carbon/human/H)
@@ -181,6 +164,18 @@
 		)
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
 	H.grant_language(/datum/language/celestial)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 
 /datum/migrant_role/zybantine/advisor
 	name = "Advisor"
@@ -190,7 +185,7 @@
 	advclass_cat_rolls = list(CTAG_ZYBANTINE_ADVISOR = 20)
 
 /datum/advclass/zybantine_advisor
-	name = "Janissary"
+	name = "Advisor"
 	outfit = /datum/outfit/job/roguetown/zybantine/advisor
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
 	category_tags = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT, TRAIT_PERFECT_TRACKER)
@@ -198,22 +193,6 @@
 		STATKEY_SPD = 2,
 		STATKEY_PER = 2,
 		STATKEY_INT = 2,
-	)
-	subclass_skills = list(
-		/datum/skill/misc/tracking = SKILL_LEVEL_LEGENDARY,
-		/datum/skill/combat/crossbows = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/climbing = SKILL_LEVEL_LEGENDARY,
-		/datum/skill/misc/reading = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/sneaking = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/stealing = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
-		/datum/skill/craft/traps = SKILL_LEVEL_EXPERT,
 	)
 
 /datum/outfit/job/roguetown/zybantine/advisor/pre_equip(mob/living/carbon/human/H)
@@ -240,7 +219,20 @@
 		)
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
 	H.grant_language(/datum/language/celestial)
-
+	H.adjust_skillrank(/datum/skill/misc/tracking, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 6, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/traps, 4, TRUE)
 #undef CTAG_ZYBANTINE_EMIR
 #undef CTAG_ZYBANTINE_AMIRAH
 #undef CTAG_ZYBANTINE_JANISSARY

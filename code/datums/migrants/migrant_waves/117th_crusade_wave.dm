@@ -2,7 +2,7 @@
 	name = "The 117th Holy Crusade"
 	shared_wave_type = /datum/migrant_wave/crusade
 	downgrade_wave = /datum/migrant_wave/crusade_down_one
-	weight = 5
+	weight = 20
 	max_spawns = 1
 	roles = list(
 		/datum/migrant_role/crusader = 5)
@@ -40,5 +40,5 @@
 	shared_wave_type = /datum/migrant_wave/crusade
 	can_roll = FALSE
 	roles = list(
-		/datum/migrant_role/crusader = = 1)
+		/datum/migrant_role/crusader = 1)
 	greet_text = "Psydon's holy chalice must be found! Rockhill, a faithful land? Bah, Why let that get in the way of a good crusade! Plenty of looting and pillaging to be done- all in service to Astrata."

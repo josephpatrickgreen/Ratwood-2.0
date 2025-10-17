@@ -22,21 +22,7 @@
 		STATKEY_PER = 1,
 		STATKEY_SPD = 1,
 	)
-	subclass_skills = list(
-		/datum/skill/combat/swords= SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/maces= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/knives= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/athletics= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/shields= SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
-		/datum/skill/misc/medicine= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/stealing= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/riding= SKILL_LEVEL_JOURNEYMAN,
-	)
+
 
 /datum/outfit/job/roguetown/grenzel/envoy/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -63,6 +49,19 @@
 		)
 	H.cmode_music = 'sound/music/combat_grenzelhoft.ogg'
 	H.grant_language(/datum/language/grenzelhoftian)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/stealing, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 
 /datum/migrant_role/grenzel/bodyguard
 	name = "Doppelsoldner"
@@ -82,22 +81,6 @@
 		STATKEY_CON = 3,
 		STATKEY_PER = 1,
 		STATKEY_SPD = 1,
-	)
-	subclass_skills = list(
-		/datum/skill/misc/swimming= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/sneaking= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/maces= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/crossbows= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/swords= SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/shields= SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/polearms= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/whipsflails= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/knives= SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/reading= SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/athletics= SKILL_LEVEL_EXPERT,
 	)
 
 /datum/outfit/job/roguetown/grenzel/doppel/pre_equip(mob/living/carbon/human/H)
@@ -122,6 +105,20 @@
 		)
 	H.cmode_music = 'sound/music/combat_grenzelhoft.ogg'
 	H.grant_language(/datum/language/grenzelhoftian)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 
 /datum/migrant_role/grenzel/priest
 	name = "Priest"
@@ -141,15 +138,6 @@
 		STATKEY_WIL = 3,
 		STATKEY_SPD = -1,
 	)
-	subclass_stats = list(
-		/datum/skill/combat/wrestling= SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/unarmed= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/polearms= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/reading = SKILL_LEVEL_LEGENDARY,
-		/datum/skill/craft/alchemy= SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/medicine= SKILL_LEVEL_EXPERT,
-		/datum/skill/magic/holy= SKILL_LEVEL_EXPERT,
-	)
 
 /datum/outfit/job/roguetown/grenzel/priest/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -167,6 +155,18 @@
 	backpack_contents = list(
 		/obj/item/needle/pestra = 1,
 	)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 6, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/magic/holy, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/alchemy, 3, TRUE)
+
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MAJOR, start_maxed = TRUE)
 
