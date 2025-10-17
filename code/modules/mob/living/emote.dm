@@ -503,7 +503,7 @@
 /datum/emote/living/lick
 	key = "lick"
 	key_third_person = "licks"
-	message = "licks their lips."
+	message = ""
 	message_param = "licks %t."
 	emote_type = EMOTE_VISIBLE
 
@@ -537,12 +537,12 @@
 						to_chat(target, span_love("It tickles..."))
 			else if(J.zone_selected == BODY_ZONE_PRECISE_GROIN)
 				message_param = "licks %t between the legs."
-				var/mob/living/carbon/human/L = target
-				if(isliving(L))
-					if(!L.cmode)
+				var/mob/living/carbon/human/M = target
+				if(isliving(M))
+					if(!M.cmode)
 						to_chat(target, span_love("It's somewhat stimulating..."))
 			else if(J.zone_selected == BODY_ZONE_HEAD)
-				message_param = "licks %t on the cheek"
+				message_param = "licks %t on the cheek."
 			else
 				message_param = "licks %t on \the [parse_zone(J.zone_selected)]."
 	playsound(target.loc, pick("sound/vo/lick.ogg"), 100, FALSE, -1)	
