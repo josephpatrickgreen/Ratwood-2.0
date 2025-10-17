@@ -162,6 +162,27 @@
 				if(their_god)
 					. += (user_side == mob_side) ? span_notice("Fellow [their_god.name] supporter!") : span_userdanger("Vile [their_god.name] supporter!")
 
+		if(dna.species.use_skintones)
+			var/skin_tone_wording = dna.species.skin_tone_wording ? lowertext(dna.species.skin_tone_wording) : "skin tone"
+			var/list/skin_tones = dna.species.get_skin_list()
+			var/skin_tone_seen = "incomprehensible"
+			if(!HAS_TRAIT(src, TRAIT_ROTMAN) && skin_tone)
+				//AGGHHHHH this is stupid
+				for(var/tone in skin_tones)
+					if(src.skin_tone == skin_tones[tone])
+						skin_tone_seen = lowertext(tone)
+						break
+			var/slop_lore_string = "."
+			if(ishumannorthern(user))
+				var/mob/living/carbon/human/racist = user
+				var/list/user_skin_tones = racist.dna.species.get_skin_list()
+				var/user_skin_tone_seen = "incomprehensible"
+				for(var/tone in user_skin_tones)
+					if(racist.skin_tone == user_skin_tones[tone])
+						user_skin_tone_seen = lowertext(tone)
+						break
+			. += span_info("[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]")
+
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
 			if(H.marriedto == name)
