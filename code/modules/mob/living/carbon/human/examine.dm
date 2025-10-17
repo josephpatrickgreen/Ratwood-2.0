@@ -173,14 +173,6 @@
 						skin_tone_seen = lowertext(tone)
 						break
 			var/slop_lore_string = "."
-			if(ishumannorthern(user))
-				var/mob/living/carbon/human/racist = user
-				var/list/user_skin_tones = racist.dna.species.get_skin_list()
-				var/user_skin_tone_seen = "incomprehensible"
-				for(var/tone in user_skin_tones)
-					if(racist.skin_tone == user_skin_tones[tone])
-						user_skin_tone_seen = lowertext(tone)
-						break
 			. += span_info("[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]")
 
 		if(ishuman(user))
