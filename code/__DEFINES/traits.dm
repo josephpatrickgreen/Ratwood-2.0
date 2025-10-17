@@ -402,7 +402,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_DWARF_REPAIR = span_info("Never again will there be a people like ours. Repairs come easy to me."),
 	TRAIT_DRUNK_HEALING = span_info("A little drinking never hurt!"),
 	TRAIT_RESONANCE = span_suppradio("My miracles will <b><u>fortify</u></b> others nearby."),
-	TRAIT_FEY_HAT_DIPPER = span_info("Dipping a hat in a pool of blood invigorates me!")
+	TRAIT_FEY_HAT_DIPPER = span_bloody("Dipping a hat in a pool of blood invigorates me!")
 
 ))
 
