@@ -1,6 +1,7 @@
 /datum/sex_action/force_milk_genitals
 	name = "Forcibly milk cock"
 	check_same_tile = FALSE
+	category = SEX_CATEGORY_HANDS
 
 /datum/sex_action/force_milk_genitals/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
