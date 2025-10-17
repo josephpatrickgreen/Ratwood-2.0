@@ -1577,7 +1577,7 @@
 /area/rogue/indoors/inq)
 "aBU" = (
 /obj/structure/lever{
-	redstone_id = "smith_shutterbasement";
+	redstone_id = "smith_shutter02";
 	pixel_y = 25;
 	pixel_x = 8
 	},
@@ -3952,12 +3952,15 @@
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/shop)
 "brb" = (
-/obj/structure/table/wood,
-/obj/item/roguegear/bronze,
-/obj/item/roguegear/bronze{
-	pixel_y = 9;
-	pixel_x = -7
+/obj/item/roguegear{
+	pixel_x = -2;
+	pixel_y = 3
 	},
+/obj/item/roguegear{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/obj/structure/table/wood,
 /turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/indoors/town/manor/rockhill)
 "brg" = (
@@ -30544,7 +30547,7 @@
 	icon_state = "barsbent"
 	},
 /obj/structure/bars/passage/shutter{
-	redstone_id = "smith_shutterbasement"
+	redstone_id = "smith_shutter02"
 	},
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/indoors/town/dwarfin/rockhill)
@@ -35104,9 +35107,9 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/roguegear/bronze{
-	pixel_y = -6;
-	pixel_x = -3
+/obj/item/roguegear{
+	pixel_x = -6;
+	pixel_y = -6
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/physician)
@@ -47432,7 +47435,7 @@
 	dir = 8
 	},
 /obj/structure/bars/passage/shutter{
-	redstone_id = "smith_shutterbasement"
+	redstone_id = "smith_shutter02"
 	},
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/indoors/town/dwarfin/rockhill)
@@ -57457,8 +57460,9 @@
 	dir = 4;
 	icon_state = "largetable"
 	},
+/obj/item/roguegear,
+/obj/item/roguegear,
 /obj/machinery/light/roguestreet/orange/walllamp,
-/obj/item/roguegear/bronze,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/dwarfin/rockhill)
 "tky" = (
@@ -256988,10 +256992,10 @@ qvR
 wSn
 qvR
 uaL
-qvR
-spp
-qvR
-qvR
+oMD
+oMD
+oMD
+oMD
 wSn
 wSn
 qvR
@@ -257420,10 +257424,10 @@ qvR
 qvR
 qvR
 qvR
-qvR
-qvR
-qvR
-qvR
+oMD
+oMD
+oMD
+oMD
 xvN
 wSn
 qvR
@@ -257853,10 +257857,10 @@ qvR
 spp
 cpy
 wSn
-spp
-qvR
-spp
-qvR
+oMD
+oMD
+oMD
+oMD
 wSn
 qvR
 qvR
@@ -258286,9 +258290,9 @@ qvR
 qvR
 wSn
 qvR
-spp
-qvR
-spp
+uaL
+oMD
+oMD
 wSn
 wSn
 qvR
@@ -367583,7 +367587,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+oMD
 qbG
 qbG
 qbG
