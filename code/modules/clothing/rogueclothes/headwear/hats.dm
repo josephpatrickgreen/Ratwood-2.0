@@ -72,8 +72,8 @@
 /obj/item/clothing/head/roguetown/feycap
 	name = "fey cap"
 	desc = "A hat mostly worn by the diminutive."
-	icon_state = "fisherhat"
-	item_state = "fisherhat"
+	icon_state = "armingcap"
+	item_state = "armingcap"
 	sewrepair = TRUE
 	color = "#990c0c"
 

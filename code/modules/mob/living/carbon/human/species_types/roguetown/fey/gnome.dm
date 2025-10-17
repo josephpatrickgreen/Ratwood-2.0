@@ -27,10 +27,10 @@
 	Their laughter is said to drive men mad, and their bargains always end in loss. \
 	Though physically unimposing, they possess a cunning beyond reckoning and wield magic and deceit as naturally as breathing. \
 	Among the the sentient, they are tolerated for their utility, but never trusted; \
-	to strike a deal with a gnome is to court one's own undoing. \
-	(+1 Fortune, -1 Constitution, -1 Willpower, Arcane T2 Trait)"
+	to strike a deal with a gnome is to court ones own undoing. \
+	(+1 Fortune, -1 Constitution, -1 Willpower, Arcane T1 Trait (T2 if Arcyne Potential))"
 	expanded_desc = "Gnomes were first shaped by Xylix, the Trickster, from the echoes of elven laughter and pure joy — small folk meant to amuse and inspire the greater folk. \
-	But the spark that gave them wit burned too fiercely; they grew restless under their creator's light, delighting in mischief that soured into malice. \
+	But the spark that gave them wit burned too fiercely; they grew restless under their creators light, delighting in mischief that soured into malice. \
 	When their pranks turned cruel and their illusions began to twist the minds of mortals, polite society cast them out, banishing them to the shallow warrens between root and stone. \
 	There, in the dim humus of forgotten groves, they festered — no longer creators of joy, but of mockery. \
 	They learned to weave jests as deftly as blades, to turn truth into poison and laughter into a weapon. \
@@ -205,8 +205,8 @@
 
 /datum/species/fey/gnome/after_creation(mob/living/carbon/human/H)
 	..()
-	H.mind?.special_items.Add(new /obj/item/clothing/head/roguetown/feycap)
-	H.mind?.adjust_spellpoints(4)
+	H.mind?.special_items.Add(/obj/item/clothing/head/roguetown/feycap)
+	H.mind?.adjust_spellpoints(2)
 	ADD_TRAIT(H, TRAIT_ARCYNE_T1, TRAIT_GENERIC)
 
 /datum/species/fey/gnome/check_roundstart_eligible()

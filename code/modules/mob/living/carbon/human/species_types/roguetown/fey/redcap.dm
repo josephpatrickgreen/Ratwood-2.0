@@ -29,7 +29,7 @@
 	Legends tell of Redcaps storming humen outposts, razing them entirely, or silently stalking lonely roads at night to satisfy their relentless hunger for blood and chaos. \
 	(+1 Strength, +1 Fortune, -1 Willpower, Hat Dipper Trait)"
 
-	expanded_desc = "The Redcaps are said to be the bitter children of Xylix's earliest works — gnomes who once danced in the hollow roots of the world, singing hymns of cleverness and craft. \
+	expanded_desc = "The Redcaps are said to be the bitter children of Xylixs earliest works — gnomes who once danced in the hollow roots of the world, singing hymns of cleverness and craft. \
 	Graggar the Rot-Father crept into their hidden warrens, whispering promises of iron, blood, and dominion. When Xylix abandoned them for turning merrymaking into cruelty \
 	He taught them that blood was the truest magic, and that only by tempering their hats in the viscera of the living could they remain free in a dying world. \
 	Thus were born the first Redcaps — gnomes who fed upon the pulse of others to keep their own hearts beating. \
@@ -198,7 +198,7 @@
 
 /datum/species/fey/redcap/after_creation(mob/living/carbon/human/H)
 	..()
-	H.mind?.special_items.Add(new /obj/item/clothing/head/roguetown/feycap)
+	H.mind?.special_items.Add(/obj/item/clothing/head/roguetown/feycap)
 
 /datum/species/fey/redcap/check_roundstart_eligible()
 	return TRUE
@@ -207,15 +207,29 @@
 	. = ..()
 	if(!HAS_TRAIT(user, TRAIT_FEY_HAT_DIPPER))
 		return
-	if(istype(target, /obj/effect/decal/cleanable/blood/puddle))
-		if (sewrepair)
-			var/mob/living/carbon/human/H = user
-			H.visible_message(span_notice("[H] begins to wipe up \the [target.name] with [src]."), span_warning("I wipe up \the [target.name] with my [src]..."))
-			if(do_after(H, 20, target = target))
-				to_chat(H, span_notice("I pull \the [target.name] into my [src] making me feel invigorated!"))
-				src.add_atom_colour("#bb0a1e", FIXED_COLOUR_PRIORITY)
-				H.apply_status_effect(/datum/status_effect/buff/healing, 1)
-				H.apply_status_effect(/datum/status_effect/buff/haste, 1 MINUTES)
-				qdel(target)
-		else
-			to_chat(user, span_warning("Blast it! This isn't a cap!"))
+	if(!proximity || !check_allowed_items(target, target_self = 1))
+		return
+
+	var/turf/bloodspot = get_turf(target)
+	if(!bloodspot)
+		return
+
+	// Search the turf for any blood puddle objects
+	var/obj/effect/decal/cleanable/blood/puddle/bloodpuddle = locate() in bloodspot
+	if(!bloodpuddle)
+		return
+
+	if(sewrepair) //check if headwear is a hat
+		var/mob/living/carbon/human/H = user
+		H.visible_message(
+			span_notice("[H] begins to wipe up \the [bloodpuddle.name] with \the [src]."),
+			span_notice("I wipe up \the [bloodpuddle.name] with my [src]...")
+		)
+		if(do_after(H, 20, target = bloodpuddle))
+			to_chat(H, span_bloody("I pull \the [bloodpuddle.name] into my [src], making me feel invigorated!"))
+			src.add_atom_colour("#bb0a1e", FIXED_COLOUR_PRIORITY)
+			H.apply_status_effect(/datum/status_effect/buff/healing, 1)
+			H.apply_status_effect(/datum/status_effect/buff/haste, 1 MINUTES)
+			qdel(bloodpuddle)
+	else
+		to_chat(user, span_warning("This isn't a cap!"))
