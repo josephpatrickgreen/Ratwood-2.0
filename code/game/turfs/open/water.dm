@@ -471,12 +471,6 @@
 	var/river_processing
 	swimdir = TRUE
 
-/turf/open/water/river/mudriver
-	name = "muddy river"
-	desc = "A river of murky water flows languidly along the contours of the land."
-	water_color = "#705a43"
-	water_reagent = /datum/reagent/water/gross
-
 /turf/open/water/river/flow
 	icon_state = "rockwd"
 
