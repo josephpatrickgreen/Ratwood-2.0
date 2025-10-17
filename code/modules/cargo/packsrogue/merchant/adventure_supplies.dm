@@ -76,11 +76,6 @@
 	cost = 6
 	contains = list(/obj/item/rogueweapon/woodstaff)
 
-/datum/supply_pack/rogue/adventure_supplies/quarterstaff
-	name = "Eight Foot Pole"
-	cost = 12
-	contains = list(/obj/item/rogueweapon/woodstaff/quarterstaff)
-
 /datum/supply_pack/rogue/adventure_supplies/lamptern
 	name = "Lamptern"
 	cost = 15

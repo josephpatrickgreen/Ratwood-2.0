@@ -406,13 +406,6 @@
 	createditem_num = 2
 	craftdiff = 1
 
-/datum/anvil_recipe/weapons/iron/claws
-	name = "Handclaws, Iron (+1 Iron)"
-	req_bar = /obj/item/ingot/iron
-	additional_items = list(/obj/item/ingot/iron)
-	created_item = /obj/item/rogueweapon/handclaw
-	craftdiff = 2
-
 /// STEEL WEAPONS
 
 /datum/anvil_recipe/weapons/steel/dagger
@@ -682,13 +675,6 @@
 	req_bar = /obj/item/ingot/steel
 	created_item = /obj/item/rogueweapon/sword/falx
 	craftdiff = 2
-
-/datum/anvil_recipe/weapons/steel/claws
-	name = "Handclaws, Steel (+1 Steel)"
-	req_bar = /obj/item/ingot/steel
-	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/rogueweapon/handclaw/steel
-	craftdiff = 3
 /// UPGRADED WEAPONS
 
 //GOLD

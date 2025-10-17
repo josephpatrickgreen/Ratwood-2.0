@@ -108,8 +108,7 @@
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
-		/obj/item/rogueweapon/handclaw/gronn = 1
+		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 	H.merctype = 1
 

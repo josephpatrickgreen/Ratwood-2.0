@@ -354,7 +354,7 @@
 	var/deposit = difficulty_data[actual_difficulty]["deposit"]
 
 	if(SStreasury.bank_accounts[user] < deposit)
-		say("Insufficient balance funds. You need [deposit] mammons in your nervelock.")
+		say("Insufficient balance funds. You need [deposit] mammons in your meister.")
 		return
 
 	var/list/type_choices = list(
