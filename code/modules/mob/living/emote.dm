@@ -510,6 +510,7 @@
 /mob/living/carbon/human/verb/emote_lick()
 	set name = "Lick"
 	set category = "Emotes"
+
 	emote("lick", intentional = TRUE, targetted = TRUE)
 
 /datum/emote/living/lick/adjacentaction(mob/user, mob/target)
@@ -527,9 +528,9 @@
 				do_change = TRUE
 		if(do_change)
 			if(J.zone_selected == BODY_ZONE_PRECISE_MOUTH)
-				message_param = "licks %t lips."
+				message_param = "licks %t on the lips."
 			else if(J.zone_selected == BODY_ZONE_PRECISE_EARS)
-				message_param = "licks the ear of %t."
+				message_param = "licks %t on the ear."
 				var/mob/living/carbon/human/O = target
 				if(iself(O) || ishalfelf(O) || isdarkelf(O))
 					if(!O.cmode)
@@ -541,9 +542,9 @@
 					if(!L.cmode)
 						to_chat(target, span_love("It's somewhat stimulating..."))
 			else if(J.zone_selected == BODY_ZONE_HEAD)
-				message_param = "licks %t cheek"
+				message_param = "licks %t on the cheek"
 			else
-				message_param = "licks %t [parse_zone(J.zone_selected)]."
+				message_param = "licks %t on \the [parse_zone(J.zone_selected)]."
 	playsound(target.loc, pick("sound/vo/lick.ogg"), 100, FALSE, -1)	
 
 /datum/emote/living/spit
