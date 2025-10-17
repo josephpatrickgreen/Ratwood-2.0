@@ -14974,12 +14974,6 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bograt/safe)
-"eOw" = (
-/turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
-	},
-/area/rogue/under/town/sewer)
 "eOB" = (
 /obj/structure/mineral_door/wood/red{
 	locked = 1;
@@ -15845,8 +15839,7 @@
 /area/rogue/indoors/town/manor/rockhill)
 "fdO" = (
 /turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
+	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/woodsrat/river)
 "fea" = (
@@ -22480,8 +22473,7 @@
 /area/rogue/indoors/town/manor/rockhill)
 "hkl" = (
 /turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
+	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/mountains/decap{
 	first_time_text = "Somewhere High"
@@ -26697,13 +26689,6 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp,
 /area/rogue/under/underdark)
-"iFw" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
-	},
-/area/rogue/under/town/sewer)
 "iFz" = (
 /obj/structure/roguewindow/openclose{
 	dir = 4
@@ -30534,8 +30519,7 @@
 /area/rogue/indoors)
 "jXv" = (
 /turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
+	icon_state = "rockwd"
 	},
 /area/rogue/indoors/shelter/mountains)
 "jXA" = (
@@ -30796,8 +30780,7 @@
 "kcB" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
+	icon_state = "rockwd"
 	},
 /area/rogue/indoors/shelter/woods{
 	first_time_text = "DRUID'S GROVE";
@@ -45248,8 +45231,7 @@
 "oXU" = (
 /obj/structure/plasticflaps,
 /turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
+	icon_state = "rockwd"
 	},
 /area/rogue/under/town/sewer)
 "oYf" = (
@@ -57161,13 +57143,6 @@
 	layer = 1.9
 	},
 /area/rogue/outdoors/beach/harbor)
-"tfz" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
-	},
-/area/rogue/under/cavewet)
 "tfU" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/cleanshallow,
@@ -62364,8 +62339,7 @@
 /area/rogue/indoors/town/manor/rockhill)
 "uYX" = (
 /turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
+	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/bograt/north)
 "uZb" = (
@@ -67709,8 +67683,7 @@
 	dir = 8
 	},
 /turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
+	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/woodsrat/river)
 "wOj" = (
@@ -67852,12 +67825,6 @@
 /obj/structure/roguewindow/stained/silver,
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/inq)
-"wPC" = (
-/turf/open/water/river{
-	icon_state = "rockwd";
-	water_reagent = /datum/reagent/water/gross
-	},
-/area/rogue/under/cavewet)
 "wPE" = (
 /obj/structure/fluff/psycross,
 /turf/open/floor/rogue/cobble/mossy,
@@ -99471,7 +99438,7 @@ whb
 whb
 whb
 whb
-wPC
+vTW
 iad
 whb
 whb
@@ -101632,11 +101599,11 @@ whb
 whb
 whb
 whb
-wPC
+vTW
 iad
 whb
 whb
-wPC
+vTW
 kmK
 whb
 whb
@@ -102497,7 +102464,7 @@ whb
 whb
 whb
 whb
-wPC
+vTW
 vTW
 kmK
 whb
@@ -133723,7 +133690,7 @@ whb
 whb
 aad
 aad
-wPC
+vTW
 iad
 iad
 aad
@@ -134588,7 +134555,7 @@ whb
 whb
 whb
 aad
-wPC
+vTW
 iad
 iad
 iad
@@ -135021,7 +134988,7 @@ whb
 whb
 aad
 aad
-tfz
+ned
 iad
 iad
 aad
@@ -150682,7 +150649,7 @@ whb
 whb
 whb
 whb
-wPC
+vTW
 swJ
 swJ
 swJ
@@ -234914,7 +234881,7 @@ pOf
 pOf
 pOf
 pOf
-eOw
+uDH
 kdN
 kdN
 kdN
@@ -235346,8 +235313,8 @@ pOf
 pOf
 pOf
 pOf
-eOw
-eOw
+uDH
+uDH
 kdN
 kdN
 vRu
@@ -235778,8 +235745,8 @@ pOf
 pOf
 uEX
 uEX
-eOw
-eOw
+uDH
+uDH
 kdN
 kdN
 vRu
@@ -236210,7 +236177,7 @@ mXk
 uEX
 uEX
 mXk
-eOw
+uDH
 kdN
 kdN
 kdN
@@ -236642,7 +236609,7 @@ gLf
 gLf
 gLf
 gLf
-iFw
+fMw
 kdN
 kdN
 kdN
@@ -240963,12 +240930,12 @@ lrs
 lrs
 lrs
 aRj
-eOw
-eOw
-eOw
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 oXU
 qbG
 qbG
@@ -247867,7 +247834,7 @@ rSC
 udz
 rSC
 uEX
-iFw
+fMw
 uvY
 mDB
 oGO
@@ -258670,13 +258637,13 @@ lrs
 rRb
 gLf
 uEX
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
 kdN
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
 kdN
 kdN
 vIa
@@ -259103,12 +259070,12 @@ rRb
 gLf
 uEX
 uEX
-eOw
-eOw
-eOw
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 kdN
 kdN
 iyZ
@@ -261267,9 +261234,9 @@ lrs
 lrs
 uEX
 uEX
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
 kdN
 kdN
 iyZ
@@ -272486,9 +272453,9 @@ uvY
 lrs
 rRb
 rRb
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
 euP
 euP
 euP
@@ -273798,9 +273765,9 @@ rdE
 crg
 uDH
 uDH
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
 oXU
 qbG
 qbG
@@ -278979,11 +278946,11 @@ rRb
 gLf
 rSC
 uEX
-eOw
+uDH
 uEX
-eOw
-eOw
-eOw
+uDH
+uDH
+uDH
 oXU
 qbG
 qbG
@@ -388919,7 +388886,7 @@ bpD
 aaf
 aaf
 aaf
-wPC
+vTW
 kmK
 ggB
 bpD
@@ -389348,9 +389315,9 @@ bpD
 bpD
 bpD
 bpD
-wPC
-wPC
-wPC
+vTW
+vTW
+vTW
 kmK
 aaf
 bpD
@@ -510779,8 +510746,8 @@ aad
 aad
 aad
 aad
-wPC
-wPC
+vTW
+vTW
 kmK
 aaf
 aaf
