@@ -13,6 +13,11 @@
  * When this file is used as part of the Ratwood-Vale/Ratwood-2.0
  * project, it is licensed under the GNU Affero General Public License v3.0.
  *
+ * This includes the AGPLv3 network clause:
+ *  - If this file is used in software that is made available to users
+ *    over a network (e.g. a game server), the complete corresponding
+ *    source code must be provided to those users, as required by AGPLv3.
+ *
  * ------------------------------------------------------------------
  * 2) PROPRIETARY LICENSE (for ANY other project or repository)
  * ------------------------------------------------------------------
