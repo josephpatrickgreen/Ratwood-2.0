@@ -295,7 +295,7 @@ If you want to expand on poisons theres tons of fun effects TG chemistry has tha
 	return ..()
 
 /datum/reagent/organpoison
-	name = "Organ Poison"
+	name = "Pulvis Interna"
 	description = ""
 	reagent_state = LIQUID
 	color = "#2c1818"
