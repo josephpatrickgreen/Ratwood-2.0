@@ -103,7 +103,7 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/shield/wood
 	belt = /obj/item/storage/belt/rogue/leather
-	r_hand = obj/item/rogueweapon/sword/falchion
+	r_hand = /obj/item/rogueweapon/sword/falchion
 	beltr = /obj/item/rogueweapon/scabbard/sword
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
