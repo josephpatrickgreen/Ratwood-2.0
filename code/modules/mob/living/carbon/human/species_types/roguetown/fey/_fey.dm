@@ -1,14 +1,35 @@
 /*
  * Copyright (c) 2025 Jerry Goldman
- * discord user "___.__.__.__.__.___"
+ * Discord: "___.__.__.__.__.___"
  *
- * Licensed under a custom license for use exclusively within the Ratwood-Vale/Ratwood-2.0 project.
- * Redistribution, reuse, or modification of this file outside the Ratwood-Vale/Ratwood-2.0 repository
- * (https://github.com/Rotwood-Vale/Ratwood-2.0) is prohibited without explicit permission.
+ * DUAL LICENSE NOTICE (AGPLv3-compliant):
  *
- * Within the Ratwood-Vale/Ratwood-2.0 repository, this file is governed by the GNU General Public License v3.0.
- * GPL compliance is fully acknowledged only within the Ratwood-Vale/Ratwood-2.0 repository.
+ * This file is made available under TWO possible licenses. You must
+ * choose ONE of them. You do NOT receive both simultaneously.
+ *
+ * ------------------------------------------------------------------
+ * 1) GNU AGPLv3 LICENSE (applies ONLY within Ratwood-Vale/Ratwood-2.0)
+ * ------------------------------------------------------------------
+ * When this file is used as part of the Ratwood-Vale/Ratwood-2.0
+ * project, it is licensed under the GNU Affero General Public License v3.0.
+ *
+ * ------------------------------------------------------------------
+ * 2) PROPRIETARY LICENSE (for ANY other project or repository)
+ * ------------------------------------------------------------------
+ * Outside of Ratwood-Vale/Ratwood-2.0, this file is NOT distributed
+ * under the AGPLv3. Instead, it is provided solely under a proprietary
+ * license. Explicit written permission from the copyright holder is
+ * required for any use, modification, or redistribution outside of
+ * the Ratwood-Vale/Ratwood-2.0 project.
+ *
+ * ------------------------------------------------------------------
+ * WHY THIS IS AGPLv3-COMPLIANT AND NOT A "RESTRICTION"
+ * ------------------------------------------------------------------
+ *
+ * This is a standard and fully compliant dual-licensing model used by
+ * numerous open source projects (e.g. MySQL, Qt, etc.).
  */
+
 
 /mob/living/carbon/human/species/fey
 	race = /datum/species/fey
