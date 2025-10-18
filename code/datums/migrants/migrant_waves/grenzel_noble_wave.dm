@@ -54,7 +54,7 @@
 		/datum/migrant_role/grenzel/envoy = 1,
 		/datum/migrant_role/grenzel/priest = 1,
 	)
-	greet_text = "You are a Grenzelhoftian envoy, traveling with bodyguards and a priest to represent your homeland."
+	greet_text = "You are a Grenzelhoftian envoy, traveling with a priest to represent your homeland."
 
 /datum/migrant_wave/grenzel_envoy_down_five
 	name = "Grenzelhoftian Envoy"
@@ -63,4 +63,4 @@
 	roles = list(
 		/datum/migrant_role/grenzel/envoy = 1,
 	)
-	greet_text = "You are a Grenzelhoftian envoy, traveling with bodyguards and a priest to represent your homeland."
+	greet_text = "You are a Grenzelhoftian envoy, traveling alone to represent your homeland."

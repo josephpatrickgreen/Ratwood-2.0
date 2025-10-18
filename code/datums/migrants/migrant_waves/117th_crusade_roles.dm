@@ -61,5 +61,5 @@
 	name = "Psydon's Chalice"
 	icon_state = "psydon_golden"
 	sellprice = 200
-	desc = "This goblet radiates opulence and grandeur."
+	desc = "A glimmering chalice made from silver and gold, it has an inlade gem unlike any other. It was said to be once psydon's very own chalice."
 #undef CTAG_CRUSADE
