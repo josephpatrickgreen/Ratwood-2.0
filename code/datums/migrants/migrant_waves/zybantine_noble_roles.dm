@@ -45,6 +45,7 @@
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/paper/scroll/writ_of_esteem/zybantine = 1,
 		/obj/item/natural/feather = 1,
 		/obj/item/paper/scroll = 2
 		)

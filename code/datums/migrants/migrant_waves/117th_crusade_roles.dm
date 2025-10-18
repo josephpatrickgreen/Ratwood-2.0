@@ -5,7 +5,7 @@
 	advclass_cat_rolls = list(CTAG_CRUSADE = 20)
 
 /datum/advclass/crusader_footman
-	name = "Knight"
+	name = "Crusader"
 	tutorial = "Crusader of the true faith, you came from Grenzelhoft on the orders of the holy see. FIND Psydon's holy chalice- and pillage your way into riches, for the glory of astrata!"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
@@ -57,4 +57,9 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_2)	//Capped to T2 miracles.
 
+/obj/item/reagent_containers/glass/cup/golden/psydon
+	name = "Psydon's Chalice"
+	icon_state = "psydon_golden"
+	sellprice = 200
+	desc = "This goblet radiates opulence and grandeur."
 #undef CTAG_CRUSADE
