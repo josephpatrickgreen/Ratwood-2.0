@@ -327,6 +327,10 @@
 /obj/item/reagent_containers/food/snacks/smallrat,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/beach/harbor)
+"afm" = (
+/obj/structure/flora/roguegrass/herb/manabloom,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/bograt/south)
 "afv" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -2791,6 +2795,22 @@
 	},
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/bath)
+"aVm" = (
+/obj/structure/stairs/stone,
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/greenstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "aVo" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/transparent/openspace,
@@ -2997,11 +3017,6 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/inq/basement)
-"aYV" = (
-/obj/structure/plasticflaps,
-/obj/structure/curtain/black,
-/turf/open/floor/rogue/greenstone,
-/area/rogue/under/town/sewer)
 "aZa" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
@@ -3083,6 +3098,28 @@
 /obj/structure/fluff/clock,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/tavern)
+"baV" = (
+/obj/structure/fluff/big_chain{
+	density = 0
+	},
+/obj/structure/rack/rogue{
+	pixel_y = 10
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons{
+	loot = list(/obj/item/rogueweapon/mace = 2, /obj/item/rogueweapon/huntingknife/idagger/steel = 2, /obj/item/rogueweapon/mace/cudgel = 2, /obj/item/rogueweapon/mace/warhammer = 2, /obj/item/rogueweapon/huntingknife = 3, /obj/item/rogueweapon/huntingknife/idagger = 2, /obj/item/rogueweapon/halberd = 2, /obj/item/rogueweapon/spear = 3, /obj/item/rogueweapon/flail = 3, /obj/item/rogueweapon/stoneaxe/battle = 1, /obj/item/rogueweapon/stoneaxe/woodcut/steel = 2, /obj/item/rogueweapon/spear = 4, /obj/item/rogueweapon/sword = 2, /obj/item/rogueweapon/sword/iron = 2, /obj/item/rogueweapon/sword/rapier = 1, /obj/item/rogueweapon/sword/short = 1, /obj/item/rogueweapon/sword/long = 1)
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons{
+	loot = list(/obj/item/rogueweapon/mace = 2, /obj/item/rogueweapon/huntingknife/idagger/steel = 2, /obj/item/rogueweapon/mace/cudgel = 2, /obj/item/rogueweapon/mace/warhammer = 2, /obj/item/rogueweapon/huntingknife = 3, /obj/item/rogueweapon/huntingknife/idagger = 2, /obj/item/rogueweapon/halberd = 2, /obj/item/rogueweapon/spear = 3, /obj/item/rogueweapon/flail = 3, /obj/item/rogueweapon/stoneaxe/battle = 1, /obj/item/rogueweapon/stoneaxe/woodcut/steel = 2, /obj/item/rogueweapon/spear = 4, /obj/item/rogueweapon/sword = 2, /obj/item/rogueweapon/sword/iron = 2, /obj/item/rogueweapon/sword/rapier = 1, /obj/item/rogueweapon/sword/short = 1, /obj/item/rogueweapon/sword/long = 1)
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "baW" = (
 /obj/effect/decal/cobbleedge{
 	dir = 6
@@ -3357,6 +3394,17 @@
 "bfS" = (
 /turf/closed/wall/mineral/rogue/roofwall/middle,
 /area/rogue/indoors/town/bath)
+"bfU" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "bfZ" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town/Academy)
@@ -3501,6 +3549,14 @@
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/tavern)
+"bim" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell{
+	icon_state = "goblin_hell";
+	faction = list("infernal","neutral")
+	},
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "bis" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/fermentation_keg/sourwine,
@@ -3884,6 +3940,19 @@
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/inq/basement)
+"bpm" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/fiend{
+	wander = 0
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "bpt" = (
 /turf/open/floor/rogue/ruinedwood{
 	dir = 1;
@@ -4002,6 +4071,10 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/manor/rockhill)
+"brE" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/bograt/west)
 "brF" = (
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/rogue/grassyel,
@@ -4030,6 +4103,21 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
+"bsh" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "bst" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -4563,10 +4651,6 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/bath)
-"bAe" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bograt/south)
 "bAk" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/pelt,
@@ -4944,6 +5028,17 @@
 "bGI" = (
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
+"bGV" = (
+/obj/structure/bed/rogue/shit,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "bGW" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -5628,6 +5723,18 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/manor/rockhill)
+"bRe" = (
+/obj/structure/rack/rogue,
+/obj/item/clothing/shoes/roguetown/boots,
+/obj/item/clothing/shoes/roguetown/boots,
+/obj/machinery/light/rogue/wallfire/candle/floorcandle/pink{
+	plane = -7;
+	pixel_y = 4;
+	name = "scented candles";
+	desc = "These candles produces a heady vapor, warding away the less pleasing scents of the sewer."
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/under/town/sewer)
 "bRf" = (
 /obj/structure/stairs/stone{
 	dir = 8
@@ -5667,6 +5774,18 @@
 	},
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/town/church)
+"bRN" = (
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "bRO" = (
 /obj/structure/stairs{
 	dir = 8
@@ -6112,6 +6231,19 @@
 	},
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/outdoors/town/rockhill)
+"bZG" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/watcher{
+	wander = 0
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "bZZ" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/grassgrey,
@@ -6156,7 +6288,7 @@
 	dir = 1;
 	pixel_y = 10
 	},
-/turf/open/floor/rogue/cobble/mossy,
+/turf/open/floor/rogue/grassgrey,
 /area/rogue/outdoors/bograt/south)
 "caS" = (
 /obj/structure/fluff/railing/fence{
@@ -6172,6 +6304,16 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
+"caY" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "cbg" = (
 /turf/closed/wall/mineral/rogue/roofwall/middle{
 	dir = 1
@@ -8011,6 +8153,16 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/food,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors)
+"cFf" = (
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "cFr" = (
 /obj/structure/closet/crate/drawer{
 	pixel_y = 6
@@ -8048,6 +8200,13 @@
 /obj/structure/fluff/walldeco/church/line,
 /turf/open/water/bath,
 /area/rogue/indoors/town/church)
+"cGc" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -10
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/bograt/safe)
 "cGj" = (
 /obj/structure/fluff/railing/border{
 	dir = 9;
@@ -8426,10 +8585,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
-"cLv" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/bograt/west)
 "cLU" = (
 /obj/structure/bars/pipe{
 	dir = 1;
@@ -8706,6 +8861,10 @@
 /area/rogue/under/town/basement{
 	droning_sound = 'sound/music/area/gobcamp.ogg'
 	})
+"cPD" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/bograt/south)
 "cPO" = (
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/indoors/shelter/mountains)
@@ -9117,6 +9276,11 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town)
+"cWu" = (
+/obj/structure/curtain/black,
+/obj/structure/plasticflaps,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/town/sewer)
 "cWz" = (
 /obj/structure/closet/crate/roguecloset/inn/south{
 	keylock = 1;
@@ -9634,6 +9798,17 @@
 	droning_sound_dusk = null;
 	droning_sound_night = null
 	})
+"dfj" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "dfk" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/bars/cemetery,
@@ -9725,6 +9900,20 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/roofs)
+"dgG" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "dgM" = (
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/tile,
@@ -10043,13 +10232,9 @@
 	droning_sound = 'sound/music/area/gobcamp.ogg'
 	})
 "dmH" = (
-/obj/effect/decal/cobbleedge{
-	dir = 8;
-	icon_state = "borderfall"
-	},
 /mob/living/carbon/human/species/skeleton/npc/cultist,
-/turf/open/floor/rogue/cobble,
-/area/rogue/under/cave/dungeon1)
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/bograt/above)
 "dmK" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/blue/long,
 /area/rogue/indoors/town/manor/rockhill)
@@ -10303,6 +10488,10 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woodsrat/north)
+"drd" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/west)
 "drv" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/closet/crate/roguecloset{
@@ -10473,6 +10662,20 @@
 /obj/item/natural/rock,
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
+"dtV" = (
+/obj/effect/wisp/prestidigitation{
+	color = "#ff0008";
+	light_color = "#ff0008"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "dum" = (
 /obj/structure/fluff/walldeco/chains,
 /obj/effect/decal/cleanable/blood/splatter,
@@ -10559,6 +10762,10 @@
 /obj/item/flashlight/flare/torch/lantern,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
+"dvY" = (
+/obj/structure/closet/crate/roguecloset/inn/chest,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/under/town/sewer)
 "dwe" = (
 /obj/machinery/light/rogue/wallfire/candle/blue{
 	pixel_y = -32
@@ -10741,6 +10948,21 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/inq/basement)
+"dyL" = (
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rogueweapon/pitchfork,
+/obj/item/rogueweapon/whip/antique,
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "dyN" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/rogue/cobble/mossy,
@@ -10791,10 +11013,10 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town/rockhill)
 "dzJ" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
-/mob/living/carbon/human/species/skeleton/npc/cultist,
-/turf/open/floor/rogue/cobble,
-/area/rogue/under/cave/dungeon1)
+/turf/closed/wall/mineral/rogue/pipe{
+	icon_state = "iron_line"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "dzU" = (
 /obj/item/grown/log/tree,
 /turf/open/floor/rogue/grass,
@@ -11139,6 +11361,22 @@
 	},
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/town/magician)
+"dEl" = (
+/obj/structure/bars/passage{
+	redstone_id = "firetreasure"
+	},
+/obj/structure/trap/fire{
+	max_integrity = 100
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "dEr" = (
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/inq/office)
@@ -11347,6 +11585,13 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town/rockhill)
+"dHW" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell{
+	icon_state = "goblin_hell";
+	faction = list("infernal","neutral")
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "dIa" = (
 /obj/structure/rack/rogue,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
@@ -11592,6 +11837,21 @@
 /obj/item/rope,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors)
+"dLF" = (
+/obj/structure/lever/wall{
+	dir = 8;
+	redstone_id = "fireexperiment2";
+	name = "Unlabelled lever";
+	pixel_y = -9
+	},
+/obj/structure/lever/wall{
+	dir = 8;
+	redstone_id = "firepreentry";
+	name = "Unlabelled lever";
+	pixel_y = 8
+	},
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "dLG" = (
 /obj/structure/fermentation_keg,
 /turf/open/floor/rogue/cobblerock,
@@ -11819,6 +12079,15 @@
 /obj/structure/fluff/walldeco/church/line,
 /turf/open/water/bath,
 /area/rogue/indoors/town/church)
+"dPB" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "dPL" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -12100,6 +12369,16 @@
 	droning_sound_dusk = null;
 	droning_sound_night = null
 	})
+"dSW" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "dSY" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -12248,6 +12527,12 @@
 	icon_state = "vertw"
 	},
 /area/rogue/indoors/town/shop)
+"dVP" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound{
+	wander = 0
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "dWa" = (
 /obj/structure/bars/grille{
 	dir = 8
@@ -12258,6 +12543,18 @@
 /obj/structure/bookcase/random/archive,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
+"dWh" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 1
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "dWk" = (
 /obj/structure/fluff/railing/border/east,
 /obj/structure/fluff/railing/border/north,
@@ -12702,6 +12999,16 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield/rockhill)
+"ebS" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdunhell1";
+	aportalid = "wizdunhell2";
+	color = "#ff0d00"
+	},
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "ebW" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/ruinedwood,
@@ -13235,10 +13542,19 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/bath)
-"ekc" = (
-/obj/structure/flora/roguegrass/swampweed,
-/turf/open/water/swamp/deep,
-/area/rogue/outdoors/bograt/sunken)
+"ejN" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp{
+	wander = 0
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "ekt" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/roguemachine/scomm/r,
@@ -13475,6 +13791,16 @@
 	icon_state = "bfloorz"
 	},
 /area/rogue/indoors/town/manor/rockhill)
+"enW" = (
+/obj/structure/roguemachine/bounty,
+/obj/machinery/light/rogue/wallfire/candle/floorcandle/pink{
+	plane = -7;
+	pixel_y = 4;
+	name = "scented candles";
+	desc = "These candles produces a heady vapor, warding away the less pleasing scents of the sewer."
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/town/sewer)
 "enZ" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
@@ -13776,6 +14102,10 @@
 /area/rogue/outdoors/mountains/decap{
 	first_time_text = "Somewhere High"
 	})
+"etL" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/north)
 "etO" = (
 /obj/structure/table/wood/poor,
 /obj/item/reagent_containers/glass/cup/wooden{
@@ -13819,6 +14149,20 @@
 /area/rogue/under/town/basement{
 	droning_sound = 'sound/music/area/gobcamp.ogg'
 	})
+"euF" = (
+/obj/structure/lever{
+	redstone_id = "WatcherRoom";
+	pixel_y = 17
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "euG" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grassred,
@@ -13830,6 +14174,17 @@
 "euP" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/beach/harbor)
+"euU" = (
+/obj/item/natural/rock/gem,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "euX" = (
 /obj/structure/chair/stool/rogue,
 /obj/structure/chair/stool/rogue,
@@ -13938,6 +14293,19 @@
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet)
+"exg" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "exk" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/wood,
@@ -13973,6 +14341,17 @@
 /obj/item/natural/bundle/cloth,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/church)
+"eyd" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "eyf" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
@@ -14306,6 +14685,18 @@
 /obj/structure/roguemachine/scomm,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town/church/chapel)
+"eDa" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/item/rogueweapon/sword/long/exe,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "eDh" = (
 /obj/structure/stairs{
 	dir = 8
@@ -14348,8 +14739,8 @@
 /area/rogue/under/cave)
 "eDW" = (
 /obj/structure/fluff/traveltile/magicportal{
-	aportalgoesto = "wizdun1";
-	aportalid = "wizdun2";
+	aportalgoesto = "wizdunhell2";
+	aportalid = "wizdunhell1";
 	color = "#ff0d00"
 	},
 /obj/structure/bars/passage/shutter{
@@ -14541,6 +14932,13 @@
 /obj/item/flashlight/flare/torch/metal,
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/church)
+"eGM" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	pixel_x = 9
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/bograt/safe)
 "eGO" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/wood,
@@ -14626,12 +15024,6 @@
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
-"eHR" = (
-/obj/structure/stairs/stone{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/bograt/safe)
 "eHX" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -14727,6 +15119,17 @@
 	icon_state = "bfloorz"
 	},
 /area/rogue/indoors/town/manor/rockhill)
+"eJu" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "eJx" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -15151,6 +15554,11 @@
 /area/rogue/under/town/basement{
 	droning_sound = 'sound/music/area/gobcamp.ogg'
 	})
+"eRT" = (
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "eSc" = (
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/tile{
@@ -16445,6 +16853,19 @@
 	dir = 1
 	},
 /area/rogue/indoors/town/manor/rockhill)
+"fno" = (
+/obj/item/natural/rock/gem,
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "fnt" = (
 /obj/structure/chair/bench/couchablack,
 /turf/open/floor/rogue/carpet/lord/center,
@@ -16988,16 +17409,6 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician)
-"fwn" = (
-/obj/structure/roguemachine/bounty,
-/obj/machinery/light/rogue/wallfire/candle/floorcandle/pink{
-	plane = -7;
-	pixel_y = 4;
-	name = "scented candles";
-	desc = "These candles produces a heady vapor, warding away the less pleasing scents of the sewer."
-	},
-/turf/open/floor/rogue/concrete,
-/area/rogue/under/town/sewer)
 "fwp" = (
 /obj/structure/table/wood{
 	dir = 4;
@@ -17491,8 +17902,11 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/rtfield/rockhill)
 "fDS" = (
-/turf/open/floor/rogue/AzureSand,
-/area/rogue/outdoors/bograt/safe)
+/obj/structure/bars/passage{
+	redstone_id = "fireexperiment3"
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "fDU" = (
 /obj/structure/chair/stool/rogue{
 	pixel_x = 2;
@@ -17886,6 +18300,17 @@
 /obj/structure/chair/bench/couchablack/r,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors)
+"fKH" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "fKM" = (
 /obj/item/bedsheet/rogue/pelt{
 	pixel_y = 8
@@ -18241,6 +18666,22 @@
 /obj/item/roguecoin/gold/pile,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church)
+"fPx" = (
+/obj/structure/mannequin/male,
+/obj/item/clothing/suit/roguetown/armor/plate/modern/blacksteel_full_plate,
+/obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet,
+/obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves,
+/obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots,
+/obj/item/clothing/under/roguetown/platelegs/blacksteel/modern,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "fPA" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -18363,6 +18804,20 @@
 	},
 /turf/open/floor/rogue/carpet/lord/left,
 /area/rogue/indoors/town/manor/rockhill)
+"fRj" = (
+/obj/structure/fluff/walldeco/chains,
+/mob/living/carbon/human/species/goblin/npc/ambush/moon{
+	icon_state = "goblin_moon"
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "fRo" = (
 /obj/structure/roguemachine/scomm/l,
 /obj/structure/fluff/railing/border{
@@ -18542,6 +18997,22 @@
 "fUe" = (
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/under/cavewet/river)
+"fUf" = (
+/obj/structure/stairs/stone,
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/greenstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "fUg" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/town/rockhill)
@@ -18672,6 +19143,19 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavewet/wizarddungeon)
+"fVY" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/moon{
+	icon_state = "goblin_moon"
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "fWo" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/cloth,
@@ -18778,6 +19262,19 @@
 /obj/item/natural/rock,
 /turf/open/water/river,
 /area/rogue/outdoors/beach/harbor)
+"fYp" = (
+/obj/structure/lever{
+	redstone_id = "firetreasure"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "fYq" = (
 /obj/structure/fluff/statue/gargoyle/moss/candles,
 /turf/closed/mineral/random/rogue,
@@ -19857,6 +20354,10 @@
 /obj/structure/ladder,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/bograt/above)
+"grB" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
+/turf/open/water/swamp,
+/area/rogue/outdoors/bograt/west)
 "grH" = (
 /obj/effect/landmark/quest_spawner/hard,
 /turf/open/floor/rogue/dirt,
@@ -20424,6 +20925,22 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/outdoors/town/rockhill)
+"gAF" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/natural/rock/coal,
+/obj/effect/wisp/prestidigitation{
+	color = "#ff0008";
+	light_color = "#ff0008"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "gAM" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/mineral/rogue/wooddark,
@@ -20501,6 +21018,17 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town)
+"gBY" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "gBZ" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4;
@@ -20527,6 +21055,17 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/under/town/sewer)
+"gCY" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "gDa" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -20976,6 +21515,18 @@
 "gLf" = (
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/town/sewer)
+"gLj" = (
+/obj/item/restraints/legcuffs/beartrap,
+/obj/item/restraints/legcuffs/beartrap,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "gLk" = (
 /mob/living/carbon/human/species/dwarfskeleton/ambush/knight,
 /turf/open/floor/rogue/cobble/mossy,
@@ -21649,6 +22200,13 @@
 /obj/structure/curtain/black,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/dwarfin/rockhill)
+"gVf" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -10
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bograt/west)
 "gVs" = (
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
@@ -21792,6 +22350,16 @@
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/bath)
+"gXW" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "gYh" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/water/bath,
@@ -23655,6 +24223,10 @@
 	dir = 5
 	},
 /area/rogue/outdoors/town/rockhill)
+"hEf" = (
+/obj/item/roguebin/water,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/town/church)
 "hEg" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 6
@@ -23718,12 +24290,15 @@
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church/chapel)
 "hFz" = (
-/obj/structure/stairs{
-	dir = 4
-	},
-/obj/structure/fluff/railing/wood,
-/turf/open/floor/rogue/hexstone,
-/area/rogue/indoors)
+/turf/open/lava,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "hFG" = (
 /obj/structure/flora/ausbushes/reedbush,
 /turf/open/water/swamp/deep,
@@ -23936,6 +24511,16 @@
 /obj/item/clothing/head/roguetown/hatfur,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors)
+"hJj" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "hJp" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
 /turf/open/floor/rogue/grass,
@@ -23962,6 +24547,19 @@
 /obj/effect/spawner/lootdrop/roguetown/sewers,
 /turf/open/water/swamp,
 /area/rogue/under/town/sewer)
+"hKb" = (
+/obj/structure/fluff/big_chain{
+	density = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "hKm" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 8
@@ -24550,6 +25148,19 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin/rockhill)
+"hTw" = (
+/obj/item/clothing/mask/rogue/facemask/prisoner,
+/obj/item/clothing/mask/rogue/facemask/prisoner,
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "hTD" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -25299,6 +25910,21 @@
 	icon_state = "bfloorz"
 	},
 /area/rogue/indoors/town/manor/rockhill)
+"ifb" = (
+/obj/structure/lever/wall{
+	dir = 8;
+	redstone_id = "fireexperiment1";
+	name = "Unlabelled lever";
+	pixel_y = -9
+	},
+/obj/structure/lever/wall{
+	dir = 8;
+	redstone_id = "fireexperiment3";
+	name = "Unlabelled lever";
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "ifg" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -26028,6 +26654,19 @@
 "iuh" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/indoors/shelter/mountains)
+"iul" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/item/rogueweapon/scabbard/sword,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "iuo" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/church)
@@ -26176,11 +26815,6 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/beach/harbor)
-"iwq" = (
-/obj/structure/curtain/black,
-/obj/structure/plasticflaps,
-/turf/open/floor/rogue/greenstone,
-/area/rogue/under/town/sewer)
 "iwv" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
@@ -26309,6 +26943,16 @@
 /obj/structure/toilet,
 /turf/open/water/swamp/deep,
 /area/rogue/under/town/basement)
+"iyu" = (
+/turf/open/floor/rogue/greenstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "iyy" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -27244,10 +27888,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
-"iNE" = (
-/mob/living/carbon/human/species/skeleton/npc/cultist,
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/bograt/above)
 "iNI" = (
 /obj/structure/roguemachine/stockpile,
 /turf/open/floor/rogue/tile{
@@ -27271,6 +27911,10 @@
 /obj/item/natural/poo/horse,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woodsrat/south)
+"iOm" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/bograt/south)
 "iOD" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobblerock,
@@ -27405,6 +28049,10 @@
 /obj/effect/landmark/start/villager,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town/rockhill)
+"iRJ" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/AzureSand,
+/area/rogue/outdoors/bograt/west)
 "iRM" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -27426,6 +28074,24 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/floor/rogue/AzureSand,
 /area/rogue/outdoors/beach/harbor)
+"iSd" = (
+/obj/structure/bed/rogue/shit,
+/obj/item/clothing/suit/roguetown/shirt/dress/royal/princess{
+	pixel_y = 2
+	},
+/obj/item/clothing/ring/quartz,
+/mob/living/carbon/human/species/goblin/npc/ambush/moon{
+	icon_state = "goblin_moon"
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "iSj" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -27474,10 +28140,6 @@
 /obj/item/rope/chain,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/church)
-"iTc" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/water/swamp,
-/area/rogue/outdoors/bograt/south)
 "iTl" = (
 /obj/machinery/light/rogue/torchholder/hotspring/standing,
 /obj/structure/flora/ausbushes/ppflowers,
@@ -27724,10 +28386,6 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor/rockhill)
-"iXY" = (
-/obj/structure/flora/roguegrass/maneater/real,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/bograt/safe)
 "iYg" = (
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/bograt/south)
@@ -27855,9 +28513,15 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/bograt/above)
 "jab" = (
-/obj/structure/flora/roguegrass/herb/manabloom,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/bograt/south)
+/turf/closed/mineral/random/rogue,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "jac" = (
 /obj/structure/flora/ausbushes/reedbush,
 /obj/structure/flora/roguegrass/herb/taraxacum,
@@ -27978,6 +28642,19 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/town/basement{
 	droning_sound = 'sound/music/area/gobcamp.ogg'
+	})
+"jbU" = (
+/obj/structure/trap/fire{
+	max_integrity = 100
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
 	})
 "jbX" = (
 /obj/structure/fluff/littlebanners/bluewhite{
@@ -28479,6 +29156,10 @@
 /obj/machinery/gear_painter,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/beach/harbor)
+"jlc" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/water/swamp/deep,
+/area/rogue/outdoors/bograt/sunken)
 "jlg" = (
 /obj/structure/fluff/statue/knight{
 	dir = 3;
@@ -28662,6 +29343,20 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/bath)
+"jnY" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp{
+	faction = list("infernal","neutral");
+	wander = 0
+	},
+/turf/open/floor/rogue/greenstone/runed,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "jod" = (
 /obj/structure/table/wood/large_table/south_west,
 /obj/item/reagent_containers/glass/bowl,
@@ -29115,6 +29810,24 @@
 	},
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/indoors/inq/basement)
+"jwv" = (
+/obj/structure/trap/fire{
+	max_integrity = 100
+	},
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "jwH" = (
 /obj/effect/wisp/prestidigitation{
 	desc = "A small, fiery ball of light made up of mystical energy.";
@@ -29614,6 +30327,11 @@
 /obj/structure/table/wood/large_table/south_west,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
+"jGk" = (
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cavewet{
+	first_time_text = null
+	})
 "jGp" = (
 /obj/structure/flora/rogueshroom,
 /turf/open/floor/rogue/dirt,
@@ -29720,6 +30438,19 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/garrison)
+"jIe" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound{
+	wander = 0
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "jIm" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/rock,
 /turf/open/floor/rogue/concrete,
@@ -29804,6 +30535,18 @@
 /obj/item/rogueweapon/pick,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
+"jKn" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "jKx" = (
 /obj/structure/closet/crate/chest,
 /obj/item/reagent_containers/glass/cup/wooden,
@@ -30046,6 +30789,21 @@
 /obj/structure/chair/bench/couchablack,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/indoors/town/bath)
+"jOz" = (
+/obj/structure/bed/rogue/shit,
+/obj/item/roguegem/diamond,
+/mob/living/carbon/human/species/goblin/npc/ambush/moon{
+	icon_state = "goblin_moon"
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "jOC" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /obj/structure/flora/roguegrass/herb/symphitum,
@@ -30168,6 +30926,25 @@
 	icon_state = "tile"
 	},
 /area/rogue/indoors/town/tavern)
+"jQk" = (
+/obj/structure/fluff/walldeco/chains,
+/obj/effect/decal/remains/human{
+	pixel_y = 16;
+	pixel_x = 10
+	},
+/obj/effect/decal/cleanable/blood,
+/mob/living/carbon/human/species/goblin/npc/ambush/moon{
+	icon_state = "goblin_moon"
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "jQo" = (
 /obj/structure/mineral_door/wood/red{
 	locked = 1;
@@ -30675,10 +31452,6 @@
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bograt/north)
-"jZF" = (
-/obj/structure/closet/crate/roguecloset/inn/chest,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/under/town/sewer)
 "jZP" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10
@@ -30857,6 +31630,16 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
+"kcO" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "kcZ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -31008,6 +31791,12 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/manor/rockhill)
+"keH" = (
+/obj/structure/trap/fire{
+	max_integrity = 100
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cavewet/wizarddungeon)
 "keJ" = (
 /obj/structure/chair/stool/rogue{
 	pixel_x = -1;
@@ -31822,6 +32611,9 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
+"kst" = (
+/turf/open/floor/rogue/AzureSand,
+/area/rogue/outdoors/bograt/safe)
 "ksu" = (
 /obj/item/reagent_containers/food/snacks/smallrat/dead,
 /turf/open/floor/rogue/dirt/road,
@@ -32241,6 +33033,10 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/inq/basement)
+"kAg" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/south)
 "kAh" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -33042,6 +33838,9 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
+"kOW" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "kPa" = (
 /obj/structure/fluff/psycross/crafted,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
@@ -33401,6 +34200,16 @@
 /obj/structure/roguemachine/noticeboard,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town/rockhill)
+"kWV" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "kXh" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -33557,6 +34366,9 @@
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/metal,
 /area/rogue/indoors/town)
+"kZk" = (
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "kZl" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/dirt/road,
@@ -33796,10 +34608,6 @@
 /area/rogue/under/town/basement{
 	droning_sound = 'sound/music/area/gobcamp.ogg'
 	})
-"lcy" = (
-/obj/structure/flora/rogueshroom,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woodsrat/river)
 "lcD" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -34097,6 +34905,21 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/outdoors/town/rockhill)
+"lkq" = (
+/obj/structure/bed/rogue/shit,
+/mob/living/carbon/human/species/goblin/npc/ambush/hell{
+	icon_state = "goblin_hell";
+	faction = list("infernal")
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "lkF" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -34173,6 +34996,12 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors)
+"llH" = (
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "lmd" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -35066,6 +35895,17 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town/rockhill)
+"lCs" = (
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "lCv" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -35235,6 +36075,10 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
+"lEY" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
+/turf/open/floor/rogue/AzureSand,
+/area/rogue/outdoors/bograt/west)
 "lFe" = (
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/inq)
@@ -35854,6 +36698,16 @@
 "lQi" = (
 /turf/closed/wall/mineral/rogue/stone/red_moss,
 /area/rogue/indoors/shelter/mountains)
+"lQl" = (
+/turf/open/floor/rogue/greenstone/runed,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "lQu" = (
 /obj/structure/fluff/wallclock{
 	pixel_x = -1
@@ -36996,6 +37850,22 @@
 	},
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/town/church)
+"miw" = (
+/obj/structure/closet/crate/chest/gold,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/item/roguecoin/gold/pile,
+/obj/item/roguecoin/silver,
+/obj/item/roguecoin/silver/pile,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "miz" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -37263,6 +38133,10 @@
 	droning_sound_dusk = null;
 	droning_sound_night = null
 	})
+"mlz" = (
+/obj/structure/flora/roguegrass/herb/random,
+/turf/open/floor/rogue/AzureSand,
+/area/rogue/outdoors/bograt/safe)
 "mlA" = (
 /obj/structure/fluff/railing/border,
 /turf/open/transparent/openspace,
@@ -37677,10 +38551,27 @@
 /obj/item/reagent_containers/glass/bucket/pot,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors)
+"msX" = (
+/obj/structure/bars/passage{
+	redstone_id = "fireexperiment2"
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "msZ" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/town/basement{
 	droning_sound = 'sound/music/area/gobcamp.ogg'
+	})
+"mtc" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
 	})
 "mtd" = (
 /obj/structure/mineral_door/wood/donjon{
@@ -38202,6 +39093,10 @@
 "mDl" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woodsrat/south)
+"mDm" = (
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/south)
 "mDo" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/inq/basement)
@@ -38402,10 +39297,6 @@
 	},
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor/rockhill)
-"mGe" = (
-/obj/item/roguebin/water/gross,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors)
 "mGi" = (
 /obj/structure/closet/crate/roguecloset/inn/south{
 	lockid = "fancyii";
@@ -38481,6 +39372,17 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/water/swamp,
 /area/rogue/under/cave/dungeon1)
+"mHT" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "mHU" = (
 /obj/machinery/light/rogue/hearth,
 /obj/item/cooking/pan,
@@ -38770,6 +39672,13 @@
 /obj/structure/rack/rogue/shelf/biggest,
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/town/basement/keep)
+"mMU" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	pixel_x = 9
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/bograt/safe)
 "mNb" = (
 /obj/structure/fluff/statue/gargoyle/candles,
 /turf/open/floor/rogue/blocks,
@@ -38797,6 +39706,12 @@
 /obj/item/clothing/suit/roguetown/shirt/apothshirt,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/physician)
+"mNy" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/bograt/safe)
 "mNP" = (
 /obj/structure/fluff/railing/border/east,
 /mob/living/simple_animal/hostile/rogue/haunt,
@@ -38808,6 +39723,30 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/rockhill)
+"mOl" = (
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
+"mOm" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "mOB" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -39125,6 +40064,20 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/manor/rockhill)
+"mUx" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/spells,
+/obj/item/roguecoin/copper/pile,
+/obj/item/roguecoin/silver,
+/obj/item/roguecoin/silver/pile,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "mUH" = (
 /obj/machinery/light/rogue/hearth,
 /obj/item/cooking/pan,
@@ -39229,6 +40182,17 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/church)
+"mWT" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "mWX" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/town/garrison)
@@ -39590,6 +40554,32 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/sewer)
+"nde" = (
+/obj/structure/rack/rogue{
+	pixel_y = 10
+	},
+/obj/item/rogueweapon/spear/stone,
+/obj/item/rogueweapon/spear/stone{
+	pixel_x = -22
+	},
+/obj/item/rogueweapon/spear/stone{
+	pixel_x = -8
+	},
+/obj/item/rogueweapon/spear/stone{
+	pixel_y = -1
+	},
+/obj/structure/fluff/big_chain{
+	density = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "ndt" = (
 /obj/structure/fermentation_keg,
 /turf/open/floor/rogue/twig,
@@ -40274,6 +41264,22 @@
 	},
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/dwarfin/rockhill)
+"npf" = (
+/obj/structure/bars/passage{
+	redstone_id = "WatcherRoom"
+	},
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "npj" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/water/swamp,
@@ -40780,6 +41786,17 @@
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/town/sewer)
+"nAf" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/lava,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "nAm" = (
 /turf/open/water/river{
 	dir = 8;
@@ -41155,6 +42172,14 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/under/cavewet)
+"nHI" = (
+/obj/structure/winch{
+	name = "Lower Major Containment Chamber Gate";
+	redstone_id = "firebigger";
+	gid = "firebigger"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cavewet/wizarddungeon)
 "nIw" = (
 /obj/structure/rack/rogue/shelf/big{
 	icon_state = "shelf_biggest";
@@ -41612,10 +42637,6 @@
 /obj/item/clothing/suit/roguetown/shirt/tunic,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
-"nPu" = (
-/obj/structure/flora/roguegrass/herb/random,
-/turf/open/floor/rogue/AzureSand,
-/area/rogue/outdoors/bograt/safe)
 "nPV" = (
 /obj/structure/bars/pipe{
 	dir = 4;
@@ -41758,6 +42779,18 @@
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/dungeon1)
+"nSa" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/item/clothing/ring/active/nomag,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "nSb" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -41924,6 +42957,16 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woodsrat/south)
+"nUW" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "nUY" = (
 /obj/structure/chair/stool/rogue{
 	pixel_x = 4
@@ -43240,7 +44283,6 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town/rockhill)
 "oqo" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
 /turf/open/floor/rogue/AzureSand,
 /area/rogue/outdoors/bograt/west)
 "oqt" = (
@@ -43599,6 +44641,9 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors)
+"ovH" = (
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/under/cavewet/wizarddungeon)
 "ovR" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -43889,6 +44934,13 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/tile/bfloorz,
 /area/rogue/indoors/town/church)
+"oAP" = (
+/obj/structure/fluff/walldeco/chains,
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound{
+	wander = 0
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "oBq" = (
 /obj/structure/fluff/railing/border,
 /obj/effect/decal/cleanable/dirt/cobweb,
@@ -44046,6 +45098,20 @@
 /obj/item/reagent_containers/food/snacks/smallrat,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/town/basement)
+"oEb" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell{
+	icon_state = "goblin_hell";
+	faction = list("infernal","neutral")
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "oEe" = (
 /obj/machinery/light/rogue/hearth,
 /obj/item/reagent_containers/glass/bucket/pot,
@@ -44179,6 +45245,12 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/sewer,
 /area/rogue/under/town/sewer)
+"oGS" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/watcher{
+	wander = 0
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "oGT" = (
 /obj/structure/vine,
 /turf/closed/wall/mineral/rogue/decowood,
@@ -44434,8 +45506,15 @@
 	droning_sound_night = null
 	})
 "oJM" = (
-/turf/open/water/cleanshallow,
-/area/rogue/outdoors/bograt/south)
+/turf/closed/mineral/random/rogue/boglava/high,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "oJZ" = (
 /obj/structure/closet/crate/chest{
 	lockid = "clinic"
@@ -44509,6 +45588,9 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cavewet)
+"oLF" = (
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/bograt/safe)
 "oLL" = (
 /turf/closed/wall/mineral/rogue/roofwall/outercorner,
 /area/rogue/indoors/town)
@@ -44731,6 +45813,16 @@
 	dir = 4
 	},
 /area/rogue/indoors/town/church)
+"oPr" = (
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "oPt" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -44913,6 +46005,7 @@
 	color = "#ffff00";
 	light_color = "#33ff00"
 	},
+/mob/living/carbon/human/species/skeleton/npc/dungeon,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
@@ -45005,6 +46098,21 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/underdark)
+"oUL" = (
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "oUP" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -45374,6 +46482,20 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors)
+"oYN" = (
+/obj/structure/gate{
+	gid = "fiendroom";
+	redstone_id = "fiendroom"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "oYO" = (
 /obj/effect/landmark/start/guard_captain{
 	dir = 1
@@ -45392,8 +46514,8 @@
 	},
 /area/rogue/under/town/sewer)
 "oZr" = (
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/bograt/safe)
+/turf/closed/wall/mineral/rogue/decostone/mossy/red,
+/area/rogue/under/cavewet/wizarddungeon)
 "oZw" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/cobble,
@@ -45423,10 +46545,6 @@
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/beach/harbor)
-"oZX" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bograt/west)
 "paa" = (
 /obj/item/reagent_containers/food/snacks/badrecipe,
 /obj/item/millstone{
@@ -45842,6 +46960,12 @@
 /obj/structure/mineral_door/swing_door,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/town/sewer)
+"pjE" = (
+/mob/living/carbon/human/species/skeleton/npc/dungeon,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "horzw"
+	},
+/area/rogue/under/cave/dungeon1)
 "pjI" = (
 /obj/structure/chair/bench/church/smallbench,
 /turf/open/floor/rogue/cobble,
@@ -45850,6 +46974,17 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/town/church/chapel)
+"pjL" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "pjO" = (
 /obj/structure/table/wood/poor,
 /obj/item/candle/skull/lit{
@@ -45942,10 +47077,6 @@
 /obj/structure/roguemachine/scomm/l,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
-"pkN" = (
-/obj/structure/stairs/stone,
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
 "pkQ" = (
 /obj/structure/flora/ausbushes/reedbush,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
@@ -46139,10 +47270,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
-"pnI" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/bograt/south)
 "pnJ" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/natural/feather,
@@ -46166,6 +47293,20 @@
 /obj/structure/roguewindow/stained/silver,
 /turf/closed/wall/mineral/rogue/decostone/mossy,
 /area/rogue/indoors/town/church)
+"poE" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp{
+	despawn_on_idle = 0;
+	faction = list("infernal","neutral")
+	},
+/turf/open/lava,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "poO" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
@@ -46184,6 +47325,20 @@
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor/rockhill)
+"ppb" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/fluff/big_chain{
+	density = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "ppi" = (
 /obj/structure/stairs{
 	dir = 1
@@ -46312,6 +47467,19 @@
 /obj/item/natural/bundle/cloth,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/church)
+"pra" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "pri" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -46899,6 +48067,19 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors)
+"pAo" = (
+/obj/effect/decal/cleanable/roguerune/arcyne/summoning/mid{
+	pixel_y = -48
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "pAs" = (
 /obj/structure/chair/stool/rogue,
 /obj/structure/fluff/walldeco/church/line{
@@ -47204,6 +48385,10 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town/rockhill)
+"pEd" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
+/turf/open/water/swamp/deep,
+/area/rogue/outdoors/bograt/west)
 "pEi" = (
 /obj/machinery/light/rogue/smelter,
 /obj/machinery/light/rogue/torchholder/l,
@@ -47710,6 +48895,13 @@
 "pOf" = (
 /turf/open/water/river,
 /area/rogue/under/town/sewer)
+"pOg" = (
+/obj/structure/gate{
+	gid = "firebigger";
+	redstone_id = "firebigger"
+	},
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "pOi" = (
 /obj/structure/rogue/trophy/deer,
 /obj/structure/chair/bench/ultimacouch,
@@ -48847,6 +50039,20 @@
 "qmr" = (
 /turf/open/water/ocean,
 /area/rogue/outdoors/beach/harbor)
+"qmw" = (
+/obj/effect/decal/cleanable/roguerune/arcyne/summoning/max,
+/obj/structure/trap/fire{
+	max_integrity = 100
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qmx" = (
 /obj/structure/rogue/trophy/deer,
 /turf/open/floor/rogue/carpet,
@@ -48854,10 +50060,6 @@
 "qmz" = (
 /turf/closed/wall/mineral/rogue/wooddark/window,
 /area/rogue/outdoors/bograt/south)
-"qmG" = (
-/obj/item/roguebin/water,
-/turf/open/floor/rogue/church,
-/area/rogue/indoors/town/church)
 "qmJ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -49402,6 +50604,13 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/church)
+"qxd" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -10
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/bograt/safe)
 "qxh" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -49423,6 +50632,19 @@
 	dir = 4
 	},
 /area/rogue/indoors/town/manor/rockhill)
+"qxt" = (
+/obj/structure/bars/passage{
+	redstone_id = "firejail1"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qxv" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -49639,6 +50861,19 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/town/sewer)
+"qBa" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/natural/rock/coal,
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qBf" = (
 /turf/closed/mineral/random/rogue/boglava/high,
 /area/rogue/under/cave)
@@ -50064,6 +51299,17 @@
 /obj/effect/spawner/roguemap/hauntpile,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet)
+"qIT" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qJa" = (
 /obj/item/storage/roguebag,
 /obj/structure/rack/rogue/shelf/biggest,
@@ -50112,6 +51358,9 @@
 "qJQ" = (
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician)
+"qJR" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
+/area/rogue/under/cavewet/wizarddungeon)
 "qJW" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
@@ -50167,6 +51416,17 @@
 	},
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/bath)
+"qLk" = (
+/obj/structure/fluff/big_chain,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qLo" = (
 /obj/structure/closet/crate/roguecloset/dark{
 	keylock = 1;
@@ -50240,6 +51500,10 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/church,
 /area/rogue/under/town/basement/keep)
+"qMq" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/bograt/north)
 "qMt" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/flora/newleaf,
@@ -50702,6 +51966,17 @@
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors)
+"qWl" = (
+/obj/structure/fluff/big_chain,
+/turf/open/lava,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qWq" = (
 /turf/open/floor/rogue/ruinedwood{
 	dir = 1;
@@ -50745,6 +52020,19 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/tavern)
+"qWW" = (
+/obj/structure/bars/passage{
+	redstone_id = "firejail0"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qXk" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/cobblerock,
@@ -50813,6 +52101,21 @@
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor/rockhill)
+"qYH" = (
+/obj/structure/chair/stool/rogue,
+/mob/living/carbon/human/species/goblin/npc/ambush/hell{
+	icon_state = "goblin_hell";
+	faction = list("infernal")
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "qYT" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -50918,6 +52221,19 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/tavern)
+"rai" = (
+/obj/structure/closet/crate/chest/gold,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/item/roguecoin/silver/pile,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "rak" = (
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
@@ -51063,6 +52379,18 @@
 	},
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/manor/rockhill)
+"rcq" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/item/roguecoin/copper/pile,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "rct" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -51334,6 +52662,19 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/town/roofs)
+"rgF" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "rgH" = (
 /obj/structure/closet/crate/drawer,
 /obj/effect/decal/cobbleedge{
@@ -51436,11 +52777,27 @@
 	},
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/indoors/shelter/mountains)
+"rii" = (
+/turf/closed/wall/mineral/rogue/pipe{
+	dir = 4;
+	icon_state = "iron_line"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "rit" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/chicken,
 /obj/structure/fluff/nest,
 /turf/open/floor/rogue/hay,
 /area/rogue/indoors)
+"rix" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/cand,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "riE" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/item/clothing/suit/roguetown/armor/chainmail,
@@ -52030,6 +53387,9 @@
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/woodsrat/north)
+"rsS" = (
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cavewet/wizarddungeon)
 "rtg" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp,
@@ -52203,6 +53563,9 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/indoors)
+"rvM" = (
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/bograt/south)
 "rvN" = (
 /mob/living/simple_animal/hostile/retaliate/frog,
 /turf/open/floor/rogue/grassred,
@@ -52559,6 +53922,32 @@
 	icon_state = "iron_corner"
 	},
 /area/rogue/indoors/town/bath)
+"rDe" = (
+/obj/structure/winch{
+	gid = "fiendroom";
+	redstone_id = "fiendroom"
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
+"rDf" = (
+/obj/item/roguecoin/copper/pile,
+/obj/item/roguestatue/gold/loot,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "rDg" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 4
@@ -52638,13 +54027,21 @@
 /obj/item/reagent_containers/powder/salt,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/underdark)
-"rEt" = (
-/obj/structure/bars/grille{
-	dir = 8
+"rEw" = (
+/obj/effect/decal/remains/human{
+	pixel_y = 19
 	},
-/obj/structure/curtain/black,
-/turf/open/transparent/openspace,
-/area/rogue/under/town/sewer)
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "rEy" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/herringbone,
@@ -53735,10 +55132,6 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors)
-"rXh" = (
-/obj/structure/flora/roguegrass/herb/symphitum,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bograt/south)
 "rXs" = (
 /obj/structure/stairs/stone,
 /obj/structure/fluff/railing/wood{
@@ -54344,18 +55737,6 @@
 /turf/open/floor/rogue/metal{
 	icon_state = "plating2"
 	},
-/area/rogue/under/town/sewer)
-"sgQ" = (
-/obj/structure/rack/rogue,
-/obj/item/clothing/shoes/roguetown/boots,
-/obj/item/clothing/shoes/roguetown/boots,
-/obj/machinery/light/rogue/wallfire/candle/floorcandle/pink{
-	plane = -7;
-	pixel_y = 4;
-	name = "scented candles";
-	desc = "These candles produces a heady vapor, warding away the less pleasing scents of the sewer."
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/town/sewer)
 "sgR" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
@@ -55133,6 +56514,18 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors)
+"svw" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 8
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "svx" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 9
@@ -55959,6 +57352,21 @@
 "sKd" = (
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/church)
+"sKw" = (
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/mob/living/carbon/human/species/goblin/npc/ambush/hell{
+	icon_state = "goblin_hell";
+	faction = list("infernal","neutral")
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "sKx" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -56809,6 +58217,17 @@
 	},
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor/rockhill)
+"sYJ" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "sYM" = (
 /obj/structure/bed/rogue/inn/hay,
 /obj/item/natural/bundle/stick,
@@ -57031,6 +58450,19 @@
 	},
 /turf/open/floor/rogue/tile/checker,
 /area/rogue/indoors/town/manor/rockhill)
+"tcd" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "tcf" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/town/sewer)
@@ -57260,6 +58692,10 @@
 	layer = 1.9
 	},
 /area/rogue/outdoors/beach/harbor)
+"tfz" = (
+/obj/structure/flora/roguegrass/herb/symphitum,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/south)
 "tfU" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/cleanshallow,
@@ -57759,6 +59195,10 @@
 /obj/item/rogueweapon/hoe,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
+"tnD" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/under/cavewet/wizarddungeon)
 "tnK" = (
 /obj/item/rogueweapon/spear/billhook{
 	pixel_x = -17
@@ -58205,9 +59645,9 @@
 	},
 /area/rogue/indoors/town/manor/rockhill)
 "tvf" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
-/turf/open/water/swamp,
-/area/rogue/outdoors/bograt/west)
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/bograt/safe)
 "tvm" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	locked = 1;
@@ -58280,6 +59720,9 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/church)
+"tvZ" = (
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/bograt/safe)
 "twd" = (
 /obj/structure/bars/passage/shutter{
 	redstone_id = "warehouse_inn02"
@@ -58564,6 +60007,17 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
+"tCi" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "tCk" = (
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/rogue/dirt/road,
@@ -58669,6 +60123,12 @@
 /obj/item/kitchen/spoon,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin/rockhill)
+"tEo" = (
+/obj/structure/bars/passage/shutter{
+	redstone_id = "fireexperiment1"
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "tEr" = (
 /obj/machinery/light/roguestreet/orange/walllamp{
 	dir = 4
@@ -58723,6 +60183,20 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
+"tFg" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "tFm" = (
 /obj/structure/bed/rogue/bedroll,
 /turf/open/floor/rogue/naturalstone,
@@ -59323,6 +60797,11 @@
 "tOz" = (
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/manor/rockhill)
+"tOK" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/structure/flora/roguegrass/herb/symphitum,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/south)
 "tOT" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -59420,7 +60899,7 @@
 /area/rogue/indoors/town/shop)
 "tQR" = (
 /obj/structure/fluff/railing/wood,
-/turf/open/floor/rogue/cobble/mossy,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bograt/south)
 "tQT" = (
 /obj/structure/roguewindow/openclose,
@@ -59701,6 +61180,10 @@
 	},
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor/rockhill)
+"tWf" = (
+/obj/structure/flora/roguegrass/maneater/real,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/bograt/safe)
 "tWj" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -59894,6 +61377,13 @@
 "uaL" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield/rockhill)
+"uaS" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = 10
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bograt/south)
 "ubf" = (
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_x = 6
@@ -60907,6 +62397,13 @@
 	},
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/indoors/town/manor/rockhill)
+"uvB" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -10
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/west)
 "uvE" = (
 /obj/structure/handcart,
 /turf/open/floor/rogue/dirt/road,
@@ -61125,6 +62622,21 @@
 /obj/structure/chair/bench,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/rockhill)
+"uAg" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "uAi" = (
 /turf/closed/wall/mineral/rogue/decostone/long,
 /area/rogue/indoors/town/bath)
@@ -61650,6 +63162,14 @@
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grassgrey,
 /area/rogue/outdoors/bograt/sunken)
+"uLK" = (
+/obj/structure/bars/passage{
+	redstone_id = "firepreentry"
+	},
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/under/cavewet/wizarddungeon)
 "uLU" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
@@ -61888,6 +63408,10 @@
 "uOL" = (
 /turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/indoors/town/manor/rockhill)
+"uOP" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "uOQ" = (
 /obj/structure/bed/rogue/inn,
 /obj/item/bedsheet/rogue/wool,
@@ -61966,11 +63490,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors)
-"uQh" = (
-/obj/structure/closet/dirthole/closed/loot,
-/obj/structure/flora/roguegrass/herb/symphitum,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bograt/south)
 "uQm" = (
 /turf/closed/wall/mineral/rogue/stone/window/moss/unbreakable,
 /area/rogue/indoors)
@@ -62017,6 +63536,19 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
+"uRo" = (
+/obj/structure/bars/passage{
+	redstone_id = "firejail2"
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "uRp" = (
 /obj/structure/fluff/walldeco/maidendrape{
 	pixel_x = 32;
@@ -62280,8 +63812,15 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
 "uVp" = (
-/turf/open/floor/rogue/AzureSand,
-/area/rogue/outdoors/bograt/west)
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "uVq" = (
 /turf/closed/wall/mineral/rogue/stone/window/moss,
 /area/rogue/indoors/town/church/chapel)
@@ -62599,6 +64138,13 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/bath)
+"vbY" = (
+/obj/structure/bars/grille{
+	dir = 8
+	},
+/obj/structure/curtain/black,
+/turf/open/transparent/openspace,
+/area/rogue/under/town/sewer)
 "vcd" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/carpet/royalblack,
@@ -62797,8 +64343,15 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin/rockhill)
 "veX" = (
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/bograt/safe)
+/turf/closed/mineral/rogue,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "vfh" = (
 /obj/structure/noose,
 /turf/open/floor/rogue/tile/bath{
@@ -62869,6 +64422,27 @@
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town/rockhill)
+"vgF" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
+"vgK" = (
+/turf/open/floor/rogue/metal,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "vgW" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -63279,6 +64853,11 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
+"voO" = (
+/obj/structure/plasticflaps,
+/obj/structure/curtain/black,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/town/sewer)
 "voU" = (
 /obj/structure/table/wood/long_table,
 /obj/item/reagent_containers/glass/cup/wooden{
@@ -63565,6 +65144,17 @@
 /obj/machinery/light/rogue/campfire,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
+"vte" = (
+/obj/structure/mineral_door/bars,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "vtg" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/rogue/cobble,
@@ -63852,6 +65442,14 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/underdark)
+"vxh" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/greenstone/runed,
+/area/rogue/under/cavewet/wizarddungeon)
 "vxj" = (
 /obj/structure/chair/wood/rogue{
 	dir = 8
@@ -63880,6 +65478,18 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/bath)
+"vxV" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long{
+	dir = 1
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "vyn" = (
 /turf/closed/wall/mineral/rogue/wooddark/window,
 /area/rogue/outdoors/bograt/above)
@@ -64145,6 +65755,10 @@
 	},
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/beach/harbor)
+"vEe" = (
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "vEg" = (
 /obj/machinery/light/rogue/wallfire/candle/blue{
 	pixel_x = -32;
@@ -64407,6 +66021,10 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/dwarfin/rockhill)
+"vIt" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors)
 "vIy" = (
 /obj/structure/fluff/railing/border,
 /obj/effect/decal/cobbleedge{
@@ -64570,6 +66188,23 @@
 /obj/item/reagent_containers/food/snacks/grown/rogue/pipeweeddry,
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/indoors/town/manor/rockhill)
+"vKl" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	status = 1;
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "vKp" = (
 /obj/structure/bed/rogue/shit,
 /obj/item/natural/bone,
@@ -64947,6 +66582,10 @@
 	},
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/woodsrat/south)
+"vRr" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/under/cavewet/wizarddungeon)
 "vRu" = (
 /turf/closed/mineral/rogue,
 /area/rogue/under/cave)
@@ -65213,10 +66852,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors)
-"vWF" = (
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/AzureSand,
-/area/rogue/outdoors/bograt/west)
 "vWY" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement{
@@ -65490,6 +67125,13 @@
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cavewet)
+"waO" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	pixel_x = 9
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bograt/west)
 "waT" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 1
@@ -66092,6 +67734,10 @@
 /area/rogue/outdoors/mountains/decap{
 	first_time_text = "Somewhere High"
 	})
+"wkv" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cavewet/wizarddungeon)
 "wkw" = (
 /obj/structure/table/vtable,
 /turf/open/floor/rogue/tile/harem,
@@ -66745,6 +68391,42 @@
 	},
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/town/church/chapel)
+"wuX" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/toy/cards/deck/syndicate,
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -9;
+	pixel_y = 13;
+	layer = 4
+	},
+/obj/item/roguecoin/copper{
+	pixel_x = -9;
+	pixel_y = -2
+	},
+/obj/item/roguecoin/copper{
+	pixel_x = 10;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = -3;
+	pixel_x = 9;
+	layer = 4
+	},
+/obj/item/candle/yellow/lit{
+	layer = 5
+	},
+/obj/item/roguecoin/copper/pile,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "wuY" = (
 /obj/structure/chair/wood/rogue/fancy{
 	dir = 4
@@ -66956,6 +68638,10 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/rockhill)
+"wxU" = (
+/obj/structure/flora/rogueshroom,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woodsrat/river)
 "wxX" = (
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/ruinedwood,
@@ -67669,10 +69355,6 @@
 /obj/structure/mineral_door/wood/towner,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town)
-"wLA" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
-/turf/open/water/swamp/deep,
-/area/rogue/outdoors/bograt/west)
 "wLE" = (
 /obj/effect/landmark/mapGenerator/rogue/forestrat,
 /turf/closed/mineral/rogue/bedrock,
@@ -68794,6 +70476,17 @@
 "xdj" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/indoors/town)
+"xdk" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/greenstone/runed,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "xdp" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/town/Academy)
@@ -69507,6 +71200,10 @@
 	droning_sound_dusk = null;
 	droning_sound_night = null
 	})
+"xoQ" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/town/roofs)
 "xoT" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/cobble/mossy,
@@ -69631,10 +71328,6 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors)
-"xry" = (
-/obj/structure/flora/roguetree/burnt,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/bograt/safe)
 "xrC" = (
 /turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/indoors/town/bath)
@@ -70094,6 +71787,10 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors)
+"xzg" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/water/swamp,
+/area/rogue/outdoors/bograt/south)
 "xzm" = (
 /obj/structure/table/wood/long_table/right,
 /obj/item/candle/gold/lit{
@@ -70140,6 +71837,13 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/bath)
+"xzN" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/indoors)
 "xzQ" = (
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/manor/rockhill)
@@ -70824,6 +72528,18 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town/rockhill)
+"xKZ" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 4
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "xLh" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/carpet/inn,
@@ -71355,6 +73071,21 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/under/town/basement/keep)
+"xTz" = (
+/obj/structure/winch{
+	name = "Lower Major Containment Chamber Gate";
+	redstone_id = "firebigger";
+	gid = "firebigger"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "xTA" = (
 /obj/structure/bookcase/random{
 	pixel_y = 7;
@@ -72060,6 +73791,19 @@
 "yeS" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/bograt/above)
+"yeX" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/volcanic{
+	desc = "Silky and sharp-smooth, like cracked glass"
+	},
+/area/rogue/indoors/town/fire_chamber{
+	ambientsounds = list('sound/ambience/hell1.ogg');
+	droning_sound_night = null;
+	droning_sound_dusk = null;
+	droning_sound = 'sound/music/area/inferno.ogg';
+	name = "firezone";
+	first_time_text = "Another Place"
+	})
 "yeY" = (
 /obj/structure/rack/rogue,
 /obj/item/candle/yellow{
@@ -72482,40 +74226,40 @@ fyc
 fyc
 fyc
 fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
-fyc
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
 fyc
 fyc
 fyc
@@ -72906,37 +74650,6 @@ aOw
 "}
 (2,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
 fyc
 fyc
 fyc
@@ -72945,9 +74658,40 @@ fyc
 fyc
 fyc
 fyc
-fyc
-fyc
-fyc
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
 fyc
 fyc
 fyc
@@ -73338,61 +75082,61 @@ fyc
 "}
 (3,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+jGk
+jGk
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -73770,61 +75514,61 @@ fyc
 "}
 (4,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+jGk
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+jGk
+jGk
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -74202,61 +75946,61 @@ fyc
 "}
 (5,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+jGk
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -74634,61 +76378,61 @@ fyc
 "}
 (6,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+jGk
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -75066,61 +76810,61 @@ fyc
 "}
 (7,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -75498,61 +77242,61 @@ fyc
 "}
 (8,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+uVp
+bRN
+hFz
+hFz
+hFz
+veX
+dfj
+veX
+veX
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+jGk
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -75930,61 +77674,61 @@ fyc
 "}
 (9,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+bRN
+oJM
+bRN
+hFz
+veX
+rix
+qYH
+wuX
+rix
+veX
+hFz
+veX
+kcO
+veX
+qLk
+veX
+kcO
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -76362,61 +78106,61 @@ fyc
 "}
 (10,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+uVp
+uVp
+bRN
+hFz
+veX
+uVp
+qYH
+qYH
+vxV
+veX
+hFz
+hFz
+veX
+ejN
+rDe
+ejN
+veX
+hFz
+hFz
+hFz
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+jGk
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -76794,61 +78538,61 @@ fyc
 "}
 (11,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+rix
+dgG
+rix
+veX
+veX
+hFz
+hFz
+qLk
+cFf
+bZG
+cFf
+qLk
+hFz
+hFz
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -77226,61 +78970,61 @@ fyc
 "}
 (12,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+oJM
+oJM
+oPr
+oPr
+rDf
+rai
+veX
+veX
+hFz
+veX
+veX
+hFz
+bRN
+bRN
+bRN
+dfj
+vxV
+uVp
+veX
+hFz
+hFz
+hFz
+hFz
+veX
+mOl
+mOl
+mOl
+veX
+hFz
+oJM
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -77658,61 +79402,61 @@ fyc
 "}
 (13,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+oJM
+oJM
+oJM
+oPr
+miw
+iul
+mOm
+svw
+hFz
+veX
+veX
+uVp
+bRN
+bRN
+uVp
+uVp
+hKb
+rix
+exg
+kWV
+kWV
+rix
+hFz
+veX
+kcO
+veX
+npf
+veX
+kcO
+hFz
+oJM
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -78090,61 +79834,61 @@ fyc
 "}
 (14,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+oJM
+oJM
+oJM
+oPr
+oPr
+eDa
+lCs
+tCi
+vgK
+bRN
+hKb
+gBY
+gXW
+dWh
+uVp
+uVp
+gBY
+uVp
+bRN
+hKb
+fno
+vxV
+hFz
+veX
+hFz
+tFg
+uVp
+uVp
+hFz
+hFz
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -78522,61 +80266,61 @@ fyc
 "}
 (15,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+oJM
+oJM
+oJM
+oPr
+fPx
+nSa
+pjL
+dEl
+vgK
+uVp
+gAF
+eyd
+uVp
+bsh
+uVp
+uVp
+uVp
+xKZ
+uVp
+bRN
+bRN
+vxV
+hFz
+poE
+hFz
+bRN
+uVp
+yeX
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -78954,61 +80698,61 @@ fyc
 "}
 (16,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+oJM
+oJM
+oJM
+oPr
+jKn
+mUx
+rcq
+tCi
+vgK
+uVp
+vKl
+uVp
+uVp
+uVp
+uVp
+dtV
+uVp
+kcO
+dWh
+uVp
+gXW
+kcO
+hKb
+hFz
+hFz
+hKb
+bRN
+bRN
+hFz
+hFz
+hFz
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -79386,61 +81130,61 @@ fyc
 "}
 (17,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+oJM
+oJM
+oJM
+hFz
+hFz
+veX
+veX
+dWh
+nAf
+bRN
+xKZ
+uVp
+uVp
+uVp
+uVp
+uVp
+uVp
+bsh
+jbU
+uVp
+bRN
+oYN
+bRN
+bRN
+mHT
+uVp
+uVp
+tcd
+hFz
+oJM
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -79818,61 +81562,61 @@ fyc
 "}
 (18,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+hFz
+fYp
+vxV
+bpm
+uVp
+uVp
+qmw
+uVp
+uVp
+uVp
+uVp
+gBY
+uVp
+uVp
+uVp
+jIe
+mHT
+uVp
+jbU
+bRN
+hFz
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -80250,64 +81994,64 @@ fyc
 "}
 (19,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+veX
+gBY
+svw
+uVp
+uVp
+uVp
+uVp
+uVp
+uVp
+uAg
+euU
+uVp
+jbU
+uVp
+tcd
+bRN
+mHT
+uVp
+iyu
+bRN
+hFz
+oJM
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+kOW
+ovH
+dzJ
+dzJ
+kOW
+wkv
+vEe
+wkv
+kOW
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -80682,64 +82426,64 @@ fyc
 "}
 (20,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+veX
+uVp
+jwv
+uVp
+uVp
+dtV
+uVp
+gBY
+uVp
+kcO
+dWh
+uVp
+gXW
+kcO
+hKb
+hFz
+hFz
+bRN
+uVp
+uVp
+hFz
+hFz
+hFz
+oJM
+hFz
+oJM
+oJM
+oJM
+kcO
+kWV
+rii
+qJR
+kOW
+rsS
+kOW
+rii
+dLF
+ifb
+kOW
+kZk
+oGS
+kZk
+kOW
+fyc
+xkm
+xkm
+xkm
+xkm
+fyc
 whb
 whb
 whb
@@ -81114,64 +82858,64 @@ fyc
 "}
 (21,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+veX
+uVp
+uVp
+pra
+uVp
+uAg
+uVp
+uVp
+uVp
+svw
+uVp
+bRN
+bRN
+vxV
+hFz
+hFz
+veX
+hKb
+iyu
+uVp
+veX
+hFz
+hFz
+oJM
+qLk
+oJM
+kWV
+oJM
+svw
+xTz
+ovH
+nHI
+oZr
+kOW
+kOW
+kOW
+llH
+llH
+kOW
+kOW
+tEo
+kOW
+kOW
+kOW
+vRr
+vRr
+kOW
+xkm
+fyc
 whb
 whb
 whb
@@ -81546,64 +83290,64 @@ fyc
 "}
 (22,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+jab
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+veX
+bRN
+hKb
+gXW
+dWh
+uVp
+gBY
+vgF
+uVp
+bRN
+hKb
+tcd
+vxV
+hFz
+veX
+hFz
+uVp
+jIe
+uVp
+mHT
+bRN
+iyu
+dSW
+iyu
+lQl
+dSW
+gBY
+aVm
+iyu
+pOg
+jiC
+dPB
+eRT
+kOW
+nUW
+uOP
+gZs
+vxh
+inU
+eRT
+gZs
+vxh
+eRT
+eRT
+eRT
+vRr
+xkm
+fyc
 whb
 whb
 whb
@@ -81978,64 +83722,64 @@ fyc
 "}
 (23,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+bRN
+tcd
+bRN
+tcd
+uVp
+uVp
+gBY
+rix
+kWV
+kWV
+kWV
+rix
+hFz
+hFz
+hFz
+veX
+fKH
+dSW
+mHT
+dSW
+uVp
+uVp
+jbU
+fKH
+iyu
+iyu
+xdk
+lQl
+gZs
+eRT
+eRT
+eRT
+uLK
+eRT
+eRT
+keH
+gZs
+gZs
+keH
+gZs
+eRT
+eRT
+ebS
+eRT
+vRr
+xkm
+fyc
 whb
 whb
 whb
@@ -82410,64 +84154,64 @@ fyc
 "}
 (24,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+bRN
+hFz
+rix
+vte
+mtc
+mtc
+vxV
+veX
+veX
+veX
+veX
+veX
+veX
+hFz
+veX
+veX
+jnY
+veX
+fKH
+uVp
+bRN
+gBY
+sYJ
+lQl
+iyu
+fUf
+iyu
+gZs
+uOP
+hJj
+jiC
+kOW
+eJu
+jiC
+eRT
+hJj
+gZs
+eRT
+jiC
+hJj
+eRT
+eRT
+jiC
+vRr
+xkm
+fyc
 whb
 whb
 whb
@@ -82842,64 +84586,64 @@ fyc
 "}
 (25,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+hFz
+vxV
+cFf
+uVp
+oUL
+vxV
+lkq
+bGV
+veX
+veX
+veX
+veX
+hFz
+qLk
+veX
+veX
+veX
+rgF
+veX
+veX
+qLk
+veX
+veX
+kWV
+kWV
+caY
+ovH
+qJR
+qJR
+qJR
+kOW
+kOW
+fDS
+kOW
+kOW
+kOW
+msX
+kOW
+kOW
+kOW
+vRr
+vRr
+kOW
+xkm
+fyc
 whb
 whb
 whb
@@ -83274,64 +85018,64 @@ fyc
 "}
 (26,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+vxV
+gLj
+mWT
+gCY
+vte
+uVp
+bGV
+veX
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+veX
+bRN
+uVp
+veX
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+rii
+rsS
+rsS
+rsS
+kOW
+kZk
+kZk
+kZk
+kOW
+bim
+dHW
+dHW
+kOW
+fyc
+xkm
+xkm
+xkm
+xkm
+fyc
 whb
 whb
 whb
@@ -83706,64 +85450,64 @@ fyc
 "}
 (27,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+veX
+gXW
+kWV
+kcO
+qWW
+veX
+veX
+veX
+veX
+hFz
+hFz
+oJM
+oJM
+hFz
+oJM
+hFz
+hFz
+hKb
+bRN
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+kOW
+oAP
+dVP
+dVP
+kOW
+dHW
+dHW
+dHW
+kOW
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -84138,61 +85882,61 @@ fyc
 "}
 (28,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+veX
+fRj
+fVY
+qxt
+cFf
+qIT
+hTw
+kcO
+veX
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+bRN
+bRN
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+kOW
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -84570,61 +86314,61 @@ fyc
 "}
 (29,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+dfj
+iSd
+rEw
+dfj
+cFf
+cFf
+ppb
+veX
+veX
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+rgF
+rgF
+hFz
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -85002,61 +86746,61 @@ fyc
 "}
 (30,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+veX
+qLk
+kcO
+rix
+uRo
+tCi
+dyL
+dfj
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+kcO
+kWV
+dWh
+vte
+gXW
+kcO
+hFz
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -85434,61 +87178,61 @@ fyc
 "}
 (31,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+veX
+dfj
+jOz
+jQk
+tCi
+kcO
+veX
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+vxV
+hKb
+bfU
+cFf
+qBa
+qWl
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -85866,61 +87610,61 @@ fyc
 "}
 (32,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+veX
+dfj
+kcO
+veX
+hFz
+hFz
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+vxV
+euF
+lCs
+oEb
+cFf
+qWl
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -86298,61 +88042,61 @@ fyc
 "}
 (33,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+hFz
+hFz
+hFz
+hFz
+hFz
+veX
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+qWl
+sKw
+pAo
+cFf
+oEb
+xKZ
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -86730,61 +88474,61 @@ fyc
 "}
 (34,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+vxV
+nde
+bfU
+oEb
+baV
+vxV
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -87162,61 +88906,61 @@ fyc
 "}
 (35,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+kcO
+kWV
+kWV
+kWV
+kWV
+kcO
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -87594,61 +89338,61 @@ fyc
 "}
 (36,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+hFz
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -88026,61 +89770,61 @@ fyc
 "}
 (37,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+veX
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -88458,61 +90202,61 @@ fyc
 "}
 (38,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+jab
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -88890,61 +90634,61 @@ fyc
 "}
 (39,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+jab
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -89322,61 +91066,61 @@ fyc
 "}
 (40,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -89754,61 +91498,61 @@ fyc
 "}
 (41,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+oJM
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -90186,61 +91930,61 @@ fyc
 "}
 (42,1,1) = {"
 fyc
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
+fyc
 whb
 whb
 whb
@@ -132062,7 +133806,7 @@ pHP
 nWS
 nRf
 koi
-dzJ
+rNH
 xQO
 xQO
 gZA
@@ -132926,7 +134670,7 @@ ptQ
 nWS
 qxy
 vpo
-vpo
+pjE
 kqe
 cHV
 xQO
@@ -135086,9 +136830,9 @@ ptQ
 nWS
 jWA
 xCN
-dmH
+jWA
 ptQ
-roG
+xQO
 xQO
 xQO
 xQO
@@ -183881,8 +185625,8 @@ ruh
 ruh
 uUU
 uUU
-fDS
-fDS
+kst
+kst
 bWx
 qOA
 qOA
@@ -184301,16 +186045,16 @@ qCt
 qCt
 qCt
 qCt
-uVp
+oqo
 qCt
 qCt
 qCt
 qCt
 qCt
-uVp
-uVp
-fDS
-fDS
+oqo
+oqo
+kst
+kst
 bWx
 bWx
 bWx
@@ -184735,9 +186479,9 @@ qCt
 qCt
 qCt
 qCt
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
 rfA
 ujL
 ujL
@@ -185081,12 +186825,12 @@ qOA
 qOA
 sJZ
 kea
-fDS
-fDS
-fDS
+kst
+kst
+kst
 czb
-fDS
-fDS
+kst
+kst
 qOA
 qOA
 psr
@@ -185111,7 +186855,7 @@ aad
 aad
 aad
 aad
-uVp
+oqo
 aOf
 smf
 smf
@@ -185166,8 +186910,8 @@ qCt
 qCt
 qCt
 qCt
-uVp
-uVp
+oqo
+oqo
 ujL
 ujL
 ujL
@@ -185511,14 +187255,14 @@ czb
 qOA
 qOA
 bWx
-fDS
-fDS
+kst
+kst
 uUU
 uUU
 uUU
 uUU
 uUU
-fDS
+kst
 wID
 qOA
 qOA
@@ -185543,11 +187287,11 @@ ujL
 rfA
 rfA
 ujL
-uVp
+oqo
 smf
 smf
 smf
-uVp
+oqo
 smf
 qCt
 qCt
@@ -185596,9 +187340,9 @@ qCt
 qCt
 qCt
 smf
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
 ujL
 ujL
 rfA
@@ -185941,8 +187685,8 @@ bWx
 qOA
 qOA
 kea
-fDS
-fDS
+kst
+kst
 uUU
 uUU
 uUU
@@ -185951,9 +187695,9 @@ uUU
 uUU
 uUU
 uUU
-fDS
-fDS
-fDS
+kst
+kst
+kst
 czb
 qOA
 bWx
@@ -185976,8 +187720,8 @@ ujL
 ujL
 rfA
 rfA
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -186028,7 +187772,7 @@ qCt
 smf
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 smf
@@ -186368,11 +188112,11 @@ aad
 aad
 czb
 rLb
-fDS
-fDS
-fDS
-fDS
-fDS
+kst
+kst
+kst
+kst
+kst
 uUU
 uUU
 uUU
@@ -186386,9 +188130,9 @@ uUU
 uUU
 uUU
 uUU
-fDS
-fDS
-nPu
+kst
+kst
+mlz
 qOA
 qOA
 bWx
@@ -186408,9 +188152,9 @@ ujL
 ujL
 ujL
 rfA
-oZX
+drd
 rfA
-uVp
+oqo
 smf
 smf
 smf
@@ -186459,8 +188203,8 @@ smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 rfA
 smf
 smf
@@ -186799,7 +188543,7 @@ aad
 aad
 aad
 aad
-fDS
+kst
 uUU
 uUU
 uUU
@@ -186820,7 +188564,7 @@ uUU
 ruh
 uUU
 uUU
-fDS
+kst
 bWx
 bWx
 bWx
@@ -186831,7 +188575,7 @@ rfA
 rfA
 rfA
 rfA
-uVp
+oqo
 smf
 ujL
 smf
@@ -186843,8 +188587,8 @@ uRH
 ujL
 ujL
 jMz
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -186890,8 +188634,8 @@ smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 rfA
 rfA
 ujL
@@ -187252,8 +188996,8 @@ qCt
 smf
 smf
 aOf
-uVp
-fDS
+oqo
+kst
 bWx
 qOA
 bWx
@@ -187277,51 +189021,51 @@ ujL
 ujL
 ujL
 rfA
-uVp
-uVp
-smf
-smf
-smf
-smf
-hvB
-hvB
-smf
-qCt
-qCt
-qCt
-qCt
-qCt
-qCt
-qbW
-qbW
-qbW
-qbW
-qCt
-qCt
-qbW
-qCt
-qCt
-qbW
-qbW
-qbW
-qbW
-qbW
-qCt
-qCt
-qCt
-qCt
-qCt
-qCt
-smf
-smf
-smf
-smf
-smf
-smf
-smf
-smf
 oqo
-uVp
+oqo
+smf
+smf
+smf
+smf
+hvB
+hvB
+smf
+qCt
+qCt
+qCt
+qCt
+qCt
+qCt
+qbW
+qbW
+qbW
+qbW
+qCt
+qCt
+qbW
+qCt
+qCt
+qbW
+qbW
+qbW
+qbW
+qbW
+qCt
+qCt
+qCt
+qCt
+qCt
+qCt
+smf
+smf
+smf
+smf
+smf
+smf
+smf
+smf
+lEY
+oqo
 rfA
 rfA
 ujL
@@ -187684,7 +189428,7 @@ qCt
 qCt
 smf
 smf
-uVp
+oqo
 smf
 ujL
 rfA
@@ -187711,8 +189455,8 @@ lNj
 ujL
 ujL
 jMz
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -187745,14 +189489,14 @@ smf
 smf
 smf
 smf
-tvf
+grB
 smf
 smf
 smf
 smf
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
 ujL
 ujL
 ujL
@@ -188116,8 +189860,8 @@ qCt
 qCt
 qCt
 smf
-tvf
-uVp
+grB
+oqo
 ujL
 ujL
 rfA
@@ -188131,7 +189875,7 @@ qCt
 qCt
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 ujL
@@ -188145,12 +189889,12 @@ ujL
 rfA
 rfA
 rfA
-uVp
-uVp
+oqo
+oqo
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -188175,12 +189919,12 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 qYw
 ujL
 ujL
@@ -188549,7 +190293,7 @@ qCt
 qCt
 smf
 smf
-uVp
+oqo
 ujL
 rfA
 smf
@@ -188563,7 +190307,7 @@ qCt
 smf
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 qYw
@@ -188579,11 +190323,11 @@ rfA
 rfA
 ujL
 ujL
-oZX
+drd
 rfA
 rfA
 rfA
-uVp
+oqo
 smf
 smf
 smf
@@ -188609,8 +190353,8 @@ aOf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 rfA
 rfA
 rfA
@@ -188982,8 +190726,8 @@ qCt
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 rfA
 lxs
 rfA
@@ -188994,7 +190738,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 ujL
@@ -189017,7 +190761,7 @@ ujL
 ujL
 rfA
 rfA
-uVp
+oqo
 smf
 smf
 smf
@@ -189033,14 +190777,14 @@ smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 smf
 smf
-uVp
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
+oqo
 rfA
 rfA
 ujL
@@ -189415,7 +191159,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 rfA
 lxs
 lxs
@@ -189450,7 +191194,7 @@ uRH
 ujL
 ujL
 ujL
-uVp
+oqo
 smf
 smf
 smf
@@ -189463,13 +191207,13 @@ smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 rfA
 uRH
 smf
 smf
-uVp
+oqo
 smf
 rfA
 rfA
@@ -189503,16 +191247,16 @@ hvB
 smf
 lxs
 lxs
-uRH
-ujL
-rfA
-ujL
-ujL
-ujL
-lxs
-lxs
-ujL
-smf
+wID
+qOA
+bWx
+qOA
+qOA
+qOA
+psr
+psr
+qOA
+uUU
 smf
 smf
 smf
@@ -189882,24 +191626,24 @@ ujL
 smf
 rfA
 uRH
-uVp
+oqo
 smf
 smf
 smf
-uVp
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
+oqo
 uRH
-uVp
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
+oqo
 qYw
 ujL
 rfA
 ujL
-uVp
+oqo
 sKX
 sKX
 lxs
@@ -190264,10 +192008,10 @@ aad
 aad
 smf
 smf
+lEY
 oqo
-uVp
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -190280,7 +192024,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 rfA
 lxs
 rfA
@@ -190316,8 +192060,8 @@ ujL
 ujL
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 jMz
 rfA
 ujL
@@ -190700,7 +192444,7 @@ rfA
 rfA
 rfA
 rfA
-uVp
+oqo
 smf
 smf
 smf
@@ -190713,7 +192457,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 rfA
 rfA
 smf
@@ -191132,7 +192876,7 @@ ujL
 uRH
 ujL
 rfA
-uVp
+oqo
 smf
 smf
 smf
@@ -191143,9 +192887,9 @@ smf
 smf
 smf
 smf
-tvf
+grB
 smf
-uVp
+oqo
 lxs
 ujL
 smf
@@ -191155,7 +192899,7 @@ ujL
 ujL
 rfA
 rfA
-uVp
+oqo
 rfA
 rfA
 rfA
@@ -191173,7 +192917,7 @@ rfA
 rfA
 rfA
 rfA
-cLv
+brE
 ujL
 ujL
 smf
@@ -191195,13 +192939,13 @@ ujL
 ujL
 ujL
 ujL
-uVp
+oqo
 smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 rfA
 rfA
 smf
@@ -191565,9 +193309,9 @@ ujL
 ujL
 ujL
 rfA
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
 smf
 smf
 aOf
@@ -191577,7 +193321,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 lxs
 rfA
 rfA
@@ -191588,7 +193332,7 @@ ujL
 rfA
 khC
 smf
-uVp
+oqo
 rfA
 rfA
 smf
@@ -191604,14 +193348,14 @@ ujL
 rfA
 qYw
 rfA
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 qCt
 qCt
 smf
-uVp
+oqo
 ujL
 lxs
 ujL
@@ -191626,7 +193370,7 @@ smf
 ujL
 rfA
 ujL
-uVp
+oqo
 smf
 smf
 smf
@@ -191634,7 +193378,7 @@ smf
 smf
 uRH
 smf
-uVp
+oqo
 rfA
 rfA
 lxs
@@ -191999,7 +193743,7 @@ ujL
 ujL
 ujL
 rfA
-uVp
+oqo
 smf
 smf
 smf
@@ -192009,7 +193753,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 lxs
 uRH
 ujL
@@ -192022,7 +193766,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 ujL
 rfA
 rfA
@@ -192034,39 +193778,39 @@ ujL
 rfA
 ujL
 rfA
-uVp
-uVp
-smf
-smf
-smf
-qCt
-smf
-smf
-uVp
-ujL
-lxs
-rfA
-ujL
-smf
-smf
-smf
-rfA
-ujL
-rfA
-ujL
-smf
-ujL
-ujL
+oqo
 oqo
 smf
 smf
+smf
+qCt
+smf
+smf
+oqo
+ujL
+lxs
+rfA
+ujL
+smf
+smf
+smf
+rfA
+ujL
+rfA
+ujL
+smf
+ujL
+ujL
+lEY
+smf
+smf
 qCt
 qCt
 qCt
 qCt
 qCt
 smf
-uVp
+oqo
 rfA
 rfA
 lxs
@@ -192431,7 +194175,7 @@ rfA
 rfA
 ujL
 uRH
-uVp
+oqo
 smf
 smf
 smf
@@ -192441,7 +194185,7 @@ smf
 smf
 smf
 qYw
-uVp
+oqo
 lxs
 ujL
 ujL
@@ -192459,21 +194203,21 @@ smf
 smf
 smf
 sKX
-uVp
+oqo
 uRH
 ujL
 ujL
 ujL
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 qCt
 qCt
 qCt
 smf
-uVp
-uVp
+oqo
+oqo
 ujL
 lxs
 ujL
@@ -192488,7 +194232,7 @@ rfA
 ujL
 rfA
 ujL
-uVp
+oqo
 smf
 smf
 qCt
@@ -192498,7 +194242,7 @@ qCt
 qCt
 smf
 smf
-uVp
+oqo
 rfA
 lxs
 lxs
@@ -192863,73 +194607,73 @@ lxs
 lxs
 ujL
 ujL
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
-smf
-uVp
-uVp
-uVp
-rfA
-lxs
-lxs
-ujL
-smf
-smf
-smf
-smf
-smf
-smf
-qCt
-qCt
-qCt
-smf
-smf
-smf
-smf
-smf
-sKX
-smf
-uVp
-uVp
-uVp
-uVp
-smf
-sKX
-smf
-smf
-smf
-smf
-smf
-uVp
-ujL
-rfA
-ujL
-lxs
-qYw
-rfA
-rfA
-ujL
-rfA
-ujL
-rfA
-rfA
-rfA
-rfA
-qYw
-rfA
-uVp
-smf
-qCt
-qCt
-qCt
-qCt
-qCt
-qCt
 smf
 oqo
+oqo
+oqo
+rfA
+lxs
+lxs
+ujL
+smf
+smf
+smf
+smf
+smf
+smf
+qCt
+qCt
+qCt
+smf
+smf
+smf
+smf
+smf
+sKX
+smf
+oqo
+oqo
+oqo
+oqo
+smf
+sKX
+smf
+smf
+smf
+smf
+smf
+oqo
+ujL
+rfA
+ujL
+lxs
+qYw
+rfA
+rfA
+ujL
+rfA
+ujL
+rfA
+rfA
+rfA
+rfA
+qYw
+rfA
+oqo
+smf
+qCt
+qCt
+qCt
+qCt
+qCt
+qCt
+smf
+lEY
 rfA
 rfA
 lxs
@@ -193296,12 +195040,12 @@ lxs
 lxs
 lxs
 ujL
-uVp
-uVp
-uVp
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
+oqo
+oqo
+oqo
 ujL
 ujL
 ujL
@@ -193319,8 +195063,8 @@ qCt
 smf
 smf
 khC
-uVp
-uVp
+oqo
+oqo
 smf
 sKX
 smf
@@ -193329,12 +195073,12 @@ smf
 smf
 smf
 smf
-uVp
-uVp
-uVp
-uVp
 oqo
-uVp
+oqo
+oqo
+oqo
+lEY
+oqo
 rfA
 rfA
 rfA
@@ -193346,13 +195090,13 @@ ujL
 rfA
 rfA
 smf
-uVp
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
+oqo
 ujL
 ujL
-uVp
+oqo
 smf
 smf
 qCt
@@ -193360,8 +195104,8 @@ qCt
 qCt
 qCt
 smf
-uVp
-uVp
+oqo
+oqo
 rfA
 ujL
 lxs
@@ -193749,7 +195493,7 @@ smf
 qCt
 smf
 smf
-uVp
+oqo
 rfA
 ujL
 uRH
@@ -193760,7 +195504,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 rfA
@@ -193777,7 +195521,7 @@ rfA
 rfA
 rfA
 ujL
-uVp
+oqo
 smf
 smf
 smf
@@ -193792,7 +195536,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 rfA
 ujL
 rfA
@@ -194192,7 +195936,7 @@ qYw
 smf
 smf
 smf
-uVp
+oqo
 smf
 ujL
 ujL
@@ -194207,8 +195951,8 @@ ujL
 smf
 ujL
 qYw
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -194221,9 +195965,9 @@ rfA
 rfA
 smf
 smf
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
 rfA
 rfA
 rfA
@@ -194638,15 +196382,15 @@ lxs
 rfA
 ujL
 rfA
+lEY
+smf
+smf
+smf
+smf
 oqo
-smf
-smf
-smf
-smf
-uVp
 uRH
-uVp
-uVp
+oqo
+oqo
 lxs
 lxs
 jMz
@@ -195055,7 +196799,7 @@ rfA
 lNj
 smf
 smf
-uVp
+oqo
 lxs
 lxs
 lxs
@@ -195074,7 +196818,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 rfA
 ujL
 ujL
@@ -195488,7 +197232,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 lNj
 ujL
 ujL
@@ -195501,15 +197245,15 @@ lxs
 smf
 rfA
 rfA
-uVp
+oqo
 smf
 qCt
 qCt
 smf
-uVp
-uVp
-uVp
-uVp
+oqo
+oqo
+oqo
+oqo
 qYw
 rfA
 lxs
@@ -195882,7 +197626,7 @@ aad
 aad
 rfA
 qCt
-wLA
+pEd
 qCt
 smf
 rfA
@@ -195921,7 +197665,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 rfA
@@ -195933,7 +197677,7 @@ rfA
 rfA
 rfA
 smf
-uVp
+oqo
 smf
 qCt
 qCt
@@ -195942,7 +197686,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 rfA
 lxs
 rfA
@@ -196354,7 +198098,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 rfA
@@ -196365,7 +198109,7 @@ ujL
 uRH
 ujL
 ujL
-uVp
+oqo
 smf
 qCt
 qCt
@@ -196375,7 +198119,7 @@ qCt
 smf
 uNw
 smf
-uVp
+oqo
 lxs
 ujL
 smf
@@ -196787,7 +198531,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 rfA
 ujL
 ujL
@@ -196797,13 +198541,13 @@ rfA
 rfA
 ujL
 lxs
-uVp
+oqo
 smf
 smf
 smf
 smf
 smf
-tvf
+grB
 smf
 smf
 smf
@@ -197220,8 +198964,8 @@ smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 ujL
 rfA
 kXQ
@@ -197229,13 +198973,13 @@ rfA
 rfA
 smf
 ujL
-uVp
+oqo
 smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -197654,7 +199398,7 @@ smf
 smf
 smf
 smf
-uVp
+oqo
 ujL
 ujL
 ujL
@@ -197665,13 +199409,13 @@ sKX
 sKX
 sKX
 smf
-uVp
+oqo
 rfA
 ujL
-uVp
-vWF
-uVp
-uVp
+oqo
+iRJ
+oqo
+oqo
 lxs
 ujL
 rfA
@@ -198043,7 +199787,7 @@ whb
 aad
 qCt
 qCt
-tvf
+grB
 smf
 ujL
 ujL
@@ -198087,12 +199831,12 @@ smf
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 khC
 qYw
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 sKX
@@ -198521,8 +200265,8 @@ khC
 smf
 smf
 smf
-uVp
-uVp
+oqo
+oqo
 smf
 smf
 smf
@@ -200750,8 +202494,8 @@ wwX
 wLx
 wLx
 wLx
-wLx
-uWK
+qrc
+qrc
 wfu
 uWK
 wLx
@@ -201182,8 +202926,8 @@ wwX
 wLx
 wLx
 wLx
-wLx
-wLx
+qrc
+qrc
 qrc
 uWK
 gDP
@@ -201614,8 +203358,8 @@ wwX
 wLx
 amU
 wLx
-wLx
-wLx
+qrc
+qrc
 qrc
 qrc
 qrc
@@ -202045,9 +203789,9 @@ wwX
 wwX
 wLx
 amU
-amU
 wLx
 wLx
+qrc
 wLx
 qrc
 uWK
@@ -202477,10 +204221,10 @@ wwX
 bca
 wwX
 amU
-amU
-amU
 wLx
 wLx
+qrc
+qrc
 qrc
 hDr
 qrc
@@ -202909,10 +204653,10 @@ wwX
 wwX
 wwX
 amU
-amU
-amU
 wLx
 wLx
+qrc
+qrc
 uWK
 qrc
 qrc
@@ -203341,10 +205085,10 @@ iJc
 iJc
 iJc
 amU
-amU
 wLx
 wLx
-wLx
+qrc
+qrc
 qrc
 qrc
 qrc
@@ -203775,8 +205519,8 @@ amU
 amU
 amU
 wLx
-wLx
-uWK
+qrc
+qrc
 uWK
 uWK
 uWK
@@ -204207,8 +205951,8 @@ amU
 amU
 wLx
 wLx
-wLx
-uWK
+qrc
+qrc
 uWK
 qrc
 wLx
@@ -204639,7 +206383,7 @@ amU
 amU
 wLx
 wLx
-wLx
+qrc
 qrc
 uWK
 qrc
@@ -206803,8 +208547,8 @@ uWK
 qrc
 hDr
 qrc
-qrc
-uWK
+wfu
+wfu
 psr
 bWx
 bWx
@@ -207235,7 +208979,7 @@ uWK
 qrc
 uWK
 uWK
-qrc
+wfu
 wfu
 qrc
 bWx
@@ -207666,7 +209410,7 @@ qrc
 qrc
 wLx
 xFg
-uWK
+wfu
 wfu
 wfu
 qrc
@@ -208098,7 +209842,7 @@ uWK
 uWK
 qrc
 xFg
-qrc
+wfu
 wfu
 uWK
 uWK
@@ -208482,7 +210226,7 @@ iJc
 aml
 iJc
 nhG
-ekc
+jlc
 lVD
 wwX
 wwX
@@ -208529,9 +210273,9 @@ uWK
 qrc
 uWK
 xQW
-wLx
-wLx
 wfu
+wfu
+wLx
 uWK
 uWK
 uWK
@@ -208911,7 +210655,7 @@ nhG
 iJc
 aml
 qQy
-ekc
+jlc
 iJc
 mIG
 nhG
@@ -208961,14 +210705,14 @@ uWK
 qrc
 qrc
 qrc
+wfu
 uWK
 wLx
-wfu
 hDr
 qrc
 qvA
 qrc
-jab
+afm
 uWK
 bWx
 uUU
@@ -209346,7 +211090,7 @@ iJc
 lVD
 jiq
 iJc
-ekc
+jlc
 aml
 wwX
 lVD
@@ -209393,9 +211137,9 @@ qrc
 qrc
 saQ
 uWK
-qrc
 wfu
-wfu
+wLx
+uWK
 qrc
 qvA
 qrc
@@ -209826,7 +211570,7 @@ uWK
 uWK
 qrc
 wfu
-wfu
+wLx
 uWK
 qrc
 qrc
@@ -210499,7 +212243,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+aad
 aad
 aad
 whb
@@ -210931,8 +212675,8 @@ qbG
 qbG
 qbG
 qbG
-qbG
-qbG
+aad
+aad
 aad
 whb
 whb
@@ -211136,7 +212880,7 @@ amU
 wLx
 wLx
 uWK
-jab
+afm
 qvA
 wLx
 qrc
@@ -211364,7 +213108,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+aad
 aad
 whb
 whb
@@ -211554,7 +213298,7 @@ gDP
 wfu
 qrc
 qvA
-jab
+afm
 uWK
 wLx
 amU
@@ -211796,7 +213540,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+aad
 aad
 whb
 whb
@@ -212228,7 +213972,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+aad
 aad
 whb
 whb
@@ -212660,7 +214404,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+aad
 aad
 whb
 whb
@@ -213092,7 +214836,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+aad
 aad
 whb
 aad
@@ -215001,11 +216745,11 @@ wLx
 qrc
 qrc
 qrc
-wfu
+uWK
 wfu
 wLx
 wLx
-jab
+afm
 qvA
 uWK
 wLx
@@ -215890,7 +217634,7 @@ qOA
 uUU
 wLx
 wLx
-jab
+afm
 wLx
 aad
 aad
@@ -218862,8 +220606,8 @@ gqg
 gqg
 gqg
 wLx
-caL
-iYg
+uaS
+xnp
 jNO
 gqg
 wLx
@@ -219294,8 +221038,8 @@ xnp
 qrc
 qrc
 wLx
-caL
-iYg
+uaS
+wfu
 xQW
 wLx
 wLx
@@ -220158,7 +221902,7 @@ nBz
 xou
 cyr
 gqg
-iYg
+wfu
 tQR
 tFL
 uWK
@@ -220190,7 +221934,7 @@ uWK
 wfu
 wLx
 qvA
-jab
+afm
 wLx
 wLx
 wLx
@@ -220590,7 +222334,7 @@ oVN
 xou
 nqU
 gqg
-caL
+uaS
 tQR
 qrc
 qsc
@@ -221022,8 +222766,8 @@ xou
 xou
 nqU
 uWK
-iYg
 wfu
+xnp
 qrc
 aDG
 xnp
@@ -221455,10 +223199,10 @@ ryI
 nqU
 uWK
 wfu
-wfu
+xnp
 uWK
 wLx
-xnp
+iYg
 qrc
 wLx
 wLx
@@ -221886,11 +223630,11 @@ qhH
 nqU
 qrc
 qrc
-iYg
-iYg
+wfu
+xnp
 uWK
 wLx
-wLx
+pOW
 xnp
 uWK
 wLx
@@ -222274,11 +224018,11 @@ rfA
 ujL
 lxs
 lxs
+waO
 lxs
 lxs
-lxs
-lxs
-rfA
+gVf
+uvB
 lxs
 lxs
 rfA
@@ -222316,14 +224060,14 @@ egP
 qhH
 qhH
 lOl
-iYg
-iYg
-qrc
+wfu
+wfu
+wfu
 tQR
 wfu
+iYg
 wLx
-wLx
-uWK
+iYg
 uWK
 qrc
 wLx
@@ -222749,14 +224493,14 @@ qhH
 qhH
 lOl
 qrc
-wfu
+qrc
 wfu
 tQR
 wfu
 qrc
 xQW
-wLx
-qrc
+pOW
+eTb
 qrc
 wLx
 wLx
@@ -223183,11 +224927,11 @@ nqU
 qrc
 wLx
 wLx
-caL
+uaS
 qrc
+iYg
+yaI
 wLx
-qrc
-qrc
 qrc
 wLx
 wLx
@@ -223615,7 +225359,7 @@ nqU
 qrc
 wLx
 wLx
-iYg
+wfu
 qrc
 gqg
 wLx
@@ -224047,7 +225791,7 @@ nqU
 qrc
 jNO
 wLx
-iYg
+wfu
 qsc
 gqg
 wLx
@@ -224093,7 +225837,7 @@ wLx
 wLx
 wLx
 wLx
-jab
+afm
 qvA
 uWK
 uTe
@@ -225343,7 +227087,7 @@ uWK
 qrc
 xQW
 wfu
-iYg
+wfu
 qrc
 qrc
 qrc
@@ -225381,7 +227125,7 @@ qrc
 qvA
 uWK
 qvA
-jab
+afm
 uWK
 uWK
 uWK
@@ -225763,7 +227507,7 @@ uWK
 gDP
 wLx
 wLx
-qrc
+iOm
 uWK
 uWK
 uWK
@@ -225775,8 +227519,8 @@ uWK
 qrc
 hDr
 qrc
-qrc
-iYg
+wfu
+wfu
 iYg
 fLP
 qrc
@@ -226207,7 +227951,7 @@ uWK
 uWK
 uWK
 uWK
-wfu
+qrc
 wfu
 pOW
 qrc
@@ -226640,7 +228384,7 @@ uWK
 uWK
 qrc
 uWK
-uWK
+wfu
 iYg
 uWK
 eTb
@@ -227072,7 +228816,7 @@ qrc
 uWK
 qrc
 uWK
-qrc
+wfu
 wfu
 xQW
 qrc
@@ -227529,9 +229273,9 @@ qrc
 qrc
 uWK
 wfu
-wLx
-wLx
 wfu
+uWK
+uWK
 wfu
 qrc
 qrc
@@ -227961,9 +229705,9 @@ uWK
 qrc
 wfu
 wfu
-wfu
-wfu
-wfu
+uWK
+gDP
+uWK
 wfu
 wfu
 wfu
@@ -230768,7 +232512,7 @@ ezv
 xvN
 uaL
 faB
-mGe
+vIt
 pAV
 imQ
 wlD
@@ -233492,7 +235236,7 @@ fcx
 sYx
 fPd
 fcx
-sYx
+etL
 azy
 sYx
 cuM
@@ -234356,7 +236100,7 @@ sYx
 fPd
 sYx
 sYx
-fPd
+qMq
 azy
 sYx
 sYx
@@ -240056,7 +241800,7 @@ amU
 wLx
 wLx
 wLx
-uQh
+tOK
 uWK
 gDP
 gDP
@@ -240501,7 +242245,7 @@ uWK
 uWK
 wLx
 wLx
-iTc
+xzg
 wLx
 wLx
 amU
@@ -240931,7 +242675,7 @@ gDP
 xQW
 qrc
 lTE
-rXh
+tfz
 wLx
 wLx
 wLx
@@ -241222,7 +242966,7 @@ fPd
 fPd
 fPd
 fPd
-fPd
+qMq
 azy
 lOV
 azy
@@ -241654,7 +243398,7 @@ fPd
 fGG
 fPd
 eNy
-sYx
+etL
 azy
 lOV
 azy
@@ -242228,10 +243972,10 @@ xPy
 crG
 xfA
 uWK
-pnI
+cPD
 wLx
 wLx
-iTc
+xzg
 wLx
 wLx
 wLx
@@ -242918,7 +244662,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 qOA
 uUU
 bWx
@@ -243335,7 +245079,7 @@ guT
 waz
 waz
 guT
-qmG
+hEf
 teW
 iHb
 igi
@@ -243350,7 +245094,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 dUd
 qOA
 bWx
@@ -243782,7 +245526,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 oAa
 uUU
 bWx
@@ -243959,7 +245703,7 @@ wfu
 ehD
 pBN
 qrc
-bAe
+kAg
 wLx
 wLx
 wEg
@@ -244214,7 +245958,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 dUd
 qOA
 sIl
@@ -244646,7 +246390,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 dUd
 eky
 sIl
@@ -245078,7 +246822,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 bWx
 iza
 bWx
@@ -245098,7 +246842,7 @@ bWx
 bWx
 bWx
 bWx
-iXY
+tWf
 fPd
 fGG
 cuM
@@ -245251,7 +246995,7 @@ amw
 rbh
 qrc
 crG
-pnI
+cPD
 qrc
 xQW
 gDP
@@ -245510,18 +247254,18 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 bWx
 psr
 cIu
-oZr
+tvZ
 qOA
 bWx
-iXY
+tWf
 oAa
 bWx
 qOA
-xry
+tvf
 qOA
 bWx
 qOA
@@ -245532,9 +247276,9 @@ bWx
 qOA
 qOA
 qOA
-cuM
-cuM
-cuM
+uUU
+uUU
+uUU
 cuM
 fPd
 kce
@@ -245946,8 +247690,8 @@ cvt
 cvt
 cvt
 sfX
-oZr
-oZr
+tvZ
+tvZ
 bWx
 psr
 psr
@@ -245967,8 +247711,8 @@ psr
 psr
 psr
 psr
-azy
-azy
+psr
+psr
 azy
 lOV
 ljM
@@ -246377,30 +248121,30 @@ iGk
 sIl
 sIl
 ffj
-eHR
+mNy
 doR
-oZr
-oZr
-oZr
+tvZ
+tvZ
+tvZ
 doR
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
+tvZ
+tvZ
+tvZ
+tvZ
+tvZ
+tvZ
+tvZ
+tvZ
+qxd
+tvZ
+tvZ
+cGc
 doR
 doR
+tvZ
 doR
-oZr
-doR
-oZr
-oZr
+qxd
+tvZ
 lOV
 lOV
 lOV
@@ -246539,7 +248283,7 @@ wLx
 wLx
 wLx
 uWK
-pnI
+cPD
 xQW
 xQW
 wfu
@@ -246809,30 +248553,30 @@ jXZ
 ffj
 ffj
 sIl
-eHR
-oZr
-oZr
-oZr
+mNy
+tvZ
+tvZ
+tvZ
 doR
-oZr
-oZr
-doR
-doR
-doR
-doR
-oZr
-oZr
-oZr
+tvZ
+tvZ
 doR
 doR
 doR
-oZr
-oZr
+doR
+tvZ
+tvZ
+tvZ
+doR
+doR
+doR
+tvZ
+tvZ
 doR
 qOA
-oZr
-oZr
-oZr
+tvZ
+tvZ
+tvZ
 ljM
 lOV
 fPd
@@ -246982,13 +248726,13 @@ lTE
 qrc
 xQW
 qrc
-bAe
+kAg
 xPy
 uWK
 qrc
 uWK
-uWK
-qrc
+bWx
+qOA
 bWx
 kea
 qOA
@@ -247241,27 +248985,27 @@ jXZ
 sIl
 ffj
 sIl
-eHR
-oZr
+mNy
+tvZ
 doR
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
-oZr
+tvZ
+tvZ
+tvZ
+tvZ
+tvZ
+eGM
+eGM
+tvZ
+tvZ
+doR
+mMU
 doR
 doR
+tvZ
+tvZ
 doR
-doR
-oZr
-oZr
-doR
-oZr
-xry
+tvZ
+tvf
 qOA
 doR
 doR
@@ -247415,10 +249159,10 @@ uWK
 gDP
 uWK
 gDP
-bAe
+kAg
 uWK
 qrc
-qrc
+qOA
 wID
 bWx
 qOA
@@ -247674,8 +249418,8 @@ rUC
 rUC
 rUC
 vSQ
-oZr
-oZr
+tvZ
+tvZ
 bWx
 psr
 psr
@@ -247691,9 +249435,9 @@ qOA
 psr
 psr
 psr
-oZr
+tvZ
 doR
-oZr
+tvZ
 ljM
 lOV
 lOV
@@ -247832,8 +249576,8 @@ amU
 wLx
 wLx
 wLx
-rXh
-bAe
+tfz
+kAg
 uWK
 qrc
 uWK
@@ -247846,11 +249590,11 @@ gDP
 uWK
 uWK
 uWK
-bAe
+kAg
 gDP
 gDP
-qrc
-qrc
+qOA
+qOA
 wID
 qOA
 qOA
@@ -248103,10 +249847,10 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 psr
 cIu
-oZr
+tvZ
 bWx
 qOA
 uUU
@@ -248268,7 +250012,7 @@ xPy
 xPy
 qrc
 uIX
-pnI
+cPD
 xQW
 wfu
 xQW
@@ -248279,9 +250023,9 @@ crG
 crG
 hPa
 wLx
-qrc
-qrc
-wLx
+qOA
+qOA
+uUU
 bWx
 bWx
 qOA
@@ -248535,7 +250279,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 iza
 sIl
 sIl
@@ -248711,9 +250455,9 @@ xQW
 uWK
 wfu
 wLx
-wLx
-qrc
-qrc
+uUU
+qOA
+qOA
 uUU
 qOA
 qOA
@@ -248967,7 +250711,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 bWx
 sIl
 sIl
@@ -249142,10 +250886,10 @@ qrc
 uWK
 qrc
 wfu
-qrc
-wLx
-wLx
-qrc
+qOA
+uUU
+uUU
+qOA
 bWx
 uUU
 qOA
@@ -249399,13 +251143,13 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 qOA
 eky
 psr
 qOA
-eHR
-veX
+mNy
+oLF
 uUU
 qOA
 bWx
@@ -249574,10 +251318,10 @@ uWK
 qrc
 qrc
 wfu
-uWK
-uWK
-wLx
-uWK
+bWx
+bWx
+uUU
+bWx
 qOA
 qOA
 wID
@@ -249831,13 +251575,13 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 dUd
 qOA
 psr
 qOA
-eHR
-veX
+mNy
+oLF
 qOA
 qOA
 qOA
@@ -250006,10 +251750,10 @@ uWK
 qrc
 qrc
 wfu
-qrc
-uWK
-uWK
-qrc
+qOA
+bWx
+bWx
+qOA
 qOA
 qOA
 wID
@@ -250263,7 +252007,7 @@ qbG
 qbG
 qbG
 qbG
-veX
+oLF
 oAa
 qOA
 wID
@@ -250438,10 +252182,10 @@ uWK
 qrc
 qrc
 wfu
-uWK
-uWK
-uWK
-qrc
+bWx
+bWx
+bWx
+qOA
 qOA
 qOA
 psr
@@ -250870,10 +252614,10 @@ qrc
 uWK
 wLx
 wfu
-wfu
-wLx
-uWK
-qrc
+psr
+uUU
+bWx
+qOA
 psr
 psr
 psr
@@ -251302,10 +253046,10 @@ wfu
 wfu
 qrc
 wfu
-wfu
-wfu
-wfu
-wfu
+psr
+psr
+psr
+psr
 qOA
 qOA
 qOA
@@ -251734,10 +253478,10 @@ uWK
 wfu
 wfu
 qrc
-uWK
-qrc
-gDP
-uWK
+bWx
+qOA
+eCl
+bWx
 bWx
 thz
 eCl
@@ -252166,10 +253910,10 @@ uWK
 uWK
 qrc
 qrc
-qrc
-uWK
-xQW
-qrc
+qOA
+bWx
+wID
+qOA
 qOA
 uUU
 bWx
@@ -252599,9 +254343,9 @@ wLx
 qrc
 qrc
 qrc
-qrc
-uWK
-qrc
+qOA
+bWx
+qOA
 bWx
 wID
 wID
@@ -253033,8 +254777,8 @@ uWK
 hDr
 qrc
 uWK
-qrc
-wLx
+qOA
+uUU
 qOA
 qOA
 bWx
@@ -253467,7 +255211,7 @@ uWK
 qrc
 uWK
 wLx
-uWK
+bWx
 bWx
 qOA
 bWx
@@ -253900,7 +255644,7 @@ qrc
 wLx
 wLx
 qrc
-uWK
+bWx
 bWx
 bWx
 qOA
@@ -256336,7 +258080,7 @@ whb
 pAV
 dAr
 tff
-hFz
+xzN
 qhH
 qhH
 xou
@@ -264920,7 +266664,7 @@ qbG
 qbG
 qbG
 qbG
-qbG
+uaL
 uaL
 uaL
 uaL
@@ -265249,7 +266993,7 @@ crg
 nnJ
 rRb
 rRb
-aYV
+voO
 rRb
 lrs
 rSC
@@ -266113,7 +267857,7 @@ vkD
 rRb
 rRb
 rRb
-iwq
+cWu
 rRb
 lrs
 lrs
@@ -266544,7 +268288,7 @@ pfC
 hHp
 rHd
 hXj
-fwn
+enW
 abS
 rRb
 lrs
@@ -266979,7 +268723,7 @@ voU
 lRr
 abS
 pAd
-sgQ
+bRe
 rRb
 rRb
 gLf
@@ -270001,7 +271745,7 @@ jPD
 jlj
 dOl
 rEg
-rEt
+vbY
 rEg
 rEg
 rEg
@@ -271803,7 +273547,7 @@ bpD
 bpD
 iMU
 iMU
-bpD
+iMU
 sSS
 sSS
 sSS
@@ -272160,7 +273904,7 @@ lrs
 lrs
 lrs
 lrs
-jZF
+dvY
 lYr
 abS
 lrs
@@ -272234,8 +273978,8 @@ vRu
 bpD
 bpD
 iMU
-bpD
-bpD
+iMU
+iMU
 sSS
 sSS
 sSS
@@ -273024,7 +274768,7 @@ lrs
 lrs
 lrs
 lrs
-jZF
+dvY
 lYr
 abS
 abS
@@ -274566,7 +276310,7 @@ tdR
 tdR
 tdR
 uhz
-oJM
+rvM
 amU
 amU
 amU
@@ -274998,8 +276742,8 @@ tdR
 tdR
 tdR
 oNE
-oJM
-oJM
+rvM
+rvM
 amU
 amU
 amU
@@ -275018,8 +276762,8 @@ sHf
 wLx
 wLx
 qrc
-wLx
-wEg
+uWK
+mDm
 wLx
 wLx
 wLx
@@ -275426,12 +277170,12 @@ whb
 whb
 whb
 whb
-tdR
+whb
 tdR
 tdR
 oNE
 oNE
-oJM
+rvM
 amU
 amU
 amU
@@ -275450,8 +277194,8 @@ wLx
 wLx
 wLx
 wLx
-wLx
-qrc
+uWK
+uWK
 uWK
 uWK
 qrc
@@ -275847,10 +277591,11 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -275861,12 +277606,11 @@ whb
 tdR
 tdR
 tdR
-tdR
 whb
 whb
 whb
-amU
-amU
+whb
+whb
 amU
 amU
 amU
@@ -276278,12 +278022,13 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -276293,14 +278038,13 @@ whb
 tdR
 tdR
 tdR
-tdR
+whb
+whb
 whb
 whb
 whb
 uhz
-amU
-amU
-amU
+uhz
 amU
 amU
 amU
@@ -276710,13 +278454,13 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -276728,12 +278472,12 @@ tdR
 tdR
 whb
 whb
+whb
+whb
 uhz
 uhz
 uhz
-amU
-amU
-amU
+uhz
 amU
 amU
 amU
@@ -277141,14 +278885,14 @@ whb
 whb
 whb
 whb
+tdR
+tdR
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -277163,10 +278907,10 @@ tdR
 tdR
 uhz
 uhz
+uhz
+uhz
 whb
-amU
-amU
-amU
+whb
 amU
 amU
 amU
@@ -277573,14 +279317,14 @@ whb
 whb
 whb
 whb
+tdR
 whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -277594,12 +279338,12 @@ tdR
 tdR
 tdR
 tdR
+uhz
+uhz
+uhz
 whb
 whb
 whb
-amU
-amU
-amU
 amU
 qsc
 amU
@@ -277865,7 +279609,7 @@ vTW
 twm
 twm
 twm
-aad
+whb
 whb
 whb
 whb
@@ -278010,9 +279754,9 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -278026,12 +279770,12 @@ tdR
 tdR
 tdR
 tdR
+uhz
+uhz
+uhz
 whb
 whb
 whb
-amU
-amU
-amU
 amU
 amU
 amU
@@ -278297,17 +280041,17 @@ twm
 twm
 twm
 aad
-aad
 whb
 whb
+xaf
 whb
 whb
 aaf
 aaf
 aaf
 ilt
-ilt
-ilt
+aaf
+aaf
 ilt
 aaf
 aaf
@@ -278443,10 +280187,9 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -278462,9 +280205,10 @@ tdR
 tdR
 tdR
 uhz
-amU
-amU
-amU
+uhz
+uhz
+whb
+whb
 amU
 amU
 amU
@@ -278728,18 +280472,18 @@ twm
 twm
 aad
 aad
+whb
+xaf
+xaf
+whb
+whb
 aad
-whb
-whb
-whb
-whb
-aad
 aaf
 aaf
 aaf
 ilt
-ilt
-ilt
+aaf
+aaf
 ilt
 aaf
 aaf
@@ -278831,20 +280575,6 @@ mUI
 mUI
 mUI
 mUI
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
 whb
 whb
 whb
@@ -278891,12 +280621,26 @@ whb
 whb
 tdR
 tdR
+tdR
+whb
+whb
+whb
+whb
+whb
+whb
+whb
+whb
+whb
+tdR
+tdR
+tdR
+whb
 tdR
 tdR
 paF
-wLx
-wLx
-wLx
+tdR
+tdR
+whb
 amU
 amU
 amU
@@ -279157,11 +280901,11 @@ twm
 twm
 twm
 twm
-aad
-aad
-aad
 whb
 whb
+whb
+xaf
+xaf
 whb
 whb
 aad
@@ -279308,27 +281052,27 @@ whb
 whb
 whb
 whb
+tdR
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 tdR
 tdR
 gQh
 tdR
-wLx
-wLx
+tdR
+tdR
 wLx
 wLx
 wLx
@@ -279591,9 +281335,9 @@ aad
 aad
 whb
 whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
 whb
 whb
 aaf
@@ -279740,31 +281484,31 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
 whb
 tdR
+tdR
+tdR
+whb
+whb
+whb
+whb
+tdR
+tdR
+tdR
+tdR
 wLx
-wLx
-wLx
-wLx
-oJM
-oJM
+rvM
+rvM
 qsc
 wLx
 wLx
@@ -280172,6 +281916,19 @@ whb
 whb
 whb
 whb
+tdR
+whb
+whb
+whb
+whb
+tdR
+tdR
+tdR
+whb
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -280180,25 +281937,12 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-wLx
-oJM
-oJM
-oJM
-oJM
-wLx
+tdR
+oNE
+rvM
+rvM
+rvM
+rvM
 wLx
 wLx
 whb
@@ -280606,16 +282350,16 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -280629,8 +282373,8 @@ whb
 whb
 whb
 kmK
-whb
-whb
+oNE
+oNE
 gQh
 whb
 whb
@@ -281038,6 +282782,15 @@ whb
 whb
 whb
 whb
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -281048,21 +282801,12 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 kmK
-whb
-whb
+gQh
+oNE
 whb
 gQh
 whb
@@ -281356,10 +283100,10 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -281476,6 +283220,9 @@ whb
 whb
 whb
 whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -281486,13 +283233,10 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -281785,16 +283529,16 @@ xaf
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -281908,6 +283652,9 @@ whb
 whb
 whb
 whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -281919,12 +283666,9 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -282175,7 +283919,7 @@ aad
 aad
 whb
 whb
-whb
+xaf
 whb
 whb
 whb
@@ -282341,6 +284085,9 @@ whb
 whb
 whb
 whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -282353,10 +284100,7 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
+tdR
 whb
 whb
 whb
@@ -282606,8 +284350,8 @@ aad
 whb
 whb
 whb
-whb
-whb
+xaf
+xaf
 whb
 whb
 aad
@@ -282661,7 +284405,7 @@ xaf
 xaf
 xaf
 xaf
-whb
+xaf
 whb
 whb
 whb
@@ -282774,8 +284518,8 @@ whb
 whb
 whb
 whb
-whb
-whb
+tdR
+tdR
 whb
 whb
 whb
@@ -283037,9 +284781,9 @@ aad
 aad
 whb
 whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
 whb
 whb
 aaf
@@ -283093,7 +284837,7 @@ xaf
 xaf
 xaf
 xaf
-whb
+xaf
 whb
 whb
 whb
@@ -283206,9 +284950,9 @@ whb
 whb
 whb
 whb
+tdR
 whb
-whb
-whb
+tdR
 whb
 whb
 whb
@@ -283469,9 +285213,9 @@ aad
 whb
 whb
 whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
 whb
 aad
 aaf
@@ -283525,6 +285269,7 @@ xaf
 xaf
 xaf
 xaf
+xaf
 whb
 whb
 whb
@@ -283637,10 +285382,9 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -283901,8 +285645,8 @@ aad
 whb
 whb
 whb
-whb
-whb
+xaf
+xaf
 whb
 whb
 aaf
@@ -283915,7 +285659,7 @@ whb
 whb
 whb
 whb
-whb
+xaf
 whb
 xaf
 huj
@@ -283957,6 +285701,7 @@ xaf
 xaf
 xaf
 xaf
+xaf
 whb
 whb
 whb
@@ -284070,9 +285815,8 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
+tdR
+tdR
 whb
 whb
 whb
@@ -284342,11 +286086,11 @@ aaf
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 xaf
@@ -284503,8 +286247,8 @@ whb
 whb
 whb
 whb
-whb
-whb
+tdR
+tdR
 whb
 whb
 whb
@@ -284773,11 +286517,11 @@ aaf
 aaf
 whb
 whb
-whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
 huj
 huj
 huj
@@ -284935,8 +286679,8 @@ whb
 whb
 whb
 whb
-whb
-whb
+tdR
+tdR
 whb
 whb
 whb
@@ -285205,11 +286949,11 @@ aaf
 aaf
 whb
 whb
-whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
 huj
 huj
 huj
@@ -285368,7 +287112,7 @@ whb
 whb
 whb
 whb
-whb
+tdR
 whb
 whb
 whb
@@ -285637,11 +287381,11 @@ aaf
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 huj
 huj
@@ -285798,8 +287542,8 @@ whb
 whb
 whb
 whb
-whb
-whb
+tdR
+tdR
 whb
 whb
 whb
@@ -286069,11 +287813,11 @@ aaf
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 aaf
 aad
@@ -286119,7 +287863,7 @@ xaf
 xaf
 xaf
 xaf
-whb
+xaf
 xaf
 whb
 whb
@@ -286229,9 +287973,9 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
+tdR
+tdR
+tdR
 whb
 whb
 whb
@@ -286501,9 +288245,9 @@ aaf
 aaf
 whb
 whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -286661,8 +288405,8 @@ whb
 whb
 whb
 whb
-whb
-whb
+tdR
+tdR
 whb
 whb
 whb
@@ -286990,6 +288734,7 @@ xaf
 xaf
 xaf
 xaf
+xaf
 whb
 whb
 whb
@@ -287092,9 +288837,8 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
+tdR
+tdR
 whb
 whb
 whb
@@ -287422,7 +289166,7 @@ xaf
 xaf
 xaf
 xaf
-whb
+xaf
 whb
 whb
 whb
@@ -287854,7 +289598,7 @@ xaf
 xaf
 xaf
 xaf
-whb
+xaf
 whb
 whb
 whb
@@ -288286,8 +290030,8 @@ xaf
 xaf
 xaf
 xaf
-whb
-whb
+xaf
+xaf
 whb
 whb
 whb
@@ -288718,8 +290462,8 @@ xaf
 xaf
 xaf
 xaf
-whb
-whb
+xaf
+xaf
 whb
 whb
 whb
@@ -289150,8 +290894,8 @@ xaf
 xaf
 xaf
 xaf
-whb
-whb
+xaf
+xaf
 whb
 whb
 whb
@@ -289527,10 +291271,10 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -289582,8 +291326,8 @@ xaf
 xaf
 xaf
 xaf
-whb
-whb
+xaf
+xaf
 whb
 whb
 whb
@@ -289958,15 +291702,15 @@ whb
 whb
 whb
 whb
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
+xaf
 whb
 whb
 xaf
@@ -290014,9 +291758,9 @@ xaf
 xaf
 xaf
 xaf
-whb
-whb
-whb
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -290390,57 +292134,6 @@ aad
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-xaf
-xaf
-whb
-whb
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
 xaf
 xaf
 xaf
@@ -290448,7 +292141,58 @@ xaf
 xaf
 whb
 whb
+xaf
+xaf
 whb
+whb
+whb
+whb
+xaf
+xaf
+whb
+whb
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -290822,51 +292566,6 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-xaf
-whb
-whb
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
-xaf
 xaf
 xaf
 xaf
@@ -290874,13 +292573,58 @@ xaf
 whb
 whb
 whb
+xaf
+xaf
 whb
 whb
 whb
 whb
+xaf
 whb
 whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -291261,7 +293005,7 @@ whb
 whb
 whb
 whb
-whb
+xaf
 whb
 whb
 xaf
@@ -291301,18 +293045,18 @@ whb
 whb
 whb
 whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
-whb
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
+xaf
 whb
 whb
 whb
@@ -353468,7 +355212,7 @@ qbG
 qbG
 qbG
 qbG
-pkN
+xoQ
 gJG
 gJG
 kEY
@@ -372544,7 +374288,7 @@ ggB
 ggB
 ggB
 ggB
-lcy
+wxU
 fdO
 ixt
 vXq
@@ -386025,9 +387769,9 @@ osh
 mBL
 mBL
 mBL
-mBL
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -386459,9 +388203,9 @@ rKu
 mBL
 mBL
 mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -386892,9 +388636,9 @@ kqc
 rKu
 rKu
 mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -387325,9 +389069,9 @@ rKu
 mBL
 mBL
 mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -387757,10 +389501,10 @@ osh
 rKu
 osh
 rKu
-mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
+rKu
 kKp
 aDN
 kKp
@@ -388190,9 +389934,9 @@ osh
 rKu
 mBL
 mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -388622,10 +390366,10 @@ osh
 rKu
 rKu
 mBL
-mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -389055,9 +390799,9 @@ osh
 rKu
 mBL
 mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -389487,9 +391231,9 @@ osh
 osh
 rKu
 mBL
-mBL
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -389920,9 +391664,9 @@ osh
 rKu
 mBL
 mBL
-kKp
-kKp
-kKp
+rKu
+rKu
+rKu
 kKp
 kKp
 kKp
@@ -390354,8 +392098,8 @@ mBL
 rKu
 rKu
 rKu
-kKp
-kKp
+rKu
+rKu
 kKp
 kKp
 aDN
@@ -390786,8 +392530,8 @@ osh
 osh
 rKu
 osh
-mBL
-mBL
+rKu
+rKu
 mBL
 kKp
 pRY
@@ -434451,7 +436195,7 @@ fGy
 hVr
 nUB
 bMQ
-iNE
+dmH
 daP
 kKp
 kKp
@@ -438333,7 +440077,7 @@ pgs
 ckR
 rkF
 vpr
-yat
+tnD
 pHm
 wpJ
 kKp
@@ -496187,8 +497931,8 @@ urb
 urb
 urb
 urb
-kKp
-kKp
+urb
+urb
 kKp
 kKp
 kKp
@@ -496620,9 +498364,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -497053,9 +498797,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -497486,9 +499230,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -497919,9 +499663,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -498351,9 +500095,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -498784,9 +500528,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -499216,9 +500960,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -499649,8 +501393,8 @@ urb
 urb
 urb
 urb
-kKp
-kKp
+urb
+urb
 kKp
 kKp
 kKp
@@ -500081,9 +501825,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -500515,8 +502259,8 @@ urb
 urb
 urb
 urb
-kKp
-kKp
+urb
+urb
 kKp
 kKp
 kKp
@@ -606348,8 +608092,8 @@ urb
 urb
 urb
 urb
-kKp
-kKp
+urb
+urb
 kKp
 kKp
 kKp
@@ -606781,9 +608525,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -607214,9 +608958,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -607647,9 +609391,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -608080,9 +609824,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -608512,9 +610256,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -608945,9 +610689,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -609377,9 +611121,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -609810,8 +611554,8 @@ urb
 urb
 urb
 urb
-kKp
-kKp
+urb
+urb
 kKp
 kKp
 kKp
@@ -610242,9 +611986,9 @@ urb
 urb
 urb
 urb
-kKp
-kKp
-kKp
+urb
+urb
+urb
 kKp
 kKp
 kKp
@@ -610676,8 +612420,8 @@ urb
 urb
 urb
 urb
-kKp
-kKp
+urb
+urb
 kKp
 kKp
 kKp
