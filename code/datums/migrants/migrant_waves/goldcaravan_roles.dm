@@ -5,14 +5,14 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
 	advclass_cat_rolls = list(CTAG_EA_MERCHANT = 20)
-	greet_text = "The esteemed EA Hasir owns your gold company, Promising only the finest quality gold in grimoria\
+	greet_text = "The esteemed EA-Hasir owns your gold company, Promising only the finest quality gold in grimoria\
 	 You've been sent with your caravan to sell golden riches and wonders- at a high price."
 
 /datum/advclass/merchant
 	name = "EA Hasir-ian Merchant"
 	tutorial = "You were born into wealth, learning from before you could talk about the basics of mathematics. \
 	Counting coins is a simple pleasure for any person, but you've made it an art form. \
-	EA Nasir has entrusted you with some of his highest quality gold products- Make him proud, \
+	EA-Hasir has entrusted you with some of his highest quality gold products- Make him proud, \
 	Rob 'em all blind."
 	outfit = /datum/outfit/job/roguetown/merchant/ea_hasir
 	traits_applied = list(TRAIT_NOBLE, TRAIT_OUTLANDER)
