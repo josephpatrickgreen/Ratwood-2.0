@@ -22,6 +22,9 @@
 
 /datum/outfit/job/roguetown/crusader/pre_equip(mob/living/carbon/human/H)
 	..()
+	if (!(istype(H.patron, /datum/patron/divine/astrata)))	//astratan crusade
+		to_chat(H, span_warning("Astrata, the Absolute Order of the lands embraces me; We shall take what is rightfully ours, For she wills it."))
+		H.set_patron(/datum/patron/divine/astrata)
 	H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
