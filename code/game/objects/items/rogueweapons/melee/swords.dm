@@ -101,6 +101,7 @@
 
 /datum/intent/sword/peel/weak
 	name = "weak armor peel"
+	attack_verb = list("<font color ='#e7e7e7'>lightly peels</font>")
 	peel_divisor = 8
 
 /datum/intent/sword/chop
