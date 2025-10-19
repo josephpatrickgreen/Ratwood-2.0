@@ -239,6 +239,8 @@ Balloon Alert / Floating Text defines
 #define RACES_CONSTRUCT \
 	/datum/species/construct/metal,\
 	/datum/species/construct/porcelain,\
+	/datum/species/fey/gnome,\
+	/datum/species/fey/redcap,\
 
 #define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_CONSTRUCT)
 
