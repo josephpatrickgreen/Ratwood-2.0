@@ -72,7 +72,7 @@
 	EA-Hasir is a reliable employer, and you're guarding a rather high value merchant\
 	Keep them alive, and you may get paid enough to take a much needed break."
 	outfit = /datum/outfit/job/roguetown/ea_guard
-	traits_applied = list(TRAIT_NOBLE, TRAIT_OUTLANDER)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_OUTLANDER)
 	category_tags = list(CTAG_EA_GUARD)
 	subclass_stats = list(
 		STATKEY_STR = 2,

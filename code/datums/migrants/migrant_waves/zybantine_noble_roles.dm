@@ -8,7 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
 	advclass_cat_rolls = list(CTAG_ZYBANTINE_EMIR = 20)
-	greet_text = "You are an envoy from the zybantine Empire, traveling with bodyguards and a priest to represent your homeland.\
+	greet_text = "You are an envoy from the zybantine Empire, traveling with bodyguards and your personal advisor to represent your homeland.\
 	 What exactly you have been sent here to speak about- only you know."
 
 /datum/advclass/zybantine_emir
@@ -122,14 +122,14 @@
 	H.adjust_skillrank(/datum/skill/misc/music, 5, TRUE)
 
 /datum/migrant_role/zybantine/janissary
-	name = "Janissary"
+	name = "Janissary Bodyguard"
 	greet_text = "You are a dilligent soldier in employ of the Emir for protection and to assure that their mission goes as planned."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
 	advclass_cat_rolls = list(CTAG_ZYBANTINE_JANISSARY = 20)
 
 /datum/advclass/zybantine_janissary
-	name = "Janissary"
+	name = "Janissary Bodyguard"
 	outfit = /datum/outfit/job/roguetown/zybantine/janissary
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
 	category_tags = list(CTAG_ZYBANTINE_JANISSARY)
@@ -188,8 +188,8 @@
 /datum/advclass/zybantine_advisor
 	name = "Advisor"
 	outfit = /datum/outfit/job/roguetown/zybantine/advisor
-	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
-	category_tags = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT, TRAIT_PERFECT_TRACKER)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT, TRAIT_PERFECT_TRACKER, TRAIT_OUTLANDER)
+	category_tags = list(CTAG_ZYBANTINE_ADVISOR)
 	subclass_stats = list(
 		STATKEY_SPD = 2,
 		STATKEY_PER = 2,

@@ -65,14 +65,14 @@
 	H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 
 /datum/migrant_role/grenzel/bodyguard
-	name = "Doppelsoldner"
+	name = "Doppelsoldner Bodyguard"
 	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that their mission goes as planned."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
 	advclass_cat_rolls = list(CTAG_GRENZEL_DOPPEL = 20)
 
 /datum/advclass/grenzel_doppel
-	name = "Doppelsoldner"
+	name = "Doppelsoldner Bodyguard"
 	outfit = /datum/outfit/job/roguetown/grenzel/doppel
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
 	category_tags = list(CTAG_GRENZEL_DOPPEL)
@@ -122,14 +122,14 @@
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 
 /datum/migrant_role/grenzel/priest
-	name = "Priest"
+	name = "Grenzelhoftian Priest"
 	greet_text = "Nominally the envoy's spiritual advisor, your real power extends beyond religious matters. Protect interests of the Holy See of the Ten."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
 	advclass_cat_rolls = list(CTAG_GRENZEL_PRIEST = 20)
 
 /datum/advclass/grenzel_priest
-	name = "Priest"
+	name = "Grenzelhoftian Priest"
 	outfit = /datum/outfit/job/roguetown/grenzel/doppel
 	traits_applied = list(TRAIT_CHOSEN, TRAIT_RITUALIST, TRAIT_GRAVEROBBER, TRAIT_OUTLANDER)
 	category_tags = list(CTAG_GRENZEL_PRIEST)
