@@ -16,7 +16,9 @@
 	var/weather_resistant = FALSE
 	possible_item_intents = list(INTENT_GENERIC)
 	var/on = FALSE
-
+	var/divine = FALSE
+	var/original_name = ""
+	var/original_color = "#f5a885"
 /obj/item/flashlight/Initialize()
 	. = ..()
 	if(icon_state == "[initial(icon_state)]-on")
@@ -67,6 +69,7 @@
 	var/on_damage = 7
 	var/produce_heat = 1500
 	var/times_used = 0
+	var/max_times_used = 8
 
 /obj/item/flashlight/flare/process()
 	open_flame(heat)
@@ -203,6 +206,8 @@
 		turn_off()
 
 /obj/item/flashlight/flare/torch/extinguish()
+	if(divine)
+		return
 	if(on)
 		turn_off()
 
@@ -244,19 +249,59 @@
 
 /obj/item/flashlight/flare/torch/afterattack(atom/movable/A, mob/user, proximity)
 	. = ..()
-	if (!proximity)
-		return
-	if (on && (prob(50) || (user.used_intent.type == /datum/intent/use)))
-		if (ismob(A))
-			A.spark_act()
-		else
-			A.fire_act(3,3)
+	if(istype(A, /obj/machinery/light/rogue/firebowl/church/astrata))
+		var/obj/machinery/light/rogue/firebowl/church/astrata/flame = A
 
-		if (should_self_destruct)  // check if self-destruct
-			times_used += 1
-			if (times_used >= 8) //amount used before burning out
-				user.visible_message("<span class='warning'>[src] has burnt out and falls apart!</span>")
-				qdel(src)
+		//torch things
+		user.visible_message("<span class='notice'>[user] lights [src] with [A], stealing Astrata's flame!</span>")
+		original_name = name
+		name = "astrata's flame"
+		original_color = light_color
+		light_color = "#aaffff"
+		divine = TRUE
+		spark_act()
+		fire_act()
+		fuel = 999 MINUTES
+		should_self_destruct = FALSE
+		extinguishable = FALSE
+		weather_resistant = TRUE
+		smeltresult = null
+		
+		//firebowl things
+		flame.force_extinguish()
+
+	else if(istype(A, /obj/machinery/light/rogue/firebowl/church/astrata/off))
+		var/obj/machinery/light/rogue/firebowl/church/astrata/off/flame = A
+
+		//torch things
+		user.visible_message("<span class='notice'>[user] lights [src] with [A], stealing Astrata's flame!</span>")
+		name = original_name
+		light_color = original_color
+		divine = FALSE
+		flame.extinguish()
+		should_self_destruct = TRUE
+		extinguishable = TRUE
+		weather_resistant = FALSE
+		
+		//firebowl things
+		flame.force_fire_act()
+
+	else
+		if (!proximity)
+			return
+		if (on && (prob(50) || (user.used_intent.type == /datum/intent/use)))
+			if (ismob(A))
+				A.spark_act()
+			else
+				A.fire_act(3,3)
+
+			if (should_self_destruct)  // check if self-destruct
+				times_used += 1
+				if (times_used >= max_times_used) //amount used before burning out
+					user.visible_message("<span class='warning'>[src] has burnt out and falls apart!</span>")
+					qdel(src)
+
+
 
 /obj/item/flashlight/flare/torch/spark_act()
 	fire_act()
@@ -279,22 +324,7 @@
 	should_self_destruct = TRUE
 	extinguishable = TRUE
 	metalizer_result = null
-
-/obj/item/flashlight/flare/torch/metal/afterattack(atom/movable/A, mob/user, proximity)
-	. = ..()
-	if(!proximity)
-		return
-	if(on && (prob(50) || (user.used_intent.type == /datum/intent/use)))
-		if(ismob(A))
-			A.spark_act()
-		else
-			A.fire_act(3,3)
-
-		if (should_self_destruct)  // check if self-destruct
-			times_used += 1
-			if (times_used >= 13) //amount used before burning out
-				user.visible_message("<span class='warning'>[src] has burnt out and falls apart!</span>")
-				qdel(src)
+	max_times_used = 13
 
 /obj/item/flashlight/flare/torch/lantern
 	name = "iron lamptern"
@@ -314,16 +344,6 @@
 	extinguishable = FALSE
 	weather_resistant = TRUE
 	metalizer_result = null
-
-/obj/item/flashlight/flare/torch/lantern/afterattack(atom/movable/A, mob/user, proximity)
-	. = ..()
-	if(!proximity)
-		return
-	if(on && (prob(50) || (user.used_intent.type == /datum/intent/use)))
-		if(ismob(A))
-			A.spark_act()
-		else
-			A.fire_act(3,3)
 
 /obj/item/flashlight/flare/torch/lantern/process()
 	open_flame(heat)

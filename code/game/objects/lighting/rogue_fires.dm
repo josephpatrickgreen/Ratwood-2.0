@@ -80,6 +80,27 @@
 	status = LIGHT_BURNED
 	desc = "The fire is gone!"
 
+/obj/machinery/light/rogue/firebowl/church/astrata
+
+	name = "astrata's flame"
+	desc = "A metal bowl containing a divine flame."
+	icon_state = "churchfire1"
+	base_state = "churchfire"
+	bulb_colour = "#aaffff"
+
+/obj/machinery/light/rogue/firebowl/church/astrata/off
+	icon_state = "churchfire0"
+	base_state = "churchfire"
+	soundloop = null
+	status = LIGHT_BURNED
+	desc = "The divine fire has been stolen!"
+
+/obj/machinery/light/rogue/firebowl/church/astrata/off/fire_act(added, maxstacks)
+	to_chat(src.loc, "<span class='notice'>The [src] refuses to be lit!</span>")
+
+/obj/machinery/light/rogue/firebowl/church/astrata/extinguish()
+	to_chat(src.loc, "<span class='notice'>Astrata's fire persists!</span>")
+
 /obj/machinery/light/rogue/firebowl/standing
 	name = "standing fire"
 	desc = "Wrought metal spun into a surprisingly stable stand for a large candle to sit upon."

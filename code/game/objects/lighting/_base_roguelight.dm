@@ -12,6 +12,7 @@
 	var/cookonme = FALSE
 	var/crossfire = TRUE
 	var/can_damage = FALSE
+	var/divine = FALSE
 
 /obj/machinery/light/rogue/Initialize()
 	if(soundloop)
@@ -47,7 +48,6 @@
 		else
 			if(initial(fueluse) > 0)
 				. += span_warning("The fire is burned out and hungry...")
-
 
 /obj/machinery/light/rogue/extinguish()
 	if(on)
