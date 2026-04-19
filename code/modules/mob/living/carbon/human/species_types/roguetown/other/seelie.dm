@@ -21,7 +21,7 @@
 
 	skin_tone_wording = "Elemental Connection"
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, STUBBLE, OLDGREY)
-	inherent_traits = list(TRAIT_NOMOBSWAP, TRAIT_NOFALLDAMAGE2, TRAIT_TINY)
+	inherent_traits = list(TRAIT_NOFALLDAMAGE2, TRAIT_TINY)
 	default_features = MANDATORY_FEATURE_LIST
 	use_skintones = TRUE
 	disliked_food = NONE
