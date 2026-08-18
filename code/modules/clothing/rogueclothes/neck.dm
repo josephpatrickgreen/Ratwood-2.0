@@ -368,6 +368,10 @@
 	desc = "A series of interlocking rings of metal set around the throat. Used by the kouken of Kazengun for precisely the same reason as the knights of Psydonia."
 	icon_state = "kazengunneckguard"
 
+/obj/item/clothing/neck/roguetown/gorget/steel/barbouche
+	name = "plated barbouche"
+	desc = "A plated barbouche, layering steel over the throat and jaw. Worn by the Custodians of the mage tower, second only to their vigilance."
+
 /obj/item/clothing/neck/roguetown/gorget/paalloy
 	name = "ancient gorget"
 	desc = "Polished gilbranze plates, layered atop one-another to guard the neck. The spine; a sacred leyline between spirit and sinew. It must remain unsevered, lest Her blessings be lost."

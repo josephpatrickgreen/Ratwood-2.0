@@ -140,6 +140,10 @@
 #define SERVANT		(1<<5)
 #define MAGEASSOCIATE	(1<<6)
 #define APOTHECARY	(1<<7)
+#define MAGEDELEGATE	(1<<8)
+#define JOURNEYMAGE	(1<<9)
+#define MAGEEXCHANGE	(1<<10)
+#define CUSTODIAN	(1<<11)
 
 #define YEOMEN		(1<<4)
 
@@ -255,8 +259,12 @@
 #define JDO_COUNCILLOR 4.1
 
 // Courtiers
-#define JDO_MAGICIAN 5
-#define JDO_MAGEASSOCIATE 5.1
+#define JDO_HEADMASTER 5
+#define JDO_MAGEDELEGATE 5.05
+#define JDO_JOURNEYMAGE 5.1
+#define JDO_MAGEASSOCIATE 5.15
+#define JDO_MAGEEXCHANGE 5.18
+#define JDO_CUSTODIAN 5.19
 #define JDO_PHYSICIAN 6
 #define JDO_APOTHECARY 6.1
 #define JDO_JESTER 7
@@ -348,6 +356,10 @@
 	/datum/job/roguetown/butler,\
 	/datum/job/roguetown/apothecary,\
 	/datum/job/roguetown/magician,\
+	/datum/job/roguetown/magedelegate,\
+	/datum/job/roguetown/journeymage,\
+	/datum/job/roguetown/mageexchange,\
+	/datum/job/roguetown/custodian,\
 	/datum/job/roguetown/headslave,\
 	/datum/job/roguetown/slave,\
 
